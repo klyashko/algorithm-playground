@@ -1,0 +1,9 @@
+# Created by .ignore support plugin (hsz.mobi)
+
+#files
+*.iml
+
+#folders
+.idea/
+target/
+
