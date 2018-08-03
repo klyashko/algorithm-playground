@@ -11,13 +11,13 @@ class FlippingAnImageSpec extends Specification {
 
 		expect:
 
-			new Solution().flipAndInvertImage((int[][]) input) == (int[][]) output
+			output as int[][] == new Solution().flipAndInvertImage(input as int[][])
 
 		where:
 
-			input                                                    | output
-			[[1, 1, 0], [1, 0, 1], [0, 0, 0]]                        | [[1, 0, 0], [0, 1, 0], [1, 1, 1]]
-			[[1, 1, 0, 0], [1, 0, 0, 1], [0, 1, 1, 1], [1, 0, 1, 0]] | [[1, 1, 0, 0], [0, 1, 1, 0], [0, 0, 0, 1], [1, 0, 1, 0]]
+			input                                                    || output
+			[[1, 1, 0], [1, 0, 1], [0, 0, 0]]                        || [[1, 0, 0], [0, 1, 0], [1, 1, 1]]
+			[[1, 1, 0, 0], [1, 0, 0, 1], [0, 1, 1, 1], [1, 0, 1, 0]] || [[1, 1, 0, 0], [0, 1, 1, 0], [0, 0, 0, 1], [1, 0, 1, 0]]
 
 	}
 
