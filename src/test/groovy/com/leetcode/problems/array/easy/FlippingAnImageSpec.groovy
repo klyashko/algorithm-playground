@@ -1,6 +1,6 @@
-package com.leetcode.problems
+package com.leetcode.problems.array.easy
 
-import com.leetcode.problems.FlippingAnImage.Solution
+import com.leetcode.problems.array.easy.FlippingAnImage.Solution
 import spock.lang.Specification
 import spock.lang.Unroll
 

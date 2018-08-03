@@ -1,4 +1,4 @@
-package com.leetcode.problems;
+package com.leetcode.problems.array.easy;
 
 /**
  * https://leetcode.com/problems/flipping-an-image/description/
