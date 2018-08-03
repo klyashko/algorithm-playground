@@ -2,9 +2,11 @@ package com.leetcode.problems.array.easy
 
 import com.leetcode.problems.array.easy.TransposeMatrix.Solution
 import spock.lang.Specification
+import spock.lang.Unroll
 
 class TransposeMatrixSpec extends Specification {
 
+	@Unroll
 	def "transpose"() {
 		expect:
 
