@@ -7,23 +7,30 @@ public class MinimumPathSum {
     public class Solution {
 
         public int minPathSum(int[][] grid) {
-            int rowLength = grid[0].length;
-            int[][] scores = new int[grid.length][rowLength];
-            scores[0][0] = grid[0][0];
-            for (int i = 0; i < rowLength - 1; i++) {
-                scores[0][i + 1] = scores[0][i] + grid[0][i + 1];
-            }
-            for (int y = 0; y < grid.length; y++) {
-                for (int x = 0; x < rowLength; x++) {
-                    if (y != 0 && x + 1 != rowLength) {
-                        scores[y][x + 1] = Math.min(scores[y][x] + grid[y][x + 1], scores[y][x + 1]);
-                    }
-                    if (y + 1 != grid.length) {
-                        scores[y + 1][x] = scores[y][x] + grid[y + 1][x];
-                    }
+            int i = 0, j = 0;
+            for (int c = 0; c < grid.length + grid[0].length - 1; c++) {
+                fillDiagonal(i, j, grid);
+                if (i < grid.length - 1) {
+                    i++;
+                } else if (j < grid[0].length - 1) {
+                    j++;
                 }
             }
-            return scores[grid.length - 1][rowLength - 1];
+            return grid[grid.length - 1][grid[0].length - 1];
+        }
+
+        private void fillDiagonal(int i, int j, int[][] grid) {
+            while (i >= 0 && j < grid[0].length) {
+                if (i != 0 && j != 0) {
+                    grid[i][j] = grid[i][j] + Math.min(grid[i - 1][j], grid[i][j - 1]);
+                } else if (i == 0 && j != 0) {
+                    grid[i][j] = grid[i][j] + grid[i][j - 1];
+                } else if (i != 0) {
+                    grid[i][j] = grid[i][j] + grid[i - 1][j];
+                }
+                i--;
+                j++;
+            }
         }
     }
 
