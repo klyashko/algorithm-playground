@@ -22,10 +22,11 @@ class WordLadderIISpec extends Specification {
 
         where:
 
-            begin || end   || list                                       || expected
-            "a"   || "c"   || ["a", "b", "c"]                            || [["a", "c"]]
-            "hit" || "cog" || ["hot", "dot", "dog", "lot", "log"]        || []
-            "hit" || "cog" || ["hot", "dot", "dog", "lot", "log", "cog"] || [["hit", "hot", "dot", "dog", "cog"], ["hit", "hot", "lot", "log", "cog"]]
+            begin || end   || list                                                     || expected
+            "a"   || "c"   || ["a", "b", "c"]                                          || [["a", "c"]]
+            "hit" || "cog" || ["hot", "dot", "dog", "lot", "log"]                      || []
+            "hit" || "cog" || ["hot", "dot", "dog", "lot", "log", "cog"]               || [["hit", "hot", "dot", "dog", "cog"], ["hit", "hot", "lot", "log", "cog"]]
+            "red" || "tax" || ["ted", "tex", "red", "tax", "tad", "den", "rex", "pee"] || [["red", "ted", "tad", "tax"], ["red", "ted", "tex", "tax"], ["red", "rex", "tex", "tax"]]
     }
 
 }

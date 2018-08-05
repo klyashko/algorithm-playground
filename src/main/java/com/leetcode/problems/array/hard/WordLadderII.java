@@ -22,10 +22,11 @@ public class WordLadderII {
 
             Queue<Node> queue = new ArrayDeque<>();
             List<List<String>> result = new ArrayList<>();
+            Set<String> visited = new HashSet<>();
             int shortest = Integer.MAX_VALUE;
 
             Node node = new Node(beginWord, null);
-            node.visited.add(beginWord);
+            visited.add(beginWord);
             queue.add(node);
 
             while (!queue.isEmpty()) {
@@ -42,9 +43,9 @@ public class WordLadderII {
                     shortest = way.size();
                 } else {
                     for (String next : options.get(current.value)) {
-                        if (!current.visited.contains(next)) {
+                        if (!visited.contains(next) || next.equals(endWord)) {
                             Node n = new Node(next, current);
-                            n.visited.add(next);
+                            visited.add(next);
                             queue.add(n);
                         }
                     }
@@ -82,16 +83,12 @@ public class WordLadderII {
         private class Node {
             String value;
             Node prev;
-            Node next;
-            Set<String> visited = new HashSet<>();
             int size = 1;
 
             public Node(String value, Node prev) {
                 this.value = value;
                 this.prev = prev;
                 if (prev != null) {
-                    prev.next = this;
-                    visited.addAll(prev.visited);
                     size += prev.size;
                 }
             }
