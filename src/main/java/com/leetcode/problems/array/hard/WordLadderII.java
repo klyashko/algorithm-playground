@@ -22,11 +22,9 @@ public class WordLadderII {
 
             Queue<Node> queue = new ArrayDeque<>();
             List<List<String>> result = new ArrayList<>();
-            Set<String> visited = new HashSet<>();
             int shortest = Integer.MAX_VALUE;
 
             Node node = new Node(beginWord, null);
-            visited.add(beginWord);
             queue.add(node);
 
             while (!queue.isEmpty()) {
@@ -43,9 +41,8 @@ public class WordLadderII {
                     shortest = way.size();
                 } else {
                     for (String next : options.get(current.value)) {
-                        if (!visited.contains(next) || next.equals(endWord)) {
+                        if (!isVisited(next, current) || next.equals(endWord)) {
                             Node n = new Node(next, current);
-                            visited.add(next);
                             queue.add(n);
                         }
                     }
@@ -53,6 +50,16 @@ public class WordLadderII {
             }
 
             return result;
+        }
+
+        private boolean isVisited(String val, Node node) {
+            while (node != null) {
+                if (node.value.equals(val)) {
+                    return true;
+                }
+                node = node.prev;
+            }
+            return false;
         }
 
         private List<String> findAllSimilar(String word, List<String> wordList) {
