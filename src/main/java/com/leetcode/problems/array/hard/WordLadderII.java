@@ -7,99 +7,114 @@ import java.util.*;
  */
 public class WordLadderII {
 
-    public class Solution {
-        public List<List<String>> findLadders(String beginWord, String endWord, List<String> wordList) {
-            if (!wordList.contains(endWord)) {
-                return Collections.emptyList();
-            }
-            Map<String, List<String>> options = new HashMap<>();
-            options.put(beginWord, findAllSimilar(beginWord, wordList));
-            for (String word : wordList) {
-                if (!word.equals(endWord)) {
-                    options.put(word, findAllSimilar(word, wordList));
-                }
-            }
+	public class Solution {
+		public List<List<String>> findLadders(String beginWord, String endWord, List<String> wordList) {
+			if (!wordList.contains(endWord)) {
+				return Collections.emptyList();
+			}
+			Map<String, List<String>> options = new HashMap<>();
+			options.put(beginWord, findAllSimilar(beginWord, wordList));
+			for (String word : wordList) {
+				if (!word.equals(endWord)) {
+					options.put(word, findAllSimilar(word, wordList));
+				}
+			}
 
-            Queue<Node> queue = new ArrayDeque<>();
-            List<List<String>> result = new ArrayList<>();
-            int shortest = Integer.MAX_VALUE;
+			int depth = findDepth(beginWord, endWord, options);
+			if (depth == Integer.MAX_VALUE) {
+				return Collections.emptyList();
+			}
+			LinkedList<String> stack = new LinkedList<>();
+			stack.addLast(beginWord);
+			int[] visited = new int[wordList.size()];
+			Arrays.fill(visited, Integer.MAX_VALUE);
 
-            Node node = new Node(beginWord, null);
-            queue.add(node);
+			List<List<String>> result = new ArrayList<>();
+			depthFirst(stack, depth, options, result, endWord, visited, wordList);
+			return result;
+		}
 
-            while (!queue.isEmpty()) {
-                Node current = queue.poll();
-                if (shortest < current.size) {
-                    break;
-                } else if (current.value.equals(endWord)) {
-                    LinkedList<String> way = new LinkedList<>();
-                    result.add(way);
-                    while (current != null) {
-                        way.addFirst(current.value);
-                        current = current.prev;
-                    }
-                    shortest = way.size();
-                } else {
-                    for (String next : options.get(current.value)) {
-                        if (!isVisited(next, current) || next.equals(endWord)) {
-                            Node n = new Node(next, current);
-                            queue.add(n);
-                        }
-                    }
-                }
-            }
+		private void depthFirst(LinkedList<String> stack,
+								int depth,
+								Map<String, List<String>> options,
+								List<List<String>> result,
+								String endWord,
+								int[] visited,
+								List<String> wordList) {
+			if (stack.isEmpty()) {
+				return;
+			}
+			String current = stack.peekLast();
+			if (stack.size() + 1 == depth) {
+				if (options.get(current).contains(endWord)) {
+					List<String> way = new ArrayList<>(stack);
+					way.add(endWord);
+					result.add(way);
+				}
+			} else if (stack.size() + 1 < depth) {
+				for (String next : options.get(current)) {
+					int idx = wordList.indexOf(next);
+					if (idx == -1 || visited[idx] > stack.size()) {
+						visited[idx] = stack.size();
+						stack.addLast(next);
+						depthFirst(stack, depth, options, result, endWord, visited, wordList);
+					}
+				}
+			}
+			int idx = wordList.indexOf(current);
+			if (idx != -1) {
+				visited[idx] = stack.size();
+			}
+			stack.pollLast();
+		}
 
-            return result;
-        }
+		private int findDepth(String current, String end, Map<String, List<String>> options) {
+			Set<String> visited = new HashSet<>();
+			Set<String> next = new HashSet<>();
+			next.add(current);
 
-        private boolean isVisited(String val, Node node) {
-            while (node != null) {
-                if (node.value.equals(val)) {
-                    return true;
-                }
-                node = node.prev;
-            }
-            return false;
-        }
+			int i = 1;
+			for (; !next.contains(end); i++) {
+				Set<String> tmp = new HashSet<>();
+				for (String key : next) {
+					if (!visited.contains(key)) {
+						tmp.addAll(options.getOrDefault(key, Collections.emptyList()));
+						visited.add(key);
+					}
+				}
+				next.clear();
+				next.addAll(tmp);
+				if (i > options.size()) {
+					return Integer.MAX_VALUE;
+				}
+			}
+			return i;
+		}
 
-        private List<String> findAllSimilar(String word, List<String> wordList) {
-            List<String> list = new ArrayList<>();
-            for (String option : wordList) {
-                if (option.equals(word)) {
-                    continue;
-                }
-                boolean diff = false;
-                boolean add = true;
-                for (int i = 0; i < word.length(); i++) {
-                    if (word.charAt(i) != option.charAt(i)) {
-                        if (diff) {
-                            add = false;
-                            break;
-                        } else {
-                            diff = true;
-                        }
-                    }
-                }
-                if (add) {
-                    list.add(option);
-                }
-            }
-            return list;
-        }
-
-        private class Node {
-            String value;
-            Node prev;
-            int size = 1;
-
-            public Node(String value, Node prev) {
-                this.value = value;
-                this.prev = prev;
-                if (prev != null) {
-                    size += prev.size;
-                }
-            }
-        }
-    }
+		private List<String> findAllSimilar(String word, List<String> wordList) {
+			List<String> list = new ArrayList<>();
+			for (String option : wordList) {
+				if (option.equals(word)) {
+					continue;
+				}
+				boolean diff = false;
+				boolean add = true;
+				for (int i = 0; i < word.length(); i++) {
+					if (word.charAt(i) != option.charAt(i)) {
+						if (diff) {
+							add = false;
+							break;
+						} else {
+							diff = true;
+						}
+					}
+				}
+				if (add) {
+					list.add(option);
+				}
+			}
+			return list;
+		}
+	}
 
 }
