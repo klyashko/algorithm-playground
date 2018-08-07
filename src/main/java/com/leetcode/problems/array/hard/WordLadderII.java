@@ -30,30 +30,29 @@ public class WordLadderII {
             unvisited.add(endWord);
             unvisited.remove(beginWord);
 
-            int currentStepSize = 1;
-            int nextStepSize = 0;
+            int sizeUntilNext = queue.size();
             boolean found = false;
 
             while (!queue.isEmpty()) {
                 String current = queue.poll();
-                currentStepSize--;
+                sizeUntilNext--;
                 for (String nextWord : options.getOrDefault(current, new HashSet<>())) {
                     if (unvisited.contains(nextWord)) {
                         if (visited.add(nextWord)) {
-                            nextStepSize++;
                             queue.add(nextWord);
                         }
 
                         map.computeIfAbsent(nextWord, ignored -> new ArrayList<>()).add(current);
-                        found = nextWord.equals(endWord);
+                        if (nextWord.equals(endWord)) {
+                            found = true;
+                        }
                     }
                 }
-                if (currentStepSize == 0) {
+                if (sizeUntilNext == 0) {
                     if (found) {
                         break;
                     }
-                    currentStepSize = nextStepSize;
-                    nextStepSize = 0;
+                    sizeUntilNext = queue.size();
                     unvisited.removeAll(visited);
                     visited.clear();
                 }
