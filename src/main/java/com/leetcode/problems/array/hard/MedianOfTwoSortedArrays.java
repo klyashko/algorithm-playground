@@ -3,6 +3,9 @@ package com.leetcode.problems.array.hard;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
+/**
+ * https://leetcode.com/problems/median-of-two-sorted-arrays/
+ */
 @SuppressWarnings("Duplicates")
 public class MedianOfTwoSortedArrays {
 
