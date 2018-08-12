@@ -1,6 +1,6 @@
 package com.leetcode.problems.array.hard
 
-import com.leetcode.problems.array.hard.JumpGameII.Solution;
+import com.leetcode.problems.array.hard.JumpGameII.Solution
 import spock.lang.Specification
 import spock.lang.Unroll
 
