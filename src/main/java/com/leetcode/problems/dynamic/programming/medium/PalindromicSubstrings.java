@@ -10,34 +10,15 @@ public class PalindromicSubstrings {
 			if (s.isEmpty()) {
 				return 0;
 			}
-			int count = 1;
-			for (int i = 1; i < s.length(); i++) {
-				int start = -1, end = -1;
-				if (s.charAt(i - 1) == s.charAt(i)) {
-					start = i - 1;
-					end = i;
-					while (start >= 0 && end < s.length() && s.charAt(start) == s.charAt(end)) {
-						start--;
-						end++;
-					}
-					count += (end - start - 1) / 2;
-				}
-				if (i > 1 && s.charAt(i - 2) == s.charAt(i)) {
-					start = i - 2;
-					end = i;
-
-					while (start >= 0 && end < s.length() && s.charAt(start) == s.charAt(end)) {
-						start--;
-						end++;
-					}
-					count += (end - start - 1) / 2;
-				}
-				count++;
+			int count = s.length();
+			for (int i = 0; i < s.length(); i++) {
+				count += countPalindromicLength(i, i, s) / 2;
+				count += countPalindromicLength(i - 1, i, s) / 2;
 			}
 			return count;
 		}
 
-		private int countPalindromecLength(int start, int end, String s) {
+		private int countPalindromicLength(int start, int end, String s) {
 			while (start >= 0 && end < s.length() && s.charAt(start) == s.charAt(end)) {
 				start--;
 				end++;
