@@ -6,18 +6,24 @@ import spock.lang.Unroll
 
 class MinimumASCIIDeleteSumForTwoStringsSpec extends Specification {
 
-	@Unroll
-	def "minimumDeleteSum"() {
+    @Unroll
+    def "minimumDeleteSum"() {
 
-		expect:
+        expect:
 
-			new Solution().minimumDeleteSum(s1, s2) == output
+            new Solution().minimumDeleteSum(s1, s2) == output
 
-		where:
+        where:
 
-			s1       || s2     || output
-//			"sea"    || "eat"  || 231
-			"delete" || "leet" || 403
-	}
+            s1                                                                                            || s2     || output
+            "sea"                                                                                         || "eat"  || 231
+            "delete"                                                                                      || "leet" || 403
+            "igijekdtywibepwonjbwykkqmrgmtybwhwjiqudxmnniskqjfbkpcxukrablqmwjndlhblxflgehddrvwfacarwkcpmcfqnajqfxyqwiugz" +
+                    "tocqzuikamtvmbjrypfqvzqiwooewpzcpwhdejmuahqtukistxgfafrymoaodtluaexucnndlnpeszdfsvfofdylcicrrevjgga" +
+                    "srgdhwdgjwcchyanodmzmuqeupnpnsmdkcfszznklqjhjqaboikughrnxxggbfyjriuvdsusvmhiaszicfa" ||
+                    "ikhuivqorirphlzqgcruwirpewbjgrjtugwpnkbrdfufjsmgzzjespzdcdjcoioaqybciofdzbdieegetnogoibbwfielwungeh" +
+                    "etanktjqjrddkrnsxvdmehaeyrpzxrxkhlepdgpwhgpnaatkzbxbnopecfkxoekcdntjyrmmvppcxcgquhomcsltiqzqzmkloom" +
+                    "vfayxhawlyqxnsbyskjtzxiyrsaobbnjpgzmetpqvscyycutdkpjpzfokvi"                                   || 41731
+    }
 
 }
