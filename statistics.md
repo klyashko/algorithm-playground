@@ -24,3 +24,4 @@
  * medium:
    * [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/description/)
    * [Arithmetic Slices](https://leetcode.com/problems/arithmetic-slices/description/)
+   * [Integer Break](https://leetcode.com/problems/integer-break/description/)
