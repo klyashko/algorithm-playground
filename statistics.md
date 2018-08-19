@@ -22,6 +22,7 @@
    * [Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/description/)
    
  * medium:
+   * [Count Numbers with Unique Digits](https://leetcode.com/problems/count-numbers-with-unique-digits/description/)
    * [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/description/)
    * [Arithmetic Slices](https://leetcode.com/problems/arithmetic-slices/description/)
    * [Integer Break](https://leetcode.com/problems/integer-break/description/)
