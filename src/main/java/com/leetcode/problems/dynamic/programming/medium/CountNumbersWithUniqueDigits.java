@@ -5,7 +5,7 @@ package com.leetcode.problems.dynamic.programming.medium;
  */
 public class CountNumbersWithUniqueDigits {
 
-    class Solution {
+    class SolutionRecursive {
         public int countNumbersWithUniqueDigits(int n) {
             if (n == 0) {
                 return 1;
@@ -15,6 +15,21 @@ public class CountNumbersWithUniqueDigits {
                 options *= (10 - i);
             }
             return options + countNumbersWithUniqueDigits(n - 1);
+        }
+    }
+
+    class Solution {
+        public int countNumbersWithUniqueDigits(int n) {
+            if (n == 0) {
+                return 1;
+            }
+            int dp = 9;
+            int sum = 10;
+            for (int i = 2; i <= n; i++) {
+                dp = dp * (11 - i);
+                sum += dp;
+            }
+            return sum;
         }
     }
 
