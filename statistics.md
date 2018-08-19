@@ -25,4 +25,5 @@
    * [Count Numbers with Unique Digits](https://leetcode.com/problems/count-numbers-with-unique-digits/description/)
    * [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/description/)
    * [Arithmetic Slices](https://leetcode.com/problems/arithmetic-slices/description/)
+   * [Keys Key board](https://leetcode.com/problems/2-keys-keyboard/description/)
    * [Integer Break](https://leetcode.com/problems/integer-break/description/)
