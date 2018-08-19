@@ -25,8 +25,8 @@ public class CountNumbersWithUniqueDigits {
             }
             int dp = 9;
             int sum = 10;
-            for (int i = 2; i <= n; i++) {
-                dp = dp * (11 - i);
+            for (int i = 1; i < n; i++) {
+                dp = dp * (10 - i);
                 sum += dp;
             }
             return sum;
