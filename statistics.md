@@ -27,3 +27,6 @@
    * [Arithmetic Slices](https://leetcode.com/problems/arithmetic-slices/description/)
    * [Keys Key board](https://leetcode.com/problems/2-keys-keyboard/description/)
    * [Integer Break](https://leetcode.com/problems/integer-break/description/)
+   
+ * hard:
+   * [Wildcard Matching](https://leetcode.com/problems/wildcard-matching/description/)
