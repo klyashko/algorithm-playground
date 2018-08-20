@@ -20,7 +20,6 @@ public class WildcardMatching {
 				} else if (s.length() == 1 && "?".equals(p)) {
 					return true;
 				}
-				boolean result = false;
 				int cursor = 0;
 				int i = 0;
 				for (; i < p.length(); i++) {
@@ -47,19 +46,20 @@ public class WildcardMatching {
 							return false;
 						}
 						cursor += offset;
+						boolean result = false;
 						while (cursor < s.length() && !result) {
 							if (s.charAt(cursor) == p.charAt(i)) {
 								result = isMatch(s.substring(cursor), p.substring(i));
 							}
 							cursor++;
 						}
-						break;
+						return result;
 					} else if (s.charAt(cursor) != p.charAt(i)) {
 						return false;
 					}
 					cursor++;
 				}
-				return result || (cursor == s.length() && i == p.length());
+				return cursor == s.length() && i == p.length();
 			});
 		}
 	}
