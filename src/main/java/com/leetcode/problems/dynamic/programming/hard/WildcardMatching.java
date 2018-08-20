@@ -25,15 +25,13 @@ public class WildcardMatching {
 				for (; i < p.length(); i++) {
 					if (cursor >= s.length()) {
 						return containsOnlyStars(p, i);
-					} else if ('?' == p.charAt(i)) {
+					} else if ('?' == p.charAt(i) || s.charAt(cursor) == p.charAt(i)) {
 						cursor++;
-						continue;
 					} else if ('*' == p.charAt(i)) {
 						return processStar(p, i, s, cursor);
-					} else if (s.charAt(cursor) != p.charAt(i)) {
+					} else {
 						return false;
 					}
-					cursor++;
 				}
 				return cursor == s.length() && i == p.length();
 			});
