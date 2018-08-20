@@ -24,36 +24,12 @@ public class WildcardMatching {
 				int i = 0;
 				for (; i < p.length(); i++) {
 					if (cursor >= s.length()) {
-						while (i < p.length() && p.charAt(i) == '*') {
-							i++;
-						}
-						return i == p.length();
+						return containsOnlyStars(p, i);
 					} else if ('?' == p.charAt(i)) {
 						cursor++;
 						continue;
 					} else if ('*' == p.charAt(i)) {
-						int offset = 0;
-						while (i < p.length() && ('*' == p.charAt(i) || '?' == p.charAt(i))) {
-							if ('?' == p.charAt(i)) {
-								offset++;
-							}
-							i++;
-						}
-						if (i == p.length()) {
-							return offset == 0 || s.length() - cursor >= offset;
-						}
-						if (offset > s.length() - cursor) {
-							return false;
-						}
-						cursor += offset;
-						boolean result = false;
-						while (cursor < s.length() && !result) {
-							if (s.charAt(cursor) == p.charAt(i)) {
-								result = isMatch(s.substring(cursor), p.substring(i));
-							}
-							cursor++;
-						}
-						return result;
+						return processStar(p, i, s, cursor);
 					} else if (s.charAt(cursor) != p.charAt(i)) {
 						return false;
 					}
@@ -62,6 +38,41 @@ public class WildcardMatching {
 				return cursor == s.length() && i == p.length();
 			});
 		}
+
+		private boolean containsOnlyStars(String pattern, int positionInPattern) {
+			while (positionInPattern < pattern.length() && pattern.charAt(positionInPattern) == '*') {
+				positionInPattern++;
+			}
+			return positionInPattern == pattern.length();
+		}
+
+		private boolean processStar(String pattern, int positionInPattern, String str, int positionInString) {
+			int offset = 0;
+			while (positionInPattern < pattern.length() && ('*' == pattern.charAt(positionInPattern) || '?' == pattern
+				.charAt(positionInPattern))) {
+				if ('?' == pattern.charAt(positionInPattern)) {
+					offset++;
+				}
+				positionInPattern++;
+			}
+			if (positionInPattern == pattern.length()) {
+				return offset == 0 || str.length() - positionInString >= offset;
+			}
+			if (offset > str.length() - positionInString) {
+				return false;
+			}
+			positionInString += offset;
+			while (positionInString < str.length()) {
+				if (str.charAt(positionInString) == pattern.charAt(positionInPattern)) {
+					if (isMatch(str.substring(positionInString), pattern.substring(positionInPattern))) {
+						return true;
+					}
+				}
+				positionInString++;
+			}
+			return false;
+		}
+
 	}
 
 }
