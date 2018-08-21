@@ -29,4 +29,5 @@
    * [Integer Break](https://leetcode.com/problems/integer-break/description/)
    
  * hard:
+   * [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/description/)
    * [Wildcard Matching](https://leetcode.com/problems/wildcard-matching/description/)
