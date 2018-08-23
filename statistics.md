@@ -31,3 +31,8 @@
  * hard:
    * [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/description/)
    * [Wildcard Matching](https://leetcode.com/problems/wildcard-matching/description/)
+
+#### String
+
+ * easy:
+   * [To Lower Case](https://leetcode.com/problems/to-lower-case/description/)
