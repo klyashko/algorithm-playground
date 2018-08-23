@@ -1,7 +1,7 @@
 package com.leetcode.problems.dynamic.programming.hard;
 
-import java.util.ArrayDeque;
 import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.Queue;
 
 /**
@@ -9,61 +9,49 @@ import java.util.Queue;
  */
 public class ShortestPathVisitingAllNodes {
 
-    class Solution {
-        public int shortestPathLength(int[][] graph) {
-            boolean[] visited = new boolean[graph.length];
+	class Solution {
+		public int shortestPathLength(int[][] graph) {
+			int N = graph.length;
 
-            Queue<Node> queue = new ArrayDeque<>();
-            Node start = new Node(0, null);
-            Node end = null;
+			Queue<Node> queue = new LinkedList<>();
+			int dist[][] = new int[1 << N][N];
 
-            visited[0] = true;
+			for (int[] row : dist) {
+				Arrays.fill(row, N * N);
+			}
 
-            queue.add(start);
+			for (int x = 0; x < N; x++) {
+				queue.add(new Node(1 << x, x));
+				dist[1 << x][x] = 0;
+			}
 
-            int cursor = 0;
+			while (!queue.isEmpty()) {
+				Node current = queue.poll();
+				int d = dist[current.cover][current.head];
+				if (current.cover == (1 << N) - 1) {
+					return d;
+				}
 
-            while (!queue.isEmpty() && end == null) {
-                Node current = queue.poll();
-                //noinspection ConstantConditions
-                for (int i = 0; i < graph[current.id].length; i++) {
-                    int val = graph[current.id][i];
-                    Node n = new Node(val, current);
-                    visited[val] = true;
-                    while (cursor < visited.length && visited[cursor]) {
-                        cursor++;
-                    }
-                    if (cursor == visited.length) {
-                        end = n;
-                        break;
-                    }
-                    queue.add(n);
-                }
-            }
+				for (int child : graph[current.head]) {
+					int cover2 = current.cover | (1 << child);
+					if (d + 1 < dist[cover2][child]) {
+						dist[cover2][child] = d + 1;
+						queue.add(new Node(cover2, child));
+					}
+				}
+			}
 
-            if (end == null) {
-                return 0;
-            }
+			return 0;
+		}
 
-            int count = 0;
+		private class Node {
+			int cover, head;
 
-            while (end != null) {
-                count++;
-                end = end.prev;
-            }
-
-            return count;
-        }
-
-        private class Node {
-            int id;
-            Node prev;
-
-            private Node(int id, Node prev) {
-                this.id = id;
-                this.prev = prev;
-            }
-        }
-    }
+			private Node(int cover, int head) {
+				this.cover = cover;
+				this.head = head;
+			}
+		}
+	}
 
 }
