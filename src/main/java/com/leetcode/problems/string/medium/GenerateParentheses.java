@@ -11,29 +11,25 @@ public class GenerateParentheses {
 	class Solution {
 		public List<String> generateParenthesis(int n) {
 			List<String> list = new ArrayList<>();
-
-			StringBuilder builder = new StringBuilder(n * 2);
-			builder.append(new char[n * 2]);
-
-			backtracking(list, builder, n, n);
+			backtracking(list, new char[n * 2], n, n);
 			return list;
 		}
 
-		private void backtracking(List<String> list, StringBuilder current, int open, int close) {
+		private void backtracking(List<String> list, char[] chars, int open, int close) {
 			if (open == 0 && close == 0) {
-				list.add(current.toString());
+				list.add(String.valueOf(chars));
 				return;
 			}
 
-			int idx = current.length() - (open + close);
+			int idx = chars.length - (open + close);
 
 			if (open > 0) {
-				current.setCharAt(idx, '(');
-				backtracking(list, current, open - 1, close);
+				chars[idx] = '(';
+				backtracking(list, chars, open - 1, close);
 			}
-			if (close > 0 && open < close) {
-				current.setCharAt(idx, ')');
-				backtracking(list, current, open, close - 1);
+			if (open < close) {
+				chars[idx] = ')';
+				backtracking(list, chars, open, close - 1);
 			}
 		}
 	}
