@@ -38,3 +38,7 @@
    * [Judge Route Circle](https://leetcode.com/problems/judge-route-circle/description/)
    * [Reverse String](https://leetcode.com/problems/reverse-string/description/)
    * [To Lower Case](https://leetcode.com/problems/to-lower-case/description/)
+   
+ * medium:
+   * [Find and Replace Pattern](https://leetcode.com/problems/find-and-replace-pattern/description/)
+   * [Custom Sort String](https://leetcode.com/problems/custom-sort-string/description/)
