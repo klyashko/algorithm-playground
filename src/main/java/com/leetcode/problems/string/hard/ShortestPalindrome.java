@@ -1,5 +1,8 @@
 package com.leetcode.problems.string.hard;
 
+/**
+ * https://leetcode.com/problems/shortest-palindrome/description/
+ */
 public class ShortestPalindrome {
 
 	class Solution {
@@ -12,13 +15,11 @@ public class ShortestPalindrome {
 			String absent = "";
 
 			for (; idx >= 0; idx--) {
-				if (test(s, idx, idx)) {
-					absent = s.substring(idx * 2 + 1);
+				if (test(s, idx, idx + 1)) {
+					absent = s.substring(idx * 2 + 2);
 					break;
-					//				} else if (test(s, idx - 1, idx)) {
-				} else if (idx > 0 && test(s, idx - 1, idx)) {
-					//					absent = s.substring(idx * 2 + 2);
-					absent = s.substring(idx * 2);
+				} else if (test(s, idx, idx)) {
+					absent = s.substring(idx * 2 + 1);
 					break;
 				}
 			}

@@ -43,3 +43,6 @@
    * [Find and Replace Pattern](https://leetcode.com/problems/find-and-replace-pattern/description/)
    * [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/description/)
    * [Custom Sort String](https://leetcode.com/problems/custom-sort-string/description/)
+   
+ * hard:
+   * [Shortest Palindrome](https://leetcode.com/problems/shortest-palindrome/description/)
