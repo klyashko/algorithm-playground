@@ -18,6 +18,11 @@ class ShortestPalindromeSpec extends Specification {
 			str        || output
 			"aacecaaa" || "aaacecaaa"
 			"abcd"     || "dcbabcd"
+			"a"        || "a"
+			""         || ""
+			"ba"       || "aba"
+			"aba"      || "aba"
+			"aabba"    || "abbaabba"
 
 	}
 
