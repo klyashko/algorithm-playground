@@ -17,8 +17,11 @@ class InterleavingStringSpec extends Specification {
 		where:
 
 			s1      || s2      || s3           || output
-			"aabcc" || "dbbca" || "aadbbcbcac" || true
-			"aabcc" || "dbbca" || "aadbbbaccc" || false
+//			"aabcc" || "dbbca" || "aadbbcbcac" || true
+//			"aabcc" || "dbbca" || "aadbbbaccc" || false
+			"bbbbbabbbbabaababaaaabbababbaaabbabbaaabaaaaababbbababbbbbabbbbababbabaabababbbaabababababbbaaababaa" ||
+			"babaaaabbababbbabbbbaabaabbaabbbbaabaaabaababaaaabaaabbaaabaaaabaabaabbbbbbbbbbbabaaabbababbabbabaab" ||
+			"babbbabbbaaabbababbbbababaabbabaabaaabbbbabbbaaabbbaaaaabbbbaabbaaabababbaaaaaabababbababaababbababbbababbbbaaaabaabbabbaaaaabbabbaaaabbbaabaaabaababaababbaaabbbbbabbbbaabbabaabbbbabaaabbababbabbabbab" || false
 
 	}
 
