@@ -9,15 +9,26 @@ class PalindromePairsSpec extends Specification {
 	@Unroll
 	def "palindromePairs"() {
 
-		expect:
+		when:
 
-			new S().palindromePairs(words as String[]) == output
+			def s = new HashSet<>(output)
+			def l = new S().palindromePairs(words as String[])
+
+		then:
+
+			l
+			l.size() == s.size()
+			!l.find { !(it in s) }
+			!s.find { !(it in l) }
 
 		where:
 
 			words                                 || output
-			["abcd", "dcba", "lls", "s", "sssll"] || [[0, 1], [1, 0], [3, 2], [2, 4]]
-			["bat", "tab", "cat"]                 || [[0, 1], [1, 0]]
+			["abcd", "dcba", "lls", "s", "sssll"] || [[1, 0], [0, 1], [3, 2], [2, 4]]
+			["bat", "tab", "cat"]                 || [[1, 0], [0, 1]]
+			["sl", "lls"]                         || [[0, 1]]
+			["s", "lls"]                          || [[0, 1]]
+			["a", ""]                             || [[0, 1], [1, 0]]
 
 	}
 
