@@ -1,15 +1,35 @@
 package com.leetcode.problems.string.hard;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 /**
  * https://leetcode.com/problems/palindrome-pairs/description/
  */
 public class PalindromePairs {
-
 	class Solution {
+
+		public List<List<Integer>> palindromePairs(String[] words) {
+			List<List<Integer>> result = new ArrayList<>();
+
+			Map<String, Integer> map = new HashMap<>();
+
+			for (int i = 0; i < words.length; i++) {
+				map.put(words[i], i);
+			}
+
+			for (int i = 0; i < words.length; i++) {
+				String w = words[i];
+				for (int j = 0; j < w.length(); j++) {
+
+				}
+			}
+
+			return result;
+		}
+
+	}
+
+	class Solution_ {
 
 		public List<List<Integer>> palindromePairs(String[] words) {
 			List<List<Integer>> result = new ArrayList<>();
