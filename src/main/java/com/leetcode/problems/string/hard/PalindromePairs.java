@@ -6,9 +6,8 @@ import java.util.*;
  * https://leetcode.com/problems/palindrome-pairs/description/
  */
 public class PalindromePairs {
-	class Solution {
 
-		private Map<String, Boolean> cache = new HashMap<>();
+	class Solution {
 
 		public List<List<Integer>> palindromePairs(String[] words) {
 			Set<List<Integer>> result = new HashSet<>();
@@ -21,10 +20,6 @@ public class PalindromePairs {
 				map.put(words[i], i);
 				min = Math.min(min, words[i].length());
 			}
-//			System.out.println(min);
-
-			//			System.out.println(map);
-			//			System.out.println();
 
 			for (int i = 0; i < words.length; i++) {
 				if (words[i].isEmpty()) {
@@ -41,9 +36,7 @@ public class PalindromePairs {
 						result.add(Arrays.asList(map.get(""), i));
 					}
 					StringBuilder w = new StringBuilder(words[i]).reverse();
-					//					System.out.println("Word: " + w);
 					for (int j = min; j <= w.length(); j++) {
-//						System.out.println(w.substring(0, j) + " : " + w.substring(j));
 						if (isPalindrome(w.substring(j))) {
 							Integer idx = map.get(w.substring(0, j));
 							if (idx != null && idx != i) {
@@ -60,7 +53,6 @@ public class PalindromePairs {
 				}
 			}
 
-			//						System.out.println(result);
 			return new ArrayList<>(result);
 		}
 
@@ -78,7 +70,7 @@ public class PalindromePairs {
 
 	}
 
-	class Solution_ {
+	class ExampleSolution {
 
 		public List<List<Integer>> palindromePairs(String[] words) {
 			List<List<Integer>> result = new ArrayList<>();
@@ -93,7 +85,6 @@ public class PalindromePairs {
 				search(words[i], i, root, result);
 			}
 
-			System.out.println(result);
 			return result;
 		}
 
