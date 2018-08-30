@@ -8,23 +8,72 @@ import java.util.*;
 public class PalindromePairs {
 	class Solution {
 
+		private Map<String, Boolean> cache = new HashMap<>();
+
 		public List<List<Integer>> palindromePairs(String[] words) {
-			List<List<Integer>> result = new ArrayList<>();
+			Set<List<Integer>> result = new HashSet<>();
 
 			Map<String, Integer> map = new HashMap<>();
 
+			int min = Integer.MAX_VALUE;
+
 			for (int i = 0; i < words.length; i++) {
 				map.put(words[i], i);
+				min = Math.min(min, words[i].length());
 			}
+//			System.out.println(min);
+
+			//			System.out.println(map);
+			//			System.out.println();
 
 			for (int i = 0; i < words.length; i++) {
-				String w = words[i];
-				for (int j = 0; j < w.length(); j++) {
-
+				if (words[i].isEmpty()) {
+					for (String key : map.keySet()) {
+						int idx = map.get(key);
+						if (idx != i) {
+							if (isPalindrome(key)) {
+								result.add(Arrays.asList(idx, i));
+							}
+						}
+					}
+				} else {
+					if (map.containsKey("") && (isPalindrome(words[i]))) {
+						result.add(Arrays.asList(map.get(""), i));
+					}
+					StringBuilder w = new StringBuilder(words[i]).reverse();
+					//					System.out.println("Word: " + w);
+					for (int j = min; j <= w.length(); j++) {
+//						System.out.println(w.substring(0, j) + " : " + w.substring(j));
+						if (isPalindrome(w.substring(j))) {
+							Integer idx = map.get(w.substring(0, j));
+							if (idx != null && idx != i) {
+								result.add(Arrays.asList(idx, i));
+							}
+						}
+						if (isPalindrome(w.substring(0, j - min))) {
+							Integer idx = map.get(w.substring(j - min));
+							if (idx != null && idx != i) {
+								result.add(Arrays.asList(i, idx));
+							}
+						}
+					}
 				}
 			}
 
-			return result;
+			//						System.out.println(result);
+			return new ArrayList<>(result);
+		}
+
+		private boolean isPalindrome(String w) {
+			int middle = w.length() / 2;
+			int i = w.length() % 2 == 0 ? middle - 1 : middle;
+			int j = middle;
+			while (i <= j && i >= 0 && j < w.length()) {
+				if (w.charAt(i--) != w.charAt(j++)) {
+					return false;
+				}
+			}
+			return true;
 		}
 
 	}
@@ -44,6 +93,7 @@ public class PalindromePairs {
 				search(words[i], i, root, result);
 			}
 
+			System.out.println(result);
 			return result;
 		}
 
