@@ -48,3 +48,8 @@
    * [Shortest Palindrome](https://leetcode.com/problems/shortest-palindrome/description/)
    * [Interleaving String](https://leetcode.com/problems/interleaving-string/description/)
    * [Palindrome Pairs](https://leetcode.com/problems/palindrome-pairs/description/)
+   
+#### Math
+
+ * easy:
+   * [Self Dividing Numbers](https://leetcode.com/problems/self-dividing-numbers/description/)

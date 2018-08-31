@@ -1,5 +1,7 @@
 package com.leetcode.problems.math.easy;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -9,8 +11,27 @@ public class SelfDividingNumbers {
 
 	class Solution {
 		public List<Integer> selfDividingNumbers(int left, int right) {
-			return null;
+			List<Integer> result = new LinkedList<>();
+			for (; left <= right; left++) {
+				if (isSelfDividing(left)) {
+					result.add(left);
+				}
+			}
+			return result;
 		}
+
+		private boolean isSelfDividing(int n) {
+			int copy = n;
+			while (n > 0) {
+				int t = n % 10;
+				if (t == 0 || copy % t != 0) {
+					return false;
+				}
+				n /= 10;
+			}
+			return true;
+		}
+
 	}
 
 }
