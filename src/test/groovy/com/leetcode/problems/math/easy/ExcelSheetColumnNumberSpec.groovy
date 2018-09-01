@@ -16,6 +16,7 @@ class ExcelSheetColumnNumberSpec extends Specification {
 		where:
 
 			s     || output
+			""    || 0
 			"A"   || 1
 			"B"   || 2
 			"AB"  || 28

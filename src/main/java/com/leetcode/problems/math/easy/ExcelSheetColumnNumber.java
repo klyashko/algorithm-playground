@@ -7,18 +7,11 @@ public class ExcelSheetColumnNumber {
 
 	class Solution {
 		public int titleToNumber(String s) {
-			int len = s.length();
-			if (len == 0) {
-				return 0;
-			}
-			if (len == 1) {
-				return s.charAt(0) - 'A' + 1;
-			}
-
-			int sum = 0;
-			for (int i = 0; i < s.length(); i++) {
+			int sum = 0, prev = 1;
+			for (int i = s.length() - 1; i >= 0; i--) {
 				int val = s.charAt(i) - 'A' + 1;
-				sum += (val * (int) Math.pow(26, len - i - 1));
+				sum += val * prev;
+				prev *= 26;
 			}
 
 			return sum;
