@@ -53,3 +53,4 @@
 
  * easy:
    * [Self Dividing Numbers](https://leetcode.com/problems/self-dividing-numbers/description/)
+   * [Add Digits](https://leetcode.com/problems/add-digits/description/)
