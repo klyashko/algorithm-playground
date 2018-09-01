@@ -55,3 +55,6 @@
    * [Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/description/)
    * [Self Dividing Numbers](https://leetcode.com/problems/self-dividing-numbers/description/)
    * [Add Digits](https://leetcode.com/problems/add-digits/description/)
+   
+ * medium:
+   * [Encode And Decode Tiny URL](https://leetcode.com/problems/encode-and-decode-tinyurl/description/)
