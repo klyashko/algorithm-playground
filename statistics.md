@@ -52,5 +52,6 @@
 #### Math
 
  * easy:
+   * [Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/description/)
    * [Self Dividing Numbers](https://leetcode.com/problems/self-dividing-numbers/description/)
    * [Add Digits](https://leetcode.com/problems/add-digits/description/)
