@@ -59,6 +59,7 @@
  * medium:
    * [Encode And Decode Tiny URL](https://leetcode.com/problems/encode-and-decode-tinyurl/description/)
    * [Reordered Power Of 2](https://leetcode.com/problems/reordered-power-of-2/description/)
+   * [Maximum Swap](https://leetcode.com/problems/maximum-swap/description/)
    
 
-##### Total: 32
+##### Total: 33
