@@ -80,14 +80,13 @@ public class SplitArrayWithSameAverage {
 			for (int i : A) {
 				for (int j = m; j >= 1; j--) {
 					for (Integer t : sums.get(j - 1)) {
-						sums.get(j).add(t + i);
+						int val = t + i;
+						if (sum * j % len == 0 && val == sum * j / len) {
+							return true;
+						} else {
+							sums.get(j).add(val);
+						}
 					}
-				}
-			}
-
-			for (int i = 1; i <= m; i++) {
-				if (sum * i % len == 0 && sums.get(i).contains(sum * i / len)) {
-					return true;
 				}
 			}
 
