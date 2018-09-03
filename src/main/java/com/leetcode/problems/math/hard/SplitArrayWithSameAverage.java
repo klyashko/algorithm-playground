@@ -1,8 +1,6 @@
 package com.leetcode.problems.math.hard;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 /**
  * https://leetcode.com/problems/split-array-with-same-average/description/
@@ -53,6 +51,56 @@ public class SplitArrayWithSameAverage {
 				ans = ans || testAllPermutations(A, sum, size, threshold, idx + 1);
 				return ans;
 			});
+		}
+
+	}
+
+	class DynamicProgrammingSolution {
+
+		public boolean splitArraySameAverage(int[] A) {
+			int len = A.length;
+			int sum = 0;
+
+			for (int i : A) {
+				sum += i;
+			}
+			if (!isPossible(len, sum)) {
+				return false;
+			}
+
+			int m = len / 2;
+
+			List<Set<Integer>> sums = new ArrayList<>(m + 1);
+			for (int i = 0; i <= m + 1; i++) {
+				sums.add(new HashSet<>());
+			}
+
+			sums.get(0).add(0);
+
+			for (int i : A) {
+				for (int j = m; j >= 1; j--) {
+					for (Integer t : sums.get(j - 1)) {
+						sums.get(j).add(t + i);
+					}
+				}
+			}
+
+			for (int i = 1; i <= m; i++) {
+				if (sum * i % len == 0 && sums.get(i).contains(sum * i / len)) {
+					return true;
+				}
+			}
+
+			return false;
+		}
+
+		private boolean isPossible(int len, int sum) {
+			for (int i = 1; i <= len / 2; i++) {
+				if (sum * i % len == 0) {
+					return true;
+				}
+			}
+			return false;
 		}
 
 	}
