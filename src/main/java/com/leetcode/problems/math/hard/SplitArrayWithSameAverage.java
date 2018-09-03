@@ -37,16 +37,11 @@ public class SplitArrayWithSameAverage {
 		private boolean testAllPermutations(int[] A, double sum, int size, double threshold, int idx) {
 			String key = String.format("%s_%s_%s", sum, size, idx);
 			return cache.computeIfAbsent(key, ignored -> {
-				if (size > A.length / 2) {
-					return size != A.length && sum / size == threshold;
-				} else if (sum / size > threshold) {
-					return false;
-				} else if (size != A.length && sum / size == threshold) {
+				if (size != A.length && sum / size == threshold) {
 					return true;
-				} else if (idx == A.length) {
-					return size != A.length && sum / size == threshold;
+				} else if (sum / size > threshold || size > A.length / 2 || idx == A.length) {
+					return false;
 				}
-
 				boolean ans = testAllPermutations(A, sum + A[idx], size + 1, threshold, idx + 1);
 				ans = ans || testAllPermutations(A, sum, size, threshold, idx + 1);
 				return ans;
