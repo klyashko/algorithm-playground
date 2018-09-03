@@ -61,5 +61,8 @@
    * [Reordered Power Of 2](https://leetcode.com/problems/reordered-power-of-2/description/)
    * [Maximum Swap](https://leetcode.com/problems/maximum-swap/description/)
    
+ * hard:
+   * [Split Array With Same Average](https://leetcode.com/problems/split-array-with-same-average/description/)
+   
 
-##### Total: 33
+##### Total: 34
