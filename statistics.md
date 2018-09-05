@@ -71,4 +71,4 @@
    * [Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/description/)
    * [Leaf Similar Trees](https://leetcode.com/problems/leaf-similar-trees/description/)
 
-##### Total: 36
+##### Total: 37
