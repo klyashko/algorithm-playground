@@ -1,7 +1,7 @@
 package com.leetcode.problems.tree.easy
 
+import com.leetcode.problems.tree.TreeNode as N
 import com.leetcode.problems.tree.easy.MergeTwoBinaryTrees.Solution as S
-import com.leetcode.problems.tree.easy.TreeNode as N
 import spock.lang.Specification
 import spock.lang.Unroll
 

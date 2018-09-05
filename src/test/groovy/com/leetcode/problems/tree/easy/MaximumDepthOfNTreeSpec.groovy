@@ -1,7 +1,7 @@
 package com.leetcode.problems.tree.easy
 
+import com.leetcode.problems.tree.Node as N
 import com.leetcode.problems.tree.easy.MaximumDepthOfNTree.Solution as S
-import com.leetcode.problems.tree.easy.Node as N
 import spock.lang.Specification
 import spock.lang.Unroll
 

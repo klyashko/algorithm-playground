@@ -1,5 +1,7 @@
 package com.leetcode.problems.tree.easy;
 
+import com.leetcode.problems.tree.Node;
+
 /**
  * https://leetcode.com/problems/maximum-depth-of-n-ary-tree/description/
  */

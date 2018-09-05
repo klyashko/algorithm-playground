@@ -1,18 +1,18 @@
-package com.leetcode.problems.tree.easy;
+package com.leetcode.problems.tree;
 
 import java.util.Objects;
 
 public class TreeNode {
 
-	int val;
-	TreeNode left;
-	TreeNode right;
+	public int val;
+	public TreeNode left;
+	public TreeNode right;
 
-	TreeNode() {
+	public TreeNode() {
 
 	}
 
-	TreeNode(int x) { val = x; }
+	public TreeNode(int x) { val = x; }
 
 	public void setVal(int val) {
 		this.val = val;

@@ -1,11 +1,11 @@
-package com.leetcode.problems.tree.easy;
+package com.leetcode.problems.tree;
 
 import java.util.List;
 
 public class Node {
 
-	int val;
-	List<Node> children;
+	public int val;
+	public List<Node> children;
 
 	public Node() {}
 
