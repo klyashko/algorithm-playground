@@ -63,6 +63,7 @@
    
  * hard:
    * [Split Array With Same Average](https://leetcode.com/problems/split-array-with-same-average/description/)
+   * [Basic Calculator](https://leetcode.com/problems/basic-calculator/description/)
    
 
-##### Total: 34
+##### Total: 35
