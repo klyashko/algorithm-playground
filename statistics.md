@@ -65,5 +65,9 @@
    * [Split Array With Same Average](https://leetcode.com/problems/split-array-with-same-average/description/)
    * [Basic Calculator](https://leetcode.com/problems/basic-calculator/description/)
    
+#### Tree
+
+ * easy:
+   * [Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/description/)
 
 ##### Total: 35
