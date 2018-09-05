@@ -71,5 +71,8 @@
    * [Maximum Depth Of N Tree](https://leetcode.com/problems/maximum-depth-of-n-ary-tree/description/)
    * [Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/description/)
    * [Leaf Similar Trees](https://leetcode.com/problems/leaf-similar-trees/description/)
+   
+ * medium:
+   * [Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/description/)
 
-##### Total: 38
+##### Total: 39

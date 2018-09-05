@@ -1,5 +1,6 @@
 package com.leetcode.problems.tree;
 
+import java.util.List;
 import java.util.Objects;
 
 public class TreeNode {
@@ -24,6 +25,10 @@ public class TreeNode {
 
 	public void setRight(TreeNode right) {
 		this.right = right;
+	}
+
+	public static TreeNode valueOf(List<Integer> values) {
+		return valueOf(values.toArray(new Integer[0]));
 	}
 
 	public static TreeNode valueOf(Integer[] values) {
