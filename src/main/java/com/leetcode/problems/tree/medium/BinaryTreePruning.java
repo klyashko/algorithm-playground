@@ -9,8 +9,7 @@ public class BinaryTreePruning {
 
 	class Solution {
 		public TreeNode pruneTree(TreeNode root) {
-			dfs(root);
-			return root;
+			return dfs(root) ? root : null;
 		}
 
 		private boolean dfs(TreeNode n) {
