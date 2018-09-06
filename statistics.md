@@ -78,7 +78,8 @@
    * [Binary Tree Pruning](https://leetcode.com/problems/binary-tree-pruning/description/)
    
  * hard:
+   * [SerializeAndDeserializeBinaryTree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/)
    * [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/description/)
    * [Redundant Connection II](https://leetcode.com/problems/redundant-connection-ii/description/)
 
-##### Total: 42
+##### Total: 43

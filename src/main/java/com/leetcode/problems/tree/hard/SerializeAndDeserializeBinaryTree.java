@@ -2,10 +2,12 @@ package com.leetcode.problems.tree.hard;
 
 import com.leetcode.problems.tree.TreeNode;
 
+import java.util.Arrays;
+import java.util.Iterator;
+
 /**
  * https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/
  */
-@SuppressWarnings("Duplicates")
 public class SerializeAndDeserializeBinaryTree {
 
 	// Your Codec object will be instantiated and called as such:
@@ -28,18 +30,18 @@ public class SerializeAndDeserializeBinaryTree {
 			if (data.isEmpty()) {
 				return null;
 			}
-			return valueOf(data.split(DELIMITER), new int[]{0});
+			Iterator<String> iterator = Arrays.asList(data.split(DELIMITER)).iterator();
+			return valueOf(iterator);
 		}
 
-		private TreeNode valueOf(String[] values, int[] idx) {
-			int i = idx[0];
-			idx[0]++;
-			if (NULL.equals(values[i])) {
+		private TreeNode valueOf(Iterator<String> values) {
+			String value = values.next();
+			if (NULL.equals(value)) {
 				return null;
 			}
-			TreeNode node = new TreeNode(Integer.valueOf(values[i]));
-			node.left = valueOf(values, idx);
-			node.right = valueOf(values, idx);
+			TreeNode node = new TreeNode(Integer.valueOf(value));
+			node.left = valueOf(values);
+			node.right = valueOf(values);
 			return node;
 		}
 
