@@ -81,4 +81,4 @@
    * [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/description/)
    * [Redundant Connection II](https://leetcode.com/problems/redundant-connection-ii/description/)
 
-##### Total: 41
+##### Total: 42
