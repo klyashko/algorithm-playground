@@ -73,6 +73,7 @@
    * [Leaf Similar Trees](https://leetcode.com/problems/leaf-similar-trees/description/)
    
  * medium:
+   * [All Possible Full Binary Trees](https://leetcode.com/problems/all-possible-full-binary-trees/description/)
    * [Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/description/)
    * [Binary Tree Pruning](https://leetcode.com/problems/binary-tree-pruning/description/)
 
