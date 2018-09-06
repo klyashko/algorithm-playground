@@ -7,10 +7,6 @@ import java.util.*;
  */
 public class RedundantConnectionII {
 
-	public static void main(String[] args) {
-		System.out.println(Arrays.toString(new boolean[3]));
-	}
-
 	class Solution {
 		public int[] findRedundantDirectedConnection(int[][] edges) {
 			if (edges.length == 0) {
@@ -27,7 +23,7 @@ public class RedundantConnectionII {
 			}
 
 			for (Integer node : nodes) {
-				if (!validate(node, nodes.size(), parentToChild)) {
+				if (isNotValidate(node, nodes.size(), parentToChild)) {
 					continue;
 				}
 				Set<Integer> visited = new HashSet<>();
@@ -53,7 +49,7 @@ public class RedundantConnectionII {
 					List<int[]> toRemove = new ArrayList<>();
 					for (int[] edge : edgesToDelete) {
 						parentToChild.get(edge[0]).remove((Integer) edge[1]);
-						if (!validate(node, nodes.size(), parentToChild)) {
+						if (isNotValidate(node, nodes.size(), parentToChild)) {
 							toRemove.add(edge);
 						}
 						parentToChild.get(edge[0]).add(edge[1]);
@@ -76,7 +72,7 @@ public class RedundantConnectionII {
 		}
 
 
-		private boolean validate(Integer start, int size, Map<Integer, List<Integer>> edges) {
+		private boolean isNotValidate(Integer start, int size, Map<Integer, List<Integer>> edges) {
 			Set<Integer> visited = new HashSet<>();
 			Queue<Integer> q = new ArrayDeque<>();
 			q.add(start);
@@ -90,7 +86,7 @@ public class RedundantConnectionII {
 					}
 				}
 			}
-			return visited.size() == size;
+			return visited.size() != size;
 		}
 
 	}
