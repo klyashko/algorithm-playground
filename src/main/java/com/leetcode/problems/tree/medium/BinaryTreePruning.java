@@ -9,7 +9,25 @@ public class BinaryTreePruning {
 
 	class Solution {
 		public TreeNode pruneTree(TreeNode root) {
-			return null;
+			dfs(root);
+			return root;
+		}
+
+		private boolean dfs(TreeNode n) {
+			if (n == null) {
+				return false;
+			}
+
+			boolean left = dfs(n.left);
+			boolean right = dfs(n.right);
+
+			if (!left) {
+				n.left = null;
+			}
+			if (!right) {
+				n.right = null;
+			}
+			return n.val == 1 || left || right;
 		}
 	}
 

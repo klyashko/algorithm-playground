@@ -74,5 +74,6 @@
    
  * medium:
    * [Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/description/)
+   * [Binary Tree Pruning](https://leetcode.com/problems/binary-tree-pruning/description/)
 
-##### Total: 39
+##### Total: 40

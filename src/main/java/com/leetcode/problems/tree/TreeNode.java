@@ -39,7 +39,7 @@ public class TreeNode {
 	}
 
 	public static Integer[] toArray(TreeNode node) {
-		Integer[] array = new Integer[size(node) + 10];
+		Integer[] array = new Integer[size(node)];
 		packNode(node, 1, array);
 		return array;
 	}
@@ -57,7 +57,8 @@ public class TreeNode {
 		if (n == null) {
 			return 0;
 		}
-		return 1 + size(n.left) + size(n.right);
+		int size = Math.max(size(n.left), size(n.right));
+		return 1 + size * 2;
 	}
 
 	private static TreeNode valueOf(Integer[] values, int idx) {

@@ -17,10 +17,10 @@ class BinaryTreePruningSpec extends Specification {
 
 		where:
 
-			input                    || output
-			[1, null, 0, 0, 1]       || [1, null, 0, null, 1]
-			[1, 0, 1, 0, 0, 0, 1]    || [1, null, 1, null, 1]
-			[1, 1, 0, 1, 1, 0, 1, 0] || [1, 1, 0, 1, 1, null, 1]
+			input                          || output
+			[1, null, 0, null, null, 0, 1] || [1, null, 0, null, null, null, 1]
+			[1, 0, 1, 0, 0, 0, 1]          || [1, null, 1, null, null, null, 1]
+			[1, 1, 0, 1, 1, 0, 1, 0]       || [1, 1, 0, 1, 1, null, 1]
 	}
 
 }
