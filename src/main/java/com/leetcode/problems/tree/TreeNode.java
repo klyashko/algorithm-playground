@@ -1,5 +1,6 @@
 package com.leetcode.problems.tree;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 
@@ -85,5 +86,10 @@ public class TreeNode {
 	public int hashCode() {
 
 		return Objects.hash(val, left, right);
+	}
+
+	@Override
+	public String toString() {
+		return "TreeNode{" + Arrays.toString(toArray(this)) + "}";
 	}
 }
