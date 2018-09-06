@@ -2,10 +2,6 @@ package com.leetcode.problems.tree.hard;
 
 import com.leetcode.problems.tree.TreeNode;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 /**
  * https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/
  */
@@ -22,9 +18,9 @@ public class SerializeAndDeserializeBinaryTree {
 
 		// Encodes a tree to a single string.
 		public String serialize(TreeNode root) {
-			List<String> list = new ArrayList<>();
-			toList(root, list);
-			return String.join(DELIMITER, list);
+			StringBuilder builder = new StringBuilder();
+			toStringBuilder(root, builder);
+			return builder.toString();
 		}
 
 		// Decodes your encoded data to tree.
@@ -32,30 +28,29 @@ public class SerializeAndDeserializeBinaryTree {
 			if (data.isEmpty()) {
 				return null;
 			}
-			List<String> values = Arrays.asList(data.split(DELIMITER));
-			return valueOf(values, new int[]{0});
+			return valueOf(data.split(DELIMITER), new int[]{0});
 		}
 
-		private TreeNode valueOf(List<String> values, int[] idx) {
+		private TreeNode valueOf(String[] values, int[] idx) {
 			int i = idx[0];
 			idx[0]++;
-			if (NULL.equals(values.get(i))) {
+			if (NULL.equals(values[i])) {
 				return null;
 			}
-			TreeNode node = new TreeNode(Integer.valueOf(values.get(i)));
+			TreeNode node = new TreeNode(Integer.valueOf(values[i]));
 			node.left = valueOf(values, idx);
 			node.right = valueOf(values, idx);
 			return node;
 		}
 
-		private void toList(TreeNode node, List<String> list) {
+		private void toStringBuilder(TreeNode node, StringBuilder builder) {
 			if (node == null) {
-				list.add(NULL);
+				builder.append(NULL).append(DELIMITER);
 				return;
 			}
-			list.add(String.valueOf(node.val));
-			toList(node.left, list);
-			toList(node.right, list);
+			builder.append(String.valueOf(node.val)).append(DELIMITER);
+			toStringBuilder(node.left, builder);
+			toStringBuilder(node.right, builder);
 		}
 	}
 
