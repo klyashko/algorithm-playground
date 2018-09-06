@@ -85,6 +85,7 @@
 #### Hash Table
 
  * easy:
+   * [Uncommon Words From Two Sentences](https://leetcode.com/problems/uncommon-words-from-two-sentences/description/)
    * [Jewels And Stones](https://leetcode.com/problems/jewels-and-stones/description/)
 
-##### Total: 44
+##### Total: 45
