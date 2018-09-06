@@ -76,5 +76,8 @@
    * [All Possible Full Binary Trees](https://leetcode.com/problems/all-possible-full-binary-trees/description/)
    * [Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/description/)
    * [Binary Tree Pruning](https://leetcode.com/problems/binary-tree-pruning/description/)
+   
+ * hard:
+   * [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/description/)
 
 ##### Total: 40

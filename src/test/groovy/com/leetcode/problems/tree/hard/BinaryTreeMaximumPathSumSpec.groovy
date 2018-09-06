@@ -17,10 +17,11 @@ class BinaryTreeMaximumPathSumSpec extends Specification {
 
 		where:
 
-			input                           || output
-			[1, 2, 3]                       || 6
-			[-10, 9, 20, null, null, 15, 7] || 42
-			[-3]                            || -3
+			input                                                              || output
+			[1, 2, 3]                                                          || 6
+			[-10, 9, 20, null, null, 15, 7]                                    || 42
+			[-3]                                                               || -3
+			[-1, null, 9, null, null, -6, 3, null, null, null, null, null, -2] || 12
 
 	}
 
