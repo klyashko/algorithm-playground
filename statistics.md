@@ -90,6 +90,7 @@
    * [Single Number](https://leetcode.com/problems/single-number/description/)
    
  * medium:
+   * [Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency/description/)
    * [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/description/)
 
-##### Total: 47
+##### Total: 48
