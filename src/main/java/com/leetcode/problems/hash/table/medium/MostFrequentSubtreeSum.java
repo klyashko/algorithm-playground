@@ -2,35 +2,38 @@ package com.leetcode.problems.hash.table.medium;
 
 import com.leetcode.problems.tree.TreeNode;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * https://leetcode.com/problems/most-frequent-subtree-sum/description/
  */
-@SuppressWarnings("Duplicates")
 public class MostFrequentSubtreeSum {
 
 	class Solution {
 		public int[] findFrequentTreeSum(TreeNode root) {
 			Map<Integer, Integer> frequency = new HashMap<>();
 			sum(root, frequency);
-			Map<Integer, List<Integer>> map = new HashMap<>();
+			List<Integer> list = new ArrayList<>();
 			int max = Integer.MIN_VALUE;
 
 			for (Integer i : frequency.keySet()) {
 				int f = frequency.get(i);
-				if (!map.containsKey(f)) {
-					map.put(f, new ArrayList<>());
+				if (f > max) {
+					max = f;
+					list.clear();
+					list.add(i);
+				} else if (f == max) {
+					list.add(i);
 				}
-				map.get(f).add(i);
-				max = Math.max(max, f);
 			}
 
-			List<Integer> maxList = map.getOrDefault(max, Collections.emptyList());
-			int[] ans = new int[maxList.size()];
+			int[] ans = new int[list.size()];
 
-			for (int i = 0; i < maxList.size(); i++) {
-				ans[i] = maxList.get(i);
+			for (int i = 0; i < list.size(); i++) {
+				ans[i] = list.get(i);
 			}
 
 			return ans;
