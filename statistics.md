@@ -88,5 +88,8 @@
    * [Uncommon Words From Two Sentences](https://leetcode.com/problems/uncommon-words-from-two-sentences/description/)
    * [Jewels And Stones](https://leetcode.com/problems/jewels-and-stones/description/)
    * [Single Number](https://leetcode.com/problems/single-number/description/)
+   
+ * medium:
+   * [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/description/)
 
-##### Total: 46
+##### Total: 47
