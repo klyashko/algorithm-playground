@@ -5,6 +5,9 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
+/**
+ * https://leetcode.com/problems/random-pick-with-blacklist/description/
+ */
 public class RandomPickWithBlacklist {
 
 	public Solution of(int N, int[] blacklist) {
@@ -15,7 +18,6 @@ public class RandomPickWithBlacklist {
 
 		private Random rnd = new Random();
 		private List<int[]> intervals = new ArrayList<>();
-		private int M;
 
 		public Solution(int N, int[] blacklist) {
 			Arrays.sort(blacklist);
@@ -39,33 +41,13 @@ public class RandomPickWithBlacklist {
 					intervals.add(new int[]{blacklist[blacklist.length - 1] + 1, N - 1});
 				}
 			}
-
-			for (int[] i : intervals) {
-				System.out.println(Arrays.toString(i));
-			}
-
-			this.M = N - blacklist.length;
 		}
 
 		public int pick() {
-			int idx = rnd.nextInt(M);
-
-			int i = 0;
-			int sum = 0;
-
-			while (i < intervals.size()) {
-				int[] curr = intervals.get(i);
-				if (sum + curr[1] - curr[0] + 1 <= idx) {
-					sum += curr[1] - curr[0] + 1;
-					i++;
-				} else {
-					break;
-				}
-			}
-
-			int[] interval = intervals.get(i);
-			idx -= sum;
-			return interval[0] + idx;
+			int idx = rnd.nextInt(intervals.size());
+			int[] curr = intervals.get(idx);
+			int val = rnd.nextInt((curr[1] + 1) - curr[0]);
+			return curr[0] + val;
 		}
 	}
 
