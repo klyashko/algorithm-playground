@@ -12,6 +12,51 @@ public class MaximalRectangle {
 			}
 			int n = matrix.length;
 			int m = matrix[0].length;
+			int[] heights = new int[m];
+
+			for (int i = 0; i < m; i++) {
+				heights[i] = matrix[0][i] - '0';
+			}
+
+			int max = getMax(heights);
+
+			for (int i = 1; i < n; i++) {
+				for (int j = 0; j < m; j++) {
+					int curr = matrix[i][j] - '0';
+					heights[j] = curr * heights[j] + curr;
+				}
+				max = Math.max(max, getMax(heights));
+			}
+
+			return max;
+		}
+
+		private int getMax(int[] heights) {
+			int max = 0;
+			for (int i = 0; i < heights.length; i++) {
+				if (heights[i] != 0) {
+					for (int j = heights[i]; j > 0; j--) {
+						int w = 1;
+						for (; w + i < heights.length; w++) {
+							if (heights[i + w] < j) {
+								break;
+							}
+						}
+						max = Math.max(max, j * w);
+					}
+				}
+			}
+			return max;
+		}
+	}
+
+	class SlowSolution {
+		public int maximalRectangle(char[][] matrix) {
+			if (matrix.length == 0) {
+				return 0;
+			}
+			int n = matrix.length;
+			int m = matrix[0].length;
 			int[][] horizontal = new int[n][m];
 			int[][] vertical = new int[n][m];
 
