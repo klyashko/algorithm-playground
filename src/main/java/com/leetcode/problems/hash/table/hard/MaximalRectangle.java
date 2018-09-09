@@ -16,30 +16,30 @@ public class MaximalRectangle {
 			int[][] vertical = new int[n][m];
 
 			for (int i = n - 1; i >= 0; i--) {
-				int curr = matrix[i][m - 1] == '1' ? 1 : 0;
+				int curr = matrix[i][m - 1] - '0';
 				horizontal[i][m - 1] = curr;
 				if (i == n - 1) {
 					vertical[i][m - 1] = curr;
 				} else {
-					vertical[i][m - 1] = curr == 1 ? vertical[i + 1][m - 1] + curr : 0;
+					vertical[i][m - 1] = curr * vertical[i + 1][m - 1] + curr;
 				}
 			}
 
 			for (int i = m - 1; i >= 0; i--) {
-				int curr = matrix[n - 1][i] == '1' ? 1 : 0;
+				int curr = matrix[n - 1][i] - '0';
 				vertical[n - 1][i] = curr;
 				if (i == m - 1) {
 					horizontal[n - 1][i] = curr;
 				} else {
-					horizontal[n - 1][i] = curr == 1 ? horizontal[n - 1][i + 1] + curr : curr;
+					horizontal[n - 1][i] = curr * horizontal[n - 1][i + 1] + curr;
 				}
 			}
 
 			for (int i = n - 2; i >= 0; i--) {
 				for (int j = m - 2; j >= 0; j--) {
-					int curr = matrix[i][j] == '1' ? 1 : 0;
-					horizontal[i][j] = curr == 1 ? horizontal[i][j + 1] + curr : curr;
-					vertical[i][j] = curr == 1 ? vertical[i + 1][j] + curr : curr;
+					int curr = matrix[i][j] - '0';
+					horizontal[i][j] = curr * horizontal[i][j + 1] + curr;
+					vertical[i][j] = curr * vertical[i + 1][j] + curr;
 				}
 			}
 

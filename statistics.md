@@ -97,5 +97,6 @@
  * hard:
    * [Insert Delete Get Random Duplicates Allowed](https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed/description/)
    * [Random Pick With Blacklist](https://leetcode.com/problems/random-pick-with-blacklist/description/)
+   * [Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/description/)
 
 ##### Total: 50
