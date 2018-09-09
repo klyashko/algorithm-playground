@@ -99,4 +99,4 @@
    * [Random Pick With Blacklist](https://leetcode.com/problems/random-pick-with-blacklist/description/)
    * [Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/description/)
 
-##### Total: 50
+##### Total: 51
