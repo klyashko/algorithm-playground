@@ -105,5 +105,8 @@
    * [Maximum Depth Of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/)
    * [Employee Importance](https://leetcode.com/problems/employee-importance/description/)
    * [Max Area of Island](https://leetcode.com/problems/max-area-of-island/description/)
+   
+ * medium:
+   * [Keys and Rooms](https://leetcode.com/problems/keys-and-rooms/description/)
 
-##### Total: 54
+##### Total: 55
