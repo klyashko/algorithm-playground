@@ -1,4 +1,4 @@
-package com.leetcode.problems.hash.table.hard;
+package com.leetcode.problems.hashtable.hard;
 
 /**
  * https://leetcode.com/problems/maximal-rectangle/description/

@@ -1,4 +1,4 @@
-package com.leetcode.problems.hash.table.hard;
+package com.leetcode.problems.hashtable.hard;
 
 import java.util.ArrayList;
 import java.util.Arrays;

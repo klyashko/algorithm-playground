@@ -1,7 +1,7 @@
-package com.leetcode.problems.hash.table.hard
+package com.leetcode.problems.hashtable.hard
 
-import com.leetcode.problems.hash.table.hard.MinimumWindowSubstring.Solution as S
-import com.leetcode.problems.hash.table.hard.MinimumWindowSubstring.SolutionOptimized as SO
+import com.leetcode.problems.hashtable.hard.MinimumWindowSubstring.Solution as S
+import com.leetcode.problems.hashtable.hard.MinimumWindowSubstring.SolutionOptimized as SO
 import spock.lang.Specification
 import spock.lang.Unroll
 

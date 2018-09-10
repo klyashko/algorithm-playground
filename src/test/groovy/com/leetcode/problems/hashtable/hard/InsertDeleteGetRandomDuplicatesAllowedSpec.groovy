@@ -1,6 +1,6 @@
-package com.leetcode.problems.hash.table.hard
+package com.leetcode.problems.hashtable.hard
 
-import com.leetcode.problems.hash.table.hard.InsertDeleteGetRandomDuplicatesAllowed.RandomizedCollection as RC
+import com.leetcode.problems.hashtable.hard.InsertDeleteGetRandomDuplicatesAllowed.RandomizedCollection as RC
 import spock.lang.Specification
 
 class InsertDeleteGetRandomDuplicatesAllowedSpec extends Specification {

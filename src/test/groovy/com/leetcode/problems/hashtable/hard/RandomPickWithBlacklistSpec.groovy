@@ -1,6 +1,6 @@
-package com.leetcode.problems.hash.table.hard
+package com.leetcode.problems.hashtable.hard
 
-import com.leetcode.problems.hash.table.hard.RandomPickWithBlacklist as S
+import com.leetcode.problems.hashtable.hard.RandomPickWithBlacklist as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

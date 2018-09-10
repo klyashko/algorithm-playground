@@ -1,6 +1,6 @@
-package com.leetcode.problems.hash.table.medium
+package com.leetcode.problems.hashtable.medium
 
-import com.leetcode.problems.hash.table.medium.MostFrequentSubtreeSum.Solution as S
+import com.leetcode.problems.hashtable.medium.MostFrequentSubtreeSum.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

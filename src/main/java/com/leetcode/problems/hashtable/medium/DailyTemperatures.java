@@ -1,4 +1,4 @@
-package com.leetcode.problems.hash.table.medium;
+package com.leetcode.problems.hashtable.medium;
 
 import java.util.LinkedList;
 
