@@ -103,5 +103,6 @@
 
  * easy:
    * [Maximum Depth Of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/)
+   * [Max Area of Island](https://leetcode.com/problems/max-area-of-island/description/)
 
-##### Total: 52
+##### Total: 53
