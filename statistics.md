@@ -107,7 +107,8 @@
    * [Max Area of Island](https://leetcode.com/problems/max-area-of-island/description/)
    
  * medium:
+   * [Find Largest Value in Each Tree Row](https://leetcode.com/problems/find-largest-value-in-each-tree-row/description/)
    * [Find Bottom Left Tree Value](https://leetcode.com/problems/find-bottom-left-tree-value/description/)
    * [Keys and Rooms](https://leetcode.com/problems/keys-and-rooms/description/)
 
-##### Total: 56
+##### Total: 59
