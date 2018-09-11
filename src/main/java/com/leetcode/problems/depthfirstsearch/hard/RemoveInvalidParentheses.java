@@ -28,15 +28,13 @@ public class RemoveInvalidParentheses {
 				}
 			}
 
-			int len = s.length() - open - close;
-
 			Set<String> result = new HashSet<>();
-			dfs("", s, result, open, close, 0, len, 0);
+			dfs("", s, result, open, close, 0, 0);
 
 			return new ArrayList<>(result);
 		}
 
-		private void dfs(String current, String s, Set<String> result, int open, int close, int idx, int len, int o) {
+		private void dfs(String current, String s, Set<String> result, int open, int close, int idx, int o) {
 			if (o < 0 || open < 0 || close < 0) {
 				return;
 			}
@@ -48,13 +46,13 @@ public class RemoveInvalidParentheses {
 			}
 			char ch = s.charAt(idx);
 			if (ch == '(') {
-				dfs(current + "(", s, result, open, close, idx + 1, len, o + 1);
-				dfs(current, s, result, open - 1, close, idx + 1, len, o);
+				dfs(current + "(", s, result, open, close, idx + 1, o + 1);
+				dfs(current, s, result, open - 1, close, idx + 1, o);
 			} else if (ch == ')') {
-				dfs(current + ")", s, result, open, close, idx + 1, len, o - 1);
-				dfs(current, s, result, open, close - 1, idx + 1, len, o);
+				dfs(current + ")", s, result, open, close, idx + 1, o - 1);
+				dfs(current, s, result, open, close - 1, idx + 1, o);
 			} else {
-				dfs(current + ch, s, result, open, close, idx + 1, len, o);
+				dfs(current + ch, s, result, open, close, idx + 1, o);
 			}
 		}
 	}
