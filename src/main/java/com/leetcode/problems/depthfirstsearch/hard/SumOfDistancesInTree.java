@@ -1,9 +1,6 @@
 package com.leetcode.problems.depthfirstsearch.hard;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * https://leetcode.com/problems/sum-of-distances-in-tree/description/
@@ -11,48 +8,43 @@ import java.util.Map;
 public class SumOfDistancesInTree {
 
 	class Solution {
+		int[] ans, count;
+		List<Set<Integer>> graph;
+		int N;
+
 		public int[] sumOfDistancesInTree(int N, int[][] edges) {
-			if (edges.length == 0) {
-				return new int[N];
-			}
-			int[] ans = new int[N];
-			Map<Integer, List<Integer>> map = new HashMap<>();
+			this.N = N;
+			graph = new ArrayList<>();
+			ans = new int[N];
+			count = new int[N];
+			Arrays.fill(count, 1);
+
+			for (int i = 0; i < N; ++i)
+				graph.add(new HashSet<>());
 			for (int[] edge : edges) {
-				put(map, edge[0], edge[1]);
-				put(map, edge[1], edge[0]);
+				graph.get(edge[0]).add(edge[1]);
+				graph.get(edge[1]).add(edge[0]);
 			}
-
-			for (int i = 0; i < N; i++) {
-				int[] values = new int[N];
-				boolean[] seen = new boolean[N];
-				seen[i] = true;
-				dfs(map, i, 0, values, seen);
-
-				for (int j : values) {
-					ans[i] += j;
-				}
-			}
-
+			dfs(0, -1);
+			dfs2(0, -1);
 			return ans;
 		}
 
-		private void put(Map<Integer, List<Integer>> map, int key, int val) {
-			if (!map.containsKey(key)) {
-				map.put(key, new ArrayList<>());
-			}
-			map.get(key).add(val);
+		private void dfs(int node, int parent) {
+			for (int child : graph.get(node))
+				if (child != parent) {
+					dfs(child, node);
+					count[node] += count[child];
+					ans[node] += ans[child] + count[child];
+				}
 		}
 
-		private void dfs(Map<Integer, List<Integer>> edges, int curr, int depth, int[] values, boolean[] seen) {
-			values[curr] = depth;
-
-			for (Integer i : edges.get(curr)) {
-				if (seen[i]) {
-					continue;
+		private void dfs2(int node, int parent) {
+			for (int child : graph.get(node))
+				if (child != parent) {
+					ans[child] = ans[node] - count[child] + N - count[child];
+					dfs2(child, node);
 				}
-				seen[i] = true;
-				dfs(edges, i, depth + 1, values, seen);
-			}
 		}
 	}
 
