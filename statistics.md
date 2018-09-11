@@ -112,6 +112,7 @@
    * [Keys and Rooms](https://leetcode.com/problems/keys-and-rooms/description/)
    
  * hard:
+   * [Similar String Groups](https://leetcode.com/problems/similar-string-groups/description/)
    * [Concatenated Words](https://leetcode.com/problems/concatenated-words/description/)
 
-##### Total: 60
+##### Total: 61
