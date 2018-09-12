@@ -1,10 +1,15 @@
 package com.leetcode.problems.tree;
 
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Objects;
 
+@SuppressWarnings("Duplicates")
 public class TreeNode {
+
+	private static final String NULL = "null";
+	private static final String DELIMITER = ",";
 
 	public int val;
 	public TreeNode left;
@@ -39,10 +44,24 @@ public class TreeNode {
 		return valueOf(values, 1);
 	}
 
+	public static TreeNode valueOf(String data) {
+		if (data.isEmpty()) {
+			return null;
+		}
+		Iterator<String> iterator = Arrays.asList(data.split(DELIMITER)).iterator();
+		return valueOf(iterator);
+	}
+
 	public static Integer[] toArray(TreeNode node) {
 		Integer[] array = new Integer[size(node)];
 		packNode(node, 1, array);
 		return array;
+	}
+
+	public static String toString(TreeNode root) {
+		StringBuilder builder = new StringBuilder();
+		toStringBuilder(root, builder);
+		return builder.toString();
 	}
 
 	private static void packNode(TreeNode n, int idx, Integer[] array) {
@@ -72,6 +91,30 @@ public class TreeNode {
 		return node;
 	}
 
+	private static TreeNode valueOf(Iterator<String> values) {
+		if (!values.hasNext()) {
+			return null;
+		}
+		String value = values.next();
+		if (NULL.equals(value)) {
+			return null;
+		}
+		TreeNode node = new TreeNode(Integer.valueOf(value));
+		node.left = valueOf(values);
+		node.right = valueOf(values);
+		return node;
+	}
+
+	private static void toStringBuilder(TreeNode node, StringBuilder builder) {
+		if (node == null) {
+			builder.append(NULL).append(DELIMITER);
+			return;
+		}
+		builder.append(String.valueOf(node.val)).append(DELIMITER);
+		toStringBuilder(node.left, builder);
+		toStringBuilder(node.right, builder);
+	}
+
 	@Override
 	public boolean equals(Object o) {
 		if (this == o) return true;
@@ -90,6 +133,6 @@ public class TreeNode {
 
 	@Override
 	public String toString() {
-		return "TreeNode{" + Arrays.toString(toArray(this)) + "}";
+		return "TreeNode{" + toString(this) + "}";
 	}
 }

@@ -8,6 +8,7 @@ import java.util.Iterator;
 /**
  * https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/
  */
+@SuppressWarnings("Duplicates")
 public class SerializeAndDeserializeBinaryTree {
 
 	// Your Codec object will be instantiated and called as such:
