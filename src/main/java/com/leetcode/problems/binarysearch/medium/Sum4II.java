@@ -18,11 +18,10 @@ public class Sum4II {
 			int idx = 0;
 			Map<Integer, Integer> counts = new HashMap<>();
 			for (int i = 0; i < N; i++) {
-				for (int j = 0; j < N; j++) {
+				for (int j = 0; j < N; j++, idx++) {
 					AB[idx] = A[i] + B[j];
 					CD[idx] = C[i] + D[j];
 					counts.put(CD[idx], counts.getOrDefault(CD[idx], 0) + 1);
-					idx++;
 				}
 			}
 			Arrays.sort(AB);
@@ -60,6 +59,25 @@ public class Sum4II {
 				}
 			}
 			return curr + nums[l] == 0 ? l : -1;
+		}
+	}
+
+	class FastSolution {
+		public int fourSumCount(int[] A, int[] B, int[] C, int[] D) {
+			Map<Integer, Integer> map = new HashMap<>();
+			for (int a : A) {
+				for (int b : B) {
+					int sum = a + b;
+					map.put(sum, map.getOrDefault(sum, 0) + 1);
+				}
+			}
+			int res = 0;
+			for (int c : C) {
+				for (int d : D) {
+					res += map.getOrDefault(0 - c - d, 0);
+				}
+			}
+			return res;
 		}
 	}
 
