@@ -29,4 +29,31 @@ public class KthSmallestElementInASortedMatrix {
 		}
 	}
 
+	class BinarySearchSolution {
+
+		public int kthSmallest(int[][] matrix, int k) {
+			int n = matrix.length;
+			int l = matrix[0][0];
+			int r = matrix[n - 1][n - 1] + 1;
+			while (l < r) {
+				int mid = l + (r - l) / 2;
+				int lessOrEquals = 0;
+				int idx = n - 1;
+				for (int[] row : matrix) {
+					while (idx >= 0 && row[idx] > mid) {
+						idx--;
+					}
+					lessOrEquals += idx + 1;
+				}
+				if (lessOrEquals < k) {
+					l = mid + 1;
+				} else {
+					r = mid;
+				}
+			}
+			return l;
+		}
+
+	}
+
 }
