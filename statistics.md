@@ -115,5 +115,10 @@
    * [Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/description/)
    * [Similar String Groups](https://leetcode.com/problems/similar-string-groups/description/)
    * [Concatenated Words](https://leetcode.com/problems/concatenated-words/description/)
+   
+#### Binary Search
 
-##### Total: 62
+ * easy:
+   * [Two Sum Input Array is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/)
+
+##### Total: 63
