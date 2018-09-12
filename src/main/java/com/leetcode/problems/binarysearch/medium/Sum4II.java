@@ -1,6 +1,8 @@
 package com.leetcode.problems.binarysearch.medium;
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * https://leetcode.com/problems/4sum-ii/description/
@@ -14,10 +16,12 @@ public class Sum4II {
 			int[] AB = new int[N * N];
 			int[] CD = new int[N * N];
 			int idx = 0;
+			Map<Integer, Integer> counts = new HashMap<>();
 			for (int i = 0; i < N; i++) {
 				for (int j = 0; j < N; j++) {
 					AB[idx] = A[i] + B[j];
 					CD[idx] = C[i] + D[j];
+					counts.put(CD[idx], counts.getOrDefault(CD[idx], 0) + 1);
 					idx++;
 				}
 			}
@@ -27,13 +31,7 @@ public class Sum4II {
 			for (int aAB : AB) {
 				int j = binarySearch(CD, aAB);
 				if (j != -1) {
-					count++;
-					for (int g = j + 1; g < CD.length && CD[g] == CD[j]; g++) {
-						count++;
-					}
-					for (int g = j - 1; g >= 0 && CD[g] == CD[j]; g--) {
-						count++;
-					}
+					count += counts.get(CD[j]);
 				}
 			}
 
