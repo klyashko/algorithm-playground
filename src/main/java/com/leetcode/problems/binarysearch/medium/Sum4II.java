@@ -28,11 +28,20 @@ public class Sum4II {
 			Arrays.sort(AB);
 			Arrays.sort(CD);
 
-			for (int aAB : AB) {
-				int j = binarySearch(CD, aAB);
-				if (j != -1) {
-					count += counts.get(CD[j]);
+			int prevVal = Integer.MIN_VALUE;
+			int prevScore = 0;
+
+			for (int a : AB) {
+				if (a != prevVal) {
+					prevVal = a;
+					int j = binarySearch(CD, a);
+					if (j != -1) {
+						prevScore = counts.get(CD[j]);
+					} else {
+						prevScore = 0;
+					}
 				}
+				count += prevScore;
 			}
 
 			return count;
