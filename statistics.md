@@ -124,6 +124,7 @@
    * [Search Insert Position](https://leetcode.com/problems/search-insert-position/description/)
    
  * medium:
+   * [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/)
    * [4Sum II](https://leetcode.com/problems/4sum-ii/description/)
 
 ##### Total: 66

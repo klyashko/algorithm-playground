@@ -1,6 +1,5 @@
 package com.leetcode.problems.binarysearch.medium
 
-import com.leetcode.problems.binarysearch.medium.KthSmallestElementInABST.FastSolution as FS
 import com.leetcode.problems.binarysearch.medium.KthSmallestElementInABST.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
@@ -15,21 +14,6 @@ class KthSmallestElementInABSTSpec extends Specification {
 		expect:
 
 			new S().kthSmallest(node(values), k) == output
-
-		where:
-
-			values                  | k || output
-			"3,1,4,null,2"          | 1 || 1
-			"5,3,6,2,4,null,null,1" | 3 || 3
-
-	}
-
-	@Unroll
-	def "kthSmallest_fast"() {
-
-		expect:
-
-			new FS().kthSmallest(node(values), k) == output
 
 		where:
 
