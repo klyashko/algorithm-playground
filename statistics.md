@@ -121,5 +121,6 @@
  * easy:
    * [Two Sum Input Array is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/)
    * [Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/description/)
+   * [Search Insert Position](https://leetcode.com/problems/search-insert-position/description/)
 
-##### Total: 64
+##### Total: 65
