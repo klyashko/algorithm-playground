@@ -112,7 +112,8 @@
    * [Keys and Rooms](https://leetcode.com/problems/keys-and-rooms/description/)
    
  * hard:
+   * [Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/description/)
    * [Similar String Groups](https://leetcode.com/problems/similar-string-groups/description/)
    * [Concatenated Words](https://leetcode.com/problems/concatenated-words/description/)
 
-##### Total: 61
+##### Total: 62
