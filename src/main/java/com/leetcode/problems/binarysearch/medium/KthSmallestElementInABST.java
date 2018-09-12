@@ -33,4 +33,28 @@ public class KthSmallestElementInABST {
 		}
 	}
 
+	class FastSolution {
+
+		private int count;
+		private int ans;
+
+		public int kthSmallest(TreeNode root, int k) {
+			count = k;
+			inOrder(root);
+			return ans;
+		}
+
+		private void inOrder(TreeNode n) {
+			if (n == null || count == 0) {
+				return;
+			}
+			inOrder(n.left);
+			count--;
+			if (count == 0) {
+				ans = n.val;
+			}
+			inOrder(n.right);
+		}
+	}
+
 }
