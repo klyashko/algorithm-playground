@@ -28,15 +28,13 @@ public class LongestWordInDictionaryThroughDeleting {
 
 		private boolean test(String str, String sample) {
 			int idx = 0;
-			for (int i = 0; i < str.length(); i++) {
-				if (str.charAt(i) == sample.charAt(idx)) {
-					idx++;
-					if (idx == sample.length()) {
-						return true;
-					}
+			for (int i = 0; i < sample.length(); i++, idx++) {
+				idx = str.indexOf(sample.charAt(i), idx);
+				if (idx == -1) {
+					return false;
 				}
 			}
-			return false;
+			return true;
 		}
 	}
 

@@ -141,7 +141,8 @@
    * [Move Zeroes](https://leetcode.com/problems/move-zeroes/description/)
    
  * medium:
+   * [Longest Word in Dictionary Through Deleting](https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/description/)
    * [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/description/)
    * [Partition Labels](https://leetcode.com/problems/partition-labels/description/)
 
-##### Total: 76
+##### Total: 77
