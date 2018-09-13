@@ -139,5 +139,8 @@
    * [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/description/)
    * [Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/description/)
    * [Move Zeroes](https://leetcode.com/problems/move-zeroes/description/)
+   
+ * medium:
+   * [Partition Labels](https://leetcode.com/problems/partition-labels/description/)
 
-##### Total: 74
+##### Total: 75

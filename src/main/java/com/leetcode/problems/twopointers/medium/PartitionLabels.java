@@ -21,8 +21,7 @@ public class PartitionLabels {
 				while (i <= until) {
 					until = Math.max(until, positions[S.charAt(i++) - 'a']);
 				}
-				result.add(i);
-				i--;
+				result.add(i--);
 			}
 			for (int i = result.size() - 1; i > 0; i--) {
 				result.set(i, result.get(i) - result.get(i - 1));
