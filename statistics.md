@@ -141,6 +141,7 @@
    * [Move Zeroes](https://leetcode.com/problems/move-zeroes/description/)
    
  * medium:
+   * [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/description/)
    * [Partition Labels](https://leetcode.com/problems/partition-labels/description/)
 
-##### Total: 75
+##### Total: 76
