@@ -2,7 +2,6 @@ package com.leetcode.problems.twopointers.medium;
 
 import java.util.Comparator;
 import java.util.List;
-import java.util.TreeSet;
 
 /**
  * https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/description/
@@ -12,20 +11,21 @@ public class LongestWordInDictionaryThroughDeleting {
 	class Solution {
 		public String findLongestWord(String str, List<String> list) {
 			list.sort(Comparator.comparingInt(String::length).reversed());
-			String lastSuccess = "";
-			TreeSet<String> success = new TreeSet<>();
-
+			String success = "";
 			for (String s : list) {
-				if (s.length() < lastSuccess.length()) {
+				if (s.length() < success.length()) {
 					break;
 				}
 				if (test(str, s)) {
-					lastSuccess = s;
-					success.add(s);
+					if (success.isEmpty()) {
+						success = s;
+					} else {
+						success = success.compareTo(s) < 0 ? success : s;
+					}
 				}
 			}
 
-			return success.isEmpty() ? "" : success.first();
+			return success;
 		}
 
 		private boolean test(String str, String sample) {
