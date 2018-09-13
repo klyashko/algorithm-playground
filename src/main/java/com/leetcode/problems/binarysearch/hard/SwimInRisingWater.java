@@ -49,23 +49,6 @@ public class SwimInRisingWater {
 			return 0;
 		}
 
-		private int dfs(int[][] grid, boolean[][] visited, int r, int c, int rows, int cols) {
-			if (c < 0 || c == cols || r < 0 || r == rows || visited[r][c]) {
-				return Integer.MAX_VALUE;
-			}
-			if (r + 1 == rows && c + 1 == cols) {
-				return grid[r][c];
-			}
-			visited[r][c] = true;
-			int min = Integer.MAX_VALUE;
-			for (int i = 0; i < 4; i++) {
-				min = Math.min(min, dfs(grid, visited, r + dr[i], c + dc[i], rows, cols));
-			}
-			visited[r][c] = false;
-
-			return Math.max(min, grid[r][c]);
-		}
-
 		private class Node {
 			int r, c, val;
 
@@ -84,6 +67,45 @@ public class SwimInRisingWater {
 						'}';
 			}
 		}
+	}
+
+	class BinarySearchSolution {
+
+		private final int[] dr = new int[]{1, -1, 0, 0};
+		private final int[] dc = new int[]{0, 0, 1, -1};
+
+		public int swimInWater(int[][] grid) {
+			int rows = grid.length;
+			int cols = grid[0].length;
+			int l = 0, r = Integer.MAX_VALUE;
+			while (l < r) {
+				int mid = l + (r - l) / 2;
+				if (!dfs(grid, new boolean[rows][cols], 0, 0, rows, cols, mid)) {
+					l = mid + 1;
+				} else {
+					r = mid;
+				}
+			}
+			return l;
+		}
+
+		private boolean dfs(int[][] grid, boolean[][] visited, int r, int c, int rows, int cols, int limit) {
+			if (c < 0 || c == cols || r < 0 || r == rows || visited[r][c] || grid[r][c] > limit) {
+				return false;
+			}
+			if (r + 1 == rows && c + 1 == cols) {
+				return true;
+			}
+			visited[r][c] = true;
+			for (int i = 0; i < 4; i++) {
+				if (dfs(grid, visited, r + dr[i], c + dc[i], rows, cols, limit)) {
+					return true;
+				}
+			}
+
+			return false;
+		}
+
 	}
 
 }
