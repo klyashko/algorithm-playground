@@ -1,6 +1,5 @@
 package com.leetcode.problems.twopointers.medium;
 
-import java.util.Comparator;
 import java.util.List;
 
 /**
@@ -10,14 +9,13 @@ public class LongestWordInDictionaryThroughDeleting {
 
 	class Solution {
 		public String findLongestWord(String str, List<String> list) {
-			list.sort(Comparator.comparingInt(String::length).reversed());
 			String success = "";
 			for (String s : list) {
 				if (s.length() < success.length()) {
-					break;
+					continue;
 				}
 				if (test(str, s)) {
-					if (success.isEmpty()) {
+					if (success.length() < s.length()) {
 						success = s;
 					} else {
 						success = success.compareTo(s) < 0 ? success : s;
