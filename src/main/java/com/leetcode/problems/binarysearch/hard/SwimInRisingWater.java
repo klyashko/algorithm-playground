@@ -77,7 +77,7 @@ public class SwimInRisingWater {
 		public int swimInWater(int[][] grid) {
 			int rows = grid.length;
 			int cols = grid[0].length;
-			int l = 0, r = Integer.MAX_VALUE;
+			int l = 0, r = rows * cols;
 			while (l < r) {
 				int mid = l + (r - l) / 2;
 				if (!dfs(grid, new boolean[rows][cols], 0, 0, rows, cols, mid)) {
