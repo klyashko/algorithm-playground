@@ -132,5 +132,12 @@
    * [Max Sum of Rectangle no Larger Than K](https://leetcode.com/problems/max-sum-of-rectangle-no-larger-than-k/description/)
    * [Russian Doll Envelopes](https://leetcode.com/problems/russian-doll-envelopes/description/)
    * [Swim In Rising Water](https://leetcode.com/problems/swim-in-rising-water/description/)
+   
+#### Two Points
 
-##### Total: 71
+ * easy:
+   * [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/description/)
+   * [Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/description/)
+   * [Move Zeroes](https://leetcode.com/problems/move-zeroes/description/)
+
+##### Total: 74
