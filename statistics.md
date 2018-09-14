@@ -144,5 +144,8 @@
    * [Longest Word in Dictionary Through Deleting](https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/description/)
    * [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/description/)
    * [Partition Labels](https://leetcode.com/problems/partition-labels/description/)
+   
+ * hard:
+   * [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/description/)
 
-##### Total: 77
+##### Total: 78
