@@ -2,8 +2,10 @@ package com.leetcode.problems.breadthfirstsearch.easy;
 
 import com.leetcode.problems.tree.Node;
 
+import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Queue;
 
 /**
  * https://leetcode.com/problems/n-ary-tree-level-order-traversal/description/
@@ -30,6 +32,34 @@ public class NaryTreeLevelOrderTraversal {
 					levelOrder(next, values, depth + 1);
 				}
 			}
+		}
+	}
+
+	class IterativeSolution {
+		public List<List<Integer>> levelOrder(Node root) {
+			List<List<Integer>> values = new ArrayList<>();
+			if (root != null) {
+				Queue<Node> queue = new ArrayDeque<>();
+				queue.add(root);
+				int size = queue.size();
+				values.add(new ArrayList<>());
+				while (!queue.isEmpty()) {
+					while (size > 0) {
+						Node n = queue.poll();
+						size--;
+						//noinspection ConstantConditions
+						values.get(values.size() - 1).add(n.val);
+						if (n.children != null) {
+							queue.addAll(n.children);
+						}
+					}
+					size = queue.size();
+					if (size > 0) {
+						values.add(new ArrayList<>());
+					}
+				}
+			}
+			return values;
 		}
 	}
 

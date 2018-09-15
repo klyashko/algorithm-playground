@@ -1,5 +1,6 @@
 package com.leetcode.problems.breadthfirstsearch.easy
 
+import com.leetcode.problems.breadthfirstsearch.easy.NaryTreeLevelOrderTraversal.IterativeSolution as IS
 import com.leetcode.problems.breadthfirstsearch.easy.NaryTreeLevelOrderTraversal.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
@@ -14,6 +15,29 @@ class NaryTreeLevelOrderTraversalSpec extends Specification {
 		expect:
 
 			new S().levelOrder(input) == output
+
+		where:
+
+			input || output
+			node(1, [
+					node(3, [
+							node(5, []),
+							node(6, [])
+					]),
+					node(2, []),
+					node(4, []),
+			])    || [[1],
+					  [3, 2, 4],
+					  [5, 6]]
+
+	}
+
+	@Unroll
+	def "levelOrder_iterative"() {
+
+		expect:
+
+			new IS().levelOrder(input) == output
 
 		where:
 
