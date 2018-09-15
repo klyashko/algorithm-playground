@@ -147,5 +147,10 @@
    
  * hard:
    * [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/description/)
+   
+#### Breadth-first Search
 
-##### Total: 78
+ * easy:
+   * [N-ary Tree Level Order Traversal](https://leetcode.com/problems/n-ary-tree-level-order-traversal/description/)
+
+##### Total: 79
