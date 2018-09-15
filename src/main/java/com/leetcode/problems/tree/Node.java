@@ -14,4 +14,8 @@ public class Node {
 		children = _children;
 	}
 
+	public static Node valueOf(int _val, List<Node> _children) {
+		return new Node(_val, _children);
+	}
+
 }
