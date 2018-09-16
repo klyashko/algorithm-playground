@@ -11,14 +11,30 @@ public class BinaryTreeLevelOrderTraversalII {
 
 	class Solution {
 		public List<List<Integer>> levelOrderBottom(TreeNode root) {
-			return null;
+			int depth = depth(root);
+			List<List<Integer>> values = new ArrayList<>();
+			levelOrderBottom(root, values, depth, 1);
+			return values;
 		}
 
-		public void levelOrderBottom(TreeNode node, List<List<Integer>> values) {
+		private int depth(TreeNode n) {
+			if (n == null) {
+				return 0;
+			}
+			return Math.max(depth(n.left), depth(n.right)) + 1;
+		}
+
+		private void levelOrderBottom(TreeNode node, List<List<Integer>> values, int depth, int currentDepth) {
 			if (node == null) {
 				return;
 			}
-
+			levelOrderBottom(node.left, values, depth, currentDepth + 1);
+			levelOrderBottom(node.right, values, depth, currentDepth + 1);
+			int idx = depth - currentDepth;
+			while (values.size() <= idx) {
+				values.add(new ArrayList<>());
+			}
+			values.get(idx).add(node.val);
 		}
 	}
 
