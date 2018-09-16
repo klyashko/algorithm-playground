@@ -42,8 +42,8 @@ public class NaryTreeLevelOrderTraversal {
 				Queue<Node> queue = new ArrayDeque<>();
 				queue.add(root);
 				int size = queue.size();
-				values.add(new ArrayList<>());
 				while (!queue.isEmpty()) {
+					values.add(new ArrayList<>());
 					while (size > 0) {
 						Node n = queue.poll();
 						size--;
@@ -54,9 +54,6 @@ public class NaryTreeLevelOrderTraversal {
 						}
 					}
 					size = queue.size();
-					if (size > 0) {
-						values.add(new ArrayList<>());
-					}
 				}
 			}
 			return values;
