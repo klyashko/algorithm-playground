@@ -2,7 +2,7 @@ package com.leetcode.problems.breadthfirstsearch.easy;
 
 import com.leetcode.problems.tree.TreeNode;
 
-import java.util.ArrayDeque;
+import java.util.LinkedList;
 import java.util.Queue;
 
 /**
@@ -33,29 +33,23 @@ public class SymmetricTree {
 			if (root.left == null || root.right == null) {
 				return false;
 			}
-			Queue<TreeNode> left = new ArrayDeque<>();
-			Queue<TreeNode> right = new ArrayDeque<>();
+			Queue<TreeNode> left = new LinkedList<>();
+			Queue<TreeNode> right = new LinkedList<>();
 			left.add(root.left);
 			right.add(root.right);
 			while (!left.isEmpty()) {
 				TreeNode l = left.poll();
 				TreeNode r = right.poll();
-				//noinspection ConstantConditions
-				if (l.val != r.val) {
+				if (l == null && r == null) {
+					continue;
+				} else if (l == null || r == null || l.val != r.val) {
 					return false;
 				}
-				if (l.left != null && r.right != null) {
-					left.add(l.left);
-					right.add(r.right);
-				} else if (l.left == null && r.right != null || l.left != null) {
-					return false;
-				}
-				if (l.right != null && r.left != null) {
-					left.add(l.right);
-					right.add(r.left);
-				} else if (l.right == null && r.left != null || l.right != null) {
-					return false;
-				}
+				left.add(l.left);
+				right.add(r.right);
+
+				left.add(l.right);
+				right.add(r.left);
 			}
 			return true;
 		}
