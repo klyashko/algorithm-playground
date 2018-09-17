@@ -33,23 +33,22 @@ public class SymmetricTree {
 			if (root.left == null || root.right == null) {
 				return false;
 			}
-			Queue<TreeNode> left = new LinkedList<>();
-			Queue<TreeNode> right = new LinkedList<>();
-			left.add(root.left);
-			right.add(root.right);
-			while (!left.isEmpty()) {
-				TreeNode l = left.poll();
-				TreeNode r = right.poll();
+			Queue<TreeNode> queue = new LinkedList<>();
+			queue.add(root.left);
+			queue.add(root.right);
+			while (!queue.isEmpty()) {
+				TreeNode l = queue.poll();
+				TreeNode r = queue.poll();
 				if (l == null && r == null) {
 					continue;
 				} else if (l == null || r == null || l.val != r.val) {
 					return false;
 				}
-				left.add(l.left);
-				right.add(r.right);
+				queue.add(l.left);
+				queue.add(r.right);
 
-				left.add(l.right);
-				right.add(r.left);
+				queue.add(l.right);
+				queue.add(r.left);
 			}
 			return true;
 		}
