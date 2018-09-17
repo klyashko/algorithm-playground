@@ -157,5 +157,6 @@
    
  * medium:
    * [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/description/)
+   * [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/description/)
 
-##### Total: 82
+##### Total: 83
