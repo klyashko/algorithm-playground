@@ -36,7 +36,7 @@ public class KSimilarStrings {
 							continue;
 						}
 						for (int j = i + 1; j < builder.length(); j++) {
-							if (builder.charAt(j) == ch) {
+							if (builder.charAt(j) != B.charAt(j) && builder.charAt(j) == ch) {
 								swap(builder, i, j);
 								String s = builder.toString();
 								if (seen.add(s)) {
