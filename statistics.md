@@ -159,5 +159,8 @@
    * [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/description/)
    * [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/description/)
    * [Open The Lock](https://leetcode.com/problems/open-the-lock/description/)
+   
+ * hard:
+   * [Cut Off Trees For Golf Event](https://leetcode.com/problems/cut-off-trees-for-golf-event/description/)
 
-##### Total: 84
+##### Total: 85

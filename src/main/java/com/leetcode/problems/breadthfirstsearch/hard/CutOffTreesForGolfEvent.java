@@ -109,4 +109,91 @@ public class CutOffTreesForGolfEvent {
 		}
 	}
 
+	/**
+	 * Time Limit Exceeded
+	 */
+	class AllNodeDistancesSolution {
+
+		private final int[] dr = new int[]{1, -1, 0, 0};
+		private final int[] dc = new int[]{0, 0, 1, -1};
+
+		public int cutOffTree(List<List<Integer>> forest) {
+			Queue<int[]> queueToCut = new PriorityQueue<>(Comparator.comparingInt(p -> forest.get(p[0]).get(p[1])));
+			int rows = forest.size();
+			int cols = forest.get(0).size();
+			int n = rows * cols;
+			int inf = n * 2;
+
+			int[][] distances = getDistances(forest, queueToCut, rows, cols, n, inf);
+
+			int steps = 0;
+			int curr = node(0, 0, cols);
+
+			while (!queueToCut.isEmpty()) {
+				int[] next = queueToCut.poll();
+				//noinspection ConstantConditions
+				int node = node(next[0], next[1], cols);
+				int dist = distances[curr][node];
+				if (dist == inf) {
+					return -1;
+				}
+				steps += dist;
+				curr = node;
+			}
+
+			return steps;
+		}
+
+		private int[][] getDistances(List<List<Integer>> forest, Queue<int[]> queue, int rows, int cols, int n, int inf) {
+			int[][] distances = new int[n][n];
+
+			for (int[] row : distances) {
+				Arrays.fill(row, inf);
+			}
+
+			for (int i = 0; i < n; i++) {
+				distances[i][i] = 0;
+			}
+
+			/** distance initialization */
+			for (int r = 0; r < rows; r++) {
+				for (int c = 0; c < cols; c++) {
+					int node = node(r, c, cols);
+					if (forest.get(r).get(c) > 1) {
+						queue.add(new int[]{r, c});
+					}
+					for (int i = 0; i < 4; i++) {
+						int tr = r + dr[i];
+						int tc = c + dc[i];
+						if (tr >= 0 && tr < rows && tc >= 0 && tc < cols) {
+							if (forest.get(tr).get(tc) == 0) {
+								distances[node][node(tr, tc, cols)] = inf;
+							} else {
+								distances[node][node(tr, tc, cols)] = 1;
+							}
+						}
+					}
+				}
+			}
+
+			/** shortest path search */
+			for (int k = 0; k < distances.length; k++) {
+				for (int i = 0; i < distances.length; i++) {
+					for (int j = 0; j < distances.length; j++) {
+						if (distances[i][k] == inf || distances[k][j] == inf) {
+							continue;
+						}
+						if (distances[i][j] > distances[i][k] + distances[k][j]) {
+							distances[i][j] = distances[i][k] + distances[k][j];
+						}
+					}
+				}
+			}
+			return distances;
+		}
+
+		private int node(int r, int c, int cols) {
+			return cols * r + c;
+		}
+	}
 }
