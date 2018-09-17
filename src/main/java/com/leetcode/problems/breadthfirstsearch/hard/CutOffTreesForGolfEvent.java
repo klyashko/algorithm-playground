@@ -33,8 +33,6 @@ public class CutOffTreesForGolfEvent {
 					return -1;
 				}
 				steps += dist;
-				//noinspection ConstantConditions
-				forest.get(next.r).set(next.c, 1);
 				curr = next;
 			}
 
