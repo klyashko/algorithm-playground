@@ -7,15 +7,6 @@ import java.util.*;
  */
 public class OpenTheLock {
 
-	public static void main(String[] args) {
-		char c = '0';
-		for (int i = 0; i < 21; i++) {
-			System.out.println(c);
-//			c = (char) ((c + 1) % (':') + ('0' * ((c + 1) / ':')));
-			c = ++c > '9' ? '0' : c;
-		}
-	}
-
 	class Solution {
 		public int openLock(String[] deadends, String target) {
 			Set<String> deadendsSet = new HashSet<>(Arrays.asList(deadends));

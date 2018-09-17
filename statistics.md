@@ -158,5 +158,6 @@
  * medium:
    * [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/description/)
    * [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/description/)
+   * [Open The Lock](https://leetcode.com/problems/open-the-lock/description/)
 
-##### Total: 83
+##### Total: 84
