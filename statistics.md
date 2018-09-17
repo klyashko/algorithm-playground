@@ -162,5 +162,6 @@
    
  * hard:
    * [Cut Off Trees For Golf Event](https://leetcode.com/problems/cut-off-trees-for-golf-event/description/)
+   * [KSimilar Strings](https://leetcode.com/problems/k-similar-strings/description/)
 
-##### Total: 85
+##### Total: 86

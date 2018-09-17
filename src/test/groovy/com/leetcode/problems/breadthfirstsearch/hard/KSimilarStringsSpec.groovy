@@ -22,6 +22,7 @@ class KSimilarStringsSpec extends Specification {
 			"aabc"                 | "abca"                 || 2
 			"abccaacceecdeea"      | "bcaacceeccdeaae"      || 9
 			"abcdeabcdeabcdeabcde" | "aaaabbbbccccddddeeee" || 8
+			"abccab"               | "abccab"               || 0
 
 	}
 
