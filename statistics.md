@@ -171,5 +171,8 @@
    * [Implement Queue Using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/description/)
    * [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/description/)
    * [Min Stack](https://leetcode.com/problems/min-stack/description/)
+   
+ * medium:
+   * [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/description/)
 
-##### Total: 90
+##### Total: 91

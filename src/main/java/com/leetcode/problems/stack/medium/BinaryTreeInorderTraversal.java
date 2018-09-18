@@ -16,21 +16,15 @@ public class BinaryTreeInorderTraversal {
 			List<Integer> values = new ArrayList<>();
 			LinkedList<TreeNode> stack = new LinkedList<>();
 
-			while (root != null) {
-				stack.push(root);
-				root = root.left;
-			}
-
-			while (!stack.isEmpty()) {
-				TreeNode n = stack.poll();
-				//noinspection ConstantConditions
-				values.add(n.val);
-
-				n = n.right;
-				while (n != null) {
-					stack.push(n);
-					n = n.left;
+			TreeNode curr = root;
+			while (curr != null || !stack.isEmpty()) {
+				while (curr != null) {
+					stack.push(curr);
+					curr = curr.left;
 				}
+				curr = stack.pop();
+				values.add(curr.val);
+				curr = curr.right;
 			}
 
 			return values;
