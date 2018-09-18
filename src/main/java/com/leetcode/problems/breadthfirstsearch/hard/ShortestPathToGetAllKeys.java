@@ -1,7 +1,6 @@
 package com.leetcode.problems.breadthfirstsearch.hard;
 
 import java.util.ArrayDeque;
-import java.util.Objects;
 import java.util.Queue;
 
 /**
@@ -15,7 +14,7 @@ public class ShortestPathToGetAllKeys {
 		private final int[] dc = new int[]{0, 0, 1, -1};
 
 		public int shortestPathAllKeys(String[] grid) {
-			Node start = null;
+			int[] start = null;
 			int keys = 0;
 			int rows = grid.length;
 			int cols = grid[0].length();
@@ -25,7 +24,7 @@ public class ShortestPathToGetAllKeys {
 				for (int j = 0; j < cols; j++) {
 					char ch = s.charAt(j);
 					if (ch == '@') {
-						start = new Node(i, j);
+						start = new int[]{i, j, 0};
 					}
 					if (Character.isLowerCase(ch)) {
 						keys++;
@@ -34,42 +33,39 @@ public class ShortestPathToGetAllKeys {
 			}
 
 			int steps = -1;
-			Queue<Node> queue = new ArrayDeque<>();
+			Queue<int[]> queue = new ArrayDeque<>();
 			boolean[][][] seen = new boolean[rows][cols][1 << keys];
 			queue.add(start);
 			//noinspection ConstantConditions
-			seen[start.r][start.c][start.keys] = true;
+			seen[start[0]][start[1]][start[2]] = true;
 
 			while (!queue.isEmpty()) {
 				int size = queue.size();
 				steps++;
 				while (size > 0) {
-					Node curr = queue.poll();
+					int[] curr = queue.poll();
 					size--;
 					//noinspection ConstantConditions
-					char ch = grid[curr.r].charAt(curr.c);
+					char ch = grid[curr[0]].charAt(curr[1]);
 					if (ch == '#') {
 						continue;
 					} else if (Character.isUpperCase(ch)) {
-						if (1 << (ch - 'A') != (curr.keys & 1 << (ch - 'A'))) {
+						if (1 << (ch - 'A') != (curr[2] & 1 << (ch - 'A'))) {
 							continue;
 						}
 					} else if (Character.isLowerCase(ch)) {
-						curr.keys = curr.keys | 1 << (ch - 'a');
-						if (curr.keys == (1 << keys) - 1) {
-//							System.out.println(curr);
+						curr[2] = curr[2] | 1 << (ch - 'a');
+						if (curr[2] == (1 << keys) - 1) {
 							return steps;
 						}
 					}
 					for (int i = 0; i < 4; i++) {
-						int tr = curr.r + dr[i];
-						int tc = curr.c + dc[i];
+						int tr = curr[0] + dr[i];
+						int tc = curr[1] + dc[i];
 						if (tr >= 0 && tr < rows && tc >= 0 && tc < cols) {
-							Node next = new Node(tr, tc);
-							next.keys = curr.keys;
-							if (!seen[tr][tc][next.keys]) {
-								seen[tr][tc][next.keys] = true;
-//								next.prev = curr;
+							int[] next = new int[]{tr, tc, curr[2]};
+							if (!seen[tr][tc][next[2]]) {
+								seen[tr][tc][next[2]] = true;
 								queue.offer(next);
 							}
 						}
@@ -79,40 +75,6 @@ public class ShortestPathToGetAllKeys {
 			}
 
 			return -1;
-		}
-
-		private class Node {
-			int r, c, keys;
-			Node prev;
-
-			public Node(int r, int c) {
-				this.r = r;
-				this.c = c;
-			}
-
-			@Override
-			public String toString() {
-				return "Node{" +
-						"r=" + r +
-						", c=" + c +
-						", keys=" + keys +
-						", prev=\n" + prev +
-						'}';
-			}
-
-			@Override
-			public boolean equals(Object o) {
-				if (this == o) return true;
-				if (o == null || getClass() != o.getClass()) return false;
-				Node node = (Node) o;
-				return r == node.r &&
-						c == node.c;
-			}
-
-			@Override
-			public int hashCode() {
-				return Objects.hash(r, c);
-			}
 		}
 	}
 
