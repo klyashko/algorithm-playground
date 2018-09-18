@@ -61,7 +61,7 @@ public class ImplementQueueUsingStacks {
 		}
 
 		private void fillCurrent() {
-			while (next.peek() != null) {
+			while (!next.isEmpty()) {
 				current.push(next.poll());
 			}
 		}

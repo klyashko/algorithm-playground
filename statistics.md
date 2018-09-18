@@ -164,5 +164,10 @@
    * [Shortest Path To Get All Keys](https://leetcode.com/problems/shortest-path-to-get-all-keys/description/)
    * [Cut Off Trees For Golf Event](https://leetcode.com/problems/cut-off-trees-for-golf-event/description/)
    * [KSimilar Strings](https://leetcode.com/problems/k-similar-strings/description/)
+   
+#### Stack
 
-##### Total: 87
+ * easy:
+   * [Implement Queue Using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/description/)
+
+##### Total: 88
