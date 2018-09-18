@@ -7,15 +7,6 @@ import java.util.*;
  */
 public class ShortestPathToGetAllKeys {
 
-	public static void main(String[] args) {
-		Set<Character> set = new HashSet<>();
-		set.add('a');
-		set.add('v');
-		set.add('b');
-		System.out.println(set);
-//		System.out.println(String.join("", set));
-	}
-
 	class Solution {
 
 		private final int[] dr = new int[]{1, -1, 0, 0};
@@ -34,7 +25,7 @@ public class ShortestPathToGetAllKeys {
 					if (ch == '@') {
 						start = new Node(i, j);
 					}
-					if (ch >= 'a' && ch <= 'z') {
+					if (Character.isLowerCase(ch)) {
 						keys++;
 					}
 				}
@@ -57,16 +48,13 @@ public class ShortestPathToGetAllKeys {
 					char ch = grid[curr.r].charAt(curr.c);
 					if (ch == '#') {
 						continue;
-					} else if (ch >= 'A' && ch <= 'Z') {
-						if (!curr.keys.contains((char) (ch + 32))) {
+					} else if (Character.isUpperCase(ch)) {
+						if (1 << (ch - 'A') != (curr.keys & 1 << (ch - 'A'))) {
 							continue;
 						}
-					} else if (ch >= 'a' && ch <= 'z') {
-						Set<Character> set = new HashSet<>(curr.keys);
-						set.add(ch);
-						curr.keys = set;
-//						curr.keys.add(ch);
-						if (curr.keys.size() == keys) {
+					} else if (Character.isLowerCase(ch)) {
+						curr.keys = curr.keys | 1 << (ch - 'a');
+						if (curr.keys == (1 << keys) - 1) {
 							System.out.println(curr);
 							return steps;
 						}
@@ -76,14 +64,13 @@ public class ShortestPathToGetAllKeys {
 						int tc = curr.c + dc[i];
 						if (tr >= 0 && tr < rows && tc >= 0 && tc < cols) {
 							Node next = new Node(tr, tc);
-							String key = toString(curr.keys);
+							String key = Integer.toString(curr.keys);
 							if (!seen.containsKey(key)) {
 								seen.put(key, new HashSet<>());
 							}
 							if (seen.get(key).add(next)) {
 								next.keys = curr.keys;
-//								next.keys.addAll(curr.keys);
-								next.prev = curr;
+//								next.prev = curr;
 								queue.offer(next);
 							}
 						}
@@ -97,17 +84,8 @@ public class ShortestPathToGetAllKeys {
 			return -1;
 		}
 
-		private String toString(Set<Character> set) {
-			StringBuilder builder = new StringBuilder();
-			for (char ch : set) {
-				builder.append(ch);
-			}
-			return builder.toString();
-		}
-
 		private class Node {
-			int r, c;
-			Set<Character> keys = new HashSet<>();
+			int r, c, keys;
 			Node prev;
 
 			public Node(int r, int c) {

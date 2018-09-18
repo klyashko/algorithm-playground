@@ -16,14 +16,14 @@ class ShortestPathToGetAllKeysSpec extends Specification {
 		where:
 
 			grid              || output
-//			["@.a.#",
-//			 "###.#",
-//			 "b.A.B"]         || 8
+			["@.a.#",
+			 "###.#",
+			 "b.A.B"]         || 8
 //			["@..aA",
 //			 "..B#.",
 //			 "....b"]         || 6
 //			["@Aa"]           || -1
-			["@abcdeABCDEFf"] || -1
+//			["@abcdeABCDEFf"] || -1
 
 	}
 
