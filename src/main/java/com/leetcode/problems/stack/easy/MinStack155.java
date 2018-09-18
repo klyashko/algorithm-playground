@@ -38,15 +38,6 @@ public class MinStack155 {
 			//noinspection ConstantConditions
 			return stack.peek()[1];
 		}
-
-		private class Node {
-			int val, min;
-
-			public Node(int val, int min) {
-				this.val = val;
-				this.min = min;
-			}
-		}
 	}
 
 }
