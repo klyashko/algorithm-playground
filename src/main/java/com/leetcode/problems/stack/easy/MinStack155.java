@@ -9,8 +9,7 @@ public class MinStack155 {
 
 	class MinStack {
 
-		private int min = Integer.MAX_VALUE;
-		private LinkedList<Integer> stack = new LinkedList<>();
+		private LinkedList<int[]> stack = new LinkedList<>();
 
 		/**
 		 * initialize your data structure here.
@@ -18,31 +17,35 @@ public class MinStack155 {
 		public MinStack() { }
 
 		public void push(int x) {
-			min = Math.min(min, x);
-			stack.push(x);
+			if (stack.isEmpty()) {
+				stack.push(new int[]{x, x});
+			} else {
+				//noinspection ConstantConditions
+				stack.push(new int[]{x, Math.min(x, stack.peek()[1])});
+			}
 		}
 
 		public void pop() {
-			int el = stack.pop();
-			if (el == min) {
-				min = Integer.MAX_VALUE;
-				LinkedList<Integer> tmp = new LinkedList<>();
-				while (!stack.isEmpty()) {
-					tmp.push(stack.pop());
-				}
-				while (!tmp.isEmpty()) {
-					push(tmp.pop());
-				}
-			}
+			stack.pop();
 		}
 
 		public int top() {
 			//noinspection ConstantConditions
-			return stack.peek();
+			return stack.peek()[0];
 		}
 
 		public int getMin() {
-			return min;
+			//noinspection ConstantConditions
+			return stack.peek()[1];
+		}
+
+		private class Node {
+			int val, min;
+
+			public Node(int val, int min) {
+				this.val = val;
+				this.min = min;
+			}
 		}
 	}
 
