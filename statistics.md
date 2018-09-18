@@ -169,5 +169,6 @@
 
  * easy:
    * [Implement Queue Using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/description/)
+   * [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/description/)
 
-##### Total: 88
+##### Total: 89
