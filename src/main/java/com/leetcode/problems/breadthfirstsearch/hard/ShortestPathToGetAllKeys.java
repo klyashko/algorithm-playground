@@ -25,8 +25,7 @@ public class ShortestPathToGetAllKeys {
 					char ch = s.charAt(j);
 					if (ch == '@') {
 						start = new int[]{i, j, 0};
-					}
-					if (Character.isLowerCase(ch)) {
+					} else if (Character.isLowerCase(ch)) {
 						keys++;
 					}
 				}
@@ -47,12 +46,9 @@ public class ShortestPathToGetAllKeys {
 					size--;
 					//noinspection ConstantConditions
 					char ch = grid[curr[0]].charAt(curr[1]);
-					if (ch == '#') {
+					// If it's a wall or we don't have keys yet skip it
+					if (ch == '#' || (Character.isUpperCase(ch) && 1 << (ch - 'A') != (curr[2] & 1 << (ch - 'A')))) {
 						continue;
-					} else if (Character.isUpperCase(ch)) {
-						if (1 << (ch - 'A') != (curr[2] & 1 << (ch - 'A'))) {
-							continue;
-						}
 					} else if (Character.isLowerCase(ch)) {
 						curr[2] = curr[2] | 1 << (ch - 'a');
 						if (curr[2] == (1 << keys) - 1) {

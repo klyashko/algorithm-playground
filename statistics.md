@@ -161,7 +161,8 @@
    * [Open The Lock](https://leetcode.com/problems/open-the-lock/description/)
    
  * hard:
+   * [Shortest Path To Get All Keys](https://leetcode.com/problems/shortest-path-to-get-all-keys/description/)
    * [Cut Off Trees For Golf Event](https://leetcode.com/problems/cut-off-trees-for-golf-event/description/)
    * [KSimilar Strings](https://leetcode.com/problems/k-similar-strings/description/)
 
-##### Total: 86
+##### Total: 87
