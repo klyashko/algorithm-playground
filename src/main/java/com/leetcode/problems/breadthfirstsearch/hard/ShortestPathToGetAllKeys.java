@@ -1,6 +1,8 @@
 package com.leetcode.problems.breadthfirstsearch.hard;
 
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.Objects;
+import java.util.Queue;
 
 /**
  * https://leetcode.com/problems/shortest-path-to-get-all-keys/description/
@@ -33,10 +35,10 @@ public class ShortestPathToGetAllKeys {
 
 			int steps = -1;
 			Queue<Node> queue = new ArrayDeque<>();
-			Map<String, Set<Node>> seen = new HashMap<>();
+			boolean[][][] seen = new boolean[rows][cols][1 << keys];
 			queue.add(start);
-			seen.put("", new HashSet<>());
-			seen.get("").add(start);
+			//noinspection ConstantConditions
+			seen[start.r][start.c][start.keys] = true;
 
 			while (!queue.isEmpty()) {
 				int size = queue.size();
@@ -55,7 +57,7 @@ public class ShortestPathToGetAllKeys {
 					} else if (Character.isLowerCase(ch)) {
 						curr.keys = curr.keys | 1 << (ch - 'a');
 						if (curr.keys == (1 << keys) - 1) {
-							System.out.println(curr);
+//							System.out.println(curr);
 							return steps;
 						}
 					}
@@ -64,12 +66,9 @@ public class ShortestPathToGetAllKeys {
 						int tc = curr.c + dc[i];
 						if (tr >= 0 && tr < rows && tc >= 0 && tc < cols) {
 							Node next = new Node(tr, tc);
-							String key = Integer.toString(curr.keys);
-							if (!seen.containsKey(key)) {
-								seen.put(key, new HashSet<>());
-							}
-							if (seen.get(key).add(next)) {
-								next.keys = curr.keys;
+							next.keys = curr.keys;
+							if (!seen[tr][tc][next.keys]) {
+								seen[tr][tc][next.keys] = true;
 //								next.prev = curr;
 								queue.offer(next);
 							}
@@ -77,8 +76,6 @@ public class ShortestPathToGetAllKeys {
 					}
 
 				}
-//				System.out.println(queue);
-
 			}
 
 			return -1;

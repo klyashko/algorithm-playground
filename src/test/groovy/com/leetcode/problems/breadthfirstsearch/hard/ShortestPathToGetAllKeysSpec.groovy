@@ -19,11 +19,11 @@ class ShortestPathToGetAllKeysSpec extends Specification {
 			["@.a.#",
 			 "###.#",
 			 "b.A.B"]         || 8
-//			["@..aA",
-//			 "..B#.",
-//			 "....b"]         || 6
-//			["@Aa"]           || -1
-//			["@abcdeABCDEFf"] || -1
+			["@..aA",
+			 "..B#.",
+			 "....b"]         || 6
+			["@Aa"]           || -1
+			["@abcdeABCDEFf"] || -1
 
 	}
 
