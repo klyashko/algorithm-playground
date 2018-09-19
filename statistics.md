@@ -178,7 +178,8 @@
    * [Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii/description/)
    
  * hard:
+   * [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/description/)
    * [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/description/)
    * [Number of Atoms](https://leetcode.com/problems/number-of-atoms/description/)
 
-##### Total: 95
+##### Total: 96

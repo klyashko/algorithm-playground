@@ -14,22 +14,17 @@ public class BinaryTreePostorderTraversal {
 	class Solution {
 		public List<Integer> postorderTraversal(TreeNode root) {
 			LinkedList<TreeNode> stack = new LinkedList<>();
-			LinkedList<TreeNode> leftStack = new LinkedList<>();
-
-			TreeNode curr = root;
-
-			while (curr != null || !leftStack.isEmpty()) {
-				while (curr != null) {
-					stack.push(curr);
-					leftStack.push(curr);
-					curr = curr.right;
-				}
-				curr = leftStack.pop().left;
-			}
-
 			List<Integer> values = new ArrayList<>();
+			stack.push(root);
+
 			while (!stack.isEmpty()) {
-				values.add(stack.pop().val);
+				TreeNode n = stack.poll();
+				if (n == null) {
+					continue;
+				}
+				values.add(0, n.val);
+				stack.push(n.left);
+				stack.push(n.right);
 			}
 
 			return values;
