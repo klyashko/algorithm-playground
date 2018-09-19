@@ -30,38 +30,37 @@ public class WordSearchII {
 			StringBuilder builder = new StringBuilder();
 			for (int r = 0; r < rows; r++) {
 				for (int c = 0; c < cols; c++) {
-					visited[r][c] = true;
-					char ch = board[r][c];
-					int idx = ch - 'a';
-					builder.append(ch);
-					dfs(board, root.children[idx], visited, r, c, builder, result);
-					builder.setLength(0);
-					visited[r][c] = false;
+					dfs(board, root.children, visited, r, c, builder, result);
 				}
 			}
 			return result;
 		}
 
+		private void dfs(char[][] board, TrieNode[] children, boolean[][] visited, int r, int c, StringBuilder builder, List<String> result) {
+			visited[r][c] = true;
+			char ch = board[r][c];
+			int idx = ch - 'a';
+			int len = builder.length();
+			builder.append(ch);
+			dfs(board, children[idx], visited, r, c, builder, result);
+			builder.setLength(len);
+			visited[r][c] = false;
+		}
+
 		private void dfs(char[][] board, TrieNode curr, boolean[][] visited, int r, int c, StringBuilder builder, List<String> result) {
 			if (curr == null) {
 				return;
-			} else if (curr.isWord) {
+			} else if (curr.isWord && !curr.isVisited) {
+				curr.isVisited = true;
 				result.add(builder.toString());
 			}
 			int rows = board.length;
 			int cols = board[0].length;
-			int len = builder.length();
 			for (int i = 0; i < 4; i++) {
 				int tr = r + dr[i];
 				int tc = c + dc[i];
 				if (tr >= 0 && tr < rows && tc >= 0 & tc < cols && !visited[tr][tc]) {
-					visited[tr][tc] = true;
-					char ch = board[tr][tc];
-					int idx = ch - 'a';
-					builder.append(ch);
-					dfs(board, curr.children[idx], visited, tr, tc, builder, result);
-					visited[tr][tc] = false;
-					builder.setLength(len);
+					dfs(board, curr.children, visited, tr, tc, builder, result);
 				}
 			}
 		}
@@ -81,6 +80,7 @@ public class WordSearchII {
 
 		private class TrieNode {
 			boolean isWord;
+			boolean isVisited;
 			TrieNode[] children = new TrieNode[26];
 		}
 	}
