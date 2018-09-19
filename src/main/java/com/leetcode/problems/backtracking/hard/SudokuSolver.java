@@ -7,13 +7,6 @@ import java.util.Arrays;
  */
 public class SudokuSolver {
 
-	public static void main(String[] args) {
-//		System.out.println(5 / 3 * 3);
-		System.out.println((char) (1 + '0'));
-		System.out.println((char) (3 + '0'));
-		System.out.println((char) (5 + '0'));
-	}
-
 	class Solution {
 		public void solveSudoku(char[][] board) {
 			backtracking(board, 0, 0);
@@ -41,8 +34,7 @@ public class SudokuSolver {
 			}
 			for (int i = 1; i < options.length; i++) {
 				if (options[i]) {
-					char ch = (char) (i + '0');
-					board[r][c] = ch;
+					board[r][c] = (char) (i + '0');
 					if (backtracking(board, r, c + 1)) {
 						return true;
 					}

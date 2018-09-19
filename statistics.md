@@ -195,5 +195,6 @@
  * hard:
    * [Word Search II](https://leetcode.com/problems/word-search-ii/description/)
    * [Word Break II](https://leetcode.com/problems/word-break-ii/description/)
+   * [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/description/)
 
-##### Total: 102
+##### Total: 103
