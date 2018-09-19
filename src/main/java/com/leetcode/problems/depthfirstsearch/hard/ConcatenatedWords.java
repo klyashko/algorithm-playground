@@ -6,6 +6,7 @@ import java.util.List;
 /**
  * https://leetcode.com/problems/concatenated-words/description/
  */
+@SuppressWarnings("Duplicates")
 public class ConcatenatedWords {
 
 	class Solution {
