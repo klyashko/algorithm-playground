@@ -21,6 +21,7 @@ class BinaryTreePostorderTraversalSpec extends Specification {
 			[1, null, 2, null, null, 3] || [3, 2, 1]
 			[]                          || []
 			[3, 1, 2]                   || [1, 2, 3]
+			[3, 2, 4, null, null, 1]    || [2, 1, 4, 3]
 
 	}
 
