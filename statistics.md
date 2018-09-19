@@ -189,5 +189,6 @@
    
  * medium:
    * [Beautiful Arrangement](https://leetcode.com/problems/beautiful-arrangement/description/)
+   * [Permutations](https://leetcode.com/problems/permutations/description/)
 
-##### Total: 98
+##### Total: 99
