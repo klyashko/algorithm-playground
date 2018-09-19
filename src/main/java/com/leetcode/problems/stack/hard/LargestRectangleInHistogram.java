@@ -7,6 +7,41 @@ public class LargestRectangleInHistogram {
 
 	class Solution {
 		public int largestRectangleArea(int[] heights) {
+			if (heights.length == 0) {
+				return 0;
+			}
+			int n = heights.length;
+			int[] left = new int[n];
+			int[] right = new int[n];
+
+			for (int i = 1; i < n; i++) {
+				int l = i - 1;
+				while (l >= 0 && heights[i] <= heights[l]) {
+					l = left[l] - 1;
+				}
+				left[i] = l + 1;
+			}
+
+			right[n - 1] = n - 1;
+			for (int i = n - 2; i >= 0; i--) {
+				int r = i + 1;
+				while (r < n && heights[i] <= heights[r]) {
+					r = right[r] + 1;
+				}
+				right[i] = r - 1;
+			}
+
+			int max = 0;
+			for (int i = 0; i < n; i++) {
+				max = Math.max(max, (right[i] - left[i] + 1) * heights[i]);
+			}
+
+			return max;
+		}
+	}
+
+	class SimpleSolution {
+		public int largestRectangleArea(int[] heights) {
 			int max = 0;
 
 			for (int i = 0; i < heights.length; i++) {
@@ -19,33 +54,6 @@ public class LargestRectangleInHistogram {
 					max = Math.max(max, min * len);
 				}
 			}
-
-			return max;
-		}
-	}
-
-	class Solution_ {
-		public int largestRectangleArea(int[] heights) {
-			int n = heights.length;
-			int[] left = new int[n];
-			int[] right = new int[n];
-
-			for (int i = 0; i < n; i++) {
-				for (int j = 1; j <= i && heights[i] <= heights[i - j]; j++) {
-					left[i]++;
-				}
-				for (int j = 1; j < n - i && heights[i] <= heights[i + j]; j++) {
-					right[i]++;
-				}
-			}
-
-			int max = 0;
-			for (int i = 0; i < n; i++) {
-				max = Math.max(max, (left[i] + right[i] + 1) * heights[i]);
-			}
-
-//			System.out.println(Arrays.toString(left));
-//			System.out.println(Arrays.toString(right));
 
 			return max;
 		}

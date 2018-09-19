@@ -176,5 +176,8 @@
    * [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/description/)
    * [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/description/)
    * [Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii/description/)
+   
+ * hard:
+   * [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/description/)
 
-##### Total: 93
+##### Total: 94
