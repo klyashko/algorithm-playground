@@ -11,7 +11,7 @@ public class NumberOfAtoms {
 
 	class Solution {
 		public String countOfAtoms(String formula) {
-			Map<String, Integer> counts = count(formula);
+			Map<String, Integer> counts = new TreeMap<>(count(formula));
 			StringBuilder builder = new StringBuilder();
 			for (String key : counts.keySet()) {
 				builder.append(key);
@@ -25,7 +25,7 @@ public class NumberOfAtoms {
 		}
 
 		public Map<String, Integer> count(String formula) {
-			TreeMap<String, Integer> counts = new TreeMap<>();
+			Map<String, Integer> counts = new HashMap<>();
 			Map<String, Integer> parts = parse(formula);
 
 			for (String key : parts.keySet()) {

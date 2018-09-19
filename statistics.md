@@ -179,5 +179,6 @@
    
  * hard:
    * [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/description/)
+   * [Number of Atoms](https://leetcode.com/problems/number-of-atoms/description/)
 
-##### Total: 94
+##### Total: 95
