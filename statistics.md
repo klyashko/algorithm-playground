@@ -189,6 +189,7 @@
    
  * medium:
    * [Beautiful Arrangement](https://leetcode.com/problems/beautiful-arrangement/description/)
+   * [Combination Sum III](https://leetcode.com/problems/combination-sum-iii/description/)
    * [Permutations](https://leetcode.com/problems/permutations/description/)
 
-##### Total: 99
+##### Total: 100
