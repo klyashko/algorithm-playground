@@ -24,15 +24,12 @@ public class BinaryTreePostorderTraversal {
 					leftStack.push(curr);
 					curr = curr.right;
 				}
-				while (curr == null && !leftStack.isEmpty()) {
-					curr = leftStack.pop().left;
-				}
+				curr = leftStack.pop().left;
 			}
 
 			List<Integer> values = new ArrayList<>();
 			while (!stack.isEmpty()) {
-				//noinspection ConstantConditions
-				values.add(stack.poll().val);
+				values.add(stack.pop().val);
 			}
 
 			return values;
