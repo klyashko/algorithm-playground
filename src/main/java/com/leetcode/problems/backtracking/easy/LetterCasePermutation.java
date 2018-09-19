@@ -11,22 +11,25 @@ public class LetterCasePermutation {
 	class Solution {
 		public List<String> letterCasePermutation(String S) {
 			List<String> values = new ArrayList<>();
-			backtracking(new StringBuilder(S.toLowerCase()), 0, values);
+			backtracking(S.toCharArray(), 0, values);
 			return values;
 		}
 
-		private void backtracking(StringBuilder builder, int idx, List<String> values) {
-			if (idx == builder.length()) {
-				values.add(builder.toString());
+		private void backtracking(char[] chars, int idx, List<String> values) {
+			if (idx == chars.length) {
+				values.add(String.valueOf(chars));
 				return;
 			}
-			backtracking(builder, idx + 1, values);
-			char ch = builder.charAt(idx);
+			backtracking(chars, idx + 1, values);
+			char ch = chars[idx];
 			if (Character.isLowerCase(ch)) {
-				builder.setCharAt(idx, Character.toUpperCase(ch));
-				backtracking(builder, idx + 1, values);
-				builder.setCharAt(idx, ch);
+				chars[idx] = Character.toUpperCase(ch);
+				backtracking(chars, idx + 1, values);
+			} else if (Character.isUpperCase(ch)) {
+				chars[idx] = Character.toLowerCase(ch);
+				backtracking(chars, idx + 1, values);
 			}
+			chars[idx] = ch;
 		}
 	}
 

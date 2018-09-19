@@ -181,5 +181,10 @@
    * [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/description/)
    * [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/description/)
    * [Number of Atoms](https://leetcode.com/problems/number-of-atoms/description/)
+   
+#### Backtracking
 
-##### Total: 96
+ * easy:
+   * [Letter Case Permutation](https://leetcode.com/problems/letter-case-permutation/description/)
+
+##### Total: 97
