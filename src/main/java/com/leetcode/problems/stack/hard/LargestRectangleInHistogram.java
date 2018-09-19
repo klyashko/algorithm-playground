@@ -30,20 +30,13 @@ public class LargestRectangleInHistogram {
 			int[] left = new int[n];
 			int[] right = new int[n];
 
-			for (int i = 1; i < n; i++) {
-				int curr = 0;
+			for (int i = 0; i < n; i++) {
 				for (int j = 1; j <= i && heights[i] <= heights[i - j]; j++) {
-					curr++;
+					left[i]++;
 				}
-				left[i] = curr;
-			}
-
-			for (int i = n - 2; i >= 0; i--) {
-				int curr = 0;
 				for (int j = 1; j < n - i && heights[i] <= heights[i + j]; j++) {
-					curr++;
+					right[i]++;
 				}
-				right[i] = curr;
 			}
 
 			int max = 0;
@@ -55,7 +48,6 @@ public class LargestRectangleInHistogram {
 //			System.out.println(Arrays.toString(right));
 
 			return max;
-//			return 10;
 		}
 	}
 
