@@ -1,7 +1,9 @@
 package com.leetcode.problems.backtracking.hard;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 /**
  * https://leetcode.com/problems/word-break-ii/description/
@@ -11,20 +13,25 @@ public class WordBreakII {
 	class Solution {
 		public List<String> wordBreak(String s, List<String> wordDict) {
 			List<String> result = new ArrayList<>();
-			backtracking(s, wordDict, new ArrayList<>(), result);
+			backtracking(s, wordDict, new ArrayList<>(), result, new HashSet<>());
 			return result;
 		}
 
-		private void backtracking(String s, List<String> words, List<String> current, List<String> result) {
+		private void backtracking(String s, List<String> words, List<String> current, List<String> result, Set<String> invalid) {
 			if (s.isEmpty()) {
 				result.add(String.join(" ", current));
-				return;
-			}
-			for (String w : words) {
-				if (s.startsWith(w)) {
-					current.add(w);
-					backtracking(s.substring(w.length()), words, current, result);
-					current.remove(current.size() - 1);
+			} else if (!invalid.contains(s)) {
+				for (String w : words) {
+					if (s.startsWith(w)) {
+						current.add(w);
+						String tmp = s.substring(w.length());
+						int size = result.size();
+						backtracking(tmp, words, current, result, invalid);
+						if (result.size() == size) {
+							invalid.add(tmp);
+						}
+						current.remove(current.size() - 1);
+					}
 				}
 			}
 		}
