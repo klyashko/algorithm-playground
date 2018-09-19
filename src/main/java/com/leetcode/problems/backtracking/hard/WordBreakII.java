@@ -13,8 +13,18 @@ public class WordBreakII {
 	class Solution {
 		public List<String> wordBreak(String s, List<String> wordDict) {
 			List<String> result = new ArrayList<>();
-			backtracking(s, wordDict, new ArrayList<>(), result, new HashSet<>());
+			backtracking(s, filter(s, wordDict), new ArrayList<>(), result, new HashSet<>());
 			return result;
+		}
+
+		private List<String> filter(String s, List<String> words) {
+			List<String> list = new ArrayList<>();
+			for (String w : words) {
+				if (s.contains(w)) {
+					list.add(w);
+				}
+			}
+			return list;
 		}
 
 		private void backtracking(String s, List<String> words, List<String> current, List<String> result, Set<String> invalid) {

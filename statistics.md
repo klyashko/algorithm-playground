@@ -192,4 +192,7 @@
    * [Combination Sum III](https://leetcode.com/problems/combination-sum-iii/description/)
    * [Permutations](https://leetcode.com/problems/permutations/description/)
 
-##### Total: 100
+ * hard:
+   * [Word Break II](https://leetcode.com/problems/word-break-ii/description/)
+
+##### Total: 101
