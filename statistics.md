@@ -173,7 +173,8 @@
    * [Min Stack](https://leetcode.com/problems/min-stack/description/)
    
  * medium:
+   * [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/description/)
    * [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/description/)
    * [Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii/description/)
 
-##### Total: 92
+##### Total: 93
