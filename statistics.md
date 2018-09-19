@@ -186,5 +186,8 @@
 
  * easy:
    * [Letter Case Permutation](https://leetcode.com/problems/letter-case-permutation/description/)
+   
+ * medium:
+   * [Beautiful Arrangement](https://leetcode.com/problems/beautiful-arrangement/description/)
 
-##### Total: 97
+##### Total: 98
