@@ -28,23 +28,8 @@ public class DesignLinkedList {
 		 * Get the value of the index-th node in the linked list. If the index is invalid, return -1.
 		 */
 		public int get(int index) {
-			if (index >= size) {
-				return -1;
-			}
-			int mid = size / 2;
-			Node curr;
-			if (index < mid) {
-				curr = head;
-				for (int i = -1; i < index; i++) {
-					curr = curr.next;
-				}
-			} else {
-				curr = tail;
-				for (int i = 0; i < size - index; i++) {
-					curr = curr.prev;
-				}
-			}
-			return curr.val;
+			Node n = getNode(index);
+			return n != null ? n.val : -1;
 		}
 
 		/**
@@ -68,11 +53,8 @@ public class DesignLinkedList {
 		 * If index is greater than the length, the node will not be inserted.
 		 */
 		public void addAtIndex(int index, int val) {
-			if (index <= size) {
-				Node curr = head;
-				for (int i = 0; i < index; i++) {
-					curr = curr.next;
-				}
+			Node curr = getNode(index - 1);
+			if (curr != null) {
 				Node n = new Node(val);
 				n.next = curr.next;
 				n.prev = curr;
@@ -86,17 +68,32 @@ public class DesignLinkedList {
 		 * Delete the index-th node in the linked list, if the index is valid.
 		 */
 		public void deleteAtIndex(int index) {
-			if (index >= size) {
-				return;
+			Node curr = getNode(index);
+			if (curr != null) {
+				curr.prev.next = curr.next;
+				curr.next.prev = curr.prev;
+				size--;
 			}
-			Node curr = head.next;
-			for (int i = 0; i < index; i++) {
-				curr = curr.next;
-			}
+		}
 
-			curr.prev.next = curr.next;
-			curr.next.prev = curr.prev;
-			size--;
+		private Node getNode(int idx) {
+			if (idx >= size) {
+				return null;
+			}
+			int mid = size / 2;
+			Node curr;
+			if (idx < mid) {
+				curr = head;
+				for (int i = -1; i < idx; i++) {
+					curr = curr.next;
+				}
+			} else {
+				curr = tail;
+				for (int i = 0; i < size - idx; i++) {
+					curr = curr.prev;
+				}
+			}
+			return curr;
 		}
 
 		@Override
