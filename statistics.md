@@ -211,5 +211,6 @@
    
  * hard:
    * [LRU Cache](https://leetcode.com/problems/lru-cache/description/)
+   * [LFU Cache](https://leetcode.com/problems/lfu-cache/description/)
 
-##### Total: 110
+##### Total: 111
