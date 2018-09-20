@@ -28,6 +28,10 @@ public class DesignLinkedList {
 		 * Get the value of the index-th node in the linked list. If the index is invalid, return -1.
 		 */
 		public int get(int index) {
+			if (index >= size) {
+				return -1;
+			}
+//			int mid = size / 2;
 			Node curr = head;
 			for (int i = -1; i < index && curr != tail; i++) {
 				curr = curr.next;
