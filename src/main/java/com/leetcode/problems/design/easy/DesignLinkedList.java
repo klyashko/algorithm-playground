@@ -31,10 +31,18 @@ public class DesignLinkedList {
 			if (index >= size) {
 				return -1;
 			}
-//			int mid = size / 2;
-			Node curr = head;
-			for (int i = -1; i < index && curr != tail; i++) {
-				curr = curr.next;
+			int mid = size / 2;
+			Node curr;
+			if (index < mid) {
+				curr = head;
+				for (int i = -1; i < index; i++) {
+					curr = curr.next;
+				}
+			} else {
+				curr = tail;
+				for (int i = 0; i < size - index; i++) {
+					curr = curr.prev;
+				}
 			}
 			return curr.val;
 		}
