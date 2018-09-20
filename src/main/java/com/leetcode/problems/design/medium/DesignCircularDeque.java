@@ -35,7 +35,7 @@ public class DesignCircularDeque {
 		 * Adds an item at the front of Deque. Return true if the operation is successful.
 		 */
 		public boolean insertFront(int value) {
-			if (size == capacity) {
+			if (isFull()) {
 				return false;
 			}
 			Node n = new Node(value, head, head.next);
@@ -49,7 +49,7 @@ public class DesignCircularDeque {
 		 * Adds an item at the rear of Deque. Return true if the operation is successful.
 		 */
 		public boolean insertLast(int value) {
-			if (size == capacity) {
+			if (isFull()) {
 				return false;
 			}
 			Node n = new Node(value, tail.prev, tail);
@@ -63,7 +63,7 @@ public class DesignCircularDeque {
 		 * Deletes an item from the front of Deque. Return true if the operation is successful.
 		 */
 		public boolean deleteFront() {
-			if (size == 0) {
+			if (isEmpty()) {
 				return false;
 			}
 			head.next.next.prev = head;
@@ -76,7 +76,7 @@ public class DesignCircularDeque {
 		 * Deletes an item from the rear of Deque. Return true if the operation is successful.
 		 */
 		public boolean deleteLast() {
-			if (size == 0) {
+			if (isEmpty()) {
 				return false;
 			}
 			tail.prev.prev.next = tail;

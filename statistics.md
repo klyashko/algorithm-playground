@@ -200,8 +200,11 @@
 #### Design
 
  * easy:
-   * [Design LinkedList](https://leetcode.com/problems/design-linked-list/description/)
+   * [Design Linked List](https://leetcode.com/problems/design-linked-list/description/)
    * [Design HashMap](https://leetcode.com/problems/design-hashmap/description/)
    * [Design HashSet](https://leetcode.com/problems/design-hashset/description/)
+   
+ * medium:
+   * [Design Circular Deque](https://leetcode.com/problems/design-circular-deque/description/)
 
-##### Total: 106
+##### Total: 107
