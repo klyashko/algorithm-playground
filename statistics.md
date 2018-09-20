@@ -200,7 +200,8 @@
 #### Design
 
  * easy:
+   * [Design LinkedList](https://leetcode.com/problems/design-linked-list/description/)
    * [Design HashMap](https://leetcode.com/problems/design-hashmap/description/)
    * [Design HashSet](https://leetcode.com/problems/design-hashset/description/)
 
-##### Total: 105
+##### Total: 106

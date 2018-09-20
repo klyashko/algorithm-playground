@@ -55,9 +55,7 @@ public class DesignLinkedList {
 		public void addAtIndex(int index, int val) {
 			Node curr = getNode(index - 1);
 			if (curr != null) {
-				Node n = new Node(val);
-				n.next = curr.next;
-				n.prev = curr;
+				Node n = new Node(val, curr, curr.next);
 				curr.next.prev = n;
 				curr.next = n;
 				size++;
@@ -116,6 +114,12 @@ public class DesignLinkedList {
 
 			public Node(int val) {
 				this.val = val;
+			}
+
+			public Node(int val, Node prev, Node next) {
+				this(val);
+				this.prev = prev;
+				this.next = next;
 			}
 
 			@Override
