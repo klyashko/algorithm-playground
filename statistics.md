@@ -196,5 +196,10 @@
    * [Word Search II](https://leetcode.com/problems/word-search-ii/description/)
    * [Word Break II](https://leetcode.com/problems/word-break-ii/description/)
    * [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/description/)
+   
+#### Design
 
-##### Total: 103
+ * easy:
+   * [Design HashMap](https://leetcode.com/problems/design-hashmap/description/)
+
+##### Total: 104
