@@ -201,5 +201,6 @@
 
  * easy:
    * [Design HashMap](https://leetcode.com/problems/design-hashmap/description/)
+   * [Design HashSet](https://leetcode.com/problems/design-hashset/description/)
 
-##### Total: 104
+##### Total: 105
