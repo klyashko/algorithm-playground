@@ -57,16 +57,9 @@ public class DesignLinkedList {
 		 */
 		public void addAtIndex(int index, int val) {
 			if (index <= size) {
-				Node curr;
-				if (index == 0) {
-					curr = head;
-				} else if (index == size) {
-					curr = tail.prev;
-				} else {
-					curr = head;
-					for (int i = 0; i < index && curr.next != tail; i++) {
-						curr = curr.next;
-					}
+				Node curr = head;
+				for (int i = 0; i < index; i++) {
+					curr = curr.next;
 				}
 				Node n = new Node(val);
 				n.next = curr.next;
@@ -85,7 +78,7 @@ public class DesignLinkedList {
 				return;
 			}
 			Node curr = head.next;
-			for (int i = 0; i < index && curr.next != tail; i++) {
+			for (int i = 0; i < index; i++) {
 				curr = curr.next;
 			}
 
