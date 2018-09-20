@@ -21,8 +21,8 @@ public class BinarySearchTreeIterator {
 
 	public class BSTIterator {
 
-		int idx;
 		private List<Integer> values = new ArrayList<>();
+		private int idx;
 
 		public BSTIterator(TreeNode root) {
 			LinkedList<TreeNode> stack = new LinkedList<>();

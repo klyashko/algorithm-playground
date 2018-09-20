@@ -205,6 +205,7 @@
    * [Design HashSet](https://leetcode.com/problems/design-hashset/description/)
    
  * medium:
+   * [Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/description/)
    * [Design Circular Deque](https://leetcode.com/problems/design-circular-deque/description/)
 
-##### Total: 107
+##### Total: 108
