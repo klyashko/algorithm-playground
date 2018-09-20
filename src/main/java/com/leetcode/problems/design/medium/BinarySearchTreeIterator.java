@@ -37,7 +37,6 @@ public class BinarySearchTreeIterator {
 				values.add(curr.val);
 				curr = curr.right;
 			}
-			System.out.println(values);
 		}
 
 		/**
