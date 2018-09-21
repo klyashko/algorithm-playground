@@ -2,9 +2,7 @@ package com.leetcode.problems.design.medium;
 
 import com.leetcode.problems.tree.TreeNode;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.List;
 
 /**
  * https://leetcode.com/problems/binary-search-tree-iterator/description/
@@ -21,36 +19,32 @@ public class BinarySearchTreeIterator {
 
 	public class BSTIterator {
 
-		private List<Integer> values = new ArrayList<>();
-		private int idx;
+		private LinkedList<TreeNode> stack = new LinkedList<>();
+		private TreeNode curr;
 
 		public BSTIterator(TreeNode root) {
-			LinkedList<TreeNode> stack = new LinkedList<>();
-
-			TreeNode curr = root;
-			while (curr != null || !stack.isEmpty()) {
-				while (curr != null) {
-					stack.push(curr);
-					curr = curr.left;
-				}
-				curr = stack.pop();
-				values.add(curr.val);
-				curr = curr.right;
-			}
+			curr = root;
 		}
 
 		/**
 		 * @return whether we have a next smallest number
 		 */
 		public boolean hasNext() {
-			return idx < values.size();
+			return curr != null || !stack.isEmpty();
 		}
 
 		/**
 		 * @return the next smallest number
 		 */
 		public int next() {
-			return values.get(idx++);
+			while (curr != null) {
+				stack.push(curr);
+				curr = curr.left;
+			}
+			curr = stack.pop();
+			int val = curr.val;
+			curr = curr.right;
+			return val;
 		}
 	}
 
