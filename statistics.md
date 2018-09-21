@@ -218,5 +218,6 @@
 
  * easy:
    * [Lemonade Change](https://leetcode.com/problems/lemonade-change/description/)
+   * [Assign Cookies](https://leetcode.com/problems/assign-cookies/description/)
 
-##### Total: 113
+##### Total: 114
