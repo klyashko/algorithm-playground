@@ -221,6 +221,7 @@
    * [Assign Cookies](https://leetcode.com/problems/assign-cookies/description/)
    
  * medium:
+   * [Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/description/)
    * [Is Subsequence](https://leetcode.com/problems/is-subsequence/description/)
 
-##### Total: 115
+##### Total: 116
