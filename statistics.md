@@ -219,5 +219,8 @@
  * easy:
    * [Lemonade Change](https://leetcode.com/problems/lemonade-change/description/)
    * [Assign Cookies](https://leetcode.com/problems/assign-cookies/description/)
+   
+ * medium:
+   * [Is Subsequence](https://leetcode.com/problems/is-subsequence/description/)
 
-##### Total: 114
+##### Total: 115
