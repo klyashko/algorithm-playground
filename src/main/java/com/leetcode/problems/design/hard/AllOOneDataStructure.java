@@ -10,7 +10,7 @@ public class AllOOneDataStructure {
 	class AllOne {
 
 		private Map<String, Integer> counts = new HashMap<>();
-		private Map<Integer, Set<String>> strings = new HashMap<>();
+		private TreeMap<Integer, Set<String>> strings = new TreeMap<>();
 		private int min, max;
 
 		/**
@@ -49,9 +49,7 @@ public class AllOOneDataStructure {
 			updateCount(key, curr);
 			min = Math.min(min, curr);
 			if (min == 0 && !strings.isEmpty()) {
-				while (strings.get(min) == null) {
-					min++;
-				}
+				min = strings.firstKey();
 			}
 		}
 
