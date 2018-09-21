@@ -210,7 +210,8 @@
    * [Design Circular Deque](https://leetcode.com/problems/design-circular-deque/description/)
    
  * hard:
+   * [All O'One Data Structure](https://leetcode.com/problems/all-oone-data-structure/description/)
    * [LRU Cache](https://leetcode.com/problems/lru-cache/description/)
    * [LFU Cache](https://leetcode.com/problems/lfu-cache/description/)
 
-##### Total: 111
+##### Total: 112
