@@ -15,22 +15,19 @@ public class LemonadeChange {
 					five++;
 				} else if (bill == 10) {
 					ten++;
-				}
-				int change = bill - 5;
-				while (change > 0) {
-					if (change >= 10 && ten > 0) {
-						change -= 10;
+					five--;
+				} else {
+					if (ten > 0) {
 						ten--;
+						five--;
 					} else {
-						five -= change / 5;
-						change = 0;
+						five -= 3;
 					}
 				}
 				if (five < 0) {
 					return false;
 				}
 			}
-
 			return true;
 		}
 	}

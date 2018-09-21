@@ -213,5 +213,10 @@
    * [All O'One Data Structure](https://leetcode.com/problems/all-oone-data-structure/description/)
    * [LRU Cache](https://leetcode.com/problems/lru-cache/description/)
    * [LFU Cache](https://leetcode.com/problems/lfu-cache/description/)
+   
+#### Greedy
 
-##### Total: 112
+ * easy:
+   * [Lemonade Change](https://leetcode.com/problems/lemonade-change/description/)
+
+##### Total: 113
