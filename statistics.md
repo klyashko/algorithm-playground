@@ -223,5 +223,6 @@
  * medium:
    * [Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/description/)
    * [Is Subsequence](https://leetcode.com/problems/is-subsequence/description/)
+   * [Task Scheduler](https://leetcode.com/problems/task-scheduler/description/)
 
-##### Total: 116
+##### Total: 117

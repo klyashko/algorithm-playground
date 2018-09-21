@@ -29,9 +29,6 @@ public class TaskScheduler {
 					todo--;
 					counts[max]--;
 					wait[max] = n;
-//					System.out.println((char) (max + 'A') + " is running");
-				} else {
-//					System.out.println("Idle");
 				}
 			}
 
