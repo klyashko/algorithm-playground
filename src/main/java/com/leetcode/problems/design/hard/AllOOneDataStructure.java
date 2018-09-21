@@ -11,7 +11,6 @@ public class AllOOneDataStructure {
 
 		private Map<String, Integer> counts = new HashMap<>();
 		private TreeMap<Integer, Set<String>> strings = new TreeMap<>();
-		private int min, max;
 
 		/**
 		 * Initialize your data structure here.
@@ -22,49 +21,28 @@ public class AllOOneDataStructure {
 		 * Inserts a new key <Key> with value 1. Or increments an existing key by 1.
 		 */
 		public void inc(String key) {
-			int curr = getCountForUpdate(key);
-			/** Update min */
-			if (curr == min && strings.getOrDefault(curr, Collections.emptySet()).isEmpty()) {
-				min++;
-			}
-			curr++;
-			updateCount(key, curr);
-			/** Update max */
-			min = Math.min(min, curr);
-			max = Math.max(max, curr);
+			updateCount(key, getCountForUpdate(key) + 1);
 		}
 
 		/**
 		 * Decrements an existing key by 1. If Key's value is 1, remove it from the data structure.
 		 */
 		public void dec(String key) {
-			int curr = getCountForUpdate(key);
-			if (curr == 0) {
-				return;
-			}
-			if (curr == max && strings.getOrDefault(curr, Collections.emptySet()).isEmpty()) {
-				max--;
-			}
-			curr--;
-			updateCount(key, curr);
-			min = Math.min(min, curr);
-			if (min == 0 && !strings.isEmpty()) {
-				min = strings.firstKey();
-			}
+			updateCount(key, getCountForUpdate(key) - 1);
 		}
 
 		/**
 		 * Returns one of the keys with maximal value.
 		 */
 		public String getMaxKey() {
-			return getAnyForKey(max);
+			return getAnyForKey(strings.isEmpty() ? 0 : strings.lastKey());
 		}
 
 		/**
 		 * Returns one of the keys with Minimal value.
 		 */
 		public String getMinKey() {
-			return getAnyForKey(min);
+			return getAnyForKey(strings.isEmpty() ? 0 : strings.firstKey());
 		}
 
 		private int getCountForUpdate(String key) {
@@ -80,7 +58,7 @@ public class AllOOneDataStructure {
 		}
 
 		private void updateCount(String key, int count) {
-			if (count == 0) {
+			if (count <= 0) {
 				counts.remove(key);
 			} else {
 				counts.put(key, count);
