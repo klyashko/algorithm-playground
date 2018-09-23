@@ -1,6 +1,6 @@
 package com.leetcode.problems.greedy.hard
 
-import com.leetcode.problems.greedy.hard.Candy.Solution as S
+import com.leetcode.problems.greedy.hard.Candy.Solution_ as S
 import spock.lang.Specification
 import spock.lang.Unroll
 
@@ -19,6 +19,7 @@ class CandySpec extends Specification {
 			[1, 2, 2]              || 4
 			[1, 3, 2, 2, 1]        || 7
 			[1, 6, 10, 8, 7, 3, 2] || 18
+			[1, 3, 4, 5, 2]        || 11
 
 	}
 
