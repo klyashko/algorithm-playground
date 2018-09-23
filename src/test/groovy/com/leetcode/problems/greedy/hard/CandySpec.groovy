@@ -1,6 +1,6 @@
 package com.leetcode.problems.greedy.hard
 
-import com.leetcode.problems.greedy.hard.Candy.Solution_ as S
+import com.leetcode.problems.greedy.hard.Candy.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 
