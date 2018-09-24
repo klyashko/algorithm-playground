@@ -20,28 +20,19 @@ public class AddTwoNumbersII {
 			ListNode curr = null;
 			int rest = 0;
 
-			while (!stack1.isEmpty() && !stack2.isEmpty()) {
-				ListNode a = stack1.pop();
-				ListNode b = stack2.pop();
-				int val = a.val + b.val + rest;
+			while (!stack1.isEmpty() || !stack2.isEmpty()) {
+				int val = rest;
+				if (!stack1.isEmpty()) {
+					val += stack1.pop().val;
+				}
+				if (!stack2.isEmpty()) {
+					val += stack2.pop().val;
+				}
 				rest = val / 10;
 				curr = node(val % 10, curr);
 			}
 
-			LinkedList<ListNode> stack = stack1.isEmpty() ? stack2 : stack1;
-
-			while (!stack.isEmpty()) {
-				ListNode n = stack.pop();
-				int val = n.val + rest;
-				rest = val / 10;
-				curr = node(val % 10, curr);
-			}
-
-			if (rest != 0) {
-				curr = node(rest, curr);
-			}
-
-			return curr;
+			return rest == 0 ? curr : node(rest, curr);
 		}
 
 		private ListNode node(int val, ListNode next) {
