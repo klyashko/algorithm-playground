@@ -249,7 +249,8 @@
 #### Bit Manipulation
 
  * easy:
+   * [Binary Number with Alternating Bits](https://leetcode.com/problems/binary-number-with-alternating-bits/description/)
    * [Number Complement](https://leetcode.com/problems/number-complement/description/)
    * [Hamming Distance](https://leetcode.com/problems/hamming-distance/description/)
 
-##### Total: 130
+##### Total: 131
