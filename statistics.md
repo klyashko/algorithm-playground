@@ -234,6 +234,7 @@
 
  * easy:
    * [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/description/)
+   * [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/description/)
    * [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/description/)
 
-##### Total: 122
+##### Total: 123
