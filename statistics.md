@@ -233,6 +233,7 @@
 #### Linked List
 
  * easy:
-   * [Middle of the LinkedList](https://leetcode.com/problems/middle-of-the-linked-list/description/)
+   * [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/description/)
+   * [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/description/)
 
-##### Total: 121
+##### Total: 122
