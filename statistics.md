@@ -245,5 +245,10 @@
  * hard:
    * [Reverse Nodes in K-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/description/)
    * [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/description/)
+   
+#### Bit Manipulation
 
-##### Total: 128
+ * easy:
+   * [Hamming Distance](https://leetcode.com/problems/hamming-distance/description/)
+
+##### Total: 129

@@ -7,24 +7,20 @@ public class HammingDistance {
 
 	class Solution {
 		public int hammingDistance(int x, int y) {
-			int t = x;
-			x = Math.min(x, y);
-			y = Math.max(t, y);
-			StringBuilder str1 = new StringBuilder(Integer.toBinaryString(x));
-			String str2 = Integer.toBinaryString(y);
-
-			while (str1.length() < str2.length()) {
-				str1.insert(0, "0");
-			}
-
 			int count = 0;
-			for (int i = 0; i < str1.length(); i++) {
-				if (str1.charAt(i) != str2.charAt(i)) {
+			for (; x != 0 || y != 0; x /= 2, y /= 2) {
+				if (x % 2 != y % 2) {
 					count++;
 				}
 			}
 
 			return count;
+		}
+	}
+
+	class FastSolution {
+		public int hammingDistance(int x, int y) {
+			return Integer.bitCount(x ^ y);
 		}
 	}
 
