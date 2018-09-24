@@ -254,6 +254,7 @@
    * [Hamming Distance](https://leetcode.com/problems/hamming-distance/description/)
    
  * medium:
+   * [Total Hamming Distance](https://leetcode.com/problems/total-hamming-distance/description/)
    * [Single Number III](https://leetcode.com/problems/single-number-iii/description/)
 
-##### Total: 132
+##### Total: 133
