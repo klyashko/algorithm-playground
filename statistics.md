@@ -241,5 +241,8 @@
    * [Split Linked List in Parts](https://leetcode.com/problems/split-linked-list-in-parts/description/)
    * [Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/description/)
    * [Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii/description/)
+   
+ * hard:
+   * [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/description/)
 
-##### Total: 126
+##### Total: 127

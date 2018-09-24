@@ -13,24 +13,13 @@ public class MergeKSortedLists {
 
 	class Solution {
 		public ListNode mergeKLists(ListNode[] lists) {
-			if (lists.length == 0) {
-				return null;
-			}
 			Queue<ListNode> queue = new PriorityQueue<>(Comparator.comparingInt(n -> n.val));
 			for (ListNode list : lists) {
 				if (list != null) {
 					queue.offer(list);
 				}
 			}
-			if (queue.isEmpty()) {
-				return null;
-			}
-			ListNode curr = queue.poll();
-			ListNode head = curr;
-			//noinspection ConstantConditions
-			if (curr.next != null) {
-				queue.offer(curr.next);
-			}
+			ListNode curr = new ListNode(0), head = curr;
 			while (!queue.isEmpty()) {
 				ListNode n = queue.poll();
 				//noinspection ConstantConditions
@@ -41,7 +30,7 @@ public class MergeKSortedLists {
 					queue.offer(n.next);
 				}
 			}
-			return head;
+			return head.next;
 		}
 	}
 
