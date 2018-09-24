@@ -25,10 +25,7 @@ public class AddTwoNumbersII {
 				ListNode b = stack2.pop();
 				int val = a.val + b.val + rest;
 				rest = val / 10;
-				val %= 10;
-				ListNode node = new ListNode(val);
-				node.next = curr;
-				curr = node;
+				curr = node(val % 10, curr);
 			}
 
 			LinkedList<ListNode> stack = stack1.isEmpty() ? stack2 : stack1;
@@ -37,19 +34,20 @@ public class AddTwoNumbersII {
 				ListNode n = stack.pop();
 				int val = n.val + rest;
 				rest = val / 10;
-				val %= 10;
-				ListNode node = new ListNode(val);
-				node.next = curr;
-				curr = node;
+				curr = node(val % 10, curr);
 			}
 
 			if (rest != 0) {
-				ListNode node = new ListNode(rest);
-				node.next = curr;
-				curr = node;
+				curr = node(rest, curr);
 			}
 
 			return curr;
+		}
+
+		private ListNode node(int val, ListNode next) {
+			ListNode node = new ListNode(val);
+			node.next = next;
+			return node;
 		}
 
 		private void pushAll(LinkedList<ListNode> stack, ListNode node) {
