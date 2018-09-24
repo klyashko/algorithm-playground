@@ -238,6 +238,7 @@
    * [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/description/)
    
  * medium:
+   * [Split Linked List in Parts](https://leetcode.com/problems/split-linked-list-in-parts/description/)
    * [Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii/description/)
 
-##### Total: 124
+##### Total: 125
