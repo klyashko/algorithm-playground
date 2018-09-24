@@ -249,6 +249,7 @@
 #### Bit Manipulation
 
  * easy:
+   * [Number Complement](https://leetcode.com/problems/number-complement/description/)
    * [Hamming Distance](https://leetcode.com/problems/hamming-distance/description/)
 
-##### Total: 129
+##### Total: 130
