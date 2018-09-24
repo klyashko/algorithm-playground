@@ -25,4 +25,23 @@ public class SingleNumberIII {
 		}
 	}
 
+	class FastSolution {
+		public int[] singleNumber(int[] nums) {
+			int xor = 0;
+			for (int i : nums) {
+				xor ^= i;
+			}
+			xor = xor & -xor;
+			int[] ans = new int[2];
+			for (int i : nums) {
+				if ((i & xor) == 0) {
+					ans[0] ^= i;
+				} else {
+					ans[1] ^= i;
+				}
+			}
+			return ans;
+		}
+	}
+
 }

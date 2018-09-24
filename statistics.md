@@ -252,5 +252,8 @@
    * [Binary Number with Alternating Bits](https://leetcode.com/problems/binary-number-with-alternating-bits/description/)
    * [Number Complement](https://leetcode.com/problems/number-complement/description/)
    * [Hamming Distance](https://leetcode.com/problems/hamming-distance/description/)
+   
+ * medium:
+   * [Single Number III](https://leetcode.com/problems/single-number-iii/description/)
 
-##### Total: 131
+##### Total: 132
