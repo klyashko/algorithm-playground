@@ -229,5 +229,10 @@
    * [Couples Holding Hands](https://leetcode.com/problems/couples-holding-hands/description/)
    * [Candy](https://leetcode.com/problems/candy/description/)
    * [IPO](https://leetcode.com/problems/ipo/description/)
+   
+#### Linked List
 
-##### Total: 120
+ * easy:
+   * [Middle of the LinkedList](https://leetcode.com/problems/middle-of-the-linked-list/description/)
+
+##### Total: 121
