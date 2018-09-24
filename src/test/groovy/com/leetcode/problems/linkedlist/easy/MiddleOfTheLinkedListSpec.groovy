@@ -5,7 +5,7 @@ import com.leetcode.problems.linkedlist.easy.MiddleOfTheLinkedList.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 
-import static com.leetcode.problems.linkedlist.easy.ListNode.valueOf as node
+import static com.leetcode.problems.linkedlist.ListNode.valueOf as node
 
 class MiddleOfTheLinkedListSpec extends Specification {
 

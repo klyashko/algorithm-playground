@@ -1,0 +1,25 @@
+package com.leetcode.problems.linkedlist.easy;
+
+import com.leetcode.problems.linkedlist.ListNode;
+
+/**
+ * https://leetcode.com/problems/reverse-linked-list/description/
+ */
+public class ReverseLinkedList {
+
+	class Solution {
+		public ListNode reverseList(ListNode head) {
+			return reverseList(head, null);
+		}
+
+		private ListNode reverseList(ListNode head, ListNode curr) {
+			if (head == null) {
+				return curr;
+			}
+			ListNode node = new ListNode(head.val);
+			node.next = curr;
+			return reverseList(head.next, node);
+		}
+	}
+
+}

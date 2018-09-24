@@ -1,5 +1,7 @@
 package com.leetcode.problems.linkedlist.easy;
 
+import com.leetcode.problems.linkedlist.ListNode;
+
 /**
  * https://leetcode.com/problems/middle-of-the-linked-list/description/
  */
