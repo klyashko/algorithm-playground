@@ -9,11 +9,7 @@ public class ReverseNodesInKGroup {
 
 	class Solution {
 		public ListNode reverseKGroup(ListNode head, int k) {
-			if (head == null) {
-				return null;
-			}
-			ListNode curr = new ListNode(0);
-			ListNode h = curr;
+			ListNode curr = new ListNode(0), h = curr;
 
 			while (head != null) {
 				ListNode tmp = head;

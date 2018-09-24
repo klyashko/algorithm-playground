@@ -243,6 +243,7 @@
    * [Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii/description/)
    
  * hard:
+   * [Reverse Nodes in K-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/description/)
    * [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/description/)
 
-##### Total: 127
+##### Total: 128
