@@ -1,6 +1,6 @@
 package com.leetcode.problems.heap.hard;
 
-import java.util.Comparator;
+import java.util.Collections;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
@@ -10,36 +10,32 @@ import java.util.Queue;
 public class MinimumNumberOfRefuelingStops {
 
 	class Solution {
-		public int minRefuelStops(int target, int startFuel, int[][] stations) {
-			if (startFuel >= target) {
+		public int minRefuelStops(int target, int fuel, int[][] stations) {
+			if (fuel >= target) {
 				return 0;
 			}
-			Queue<int[]> queue = new PriorityQueue<>(Comparator.comparingInt((int[] s) -> s[1]).reversed());
-			int idx = put(queue, stations, 0, startFuel);
-			int current = startFuel;
-			int count = 0;
+			Queue<Integer> queue = new PriorityQueue<>(Collections.reverseOrder());
+			int idx = put(queue, stations, 0, fuel);
 
-			while (!queue.isEmpty()) {
-				int[] station = queue.poll();
-				count++;
+			for (int count = 1; !queue.isEmpty(); count++) {
 				//noinspection ConstantConditions
-				current += station[1];
-				if (current >= target) {
+				fuel += queue.poll();
+				if (fuel >= target) {
 					return count;
 				}
-				idx = put(queue, stations, idx, current);
+				idx = put(queue, stations, idx, fuel);
 			}
 
 			return -1;
 		}
 
-		private int put(Queue<int[]> queue, int[][] stations, int idx, int limit) {
+		private int put(Queue<Integer> queue, int[][] stations, int idx, int limit) {
 			for (; idx < stations.length; idx++) {
 				int[] station = stations[idx];
 				if (station[0] > limit) {
 					break;
 				}
-				queue.offer(station);
+				queue.offer(station[1]);
 			}
 			return idx;
 		}
