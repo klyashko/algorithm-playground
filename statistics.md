@@ -262,5 +262,8 @@
 
  * easy:
    * [Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/description/)
+   
+ * medium:
+   * [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/)
 
-##### Total: 135
+##### Total: 136
