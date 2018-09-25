@@ -264,6 +264,7 @@
    * [Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/description/)
    
  * medium:
+   * [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/description/)
    * [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/)
 
-##### Total: 136
+##### Total: 137
