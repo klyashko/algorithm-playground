@@ -46,17 +46,16 @@ public class TopKFrequentWords {
 				return counts.get(s1) - counts.get(s2);
 			});
 
-//			for (String key : counts.keySet()) {
-//				queue.offer(key);
-//				if (queue.size() > k) {
-//
-//				}
-//			}
-			queue.addAll(counts.keySet());
+			for (String key : counts.keySet()) {
+				queue.offer(key);
+				if (queue.size() > k) {
+					queue.poll();
+				}
+			}
 
 			List<String> result = new ArrayList<>();
-			while (result.size() < k) {
-				result.add(queue.poll());
+			while (!queue.isEmpty()) {
+				result.add(0, queue.poll());
 			}
 			return result;
 		}
