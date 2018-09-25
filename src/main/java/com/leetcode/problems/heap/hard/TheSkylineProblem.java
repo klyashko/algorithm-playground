@@ -40,6 +40,7 @@ public class TheSkylineProblem {
 
 				}
 			} else {
+				/** Handling large integers  */
 				int end = 0;
 				List<int[]> tmp = new ArrayList<>();
 				for (int[] b : buildings) {
@@ -59,46 +60,23 @@ public class TheSkylineProblem {
 		}
 
 		private List<int[]> getSkyline(List<int[]> buildings) {
-			buildings.sort(Comparator.comparingInt(b -> b[2]));
 			List<int[]> dots = new ArrayList<>();
-			for (int i = 0; i < buildings.size(); i++) {
-				int[] b = buildings.get(i);
-				int li = b[0];
-				int ri = b[1];
-				int hi = b[2];
-				for (int j = i; j < buildings.size(); j++) {
-					int[] t = buildings.get(j);
-					if (hi != t[2]) {
-						break;
-					}
-					ri = Math.max(ri, t[1]);
-					i = j;
-				}
-				dots.add(new int[]{li, hi});
-				dots.add(new int[]{ri, hi});
+			for (int[] b : buildings) {
+				dots.add(new int[]{b[0], b[2]});
+				dots.add(new int[]{b[1], b[2]});
 			}
 			dots.sort(Comparator.comparingInt(p -> p[0]));
-//			for (int[] t : dots) {
-//				System.out.println(Arrays.toString(t));
-//			}
 			LinkedList<Integer> stack = new LinkedList<>();
 			List<int[]> ans = new ArrayList<>();
 			stack.push(0);
-			int last = -1;
 			for (int[] p : dots) {
 				//noinspection ConstantConditions
 				if (p[1] > stack.peek()) {
-					if (p[0] == last) {
-						ans.remove(ans.size() - 1);
-					}
-					last = p[0];
 					ans.add(new int[]{p[0], p[1]});
 					stack.push(p[1]);
 				} else if (p[1] == stack.peek()) {
 					stack.pop();
-					if (stack.peek() != 0) {
-						ans.add(new int[]{p[0], stack.peek()});
-					}
+					ans.add(new int[]{p[0], stack.peek()});
 				} else {
 					int idx = stack.lastIndexOf(p[1]);
 					if (idx == -1) {
@@ -109,9 +87,6 @@ public class TheSkylineProblem {
 						stack.remove(idx);
 					}
 				}
-			}
-			if (!dots.isEmpty()) {
-				ans.add(new int[]{dots.get(dots.size() - 1)[0], 0});
 			}
 			return ans;
 		}
