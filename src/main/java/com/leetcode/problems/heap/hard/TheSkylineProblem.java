@@ -12,24 +12,49 @@ public class TheSkylineProblem {
 			if (buildings.length == 0) {
 				return Collections.emptyList();
 			}
-//			int len =
-
 			List<int[]> ans = new ArrayList<>();
-
-			int end = 0;
-			List<int[]> tmp = new ArrayList<>();
+			int len = 0;
 			for (int[] b : buildings) {
-				if (b[0] <= end) {
-					tmp.add(b);
-					end = Math.max(end, b[1]);
-				} else {
-					ans.addAll(getSkyline(tmp));
-					tmp.clear();
-					tmp.add(b);
-					end = b[1];
+				len = Math.max(len, b[1]);
+				if (len > 1_000_000) {
+					break;
 				}
 			}
-			ans.addAll(getSkyline(tmp));
+			if (len < 1_000_000) {
+				int[] heights = new int[len + 2];
+				for (int[] b : buildings) {
+					for (int i = b[0]; i <= b[1]; i++) {
+						heights[i] = Math.max(heights[i], b[2]);
+					}
+				}
+				int height = 0;
+				for (int i = 0; i < heights.length; i++) {
+					int h = heights[i];
+					if (h > height) {
+						ans.add(new int[]{i, h});
+						height = h;
+					} else if (h < height) {
+						ans.add(new int[]{i - 1, h});
+						height = h;
+					}
+
+				}
+			} else {
+				int end = 0;
+				List<int[]> tmp = new ArrayList<>();
+				for (int[] b : buildings) {
+					if (b[0] <= end) {
+						tmp.add(b);
+						end = Math.max(end, b[1]);
+					} else {
+						ans.addAll(getSkyline(tmp));
+						tmp.clear();
+						tmp.add(b);
+						end = b[1];
+					}
+				}
+				ans.addAll(getSkyline(tmp));
+			}
 			return ans;
 		}
 
@@ -87,37 +112,6 @@ public class TheSkylineProblem {
 			}
 			if (!dots.isEmpty()) {
 				ans.add(new int[]{dots.get(dots.size() - 1)[0], 0});
-			}
-			return ans;
-		}
-	}
-
-	/**
-	 * Doesn't work for large integers due to array size
-	 */
-	class Solution_ {
-		public List<int[]> getSkyline(int[][] buildings) {
-			if (buildings.length == 0) {
-				return Collections.emptyList();
-			}
-			int[] heights = new int[buildings[buildings.length - 1][1] + 2];
-			for (int[] b : buildings) {
-				for (int i = b[0]; i <= b[1]; i++) {
-					heights[i] = Math.max(heights[i], b[2]);
-				}
-			}
-			List<int[]> ans = new ArrayList<>();
-			int height = 0;
-			for (int i = 0; i < heights.length; i++) {
-				int h = heights[i];
-				if (h > height) {
-					ans.add(new int[]{i, h});
-					height = h;
-				} else if (h < height) {
-					ans.add(new int[]{i - 1, h});
-					height = h;
-				}
-
 			}
 			return ans;
 		}
