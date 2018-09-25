@@ -18,28 +18,23 @@ public class KthLargestElementInAStream {
 
 	class KthLargest {
 
-		private Queue<Integer> topQueue = new PriorityQueue<>();
-		private Queue<Integer> bottomQueue = new PriorityQueue<>((a, b) -> b - a);
-		private int k;
+		private Queue<Integer> minQueue = new PriorityQueue<>();
+		private int capacity;
 
 		public KthLargest(int k, int[] nums) {
-			this.k = k - 1;
-			int i = 0;
-			for (; i < this.k && i < nums.length; i++) {
-				topQueue.offer(nums[i]);
-			}
-			for (; i < nums.length; i++) {
-				add(nums[i]);
+			this.capacity = k;
+			for (int i : nums) {
+				add(i);
 			}
 		}
 
 		public int add(int val) {
-			topQueue.offer(val);
-			if (topQueue.size() > k) {
-				bottomQueue.offer(topQueue.poll());
+			minQueue.add(val);
+			if (minQueue.size() > capacity) {
+				minQueue.poll();
 			}
 			//noinspection ConstantConditions
-			return bottomQueue.peek();
+			return minQueue.peek();
 		}
 	}
 

@@ -257,5 +257,10 @@
    * [Total Hamming Distance](https://leetcode.com/problems/total-hamming-distance/description/)
    * [Single Number III](https://leetcode.com/problems/single-number-iii/description/)
    * [Subsets](https://leetcode.com/problems/subsets/description/)
+   
+#### Heap
 
-##### Total: 134
+ * easy:
+   * [Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/description/)
+
+##### Total: 135
