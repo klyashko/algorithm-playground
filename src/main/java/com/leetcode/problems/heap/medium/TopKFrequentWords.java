@@ -1,9 +1,6 @@
 package com.leetcode.problems.heap.medium;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * https://leetcode.com/problems/top-k-frequent-words/description/
@@ -33,6 +30,35 @@ public class TopKFrequentWords {
 				}
 			}
 			return result.subList(0, k);
+		}
+	}
+
+	class PriorityQueueSolution {
+		public List<String> topKFrequent(String[] words, int k) {
+			Map<String, Integer> counts = new HashMap<>();
+			for (String w : words) {
+				counts.put(w, counts.getOrDefault(w, 0) + 1);
+			}
+			Queue<String> queue = new PriorityQueue<>((s1, s2) -> {
+				if (counts.get(s1).equals(counts.get(s2))) {
+					return s2.compareTo(s1);
+				}
+				return counts.get(s1) - counts.get(s2);
+			});
+
+//			for (String key : counts.keySet()) {
+//				queue.offer(key);
+//				if (queue.size() > k) {
+//
+//				}
+//			}
+			queue.addAll(counts.keySet());
+
+			List<String> result = new ArrayList<>();
+			while (result.size() < k) {
+				result.add(queue.poll());
+			}
+			return result;
 		}
 	}
 
