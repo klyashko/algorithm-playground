@@ -1,6 +1,6 @@
 package com.leetcode.problems.heap.hard
 
-import com.leetcode.problems.heap.hard.TheSkylineProblem.Solution_ as S
+import com.leetcode.problems.heap.hard.TheSkylineProblem.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 
