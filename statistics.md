@@ -272,5 +272,10 @@
    * [Minimum Number of Refueling Stops](https://leetcode.com/problems/minimum-number-of-refueling-stops/description/)
    * [Find Median From Data Stream](https://leetcode.com/problems/find-median-from-data-stream/description/)
    * [The Skyline Problem](https://leetcode.com/problems/the-skyline-problem/description/)
+   
+#### Sort
 
-##### Total: 141
+ * easy:
+   * [Valid Anagram](https://leetcode.com/problems/valid-anagram/description/)
+
+##### Total: 142
