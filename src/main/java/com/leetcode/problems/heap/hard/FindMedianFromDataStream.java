@@ -7,6 +7,7 @@ import java.util.Queue;
 /**
  * https://leetcode.com/problems/find-median-from-data-stream/description/
  */
+@SuppressWarnings("ConstantConditions")
 public class FindMedianFromDataStream {
 
 	class MedianFinder {
@@ -20,31 +21,28 @@ public class FindMedianFromDataStream {
 		public MedianFinder() { }
 
 		public void addNum(int num) {
-			double median = findMedian();
-			if (num >= median) {
-				if (top.size() > bottom.size()) {
-					bottom.offer(top.poll());
-				}
-				top.offer(num);
+			if (num >= findMedian()) {
+				insert(top, bottom, num);
 			} else {
-				if (top.size() < bottom.size()) {
-					top.offer(bottom.poll());
-				}
-				bottom.offer(num);
+				insert(bottom, top, num);
 			}
 		}
 
-		@SuppressWarnings("ConstantConditions")
 		public double findMedian() {
 			if (top.size() > bottom.size()) {
 				return top.peek();
 			} else if (top.size() < bottom.size()) {
 				return bottom.peek();
-			} else if (top.isEmpty() && bottom.isEmpty()) {
-				return 0;
 			} else {
-				return (top.peek() + bottom.peek()) / 2.;
+				return top.isEmpty() ? 0 : (top.peek() + bottom.peek()) / 2.;
 			}
+		}
+
+		private void insert(Queue<Integer> toInsert, Queue<Integer> other, int val) {
+			if (toInsert.size() > other.size()) {
+				other.offer(toInsert.poll());
+			}
+			toInsert.offer(val);
 		}
 	}
 
