@@ -270,6 +270,7 @@
    
  * hard:
    * [Minimum Number of Refueling Stops](https://leetcode.com/problems/minimum-number-of-refueling-stops/description/)
+   * [Find Median From Data Stream](https://leetcode.com/problems/find-median-from-data-stream/description/)
    * [The Skyline Problem](https://leetcode.com/problems/the-skyline-problem/description/)
 
-##### Total: 140
+##### Total: 141
