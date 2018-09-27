@@ -34,8 +34,8 @@ public class RedundantConnection {
 
 		private Set<Integer> cycle(Map<Integer, List<Integer>> edges) {
 			Set<Integer> seen = new HashSet<>();
-			Queue<int[]> queue = new ArrayDeque<>();
 			// [curr, from]
+			Queue<int[]> queue = new ArrayDeque<>();
 			queue.add(new int[]{1, 0});
 			seen.add(1);
 			Integer from = null;
@@ -50,32 +50,29 @@ public class RedundantConnection {
 				}
 			}
 
-			for (Integer next : edges.get(from)) {
-				seen.clear();
-				seen.add(next);
-				//noinspection ConstantConditions
-				if (dfs(from, next, from, seen, edges)) {
-					break;
+			seen.clear();
+			// [curr, from]
+			LinkedList<int[]> stack = new LinkedList<>();
+			stack.push(new int[]{from, 0});
+
+			while (!stack.isEmpty()) {
+				int[] curr = stack.peek();
+				if (seen.add(curr[0])) {
+					if (curr[0] == from && curr[1] != 0) {
+						return seen;
+					}
+					for (Integer next : edges.get(curr[0])) {
+						if (next != curr[1]) {
+							stack.push(new int[]{next, curr[0]});
+						}
+					}
+				} else {
+					seen.remove(curr[0]);
+					stack.pop();
 				}
 			}
 
 			return seen;
-		}
-
-		private boolean dfs(int from, int curr, int to, Set<Integer> cycle, Map<Integer, List<Integer>> edges) {
-			if (curr == to) {
-				return true;
-			}
-			for (Integer next : edges.get(curr)) {
-				if (next != from) {
-					cycle.add(next);
-					if (dfs(curr, next, to, cycle, edges)) {
-						return true;
-					}
-					cycle.remove(next);
-				}
-			}
-			return false;
 		}
 	}
 

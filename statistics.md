@@ -287,5 +287,10 @@
  * hard:
    * [Insert Interval](https://leetcode.com/problems/insert-interval/description/)
    * [Maximum Gap](https://leetcode.com/problems/maximum-gap/description/)
+   
+#### Graph
 
-##### Total: 148
+ * medium:
+   * [Redundant Connection](https://leetcode.com/problems/redundant-connection/description/)
+
+##### Total: 149
