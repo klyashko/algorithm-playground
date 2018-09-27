@@ -279,6 +279,7 @@
    * [Valid Anagram](https://leetcode.com/problems/valid-anagram/description/)
    
  * medium:
+   * [Reorganize String](https://leetcode.com/problems/reorganize-string/description/)
    * [Sort Colors](https://leetcode.com/problems/sort-colors/description/)
 
-##### Total: 143
+##### Total: 144
