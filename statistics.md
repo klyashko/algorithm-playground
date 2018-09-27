@@ -280,6 +280,7 @@
    
  * medium:
    * [Reorganize String](https://leetcode.com/problems/reorganize-string/description/)
+   * [Merge Intervals](https://leetcode.com/problems/merge-intervals/description/)
    * [Sort Colors](https://leetcode.com/problems/sort-colors/description/)
 
-##### Total: 144
+##### Total: 145
