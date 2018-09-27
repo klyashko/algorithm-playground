@@ -282,5 +282,6 @@
    * [Reorganize String](https://leetcode.com/problems/reorganize-string/description/)
    * [Merge Intervals](https://leetcode.com/problems/merge-intervals/description/)
    * [Sort Colors](https://leetcode.com/problems/sort-colors/description/)
+   * [Sort List](https://leetcode.com/problems/sort-list/description/)
 
-##### Total: 145
+##### Total: 146
