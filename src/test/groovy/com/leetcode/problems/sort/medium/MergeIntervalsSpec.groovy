@@ -4,7 +4,7 @@ import com.leetcode.problems.sort.medium.MergeIntervals.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 
-import static com.leetcode.problems.sort.medium.Interval.valueOf as intervals
+import static com.leetcode.problems.sort.Interval.valueOf as intervals
 
 class MergeIntervalsSpec extends Specification {
 

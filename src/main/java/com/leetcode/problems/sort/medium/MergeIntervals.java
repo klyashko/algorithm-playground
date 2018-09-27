@@ -1,5 +1,7 @@
 package com.leetcode.problems.sort.medium;
 
+import com.leetcode.problems.sort.Interval;
+
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;

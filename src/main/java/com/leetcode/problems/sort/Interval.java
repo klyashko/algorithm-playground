@@ -1,4 +1,4 @@
-package com.leetcode.problems.sort.medium;
+package com.leetcode.problems.sort;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,15 +6,15 @@ import java.util.Objects;
 
 public class Interval {
 
-	int start;
-	int end;
+	public int start;
+	public int end;
 
-	Interval() {
+	public Interval() {
 		start = 0;
 		end = 0;
 	}
 
-	Interval(int s, int e) {
+	public Interval(int s, int e) {
 		start = s;
 		end = e;
 	}
@@ -47,9 +47,6 @@ public class Interval {
 
 	@Override
 	public String toString() {
-		return "Interval{" +
-				"start=" + start +
-				", end=" + end +
-				'}';
+		return "Interval[" + start + ", " + end + ']';
 	}
 }
