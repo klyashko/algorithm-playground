@@ -283,5 +283,8 @@
    * [Merge Intervals](https://leetcode.com/problems/merge-intervals/description/)
    * [Sort Colors](https://leetcode.com/problems/sort-colors/description/)
    * [Sort List](https://leetcode.com/problems/sort-list/description/)
+   
+ * hard:
+   * [Insert Interval](https://leetcode.com/problems/insert-interval/description/)
 
-##### Total: 146
+##### Total: 147
