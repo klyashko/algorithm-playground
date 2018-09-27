@@ -277,5 +277,8 @@
 
  * easy:
    * [Valid Anagram](https://leetcode.com/problems/valid-anagram/description/)
+   
+ * medium:
+   * [Sort Colors](https://leetcode.com/problems/sort-colors/description/)
 
-##### Total: 142
+##### Total: 143
