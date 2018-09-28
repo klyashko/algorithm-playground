@@ -11,32 +11,28 @@ public class FindEventualSafeStates {
 	class Solution {
 		public List<Integer> eventualSafeNodes(int[][] graph) {
 			List<Integer> result = new ArrayList<>();
-			boolean[] cache = new boolean[graph.length];
 			int[] colors = new int[graph.length];
-			for (int i = graph.length - 1; i >= 0; i--) {
-				if (dfs(graph, colors, cache, i)) {
-					result.add(0, i);
+			for (int i = 0; i < graph.length; i++) {
+				if (dfs(graph, colors, i)) {
+					result.add(i);
 				}
 			}
 
 			return result;
 		}
 
-		private boolean dfs(int[][] edges, int[] colors, boolean[] cache, int curr) {
-			if (cache[curr] || colors[curr] == 2) {
-				return true;
-			} else if (colors[curr] == 1) {
-				return false;
+		private boolean dfs(int[][] edges, int[] colors, int curr) {
+			if (colors[curr] > 0) {
+				return colors[curr] == 2;
 			}
 
 			colors[curr] = 1;
 			for (int e : edges[curr]) {
-				if (colors[e] == 1 || !dfs(edges, colors, cache, e)) {
+				if (colors[e] == 1 || !dfs(edges, colors, e)) {
 					return false;
 				}
 			}
 			colors[curr] = 2;
-			cache[curr] = true;
 			return true;
 		}
 	}

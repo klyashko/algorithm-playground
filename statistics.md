@@ -291,6 +291,7 @@
 #### Graph
 
  * medium:
+   * [Find Eventual Safe States](https://leetcode.com/problems/find-eventual-safe-states/description/)
    * [Redundant Connection](https://leetcode.com/problems/redundant-connection/description/)
 
-##### Total: 149
+##### Total: 150
