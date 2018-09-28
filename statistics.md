@@ -294,5 +294,10 @@
    * [Find Eventual Safe States](https://leetcode.com/problems/find-eventual-safe-states/description/)
    * [Redundant Connection](https://leetcode.com/problems/redundant-connection/description/)
    * [Is Graph Bipartite](https://leetcode.com/problems/is-graph-bipartite/description/)
+   
+#### Divide and Conquer
 
-##### Total: 151
+ * easy:
+   * [Majority Element](https://leetcode.com/problems/majority-element/description/)
+
+##### Total: 152
