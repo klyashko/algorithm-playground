@@ -28,6 +28,7 @@ class SearchA2DMatrixIISpec extends Specification {
 			 [10, 13, 14, 17, 24],
 			 [18, 21, 23, 26, 30]] | 20     || false
 			[]                     | 1      || false
+			[[]]                   | 1      || false
 
 	}
 
