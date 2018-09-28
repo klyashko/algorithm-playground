@@ -298,6 +298,7 @@
 #### Divide and Conquer
 
  * easy:
+   * [Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/description/)
    * [Majority Element](https://leetcode.com/problems/majority-element/description/)
 
-##### Total: 152
+##### Total: 153

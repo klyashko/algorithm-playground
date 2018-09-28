@@ -15,11 +15,11 @@ class DifferentWaysToAddParenthesesSpec extends Specification {
 
 		where:
 
-			input  || output
-//			"2-1-1"   || [0, 2]
-//			"2*3-4*5" || [-34, -14, -10, -10, 10]
-//			"11"      || [11]
-			"10+5" || [15]
+			input     || output
+			"2-1-1"   || [0, 2]
+			"2*3-4*5" || [-34, -14, -10, -10, 10]
+			"11"      || [11]
+			"10+5"    || [15]
 
 	}
 
