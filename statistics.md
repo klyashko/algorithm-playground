@@ -293,5 +293,6 @@
  * medium:
    * [Find Eventual Safe States](https://leetcode.com/problems/find-eventual-safe-states/description/)
    * [Redundant Connection](https://leetcode.com/problems/redundant-connection/description/)
+   * [Is Graph Bipartite](https://leetcode.com/problems/is-graph-bipartite/description/)
 
-##### Total: 150
+##### Total: 151
