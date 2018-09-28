@@ -10,27 +10,27 @@ public class RedundantConnection {
 
 	class Solution {
 		public int[] findRedundantConnection(int[][] edges) {
-			Map<Integer, Integer> map = new HashMap<>();
+			int[] parents = new int[edges.length + 1];
 			for (int[] edge : edges) {
-				int p1 = find(map, edge[0]);
-				int p2 = find(map, edge[1]);
+				int p1 = find(parents, edge[0]);
+				int p2 = find(parents, edge[1]);
 				if (p1 == p2) {
 					return edge;
 				}
-				map.put(p2, p1);
+				parents[p2] = p1;
 			}
 			return null;
 		}
 
-		private int find(Map<Integer, Integer> map, int key) {
-			if (!map.containsKey(key)) {
-				map.put(key, key);
+		private int find(int[] parents, int key) {
+			if (parents[key] == 0) {
+				parents[key] = key;
 				return key;
-			} else if (map.get(key) == key) {
+			} else if (parents[key] == key) {
 				return key;
 			}
-			int parent = find(map, map.get(key));
-			map.put(key, parent);
+			int parent = find(parents, parents[key]);
+			parents[key] = parent;
 			return parent;
 		}
 	}
