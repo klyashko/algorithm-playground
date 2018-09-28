@@ -1,6 +1,6 @@
 package com.leetcode.problems.graph.medium
 
-import com.leetcode.problems.graph.medium.RedundantConnection.Solution as S
+import com.leetcode.problems.graph.medium.RedundantConnection.Solution_ as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

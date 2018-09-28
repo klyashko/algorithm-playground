@@ -76,4 +76,31 @@ public class RedundantConnection {
 		}
 	}
 
+	class Solution_ {
+		public int[] findRedundantConnection(int[][] edges) {
+			Map<Integer, Integer> map = new HashMap<>();
+			for (int[] edge : edges) {
+				int p1 = find(map, edge[0]);
+				int p2 = find(map, edge[1]);
+				if (p1 == p2) {
+					return edge;
+				}
+				map.put(p2, p1);
+			}
+			return null;
+		}
+
+		private int find(Map<Integer, Integer> map, int key) {
+			if (!map.containsKey(key)) {
+				map.put(key, key);
+				return key;
+			} else if (map.get(key) == key) {
+				return key;
+			}
+			int parent = find(map, map.get(key));
+			map.put(key, parent);
+			return parent;
+		}
+	}
+
 }
