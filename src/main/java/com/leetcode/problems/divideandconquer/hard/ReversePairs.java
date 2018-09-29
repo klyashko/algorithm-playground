@@ -24,22 +24,17 @@ public class ReversePairs {
 			return count;
 		}
 
-		private void insert(Node node, int key) {
-			if (node.val > key) {
-				if (node.left == null) {
-					node.left = new Node(key);
-					return;
-				}
-				insert(node.left, key);
+		private Node insert(Node node, int key) {
+			if (node == null) {
+				return new Node(key);
+			} else if (node.val > key) {
+				node.left = insert(node.left, key);
 			} else if (node.val < key) {
-				if (node.right == null) {
-					node.right = new Node(key);
-					return;
-				}
-				insert(node.right, key);
+				node.right = insert(node.right, key);
 			} else {
 				node.count++;
 			}
+			return node;
 		}
 
 		private int searchGe(Node node, long key) {
