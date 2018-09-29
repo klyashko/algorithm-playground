@@ -15,9 +15,9 @@ public class ReversePairs {
 			Node root = new Node(nums[0]);
 			for (int i = 1; i < nums.length; i++) {
 				int num = nums[i];
-				long key = (long) num * 2;
+				long key = (long) num * 2L;
 				if (key < Integer.MAX_VALUE) {
-					count += searchGe(root, key);
+					count += searchGe(root, key + 1);
 				}
 				insert(root, num);
 			}
@@ -31,6 +31,7 @@ public class ReversePairs {
 				node.left = insert(node.left, key);
 			} else if (node.val < key) {
 				node.right = insert(node.right, key);
+				node.count++;
 			} else {
 				node.count++;
 			}
@@ -40,11 +41,12 @@ public class ReversePairs {
 		private int searchGe(Node node, long key) {
 			if (node == null) {
 				return 0;
-			}
-			if (node.val <= key) {
-				return searchGe(node.right, key);
+			} else if (node.val == key) {
+				return node.count;
+			} else if (key < node.val) {
+				return node.count + searchGe(node.left, key);
 			} else {
-				return node.count + searchGe(node.left, key) + searchGe(node.right, key);
+				return searchGe(node.right, key);
 			}
 		}
 
@@ -55,6 +57,14 @@ public class ReversePairs {
 			public Node(int val) {
 				this.val = val;
 				this.count = 1;
+			}
+
+			@Override
+			public String toString() {
+				return "Node{" +
+						"val=" + val +
+						", count=" + count +
+						'}';
 			}
 		}
 	}
