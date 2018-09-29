@@ -1,7 +1,5 @@
 package com.leetcode.problems.divideandconquer.hard;
 
-import java.util.*;
-
 /**
  * https://leetcode.com/problems/reverse-pairs/description/
  */
@@ -10,34 +8,18 @@ public class ReversePairs {
 
 	class Solution {
 		public int reversePairs(int[] nums) {
-			Map<Integer, List<Integer>> map = new HashMap<>();
-			LinkedList<Integer> stack = new LinkedList<>();
-			for (int i = nums.length - 1; i >= 0; i--) {
-				int num = nums[i];
-				if (!map.containsKey(num)) {
-					map.put(num, new ArrayList<>());
-				}
-				map.get(num).add(0, i);
-				if (stack.isEmpty()) {
-					stack.push(num);
-				} else {
-					stack.push(Math.min(num, stack.peek()));
-				}
+			if (nums.length == 0) {
+				return 0;
 			}
 			int count = 0;
-			for (int i = 0; i < nums.length - 1; i++) {
-				stack.pop();
-				Integer min = stack.peek();
+			Node root = new Node(nums[0]);
+			for (int i = 1; i < nums.length; i++) {
 				int num = nums[i];
-				int limit = num % 2 == 1 ? num / 2 : num / 2 - 1;
-				for (int j = min; j <= limit; j++) {
-					List<Integer> list = map.getOrDefault(j, Collections.emptyList());
-					int idx = Collections.binarySearch(list, i + 1);
-					if (idx < 0) {
-						idx = -idx - 1;
-					}
-					count += list.size() - idx;
+				long key = (long) num * 2;
+				if (key < Integer.MAX_VALUE) {
+					count += searchGe(root, key);
 				}
+				insert(root, num);
 			}
 			return count;
 		}
@@ -60,12 +42,15 @@ public class ReversePairs {
 			}
 		}
 
-		private int searchGe(Node node, int key) {
+		private int searchGe(Node node, long key) {
 			if (node == null) {
 				return 0;
 			}
-			int count = node.val > key ? node.count : 0;
-			return count + searchGe(node.left, key) + searchGe(node.right, key);
+			if (node.val <= key) {
+				return searchGe(node.right, key);
+			} else {
+				return node.count + searchGe(node.left, key) + searchGe(node.right, key);
+			}
 		}
 
 		private class Node {
