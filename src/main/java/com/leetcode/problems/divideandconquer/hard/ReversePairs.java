@@ -1,12 +1,36 @@
 package com.leetcode.problems.divideandconquer.hard;
 
+import java.util.Arrays;
+
 /**
  * https://leetcode.com/problems/reverse-pairs/description/
  */
-@SuppressWarnings("ConstantConditions")
 public class ReversePairs {
 
 	class Solution {
+		public int reversePairs(int[] nums) {
+			return reversePairs(nums, 0, nums.length - 1);
+		}
+
+		private int reversePairs(int[] nums, int s, int e) {
+			if (s < e) {
+				int mid = (s + e) / 2;
+				int count = reversePairs(nums, s, mid) + reversePairs(nums, mid + 1, e);
+				int j = mid + 1;
+				for (int i = s; i <= mid; i++) {
+					while (j <= e && nums[i] > nums[j] * 2L) {
+						j++;
+					}
+					count += j - mid - 1;
+				}
+				Arrays.sort(nums, s, e + 1);
+				return count;
+			}
+			return 0;
+		}
+	}
+
+	class Solution_ {
 		public int reversePairs(int[] nums) {
 			if (nums.length == 0) {
 				return 0;
