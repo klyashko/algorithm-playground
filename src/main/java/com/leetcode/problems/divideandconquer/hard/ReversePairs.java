@@ -15,9 +15,9 @@ public class ReversePairs {
 			Node root = new Node(nums[0]);
 			for (int i = 1; i < nums.length; i++) {
 				int num = nums[i];
-				long key = (long) num * 2L;
+				long key = num * 2L + 1;
 				if (key < Integer.MAX_VALUE) {
-					count += searchGe(root, key + 1);
+					count += searchGe(root, key);
 				}
 				insert(root, num);
 			}
