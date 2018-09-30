@@ -8,26 +8,34 @@ import java.util.List;
  */
 public class ExpressionAddOperators {
 
-	public static void main(String[] args) {
-		System.out.println(String.valueOf(Integer.MAX_VALUE).length());
-	}
-
 	class Solution {
 		public List<String> addOperators(String num, int target) {
 			List<String> result = new ArrayList<>();
-			backtracking(result, num, new StringBuilder(), 0, '*', 0, 0, target);
+			if (num == null || num.isEmpty()) {
+				return result;
+			}
+			int offset = Long.valueOf(num.substring(0, Math.min(10, num.length()))) <= Integer.MAX_VALUE ? 10 : 9;
+			int until = num.charAt(0) == '0' ? 1 : Math.min(offset, num.length());
+			StringBuilder builder = new StringBuilder();
+			for (int i = 0; i < until; i++) {
+				Integer n = Integer.valueOf(num.substring(0, i + 1));
+				builder.append(n);
+				backtracking(result, num, builder, i + 1, '+', n, n, target);
+				builder.setLength(0);
+			}
 			return result;
 		}
 
 		private void backtracking(List<String> result, String nums, StringBuilder expression, int idx, char op, int num, int val, int target) {
 			if (idx == nums.length()) {
 				if (val == target) {
-					result.add(expression.substring(1));
+					result.add(expression.toString());
 				}
 				return;
 			}
 			int len = expression.length();
-			int until = nums.charAt(idx) == '0' ? idx + 1 : Math.min(nums.length(), idx + 9);
+			int offset = Long.valueOf(nums.substring(idx, Math.min(idx + 10, nums.length()))) <= Integer.MAX_VALUE ? 10 : 9;
+			int until = nums.charAt(idx) == '0' ? idx + 1 : Math.min(nums.length(), idx + offset);
 			for (int i = idx; i < until; i++) {
 				Integer n = Integer.valueOf(nums.substring(idx, i + 1));
 				/** + */
