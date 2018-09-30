@@ -307,5 +307,10 @@
  * hard:
    * [Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/description/)
    * [Expression Add Operators](https://leetcode.com/problems/expression-add-operators/description/)
+   
+#### Union Find
 
-##### Total: 156
+ * medium:
+   * [Friend Circles](https://leetcode.com/problems/friend-circles/description/)
+
+##### Total: 157
