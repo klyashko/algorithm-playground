@@ -12,48 +12,6 @@ public class CountOfSmallerNumbersAfterSelf {
 
 	class Solution {
 		public List<Integer> countSmaller(int[] nums) {
-			if (nums.length == 0) {
-				return Collections.emptyList();
-			}
-			int[] indexes = new int[nums.length];
-			for (int i = 0; i < indexes.length; i++) {
-				indexes[i] = i;
-			}
-			Integer[] array = new Integer[nums.length];
-			Arrays.fill(array, 0);
-			mergeSort(nums, 0, nums.length - 1, array, indexes);
-			return Arrays.asList(array);
-		}
-
-		private void mergeSort(int[] nums, int s, int e, Integer[] result, int[] indexes) {
-			if (s >= e) {
-//				result[s] = 0;
-				return;
-			}
-			int mid = s + (e - s) / 2;
-			mergeSort(nums, s, mid, result, indexes);
-			mergeSort(nums, mid + 1, e, result, indexes);
-
-			int[] sorted = new int[e - s + 1];
-			int j = mid + 1, p = mid + 1, r = 0;
-			for (int i = s; i <= mid; i++) {
-				while (j <= e && nums[indexes[j]] < nums[indexes[i]]) {
-					j++;
-				}
-				result[indexes[i]] += j - (mid + 1);
-				while (p <= e && nums[indexes[p]] <= nums[indexes[i]]) {
-					sorted[r++] = indexes[p++];
-				}
-				sorted[r++] = indexes[i];
-			}
-
-			System.arraycopy(sorted, 0, indexes, s, r);
-			System.out.println(Arrays.toString(indexes));
-		}
-	}
-
-	class Solution_ {
-		public List<Integer> countSmaller(int[] nums) {
 			List<Integer> result = new ArrayList<>();
 			Node root = null;
 			for (int i = nums.length - 1; i >= 0; i--) {
@@ -105,6 +63,46 @@ public class CountOfSmallerNumbersAfterSelf {
 						", count=" + count +
 						'}';
 			}
+		}
+	}
+
+	class MergeSortSolution {
+		public List<Integer> countSmaller(int[] nums) {
+			if (nums.length == 0) {
+				return Collections.emptyList();
+			}
+			int[] indexes = new int[nums.length];
+			for (int i = 0; i < indexes.length; i++) {
+				indexes[i] = i;
+			}
+			Integer[] array = new Integer[nums.length];
+			mergeSort(nums, 0, nums.length - 1, array, indexes);
+			return Arrays.asList(array);
+		}
+
+		private void mergeSort(int[] nums, int s, int e, Integer[] result, int[] indexes) {
+			if (s >= e) {
+				result[s] = 0;
+				return;
+			}
+			int mid = s + (e - s) / 2;
+			mergeSort(nums, s, mid, result, indexes);
+			mergeSort(nums, mid + 1, e, result, indexes);
+
+			int[] sorted = new int[e - s + 1];
+			int j = mid + 1, p = mid + 1, r = 0;
+			for (int i = s; i <= mid; i++) {
+				while (j <= e && nums[indexes[j]] < nums[indexes[i]]) {
+					j++;
+				}
+				result[indexes[i]] += j - (mid + 1);
+				while (p <= e && nums[indexes[p]] <= nums[indexes[i]]) {
+					sorted[r++] = indexes[p++];
+				}
+				sorted[r++] = indexes[i];
+			}
+
+			System.arraycopy(sorted, 0, indexes, s, r);
 		}
 	}
 
