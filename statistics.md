@@ -323,5 +323,6 @@
  * medium:
    * [Implement Magic Dictionary](https://leetcode.com/problems/implement-magic-dictionary/description/)
    * [Map Sum Pairs](https://leetcode.com/problems/map-sum-pairs/description/)
+   * [Replace Words](https://leetcode.com/problems/replace-words/description/)
 
-##### Total: 162
+##### Total: 163
