@@ -314,5 +314,8 @@
    * [Number of Islands](https://leetcode.com/problems/number-of-islands/description/)
    * [Friend Circles](https://leetcode.com/problems/friend-circles/description/)
    * [Accounts Merge](https://leetcode.com/problems/accounts-merge/description/)
+   
+ * hard:
+   * [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/description/)
 
-##### Total: 159
+##### Total: 160
