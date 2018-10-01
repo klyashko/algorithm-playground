@@ -317,5 +317,10 @@
    
  * hard:
    * [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/description/)
+   
+#### Trie
 
-##### Total: 160
+ * medium:
+   * [Map Sum Pairs](https://leetcode.com/problems/map-sum-pairs/description/)
+
+##### Total: 161
