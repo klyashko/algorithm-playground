@@ -311,6 +311,7 @@
 #### Union Find
 
  * medium:
+   * [Number of Islands](https://leetcode.com/problems/number-of-islands/description/)
    * [Friend Circles](https://leetcode.com/problems/friend-circles/description/)
 
-##### Total: 157
+##### Total: 158
