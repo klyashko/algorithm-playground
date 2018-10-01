@@ -67,4 +67,46 @@ public class NumberOfIslands {
 
 	}
 
+	class DFSSolution {
+
+		private final int[] dr = new int[]{1, -1, 0, 0};
+		private final int[] dc = new int[]{0, 0, 1, -1};
+
+		public int numIslands(char[][] grid) {
+			if (grid.length == 0) {
+				return 0;
+			}
+			int rows = grid.length;
+			int cols = grid[0].length;
+			int count = 0;
+			boolean[][] visited = new boolean[rows][cols];
+
+			for (int r = 0; r < rows; r++) {
+				for (int c = 0; c < cols; c++) {
+					if (grid[r][c] == '1' && !visited[r][c]) {
+						dfs(grid, visited, r, c);
+						count++;
+					}
+				}
+			}
+
+			return count;
+		}
+
+		private void dfs(char[][] grid, boolean[][] visited, int r, int c) {
+			if (visited[r][c]) {
+				return;
+			}
+			visited[r][c] = true;
+			int rows = grid.length;
+			int cols = grid[0].length;
+			for (int i = 0; i < 4; i++) {
+				int tr = r + dr[i], tc = c + dc[i];
+				if (tr >= 0 && tr < rows && tc >= 0 && tc < cols && grid[tr][tc] == '1') {
+					dfs(grid, visited, tr, tc);
+				}
+			}
+		}
+	}
+
 }
