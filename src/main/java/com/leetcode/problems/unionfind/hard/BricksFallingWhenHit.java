@@ -48,7 +48,7 @@ public class BricksFallingWhenHit {
 				while (!queue.isEmpty()) {
 					int[] curr = queue.poll();
 					boolean[][] visited = new boolean[rows][cols];
-					if ((curr == hit || (key(curr[0], curr[1], cols) >= cols && grid[curr[0]][curr[1]] == 1)) && find(grid, visited, curr[0], curr[1], cols, -1) >= cols) {
+					if ((curr == hit || grid[curr[0]][curr[1]] == 1) && find(grid, visited, curr[0], curr[1], cols, -1) >= cols) {
 						count++;
 						grid[curr[0]][curr[1]] = 0;
 						for (int j = 0; j < 4; j++) {
