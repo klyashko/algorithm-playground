@@ -321,6 +321,7 @@
 #### Trie
 
  * medium:
+   * [Implement Magic Dictionary](https://leetcode.com/problems/implement-magic-dictionary/description/)
    * [Map Sum Pairs](https://leetcode.com/problems/map-sum-pairs/description/)
 
-##### Total: 161
+##### Total: 162
