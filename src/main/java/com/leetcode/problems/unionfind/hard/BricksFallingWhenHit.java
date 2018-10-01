@@ -10,8 +10,8 @@ public class BricksFallingWhenHit {
 
 	class Solution {
 
-		private final int[] dr = new int[]{-1, 1, 0, 0};
-		private final int[] dc = new int[]{0, 0, 1, -1};
+		private final int[] dr = new int[]{-1, 0, 0, 1};
+		private final int[] dc = new int[]{0, -1, 1, 0};
 
 		private Map<Integer, List<Integer>> map = new HashMap<>();
 
@@ -80,6 +80,9 @@ public class BricksFallingWhenHit {
 					continue;
 				}
 				min = Math.min(min, find(grid, visited, point[0], point[1], cols, key));
+				if (min < cols) {
+					return min;
+				}
 			}
 			return min;
 		}
