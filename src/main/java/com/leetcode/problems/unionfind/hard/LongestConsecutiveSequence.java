@@ -1,8 +1,6 @@
 package com.leetcode.problems.unionfind.hard;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 /**
  * https://leetcode.com/problems/longest-consecutive-sequence/description/
@@ -10,6 +8,29 @@ import java.util.Map;
 public class LongestConsecutiveSequence {
 
 	class Solution {
+		public int longestConsecutive(int[] nums) {
+			Set<Integer> set = new HashSet<>();
+			for (int i : nums) {
+				set.add(i);
+			}
+			int max = 0;
+
+			for (Integer n : set) {
+				if (!set.contains(n - 1)) {
+					Integer curr = n;
+					int len = 1;
+					while (set.contains(curr + 1)) {
+						curr++;
+						len++;
+					}
+					max = Math.max(max, len);
+				}
+			}
+			return max;
+		}
+	}
+
+	class DSUSolution {
 		public int longestConsecutive(int[] nums) {
 			DSU dsu = new DSU();
 			for (int i : nums) {
