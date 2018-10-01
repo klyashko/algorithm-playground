@@ -29,10 +29,12 @@ public class BricksFallingWhenHit {
 				Queue<int[]> queue = new ArrayDeque<>();
 				queue.offer(hit);
 
+				boolean[][] cache = new boolean[rows][cols];
+
 				while (!queue.isEmpty()) {
 					int[] curr = queue.poll();
 					boolean[][] visited = new boolean[rows][cols];
-					if ((curr == hit || grid[curr[0]][curr[1]] == 1) && !find(grid, visited, curr[0], curr[1])) {
+					if ((curr == hit || grid[curr[0]][curr[1]] == 1) && !find(grid, visited, curr[0], curr[1], cache)) {
 						count++;
 						grid[curr[0]][curr[1]] = 0;
 						for (int j = 0; j < 4; j++) {
@@ -48,10 +50,10 @@ public class BricksFallingWhenHit {
 			return ans;
 		}
 
-		private boolean find(int[][] grid, boolean[][] visited, int r, int c) {
+		private boolean find(int[][] grid, boolean[][] visited, int r, int c, boolean[][] cache) {
 			if (visited[r][c] || grid[r][c] == 0) {
 				return false;
-			} else if (r == 0) {
+			} else if (r == 0 || cache[r][c]) {
 				return true;
 			}
 			visited[r][c] = true;
@@ -60,7 +62,8 @@ public class BricksFallingWhenHit {
 			for (int j = 0; j < 4; j++) {
 				int tr = r + dr[j], tc = c + dc[j];
 				if (tr >= 0 && tr < rows && tc >= 0 && tc < cols && grid[tr][tc] == 1) {
-					if (find(grid, visited, tr, tc)) {
+					if (find(grid, visited, tr, tc, cache)) {
+						cache[r][c] = true;
 						return true;
 					}
 				}
