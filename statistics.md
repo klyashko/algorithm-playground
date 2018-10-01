@@ -313,5 +313,6 @@
  * medium:
    * [Number of Islands](https://leetcode.com/problems/number-of-islands/description/)
    * [Friend Circles](https://leetcode.com/problems/friend-circles/description/)
+   * [Accounts Merge](https://leetcode.com/problems/accounts-merge/description/)
 
-##### Total: 158
+##### Total: 159
