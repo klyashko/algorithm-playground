@@ -6,13 +6,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * https://leetcode.com/problems/minimum-distance-between-bst-nodes/description/
+ * https://leetcode.com/problems/minimum-absolute-difference-in-bst/description/
  */
 @SuppressWarnings("Duplicates")
-public class MinimumDistanceBetweenBSTNodes {
+public class MinimumAbsoluteDifferenceInBST {
 
 	class Solution {
-		public int minDiffInBST(TreeNode root) {
+		public int getMinimumDifference(TreeNode root) {
 			List<Integer> list = new ArrayList<>();
 			traverse(root, list);
 			int min = Integer.MAX_VALUE;
