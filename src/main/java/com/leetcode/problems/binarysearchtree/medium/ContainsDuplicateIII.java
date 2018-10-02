@@ -1,5 +1,6 @@
 package com.leetcode.problems.binarysearchtree.medium;
 
+import java.util.Map;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
@@ -9,6 +10,32 @@ import java.util.TreeSet;
 public class ContainsDuplicateIII {
 
 	class Solution {
+		public boolean containsNearbyAlmostDuplicate(int[] nums, int k, int t) {
+			if (k == 0) {
+				return t == 0 && nums.length > 1;
+			}
+			TreeMap<Long, Integer> map = new TreeMap<>();
+			for (int i = 0; i < nums.length; i++) {
+				long n = nums[i];
+				long min = n - t, max = n + t;
+				Map.Entry<Long, Integer> entry = map.higherEntry(min - 1);
+				if (entry != null && entry.getKey() <= max) {
+					return true;
+				}
+				if (i >= k) {
+					int idx = i - k;
+					long toDelete = nums[idx];
+					if (map.get(toDelete) == idx) {
+						map.remove(toDelete);
+					}
+				}
+				map.put(n, i);
+			}
+			return false;
+		}
+	}
+
+	class SecondSolution {
 		public boolean containsNearbyAlmostDuplicate(int[] nums, int k, int t) {
 			TreeMap<Long, TreeSet<Integer>> map = new TreeMap<>();
 			for (int i = 0; i < nums.length; i++) {
