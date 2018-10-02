@@ -327,5 +327,10 @@
    
  * hard:
    * [Prefix and Suffix Search](https://leetcode.com/problems/prefix-and-suffix-search/description/)
+   
+#### Binary Search Tree
 
-##### Total: 164
+ * easy:
+   * [Minimum Distance Between BST Nodes](https://leetcode.com/problems/minimum-distance-between-bst-nodes/description/)
+
+##### Total: 165
