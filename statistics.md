@@ -332,5 +332,6 @@
 
  * easy:
    * [Minimum Distance Between BST Nodes](https://leetcode.com/problems/minimum-distance-between-bst-nodes/description/)
+   * [Minimum Absolute Difference in BST](https://leetcode.com/problems/minimum-absolute-difference-in-bst/description/)
 
-##### Total: 165
+##### Total: 166

@@ -8,7 +8,6 @@ import java.util.List;
 /**
  * https://leetcode.com/problems/minimum-distance-between-bst-nodes/description/
  */
-@SuppressWarnings("Duplicates")
 public class MinimumDistanceBetweenBSTNodes {
 
 	class Solution {
