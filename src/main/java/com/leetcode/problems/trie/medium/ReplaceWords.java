@@ -5,6 +5,7 @@ import java.util.List;
 /**
  * https://leetcode.com/problems/replace-words/description/
  */
+@SuppressWarnings({"ForLoopReplaceableByWhile", "Duplicates"})
 public class ReplaceWords {
 
 	class Solution {
