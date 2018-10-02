@@ -324,5 +324,8 @@
    * [Implement Magic Dictionary](https://leetcode.com/problems/implement-magic-dictionary/description/)
    * [Map Sum Pairs](https://leetcode.com/problems/map-sum-pairs/description/)
    * [Replace Words](https://leetcode.com/problems/replace-words/description/)
+   
+ * hard:
+   * [Prefix and Suffix Search](https://leetcode.com/problems/prefix-and-suffix-search/description/)
 
-##### Total: 163
+##### Total: 164

@@ -56,8 +56,7 @@ public class PrefixAndSuffixSearch {
 		private void searchAll(TrieNode node, List<TrieNode> list) {
 			if (node == null) {
 				return;
-			}
-			if (node.word != null) {
+			} else if (node.word != null) {
 				list.add(node);
 			}
 			for (TrieNode child : node.children) {
