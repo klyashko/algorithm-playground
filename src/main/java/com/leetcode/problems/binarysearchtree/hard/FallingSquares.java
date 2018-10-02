@@ -10,13 +10,55 @@ public class FallingSquares {
 	class Solution {
 
 		public List<Integer> fallingSquares(int[][] positions) {
+			TreeSet<Integer> coordinates = new TreeSet<>();
+			for (int[] pos : positions) {
+				coordinates.add(pos[0]);
+				coordinates.add(pos[0] + pos[1] - 1);
+			}
+			Map<Integer, Integer> indexes = new HashMap<>();
+			int idx = 0;
+			for (Integer i : coordinates) {
+				indexes.put(i, idx++);
+			}
+
+			int[] heights = new int[idx];
+			List<Integer> ans = new ArrayList<>();
+			for (int[] pos : positions) {
+				int li = pos[0];
+				int ri = li + pos[1] - 1;
+				int hi = pos[1];
+
+				int max = 0;
+				for (int i = indexes.get(li); i <= indexes.get(ri); i++) {
+					max = Math.max(max, heights[i]);
+				}
+
+				max += hi;
+
+				for (int i = indexes.get(li); i <= indexes.get(ri); i++) {
+					heights[i] = max;
+				}
+
+				max = 0;
+				for (int h : heights) {
+					max = Math.max(max, h);
+				}
+				ans.add(max);
+			}
+			return ans;
+		}
+	}
+
+	class Solution_ {
+
+		public List<Integer> fallingSquares(int[][] positions) {
 			Set<Integer> coords = new HashSet<>();
 			for (int[] pos : positions) {
 				coords.add(pos[0]);
 				coords.add(pos[0] + pos[1] - 1);
 			}
 			List<Integer> sortedCoords = new ArrayList<>(coords);
-			Collections.sort(sortedCoords);
+			sortedCoords.sort(Integer::compareTo);
 
 			Map<Integer, Integer> index = new HashMap<>();
 			int t = 0;
@@ -44,8 +86,10 @@ public class FallingSquares {
 
 			SegmentTree(int N) {
 				this.N = N;
-				H = 1;
-				while ((1 << H) < N) H++;
+				this.H = 1;
+				while ((1 << H) < N) {
+					H++;
+				}
 				tree = new int[2 * N];
 				lazy = new int[N];
 			}
@@ -79,7 +123,7 @@ public class FallingSquares {
 			private void update(int L, int R, int h) {
 				L += N;
 				R += N;
-				int L0 = L, R0 = R, ans = 0;
+				int L0 = L, R0 = R;
 				while (L <= R) {
 					if ((L & 1) == 1) {
 						apply(L++, h);

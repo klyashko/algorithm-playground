@@ -336,5 +336,8 @@
    
  * medium:
    * [Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii/description/)
+   
+ * hard:
+   * [Falling Squares](https://leetcode.com/problems/falling-squares/description/)
 
-##### Total: 167
+##### Total: 168
