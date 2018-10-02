@@ -1,9 +1,8 @@
 package com.leetcode.problems.binarysearchtree.hard;
 
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
-import java.util.TreeMap;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.TreeSet;
 
 /**
  * https://leetcode.com/problems/range-module/description/
@@ -19,55 +18,65 @@ public class RangeModule715 {
 	 */
 	class RangeModule {
 
-		private TreeMap<Integer, Integer> intervals = new TreeMap<>();
+		private TreeSet<Interval> ranges;
 
-		public RangeModule() { }
+		public RangeModule() {
+			ranges = new TreeSet<>();
+		}
 
 		public void addRange(int left, int right) {
-			Set<Integer> toDelete = new HashSet<>();
-			for (Map.Entry<Integer, Integer> entry : intervals.headMap(right + 1).entrySet()) {
-				Integer li = entry.getKey();
-				Integer ri = entry.getValue();
-				if (isOverlap(li, ri + 1, left, right)) {
-					toDelete.add(li);
-					left = Math.min(left, li);
-					right = Math.max(right, ri);
+			Iterator<Interval> itr = ranges.tailSet(new Interval(0, left - 1)).iterator();
+			while (itr.hasNext()) {
+				Interval iv = itr.next();
+				if (right < iv.left) {
+					break;
 				}
+				left = Math.min(left, iv.left);
+				right = Math.max(right, iv.right);
+				itr.remove();
 			}
-			intervals.keySet().removeAll(toDelete);
-			intervals.put(left, right);
+			ranges.add(new Interval(left, right));
 		}
 
 		public boolean queryRange(int left, int right) {
-			Map.Entry<Integer, Integer> entry = intervals.lowerEntry(left + 1);
-			return entry != null && entry.getValue() >= right - 1;
+			Interval iv = ranges.higher(new Interval(0, left));
+			return (iv != null && iv.left <= left && right <= iv.right);
 		}
 
 		public void removeRange(int left, int right) {
-			remove(intervals.lowerEntry(right), left, right);
-			remove(intervals.lowerEntry(left), left, right);
+			Iterator<Interval> itr = ranges.tailSet(new Interval(0, left)).iterator();
+			ArrayList<Interval> todo = new ArrayList<>();
+			while (itr.hasNext()) {
+				Interval iv = itr.next();
+				if (right < iv.left) {
+					break;
+				}
+				if (iv.left < left) {
+					todo.add(new Interval(iv.left, left));
+				}
+				if (right < iv.right) {
+					todo.add(new Interval(right, iv.right));
+				}
+				itr.remove();
+			}
+			ranges.addAll(todo);
+		}
+	}
+
+	class Interval implements Comparable<Interval> {
+		int left;
+		int right;
+
+		public Interval(int left, int right) {
+			this.left = left;
+			this.right = right;
 		}
 
-		private void remove(Map.Entry<Integer, Integer> entry, int left, int right) {
-			if (entry != null && isOverlap(left, right, entry.getKey(), entry.getValue())) {
-				intervals.remove(entry.getKey());
-				if (entry.getKey() < left) {
-					intervals.put(entry.getKey(), left - 1);
-				}
-				if (entry.getValue() > right) {
-					intervals.put(right, entry.getValue());
-				}
+		public int compareTo(Interval that) {
+			if (this.right == that.right) {
+				return this.left - that.left;
 			}
-		}
-
-		private boolean isOverlap(int li1, int ri1, int li2, int ri2) {
-			if (li1 <= li2 && ri2 <= ri1) {
-				return true;
-			} else if (li1 >= li2 && ri2 >= li1) {
-				return true;
-			} else {
-				return li2 <= ri1 && ri2 >= ri1;
-			}
+			return this.right - that.right;
 		}
 	}
 
