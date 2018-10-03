@@ -346,5 +346,8 @@
 
  * easy:
    * [Longest Univalue Path](https://leetcode.com/problems/longest-univalue-path/description/)
+   
+ * medium:
+   * [Partition to K Equal Sum Subsets](https://leetcode.com/problems/partition-to-k-equal-sum-subsets/description/)
 
-##### Total: 171
+##### Total: 172
