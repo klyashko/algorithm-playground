@@ -14,13 +14,11 @@ public class KthSymbolInGrammar {
 			if (N == 1) {
 				return ch;
 			}
-			String s = ch == '0' ? "01" : "10";
-			int n = (1 << N - 1);
-			int i = n / 2;
-			if (K - i > 0) {
-				return recursion(s.charAt(1), N - 1, K - i);
+			int n = (1 << N - 1) / 2;
+			if (K - n > 0) {
+				return recursion(ch == '0' ? '1' : '0', N - 1, K - n);
 			} else {
-				return recursion(s.charAt(0), N - 1, K);
+				return recursion(ch == '0' ? '0' : '1', N - 1, K);
 			}
 		}
 	}
