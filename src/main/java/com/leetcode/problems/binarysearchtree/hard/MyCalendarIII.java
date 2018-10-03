@@ -24,8 +24,8 @@ public class MyCalendarIII {
 			deltas.put(start, deltas.getOrDefault(start, 0) + 1);
 			deltas.put(end, deltas.getOrDefault(end, 0) - 1);
 			int max = 0, curr = 0;
-			for (Integer time : deltas.keySet()) {
-				curr += deltas.get(time);
+			for (Integer delta : deltas.values()) {
+				curr += delta;
 				max = Math.max(max, curr);
 			}
 			return max;
