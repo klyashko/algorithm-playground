@@ -49,7 +49,7 @@ public class FallingSquares {
 		}
 	}
 
-	class Solution_ {
+	class SegmentTreeSolution {
 
 		public List<Integer> fallingSquares(int[][] positions) {
 			Set<Integer> coords = new HashSet<>();
