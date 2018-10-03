@@ -349,5 +349,6 @@
    
  * medium:
    * [Partition to K Equal Sum Subsets](https://leetcode.com/problems/partition-to-k-equal-sum-subsets/description/)
+   * [K-th Symbol in Grammar](https://leetcode.com/problems/k-th-symbol-in-grammar/description/)
 
-##### Total: 172
+##### Total: 173
