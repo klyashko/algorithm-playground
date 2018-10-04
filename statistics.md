@@ -355,5 +355,8 @@
    
  * medium:
    * [Range Sum Query Mutable](https://leetcode.com/problems/range-sum-query-mutable/description/)
+   
+ * hard:
+   * [Rectangle Area II](https://leetcode.com/problems/rectangle-area-ii/description/)
 
-##### Total: 174
+##### Total: 175

@@ -55,12 +55,11 @@ public class RectangleAreaII {
 						long w = x[j + 1] - x[j];
 						long h = y[i + 1] - y[i];
 						area += w * h;
-						area %= mod;
 					}
 				}
 			}
 
-			return (int) area;
+			return (int) (area % mod);
 		}
 	}
 
