@@ -351,4 +351,9 @@
    * [Partition to K Equal Sum Subsets](https://leetcode.com/problems/partition-to-k-equal-sum-subsets/description/)
    * [K-th Symbol in Grammar](https://leetcode.com/problems/k-th-symbol-in-grammar/description/)
 
-##### Total: 173
+#### Segment Tree
+   
+ * medium:
+   * [Range Sum Query Mutable](https://leetcode.com/problems/range-sum-query-mutable/description/)
+
+##### Total: 174
