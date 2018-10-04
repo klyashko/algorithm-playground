@@ -42,8 +42,8 @@ public class DesignCircularQueue {
 			if (isFull()) {
 				return false;
 			}
-			values[tail++] = value;
-			tail = tail % values.length;
+			values[tail] = value;
+			tail = ++tail % values.length;
 			return true;
 		}
 
@@ -54,8 +54,7 @@ public class DesignCircularQueue {
 			if (isEmpty()) {
 				return false;
 			}
-			front++;
-			front = front % values.length;
+			front = ++front % values.length;
 			return true;
 		}
 
@@ -63,10 +62,7 @@ public class DesignCircularQueue {
 		 * Get the front item from the queue.
 		 */
 		public int Front() {
-			if (isEmpty()) {
-				return -1;
-			}
-			return values[front];
+			return isEmpty() ? -1 : values[front];
 		}
 
 		/**
@@ -91,8 +87,7 @@ public class DesignCircularQueue {
 		 * Checks whether the circular queue is full or not.
 		 */
 		public boolean isFull() {
-			int t = (tail + 1) % values.length;
-			return t == front;
+			return (tail + 1) % values.length == front;
 		}
 	}
 

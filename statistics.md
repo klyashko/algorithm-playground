@@ -358,5 +358,10 @@
    
  * hard:
    * [Rectangle Area II](https://leetcode.com/problems/rectangle-area-ii/description/)
+   
+#### Queue
+   
+ * medium:
+   * [Design Circular Queue](https://leetcode.com/problems/design-circular-queue/description/)
 
-##### Total: 175
+##### Total: 176
