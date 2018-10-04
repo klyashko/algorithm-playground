@@ -5,14 +5,18 @@ package com.leetcode.problems.random.medium;
  */
 public class ImplementRand10UsingRand7 {
 
+	/**
+	 * The rand7() API is already defined in the parent class SolBase.
+	 * public int rand7();
+	 * returns a random integer in the range 1 to 7
+	 */
 	class Solution extends SolBase {
 
-		private int[] nums = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-		private int idx = 0;
+		private int curr = 0;
 
 		public int rand10() {
-			idx = (idx + rand7()) % nums.length;
-			return nums[idx];
+			curr = ((curr + rand7()) % 10) + 1;
+			return curr;
 		}
 	}
 

@@ -363,5 +363,10 @@
    
  * medium:
    * [Design Circular Queue](https://leetcode.com/problems/design-circular-queue/description/)
+   
+#### Random
+   
+ * medium:
+   * [Implement Rand10 Using Rand7](https://leetcode.com/problems/implement-rand10-using-rand7/description/)
 
-##### Total: 176
+##### Total: 177
