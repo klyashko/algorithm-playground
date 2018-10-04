@@ -368,5 +368,6 @@
    
  * medium:
    * [Implement Rand10 Using Rand7](https://leetcode.com/problems/implement-rand10-using-rand7/description/)
+   * [Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight/description/)
 
-##### Total: 177
+##### Total: 178
