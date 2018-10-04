@@ -22,9 +22,9 @@ class RandomFlipMatrixSpec extends Specification {
 		where:
 
 			r | c | methods
-//			2 | 3 | ["flip", "flip", "flip", "flip"]
-//			1 | 2 | ["flip", "flip", "reset", "flip"]
-//			2 | 2 | ["flip", "flip", "flip", "flip"]
+			2 | 3 | ["flip", "flip", "flip", "flip"]
+			1 | 2 | ["flip", "flip", "reset", "flip"]
+			2 | 2 | ["flip", "flip", "flip", "flip"]
 			1 | 2 | ["flip", "flip", "reset", "flip"]
 
 	}
