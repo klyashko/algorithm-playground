@@ -375,5 +375,10 @@
  * medium:
    * [Course Schedule II](https://leetcode.com/problems/course-schedule-ii/description/)
    * [Course Schedule](https://leetcode.com/problems/course-schedule/description/)
+   
+#### Reservoir Sampling
+   
+ * medium:
+   * [Linked List Random Node](https://leetcode.com/problems/linked-list-random-node/description/)
 
-##### Total: 180
+##### Total: 181
