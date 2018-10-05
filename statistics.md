@@ -380,5 +380,10 @@
    
  * medium:
    * [Linked List Random Node](https://leetcode.com/problems/linked-list-random-node/description/)
+   
+#### Map
+   
+ * medium:
+   * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/description/)
 
-##### Total: 181
+##### Total: 182
