@@ -21,6 +21,7 @@ class HandOfStraightsSpec extends Specification {
 			[1, 2, 3, 4, 5]             | 4 || false
 			[2, 1]                      | 2 || true
 			[5, 1]                      | 2 || false
+			[1, 1, 2, 2, 3, 3]          | 2 || false
 	}
 
 }

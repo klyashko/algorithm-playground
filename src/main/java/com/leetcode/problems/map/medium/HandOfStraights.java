@@ -5,6 +5,7 @@ import java.util.*;
 /**
  * https://leetcode.com/problems/hand-of-straights/description/
  */
+@SuppressWarnings("ConstantConditions")
 public class HandOfStraights {
 
 	class Solution {
@@ -12,29 +13,39 @@ public class HandOfStraights {
 			if (hand.length % W != 0) {
 				return false;
 			}
-			Arrays.sort(hand);
 
-			int n = hand.length / W;
+			Queue<Integer> queue = new PriorityQueue<>();
+			Map<Integer, Integer> counts = new HashMap<>();
 
-			List<Set<Integer>> list = new ArrayList<>();
-			for (int i : hand) {
-				boolean done = false;
-				for (Set<Integer> set : list) {
-					if (set.size() < W && set.contains(i - 1) && set.add(i)) {
-						done = true;
-						break;
-					}
-				}
-				if (done) {
-					continue;
-				}
-				if (list.size() < n) {
-					Set<Integer> set = new HashSet<>();
-					set.add(i);
-					list.add(set);
+			for (int n : hand) {
+				if (!counts.containsKey(n)) {
+					counts.put(n, 1);
+					queue.offer(n);
 				} else {
-					return false;
+					counts.replace(n, counts.get(n) + 1);
 				}
+			}
+
+			List<Integer> todo = new ArrayList<>();
+			Integer prev = null;
+
+			while (!queue.isEmpty()) {
+				todo.clear();
+				for (int i = 0; i < W; i++) {
+					Integer curr = queue.poll();
+					if ((queue.isEmpty() && curr == null) || (prev != null && curr != prev + 1)) {
+						return false;
+					}
+					if (counts.get(curr) == 1) {
+						counts.remove(curr);
+					} else {
+						counts.replace(curr, counts.get(curr) - 1);
+						todo.add(curr);
+					}
+					prev = curr;
+				}
+				prev = null;
+				queue.addAll(todo);
 			}
 
 			return true;
