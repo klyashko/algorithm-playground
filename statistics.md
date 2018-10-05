@@ -369,5 +369,10 @@
  * medium:
    * [Implement Rand10 Using Rand7](https://leetcode.com/problems/implement-rand10-using-rand7/description/)
    * [Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight/description/)
+   
+#### Topological Sort
+   
+ * medium:
+   * [Course Schedule](https://leetcode.com/problems/course-schedule/description/)
 
-##### Total: 178
+##### Total: 179

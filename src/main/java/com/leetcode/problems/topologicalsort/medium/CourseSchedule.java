@@ -21,7 +21,7 @@ public class CourseSchedule {
 
 			for (int i = 0; i < colors.length; i++) {
 				if (colors[i] == 0) {
-					if (!dfs(colors, edges, i)) {
+					if (dfs(colors, edges, i)) {
 						return false;
 					}
 				}
@@ -32,16 +32,16 @@ public class CourseSchedule {
 
 		private boolean dfs(int[] colors, Map<Integer, List<Integer>> edges, int curr) {
 			if (colors[curr] > 0) {
-				return colors[curr] == 2;
+				return colors[curr] != 2;
 			}
 			colors[curr] = 1;
 			for (Integer next : edges.getOrDefault(curr, Collections.emptyList())) {
-				if (!dfs(colors, edges, next)) {
-					return false;
+				if (dfs(colors, edges, next)) {
+					return true;
 				}
 			}
 			colors[curr] = 2;
-			return true;
+			return false;
 		}
 	}
 
