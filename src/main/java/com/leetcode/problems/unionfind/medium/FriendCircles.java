@@ -36,14 +36,11 @@ public class FriendCircles {
 
 		private int find(int[] parents, int key) {
 			if (parents[key] == -1) {
-				parents[key] = key;
-				return key;
+				return parents[key] = key;
 			} else if (parents[key] == key) {
 				return key;
 			}
-			int p = find(parents, parents[key]);
-			parents[key] = p;
-			return p;
+			return parents[key] = find(parents, parents[key]);
 		}
 	}
 
