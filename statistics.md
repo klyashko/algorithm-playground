@@ -294,6 +294,7 @@
    * [Find Eventual Safe States](https://leetcode.com/problems/find-eventual-safe-states/description/)
    * [Redundant Connection](https://leetcode.com/problems/redundant-connection/description/)
    * [Is Graph Bipartite](https://leetcode.com/problems/is-graph-bipartite/description/)
+   * [Evaluate Division](https://leetcode.com/problems/evaluate-division/description/)
    
 #### Divide and Conquer
 
@@ -386,4 +387,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/description/)
 
-##### Total: 182
+##### Total: 183
