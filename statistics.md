@@ -6,6 +6,7 @@
    * [Transpose Matrix](https://leetcode.com/problems/transpose-matrix/description/)
    
  * medium:
+   * [945. Minimum Increment to Make Array Unique](https://leetcode.com/problems/minimum-increment-to-make-array-unique/)
    * [Find all Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/description/)
    * [Product Of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/description/)
    * [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/description/)
@@ -387,4 +388,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/description/)
 
-##### Total: 183
+##### Total: 184
