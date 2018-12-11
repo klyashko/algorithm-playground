@@ -1,5 +1,6 @@
 package com.leetcode.problems.stack.medium
 
+import com.leetcode.problems.stack.medium.BinaryTreeInorderTraversal.MSolution as MS
 import com.leetcode.problems.stack.medium.BinaryTreeInorderTraversal.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
@@ -14,6 +15,20 @@ class BinaryTreeInorderTraversalSpec extends Specification {
 		expect:
 
 			new S().inorderTraversal(node(values)) == output
+
+		where:
+
+			values                      || output
+			[1, null, 2, null, null, 3] || [1, 3, 2]
+
+	}
+
+	@Unroll
+	def "inorderMTraversal"() {
+
+		expect:
+
+			new MS().inorderTraversal(node(values)) == output
 
 		where:
 

@@ -31,4 +31,39 @@ public class BinaryTreeInorderTraversal {
 		}
 	}
 
+	class MSolution {
+		public List<Integer> inorderTraversal(TreeNode root) {
+			List<Integer> values = new ArrayList<>();
+			TreeNode curr = root;
+
+			while (curr != null) {
+				TreeNode successor = find(curr.left, curr);
+				if (successor == null || successor.right == curr) {
+					values.add(curr.val);
+					if (successor != null) {
+						successor.right = null;
+					}
+					curr = curr.right;
+				} else {
+					successor.right = curr;
+					curr = curr.left;
+				}
+			}
+
+			return values;
+		}
+
+		private TreeNode find(TreeNode curr, TreeNode node) {
+			if (curr == null) {
+				return null;
+			} else {
+				while (curr.right != null && curr.right != node) {
+					curr = curr.right;
+				}
+				return curr;
+			}
+		}
+
+	}
+
 }
