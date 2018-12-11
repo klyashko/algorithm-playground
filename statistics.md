@@ -4,6 +4,7 @@
    * [Array Partition I](https://leetcode.com/problems/array-partition-i/description/)
    * [Flipping an Image](https://leetcode.com/problems/flipping-an-image/description/)
    * [Transpose Matrix](https://leetcode.com/problems/transpose-matrix/description/)
+   * [Missing Number](https://leetcode.com/problems/missing-number/)
    
  * medium:
    * [945. Minimum Increment to Make Array Unique](https://leetcode.com/problems/minimum-increment-to-make-array-unique/)
@@ -388,4 +389,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/description/)
 
-##### Total: 184
+##### Total: 185
