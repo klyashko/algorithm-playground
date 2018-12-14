@@ -46,6 +46,7 @@
    * [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/description/)
    * [Custom Sort String](https://leetcode.com/problems/custom-sort-string/description/)
    * [Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/)
+   * [Group Anagrams](https://leetcode.com/problems/group-anagrams/)
    
  * hard:
    * [Shortest Palindrome](https://leetcode.com/problems/shortest-palindrome/description/)
@@ -390,4 +391,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/description/)
 
-##### Total: 186
+##### Total: 187
