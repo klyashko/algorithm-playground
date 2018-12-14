@@ -246,6 +246,7 @@
    * [Split Linked List in Parts](https://leetcode.com/problems/split-linked-list-in-parts/description/)
    * [Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/description/)
    * [Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii/description/)
+   * [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/submissions/)
    
  * hard:
    * [Reverse Nodes in K-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/description/)
@@ -392,4 +393,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/description/)
 
-##### Total: 188
+##### Total: 189
