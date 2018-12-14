@@ -40,6 +40,7 @@
    * [Judge Route Circle](https://leetcode.com/problems/judge-route-circle/description/)
    * [Reverse String](https://leetcode.com/problems/reverse-string/description/)
    * [To Lower Case](https://leetcode.com/problems/to-lower-case/description/)
+   * [Long Pressed Name](https://leetcode.com/problems/long-pressed-name/)
    
  * medium:
    * [Find and Replace Pattern](https://leetcode.com/problems/find-and-replace-pattern/description/)
@@ -393,4 +394,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/description/)
 
-##### Total: 189
+##### Total: 190
