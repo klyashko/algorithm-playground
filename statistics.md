@@ -45,6 +45,7 @@
    * [Find and Replace Pattern](https://leetcode.com/problems/find-and-replace-pattern/description/)
    * [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/description/)
    * [Custom Sort String](https://leetcode.com/problems/custom-sort-string/description/)
+   * [Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/)
    * [Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/)
    * [Group Anagrams](https://leetcode.com/problems/group-anagrams/)
    
@@ -391,4 +392,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/description/)
 
-##### Total: 187
+##### Total: 188
