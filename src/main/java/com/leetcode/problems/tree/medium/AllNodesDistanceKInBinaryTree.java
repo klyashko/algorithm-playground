@@ -10,6 +10,7 @@ import java.util.*;
 public class AllNodesDistanceKInBinaryTree {
 
 	class Solution {
+
 		public List<Integer> distanceK(TreeNode root, TreeNode target, int K) {
 			if (root == null) {
 				return Collections.emptyList();
@@ -61,6 +62,55 @@ public class AllNodesDistanceKInBinaryTree {
 				parents.put(root.right.val, root);
 				dfs(parents, root.right);
 			}
+		}
+	}
+
+	class DFSOnlySolution {
+		public List<Integer> distanceK(TreeNode root, TreeNode target, int K) {
+			List<Integer> vals = new ArrayList<>();
+			dfs(root, target.val, K, -1, vals);
+			return vals;
+		}
+
+		private int dfs(TreeNode node, int val, int K, int dist, List<Integer> values) {
+			if (node == null) {
+				return -1;
+			}
+			int top = -1;
+			if (node.val == val) {
+				dist = K;
+				top = 1;
+			}
+			if (dist >= 0) {
+				if (dist == 0) {
+					values.add(node.val);
+					return -1;
+				} else {
+					dfs(node.left, val, K, dist - 1, values);
+					dfs(node.right, val, K, dist - 1, values);
+					return top;
+				}
+			}
+			int L = dfs(node.left, val, K, dist, values);
+			if (L == K) {
+				values.add(node.val);
+				return -1;
+			} else if (L >= 0 && L < K) {
+				dfs(node.right, val, K, K - L - 1, values);
+			}
+
+			int R = dfs(node.right, val, K, dist, values);
+			if (R == K) {
+				values.add(node.val);
+				return -1;
+			} else if (R >= 0 && R < K) {
+				dfs(node.left, val, K, K - R - 1, values);
+			}
+			int max = Math.max(L, R);
+			if (max == -1) {
+				return -1;
+			}
+			return max + 1;
 		}
 	}
 
