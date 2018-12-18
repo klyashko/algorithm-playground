@@ -1,0 +1,25 @@
+package com.leetcode.problems.tree.medium
+
+import com.leetcode.problems.tree.medium.AllNodesDistanceKInBinaryTree.Solution as S
+import spock.lang.Specification
+import spock.lang.Unroll
+
+import static com.leetcode.problems.tree.TreeNode.valueOf as node
+
+class AllNodesDistanceKInBinaryTreeSpec extends Specification {
+
+	@Unroll
+	def "distanceK"() {
+
+		expect:
+
+			new S().distanceK(node(root), node(target), k) as Set == out as Set
+
+		where:
+
+			root                                    | target | k || out
+			[3, 5, 1, 6, 2, 0, 8, null, null, 7, 4] | [5]    | 2 || [7, 4, 1]
+
+	}
+
+}
