@@ -7,7 +7,31 @@ import java.util.*;
  */
 public class CheapestFlightsWithinKStops {
 
+	/**
+	 * Bellman Fold
+	 */
 	class Solution {
+		public int findCheapestPrice(int n, int[][] flights, int src, int dst, int K) {
+			int[] prices = new int[n];
+			Arrays.fill(prices, Integer.MAX_VALUE);
+			prices[src] = 0;
+
+			for (int i = 0; i <= K; i++) {
+				int[] tmp = Arrays.copyOf(prices, prices.length);
+				for (int[] flight : flights) {
+					int curr = flight[0], next = flight[1], price = flight[2];
+					if (prices[curr] != Integer.MAX_VALUE) {
+						tmp[next] = Math.min(tmp[next], prices[curr] + price);
+					}
+				}
+				prices = tmp;
+			}
+
+			return prices[dst] == Integer.MAX_VALUE ? -1 : prices[dst];
+		}
+	}
+
+	class DFSSolution {
 		public int findCheapestPrice(int n, int[][] flights, int src, int dst, int K) {
 			if (src == dst) {
 				return 0;
