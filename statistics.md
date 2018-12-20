@@ -333,6 +333,7 @@
 
  * medium:
    * [Implement Magic Dictionary](https://leetcode.com/problems/implement-magic-dictionary/description/)
+   * [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)
    * [Map Sum Pairs](https://leetcode.com/problems/map-sum-pairs/description/)
    * [Replace Words](https://leetcode.com/problems/replace-words/description/)
    
@@ -397,4 +398,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/description/)
 
-##### Total: 193
+##### Total: 194
