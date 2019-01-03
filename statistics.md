@@ -172,6 +172,7 @@
    * [Shortest Path To Get All Keys](https://leetcode.com/problems/shortest-path-to-get-all-keys/description/)
    * [Cut Off Trees For Golf Event](https://leetcode.com/problems/cut-off-trees-for-golf-event/description/)
    * [KSimilar Strings](https://leetcode.com/problems/k-similar-strings/description/)
+   * [Sliding Puzzle](https://leetcode.com/problems/sliding-puzzle/)
    
 #### Stack
 
@@ -398,4 +399,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/description/)
 
-##### Total: 194
+##### Total: 195
