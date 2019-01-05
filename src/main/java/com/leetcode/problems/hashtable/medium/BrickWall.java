@@ -14,7 +14,7 @@ public class BrickWall {
 			Map<Integer, Integer> row = new HashMap<>();
 			int max = 0;
 			for (List<Integer> curr : wall) {
-				int sum = 0;
+				Integer sum = 0;
 				for (int i = 0; i < curr.size() - 1; i++) {
 					sum += curr.get(i);
 					row.put(sum, row.getOrDefault(sum, 0) + 1);
