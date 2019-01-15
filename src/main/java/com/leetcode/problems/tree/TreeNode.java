@@ -1,9 +1,6 @@
 package com.leetcode.problems.tree;
 
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
 
 @SuppressWarnings("Duplicates")
 public class TreeNode {
@@ -35,6 +32,32 @@ public class TreeNode {
 
 	public static TreeNode valueOf(List<Integer> values) {
 		return valueOf(values.toArray(new Integer[0]));
+	}
+
+	public static TreeNode node(List<Integer> values) {
+		Queue<TreeNode> queue = new LinkedList<>();
+		Queue<TreeNode> nodeQueue = new LinkedList<>();
+
+		for (Integer i : values) {
+			queue.offer(i != null ? new TreeNode(i) : null);
+		}
+
+		TreeNode root = queue.poll();
+		nodeQueue.offer(root);
+
+		while (!queue.isEmpty()) {
+			TreeNode curr = nodeQueue.poll();
+			if (curr == null) {
+				continue;
+			}
+			curr.left = queue.poll();
+			curr.right = queue.poll();
+
+			nodeQueue.offer(curr.left);
+			nodeQueue.offer(curr.right);
+		}
+
+		return root;
 	}
 
 	public static TreeNode valueOf(Integer[] values) {
