@@ -101,6 +101,7 @@
    * [Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency/description/)
    * [Most Frequent Subtree Sum](https://leetcode.com/problems/most-frequent-subtree-sum/description/)
    * [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/description/)
+   * [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)
    
  * hard:
    * [Insert Delete Get Random Duplicates Allowed](https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed/description/)
@@ -399,4 +400,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/description/)
 
-##### Total: 195
+##### Total: 196
