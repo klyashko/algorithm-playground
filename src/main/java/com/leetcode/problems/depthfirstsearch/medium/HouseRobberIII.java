@@ -10,24 +10,23 @@ public class HouseRobberIII {
 	class Solution {
 
 		public int rob(TreeNode root) {
-			return Math.max(include(root), exclude(root));
+			int[] res = dfs(root);
+			return Math.max(res[0], res[1]);
 		}
 
-		private int include(TreeNode node) {
+		private int[] dfs(TreeNode node) {
 			if (node == null) {
-				return 0;
+				return new int[2];
 			}
-			return exclude(node.left) + exclude(node.right) + node.val;
-		}
+			int[] l = dfs(node.left);
+			int[] r = dfs(node.right);
 
-		private int exclude(TreeNode node) {
-			if (node == null) {
-				return 0;
-			}
-			return rob(node.left) + rob(node.right);
+			int[] res = new int[2];
+			res[0] = Math.max(l[0], l[1]) + Math.max(r[0], r[1]);
+			res[1] = l[0] + r[0] + node.val;
+			return res;
 		}
 
 	}
-
 
 }
