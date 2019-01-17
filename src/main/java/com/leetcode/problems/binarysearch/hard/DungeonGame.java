@@ -40,7 +40,6 @@ public class DungeonGame {
 			for (int i = 0; i < 2; i++) {
 				int tr = r + dr[i], tc = c + dc[i];
 				if (tr < n && tc < m) {
-
 					if (dfs(tr, tc, health + grid[tr][tc], grid, cache)) {
 						return true;
 					}
