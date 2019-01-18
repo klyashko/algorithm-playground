@@ -11,7 +11,7 @@ public class DungeonGame {
 		private final int[] dc = new int[]{0, 1};
 
 		public int calculateMinimumHP(int[][] dungeon) {
-			int l = 0, r = Integer.MAX_VALUE;
+			int l = 1, r = Integer.MAX_VALUE;
 			int n = dungeon.length;
 			int m = dungeon[0].length;
 			while (l < r) {
@@ -22,7 +22,7 @@ public class DungeonGame {
 					r = mid;
 				}
 			}
-			return Math.max(l, 1);
+			return l;
 		}
 
 		private boolean dfs(int r, int c, int health, int[][] grid, int[][] cache) {
