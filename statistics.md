@@ -201,6 +201,7 @@
  * medium:
    * [Beautiful Arrangement](https://leetcode.com/problems/beautiful-arrangement/description/)
    * [Combination Sum III](https://leetcode.com/problems/combination-sum-iii/description/)
+   * [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/)
    * [Permutations](https://leetcode.com/problems/permutations/description/)
 
  * hard:
@@ -401,4 +402,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/description/)
 
-##### Total: 197
+##### Total: 198
