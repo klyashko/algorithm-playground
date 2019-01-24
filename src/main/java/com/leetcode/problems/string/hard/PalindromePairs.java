@@ -5,6 +5,7 @@ import java.util.*;
 /**
  * https://leetcode.com/problems/palindrome-pairs/description/
  */
+@SuppressWarnings("Duplicates")
 public class PalindromePairs {
 
 	class Solution {

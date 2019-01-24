@@ -1,46 +1,46 @@
 package com.leetcode.problems.backtracking.medium;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 /**
  * https://leetcode.com/problems/palindrome-partitioning/
  */
+@SuppressWarnings("Duplicates")
 public class PalindromePartitioning {
 
 	class Solution {
 
 		public List<List<String>> partition(String s) {
-			if (s.isEmpty()) {
-//				List<List<String>> list = new ArrayList<>();
-//				List<String> l = new ArrayList<>();
-				return Collections.emptyList();
+			if (s.length() == 1) {
+				return singleton(singleton(s));
 			}
 			List<List<String>> result = new ArrayList<>();
-
 			for (int i = 1; i <= s.length(); i++) {
-				String l = s.substring(0, i);
-				String r = s.substring(i);
-				if (isPalindrome(l)) {
-					List<List<String>> list = partition(r);
-					if (list.isEmpty()) {
-						result.add(new ArrayList<>(Collections.singleton(l)));
+				if (isPalindrome(s, 0, i - 1)) {
+					String left = s.substring(0, i);
+					List<List<String>> partition = partition(s.substring(i));
+					if (partition.isEmpty()) {
+						result.add(singleton(left));
 					}
-					for (List<String> ll : list) {
-						ll.add(0, l);
-						result.add(0, ll);
+					for (List<String> list : partition) {
+						list.add(0, left);
+						result.add(0, list);
 					}
 				}
 			}
 			return result;
 		}
 
-		private boolean isPalindrome(String s) {
-			int r = s.length() / 2;
-			int l = s.length() % 2 == 0 ? r - 1 : r;
-			while (l >= 0) {
-				if (s.charAt(l--) != s.charAt(r++)) {
+		private <T> List<T> singleton(T value) {
+			List<T> list = new ArrayList<>();
+			list.add(value);
+			return list;
+		}
+
+		private boolean isPalindrome(String s, int l, int r) {
+			while (l < r) {
+				if (s.charAt(l++) != s.charAt(r--)) {
 					return false;
 				}
 			}
