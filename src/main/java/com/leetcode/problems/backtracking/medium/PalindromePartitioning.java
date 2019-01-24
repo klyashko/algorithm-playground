@@ -19,11 +19,10 @@ public class PalindromePartitioning {
 			for (int i = 1; i <= s.length(); i++) {
 				if (isPalindrome(s, 0, i - 1)) {
 					String left = s.substring(0, i);
-					List<List<String>> partition = partition(s.substring(i));
-					if (partition.isEmpty()) {
+					if (i == s.length()) {
 						result.add(singleton(left));
 					}
-					for (List<String> list : partition) {
+					for (List<String> list : partition(s.substring(i))) {
 						list.add(0, left);
 						result.add(0, list);
 					}
