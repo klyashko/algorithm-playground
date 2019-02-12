@@ -80,6 +80,7 @@
    * [Leaf Similar Trees](https://leetcode.com/problems/leaf-similar-trees/description/)
    
  * medium:
+   * [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
    * [All Possible Full Binary Trees](https://leetcode.com/problems/all-possible-full-binary-trees/description/)
    * [All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/)
    * [Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/description/)
