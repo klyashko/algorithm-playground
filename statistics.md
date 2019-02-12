@@ -25,6 +25,7 @@
    
  * medium:
    * [Count Numbers with Unique Digits](https://leetcode.com/problems/count-numbers-with-unique-digits/description/)
+   * [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)
    * [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/description/)
    * [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/)
    * [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)
@@ -404,4 +405,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/description/)
 
-##### Total: 200
+##### Total: 201
