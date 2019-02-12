@@ -18,6 +18,7 @@ class MaximumProductSubarraySpec extends Specification {
 			nums          || out
 			[2, 3, -2, 4] || 6
 			[-2, 0, -1]   || 0
+			[-2, 3, -4]   || 24
 
 	}
 
