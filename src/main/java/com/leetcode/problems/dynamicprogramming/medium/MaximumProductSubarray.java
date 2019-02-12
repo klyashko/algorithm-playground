@@ -12,11 +12,8 @@ public class MaximumProductSubarray {
 			int prev_max = nums[0], prev_min = nums[0], ans = nums[0];
 
 			for (int i = 1; i < nums.length; i++) {
-				int max = Math.max(prev_max * nums[i], prev_min * nums[i]);
-				max = Math.max(max, nums[i]);
-
-				int min = Math.min(prev_max * nums[i], prev_min * nums[i]);
-				min = Math.min(min, nums[i]);
+				int max = max(prev_max * nums[i], prev_min * nums[i], nums[i]);
+				int min = min(prev_max * nums[i], prev_min * nums[i], nums[i]);
 
 				ans = Math.max(ans, max);
 
@@ -26,9 +23,17 @@ public class MaximumProductSubarray {
 
 			return ans;
 		}
+
+		private int min(int a, int b, int c) {
+			return Math.min(Math.min(a, b), c);
+		}
+
+		private int max(int a, int b, int c) {
+			return Math.max(Math.max(a, b), c);
+		}
 	}
 
-	class Solution_ {
+	class VectorSolution {
 		public int maxProduct(int[] nums) {
 			int[] col = new int[nums.length];
 			Arrays.fill(col, 1);
