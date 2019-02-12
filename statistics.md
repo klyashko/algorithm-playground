@@ -27,6 +27,7 @@
    * [Count Numbers with Unique Digits](https://leetcode.com/problems/count-numbers-with-unique-digits/description/)
    * [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/description/)
    * [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/)
+   * [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)
    * [Arithmetic Slices](https://leetcode.com/problems/arithmetic-slices/description/)
    * [Keys Key board](https://leetcode.com/problems/2-keys-keyboard/description/)
    * [Integer Break](https://leetcode.com/problems/integer-break/description/)
@@ -403,4 +404,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/description/)
 
-##### Total: 199
+##### Total: 200
