@@ -20,7 +20,7 @@ class ConstructBinaryTreeFromPreorderAndInorderTraversalSpec extends Specificati
 			pre               | inorder           || out
 			[3, 9, 20, 15, 7] | [9, 3, 15, 20, 7] || [3, 9, 20, null, null, 15, 7]
 			[3, 9, 20]        | [9, 3, 20]        || [3, 9, 20]
-//			[1, 2, 3]         | [2, 3, 1]         || [1, 2, null, 3, null]
+			[1, 2, 3]         | [2, 3, 1]         || [1, 2, null, null, 3, null]
 
 	}
 
