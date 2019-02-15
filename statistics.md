@@ -5,6 +5,7 @@
    * [Flipping an Image](https://leetcode.com/problems/flipping-an-image/description/)
    * [Transpose Matrix](https://leetcode.com/problems/transpose-matrix/description/)
    * [Missing Number](https://leetcode.com/problems/missing-number/)
+   * [Rotate Array](https://leetcode.com/problems/rotate-array/)
    
  * medium:
    * [945. Minimum Increment to Make Array Unique](https://leetcode.com/problems/minimum-increment-to-make-array-unique/)
@@ -405,4 +406,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/description/)
 
-##### Total: 201
+##### Total: 202
