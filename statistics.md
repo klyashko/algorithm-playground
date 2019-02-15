@@ -4,6 +4,7 @@
    * [Array Partition I](https://leetcode.com/problems/array-partition-i/description/)
    * [Flipping an Image](https://leetcode.com/problems/flipping-an-image/description/)
    * [Transpose Matrix](https://leetcode.com/problems/transpose-matrix/description/)
+   * [Third Maximum Number](https://leetcode.com/problems/third-maximum-number/)
    * [Missing Number](https://leetcode.com/problems/missing-number/)
    * [Rotate Array](https://leetcode.com/problems/rotate-array/)
    
@@ -406,4 +407,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/description/)
 
-##### Total: 202
+##### Total: 203
