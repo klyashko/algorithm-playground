@@ -14,22 +14,24 @@ public class RotateArray {
 			if (gcd == 1) {
 				int idx = k % nums.length, tmp = nums[0];
 				for (int i = 0; i < nums.length; i++) {
-					int tmp2 = nums[idx];
-					nums[idx] = tmp;
-					tmp = tmp2;
+					tmp = swap(nums, idx, tmp);
 					idx = (idx + k) % nums.length;
 				}
 			} else {
 				for (int j = 0; j < gcd; j++) {
 					int idx = (k + j) % nums.length, tmp = nums[j];
 					for (int i = 0; i < nums.length / gcd; i++) {
-						int tmp2 = nums[idx];
-						nums[idx] = tmp;
-						tmp = tmp2;
+						tmp = swap(nums, idx, tmp);
 						idx = (idx + k) % nums.length;
 					}
 				}
 			}
+		}
+
+		private int swap(int[] nums, int idx, int value) {
+			int tmp = nums[idx];
+			nums[idx] = value;
+			return tmp;
 		}
 
 		private int gcd(int p, int q) {
