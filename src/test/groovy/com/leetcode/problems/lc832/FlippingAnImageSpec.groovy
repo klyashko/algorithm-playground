@@ -1,6 +1,6 @@
-package com.leetcode.problems.array.easy
+package com.leetcode.problems.lc832
 
-import com.leetcode.problems.array.easy.FlippingAnImage.Solution
+import com.leetcode.problems.lc832.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 
@@ -11,7 +11,7 @@ class FlippingAnImageSpec extends Specification {
 
 		expect:
 
-			output as int[][] == new Solution().flipAndInvertImage(input as int[][])
+			output as int[][] == new S().flipAndInvertImage(input as int[][])
 
 		where:
 

@@ -1,6 +1,6 @@
-package com.leetcode.problems.array.easy
+package com.leetcode.problems.lc665
 
-import com.leetcode.problems.array.easy.NonDecreasingArray.Solution as S
+import com.leetcode.problems.lc665.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 
