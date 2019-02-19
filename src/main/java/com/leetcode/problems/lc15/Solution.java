@@ -10,25 +10,21 @@ public class Solution {
 	public List<List<Integer>> threeSum(int[] nums) {
 		Arrays.sort(nums);
 		List<List<Integer>> values = new ArrayList<>();
-		Set<Integer> fuck = new HashSet<>();
+		Set<Integer> seen = new HashSet<>();
 		for (int i = 0; i < nums.length; i++) {
 			int rest = 0 - nums[i];
-			if (fuck.add(rest)) {
-				for (List<Integer> two : twoSum(nums, i + 1, 0 - nums[i])) {
-					List<Integer> list = new ArrayList<>();
-					list.add(nums[i]);
-					list.add(two.get(0));
-					list.add(two.get(1));
-					values.add(list);
+			if (seen.add(rest)) {
+				for (Pair two : twoSum(nums, i + 1, 0 - nums[i])) {
+					values.add(list(nums[i], two.left, two.right));
 				}
 			}
 		}
 		return values;
 	}
 
-	private Set<List<Integer>> twoSum(int[] nums, int from, int sum) {
+	private Set<Pair> twoSum(int[] nums, int from, int sum) {
 		int l = from, r = nums.length - 1;
-		Set<List<Integer>> result = new HashSet<>();
+		Set<Pair> result = new HashSet<>();
 		while (l < r) {
 			int curr = nums[l] + nums[r];
 			if (curr < sum) {
@@ -36,11 +32,38 @@ public class Solution {
 			} else if (curr > sum) {
 				r--;
 			} else {
-				result.add(Arrays.asList(nums[l], nums[r]));
+				result.add(new Pair(nums[l], nums[r]));
 				l++;
 			}
 		}
 		return result;
+	}
+
+	private List<Integer> list(Integer i1, Integer i2, Integer i3) {
+		return new ArrayList<>(Arrays.asList(i1, i2, i3));
+	}
+
+	private static class Pair {
+		int left, right;
+
+		Pair(int left, int right) {
+			this.left = left;
+			this.right = right;
+		}
+
+		@Override
+		public boolean equals(Object o) {
+			if (this == o) return true;
+			if (o == null || getClass() != o.getClass()) return false;
+			Pair pair = (Pair) o;
+			return left == pair.left &&
+					right == pair.right;
+		}
+
+		@Override
+		public int hashCode() {
+			return Objects.hash(left, right);
+		}
 	}
 
 }
