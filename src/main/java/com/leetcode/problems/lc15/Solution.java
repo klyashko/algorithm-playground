@@ -10,13 +10,13 @@ public class Solution {
 	public List<List<Integer>> threeSum(int[] nums) {
 		Arrays.sort(nums);
 		List<List<Integer>> values = new ArrayList<>();
-		Set<Integer> seen = new HashSet<>();
+		int prev = Integer.MAX_VALUE;
 		for (int i = 0; i < nums.length; i++) {
-			int rest = 0 - nums[i];
-			if (seen.add(rest)) {
+			if (prev != nums[i]) {
 				for (Pair two : twoSum(nums, i + 1, 0 - nums[i])) {
 					values.add(list(nums[i], two.left, two.right));
 				}
+				prev = nums[i];
 			}
 		}
 		return values;
@@ -33,7 +33,10 @@ public class Solution {
 				r--;
 			} else {
 				result.add(new Pair(nums[l], nums[r]));
-				l++;
+				int left = nums[l];
+				while (l < nums.length && left == nums[l]) {
+					l++;
+				}
 			}
 		}
 		return result;
