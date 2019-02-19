@@ -14,7 +14,9 @@ public class Solution {
 		List<List<Integer>> values = new ArrayList<>();
 		int prev = Integer.MAX_VALUE;
 		for (int i = 0; i < nums.length; i++) {
-			if (prev != nums[i]) {
+			if (nums[i] > 0) {
+				break;
+			} else if (prev != nums[i]) {
 				for (int[] two : twoSum(nums, i + 1, 0 - nums[i])) {
 					values.add(list(nums[i], two[0], two[1]));
 				}
@@ -36,8 +38,12 @@ public class Solution {
 			} else {
 				result.add(new int[]{nums[l], nums[r]});
 				int left = nums[l];
+				int right = nums[r];
 				while (l < nums.length && left == nums[l]) {
 					l++;
+				}
+				while (r > l && right == nums[r]) {
+					r--;
 				}
 			}
 		}
