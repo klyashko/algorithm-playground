@@ -8,6 +8,7 @@
    * [Non-decreasing Array](https://leetcode.com/problems/non-decreasing-array/)
    * [Missing Number](https://leetcode.com/problems/missing-number/)
    * [Rotate Array](https://leetcode.com/problems/rotate-array/)
+   * [3Sum](https://leetcode.com/problems/3sum/)
    
  * medium:
    * [945. Minimum Increment to Make Array Unique](https://leetcode.com/problems/minimum-increment-to-make-array-unique/)
@@ -408,4 +409,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/description/)
 
-##### Total: 204
+##### Total: 205

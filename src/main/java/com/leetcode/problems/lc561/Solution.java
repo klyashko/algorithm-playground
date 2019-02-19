@@ -2,6 +2,9 @@ package com.leetcode.problems.lc561;
 
 import java.util.Arrays;
 
+/**
+ * https://leetcode.com/problems/array-partition-i/description/
+ */
 public class Solution {
 
 	public int arrayPairSum(int[] nums) {
