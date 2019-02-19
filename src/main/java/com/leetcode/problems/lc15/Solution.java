@@ -51,7 +51,7 @@ public class Solution {
 	}
 
 	private List<Integer> list(Integer i1, Integer i2, Integer i3) {
-		return new ArrayList<>(Arrays.asList(i1, i2, i3));
+		return Arrays.asList(i1, i2, i3);
 	}
 
 }
