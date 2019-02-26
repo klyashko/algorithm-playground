@@ -18,6 +18,7 @@
    * [Teemo Attacking](https://leetcode.com/problems/teemo-attacking/description/)
   
  * hard:
+   * [Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/)
    * [First Missing Positive](https://leetcode.com/problems/first-missing-positive/description/)
    * [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)
    * [Jump Game II](https://leetcode.com/problems/jump-game-ii/description/)
@@ -409,4 +410,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/description/)
 
-##### Total: 205
+##### Total: 206
