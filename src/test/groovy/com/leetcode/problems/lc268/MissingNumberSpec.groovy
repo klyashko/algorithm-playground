@@ -1,6 +1,6 @@
-package com.leetcode.problems.array.easy
+package com.leetcode.problems.lc268
 
-import com.leetcode.problems.array.easy.MissingNumber.Solution as S
+import com.leetcode.problems.lc268.MissingNumber.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

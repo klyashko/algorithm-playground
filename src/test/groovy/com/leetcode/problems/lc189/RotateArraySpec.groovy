@@ -1,6 +1,6 @@
-package com.leetcode.problems.array.easy
+package com.leetcode.problems.lc189
 
-import com.leetcode.problems.array.easy.RotateArray.Solution as S
+import com.leetcode.problems.lc189.RotateArray.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

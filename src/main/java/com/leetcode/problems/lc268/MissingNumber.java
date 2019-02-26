@@ -1,4 +1,4 @@
-package com.leetcode.problems.array.easy;
+package com.leetcode.problems.lc268;
 
 /**
  * https://leetcode.com/problems/missing-number/
