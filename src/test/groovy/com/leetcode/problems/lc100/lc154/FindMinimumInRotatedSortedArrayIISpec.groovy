@@ -1,4 +1,4 @@
-package com.leetcode.problems.lc154
+package com.leetcode.problems.lc100.lc154
 
 import com.leetcode.problems.lc154.FindMinimumInRotatedSortedArrayII.Solution as S
 import spock.lang.Specification

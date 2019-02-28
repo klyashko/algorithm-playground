@@ -1,4 +1,4 @@
-package com.leetcode.problems.lc123
+package com.leetcode.problems.lc100.lc123
 
 import com.leetcode.problems.lc123.BestTimeToBuyAndSellStockIII.Solution as S
 import spock.lang.Specification

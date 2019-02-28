@@ -1,4 +1,4 @@
-package com.leetcode.problems.lc154;
+package com.leetcode.problems.lc100.lc154;
 
 /**
  * https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/

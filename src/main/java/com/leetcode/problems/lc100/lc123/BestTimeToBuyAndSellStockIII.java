@@ -1,4 +1,4 @@
-package com.leetcode.problems.lc123;
+package com.leetcode.problems.lc100.lc123;
 
 /**
  * https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/
