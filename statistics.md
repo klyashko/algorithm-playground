@@ -242,6 +242,7 @@
    
  * medium:
    * [Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/description/)
+   * [Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/)
    * [Is Subsequence](https://leetcode.com/problems/is-subsequence/description/)
    * [Task Scheduler](https://leetcode.com/problems/task-scheduler/description/)
    
@@ -410,4 +411,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/description/)
 
-##### Total: 206
+##### Total: 207
