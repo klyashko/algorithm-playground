@@ -1,7 +1,7 @@
-package com.leetcode.problems.heap.medium
+package com.leetcode.problems.lc787
 
-import com.leetcode.problems.heap.medium.CheapestFlightsWithinKStops.DFSSolution as DFSS
-import com.leetcode.problems.heap.medium.CheapestFlightsWithinKStops.Solution as S
+import com.leetcode.problems.lc787.CheapestFlightsWithinKStops.DFSSolution as DFSS
+import com.leetcode.problems.lc787.CheapestFlightsWithinKStops.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

@@ -1,4 +1,4 @@
-package com.leetcode.problems.heap.medium;
+package com.leetcode.problems.lc787;
 
 import java.util.*;
 
@@ -10,7 +10,7 @@ public class CheapestFlightsWithinKStops {
 	/**
 	 * Bellman Fold
 	 */
-	class Solution {
+	public class Solution {
 		public int findCheapestPrice(int n, int[][] flights, int src, int dst, int K) {
 			int[] prices = new int[n];
 			Arrays.fill(prices, Integer.MAX_VALUE);
