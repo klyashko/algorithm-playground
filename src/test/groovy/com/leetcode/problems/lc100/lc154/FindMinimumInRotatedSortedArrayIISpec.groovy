@@ -1,6 +1,6 @@
 package com.leetcode.problems.lc100.lc154
 
-import com.leetcode.problems.lc154.FindMinimumInRotatedSortedArrayII.Solution as S
+import com.leetcode.problems.lc100.lc154.FindMinimumInRotatedSortedArrayII.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 
