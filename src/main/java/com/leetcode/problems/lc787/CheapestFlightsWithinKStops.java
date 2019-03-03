@@ -7,6 +7,77 @@ import java.util.*;
  */
 public class CheapestFlightsWithinKStops {
 
+	public class SolutionDijkstra {
+		public int findCheapestPrice(int n, int[][] flights, int src, int dst, int K) {
+
+			int[][] prices = new int[n][n];
+			for (int[] flight : flights) {
+				prices[flight[0]][flight[1]] = flight[2];
+			}
+
+			PriorityQueue<City> queue = new PriorityQueue<>();
+			queue.offer(new City(0, src, -1));
+
+			int[] costs = new int[n];
+			Arrays.fill(costs, Integer.MAX_VALUE);
+			costs[src] = 0;
+			int[] stops = new int[n];
+
+			while (!queue.isEmpty()) {
+				City city = queue.poll();
+				if (city.stops > K) {
+					continue;
+				} else if (city.curr == dst) {
+					return city.price;
+				} else {
+					int[] next = prices[city.curr];
+					for (int i = 0; i < next.length; i++) {
+						if (next[i] != 0) {
+							int price = next[i];
+							if (costs[i] > city.price + price) {
+								stops[i] = city.stops + 1;
+								costs[i] = city.price + price;
+								queue.offer(new City(costs[i], i, stops[i]));
+							} else if (stops[i] > city.stops + 1) {
+								stops[i] = city.stops + 1;
+								costs[i] = city.price + price;
+								queue.offer(new City(costs[i], i, stops[i]));
+							}
+						}
+					}
+				}
+			}
+
+			return -1;
+		}
+
+		private class City implements Comparable<City> {
+
+			private int price, curr, stops;
+
+			City(int price, int curr, int stops) {
+				this.price = price;
+				this.curr = curr;
+				this.stops = stops;
+			}
+
+			@Override
+			public int compareTo(City o) {
+				return Integer.compare(price, o.price);
+			}
+
+			@Override
+			public String toString() {
+				return "City{" +
+						"price=" + price +
+						", curr=" + curr +
+						", stops=" + stops +
+						'}';
+			}
+		}
+
+	}
+
 	/**
 	 * Bellman Fold
 	 */
