@@ -20,28 +20,24 @@ public class CheapestFlightsWithinKStops {
 
 			int[] costs = new int[n];
 			Arrays.fill(costs, Integer.MAX_VALUE);
-			costs[src] = 0;
 			int[] stops = new int[n];
 
 			while (!queue.isEmpty()) {
 				City city = queue.poll();
-				if (city.stops > K) {
-					continue;
-				} else if (city.curr == dst) {
-					return city.price;
-				} else {
-					int[] next = prices[city.curr];
-					for (int i = 0; i < next.length; i++) {
-						if (next[i] != 0) {
-							int price = next[i];
-							if (costs[i] > city.price + price) {
-								stops[i] = city.stops + 1;
-								costs[i] = city.price + price;
-								queue.offer(new City(costs[i], i, stops[i]));
-							} else if (stops[i] > city.stops + 1) {
-								stops[i] = city.stops + 1;
-								costs[i] = city.price + price;
-								queue.offer(new City(costs[i], i, stops[i]));
+				if (city.stops <= K) {
+					if (city.curr == dst) {
+						return city.price;
+					} else {
+						int[] next = prices[city.curr];
+						for (int i = 0; i < next.length; i++) {
+							if (next[i] != 0) {
+								int nextPrice = city.price + next[i];
+								int nextStop = city.stops + 1;
+								if (costs[i] > nextPrice || stops[i] > nextStop) {
+									stops[i] = nextStop;
+									costs[i] = nextPrice;
+									queue.offer(new City(costs[i], i, stops[i]));
+								}
 							}
 						}
 					}
