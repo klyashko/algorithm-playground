@@ -1,6 +1,6 @@
-package com.leetcode.problems.array.hard
+package com.leetcode.problems.lc41
 
-import com.leetcode.problems.array.hard.FirstMissingPositive.Solution
+import com.leetcode.problems.lc41.FirstMissingPositive.Solution
 import spock.lang.Specification
 import spock.lang.Unroll
 

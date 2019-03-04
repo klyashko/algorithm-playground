@@ -1,6 +1,6 @@
-package com.leetcode.problems.array.easy
+package com.leetcode.problems.lc414
 
-import com.leetcode.problems.array.easy.ThirdMaximumNumber.Solution as S
+import com.leetcode.problems.lc414.ThirdMaximumNumber.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 
