@@ -34,15 +34,12 @@ public class MinimumHeightTrees {
 				for (int i = 0; i < size; i++) {
 					int curr = leafs.poll();
 					degrees[curr] = 0;
-					Set<Integer> parents = graph.remove(curr);
-					if (parents != null) {
-						for (Integer parent : parents) {
-							degrees[parent]--;
-							if (degrees[parent] == 1) {
-								leafs.offer(parent);
-							}
-							graph.get(parent).remove(curr);
+					for (Integer parent : graph.remove(curr)) {
+						degrees[parent]--;
+						if (degrees[parent] == 1) {
+							leafs.offer(parent);
 						}
+						graph.get(parent).remove(curr);
 					}
 				}
 			}
