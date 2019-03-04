@@ -92,6 +92,7 @@
    * [All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/)
    * [Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/description/)
    * [Binary Tree Pruning](https://leetcode.com/problems/binary-tree-pruning/description/)
+   * [Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/)
    
  * hard:
    * [SerializeAndDeserializeBinaryTree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/)
@@ -411,4 +412,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/description/)
 
-##### Total: 207
+##### Total: 208
