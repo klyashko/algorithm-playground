@@ -5,6 +5,7 @@ import java.util.*;
 /**
  * https://leetcode.com/problems/minimum-height-trees/
  */
+@SuppressWarnings("ConstantConditions")
 public class MinimumHeightTrees {
 
 	class Solution {
@@ -20,31 +21,30 @@ public class MinimumHeightTrees {
 				degrees[edge[0]]++;
 				degrees[edge[1]]++;
 			}
-			LinkedList<Integer> leafs = new LinkedList<>();
+
+			Queue<Integer> leafs = new ArrayDeque<>();
 			for (int i = 0; i < degrees.length; i++) {
 				if (degrees[i] == 1) {
-					leafs.add(i);
+					leafs.offer(i);
 				}
 			}
 
-			List<Integer> next = new LinkedList<>();
-
 			while (graph.size() > 2) {
-				for (Integer curr : leafs) {
+				int size = leafs.size();
+				for (int i = 0; i < size; i++) {
+					int curr = leafs.poll();
 					degrees[curr] = 0;
 					Set<Integer> parents = graph.remove(curr);
 					if (parents != null) {
 						for (Integer parent : parents) {
 							degrees[parent]--;
 							if (degrees[parent] == 1) {
-								next.add(parent);
+								leafs.offer(parent);
 							}
 							graph.get(parent).remove(curr);
 						}
 					}
 				}
-				leafs.clear();
-				leafs.addAll(next);
 			}
 
 			return new ArrayList<>(graph.keySet());

@@ -92,7 +92,6 @@
    * [All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/)
    * [Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/description/)
    * [Binary Tree Pruning](https://leetcode.com/problems/binary-tree-pruning/description/)
-   * [Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/)
    
  * hard:
    * [SerializeAndDeserializeBinaryTree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/)
@@ -319,6 +318,7 @@
    * [Redundant Connection](https://leetcode.com/problems/redundant-connection/description/)
    * [Is Graph Bipartite](https://leetcode.com/problems/is-graph-bipartite/description/)
    * [Evaluate Division](https://leetcode.com/problems/evaluate-division/description/)
+   * [Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/)
    
 #### Divide and Conquer
 
