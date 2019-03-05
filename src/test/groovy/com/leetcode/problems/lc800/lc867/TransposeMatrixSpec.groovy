@@ -1,6 +1,6 @@
-package com.leetcode.problems.lc867
+package com.leetcode.problems.lc800.lc867
 
-import com.leetcode.problems.lc867.TransposeMatrix.Solution
+import com.leetcode.problems.lc800.lc867.TransposeMatrix.Solution
 import spock.lang.Specification
 import spock.lang.Unroll
 

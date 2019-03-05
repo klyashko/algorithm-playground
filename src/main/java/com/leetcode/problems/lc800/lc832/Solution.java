@@ -1,4 +1,4 @@
-package com.leetcode.problems.lc832;
+package com.leetcode.problems.lc800.lc832;
 
 /**
  * https://leetcode.com/problems/flipping-an-image/description/

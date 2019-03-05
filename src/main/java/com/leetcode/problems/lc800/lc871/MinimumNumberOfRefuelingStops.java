@@ -1,4 +1,4 @@
-package com.leetcode.problems.heap.hard;
+package com.leetcode.problems.lc800.lc871;
 
 import java.util.Collections;
 import java.util.PriorityQueue;
@@ -9,7 +9,7 @@ import java.util.Queue;
  */
 public class MinimumNumberOfRefuelingStops {
 
-	class Solution {
+	public class Solution {
 		public int minRefuelStops(int target, int fuel, int[][] stations) {
 			if (fuel >= target) {
 				return 0;
@@ -18,7 +18,6 @@ public class MinimumNumberOfRefuelingStops {
 			int idx = put(queue, stations, 0, fuel);
 
 			for (int count = 1; !queue.isEmpty(); count++) {
-				//noinspection ConstantConditions
 				fuel += queue.poll();
 				if (fuel >= target) {
 					return count;

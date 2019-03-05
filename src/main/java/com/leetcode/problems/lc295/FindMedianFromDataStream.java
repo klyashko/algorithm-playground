@@ -1,4 +1,4 @@
-package com.leetcode.problems.heap.hard;
+package com.leetcode.problems.lc295;
 
 import java.util.Collections;
 import java.util.PriorityQueue;
@@ -7,7 +7,6 @@ import java.util.Queue;
 /**
  * https://leetcode.com/problems/find-median-from-data-stream/description/
  */
-@SuppressWarnings("ConstantConditions")
 public class FindMedianFromDataStream {
 
 	class MedianFinder {

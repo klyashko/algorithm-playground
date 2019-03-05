@@ -1,6 +1,6 @@
-package com.leetcode.problems.lc832
+package com.leetcode.problems.lc800.lc832
 
-import com.leetcode.problems.lc832.Solution as S
+import com.leetcode.problems.lc800.lc832.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

@@ -1,6 +1,6 @@
-package com.leetcode.problems.heap.hard
+package com.leetcode.problems.lc800.lc871
 
-import com.leetcode.problems.heap.hard.MinimumNumberOfRefuelingStops.Solution as S
+import com.leetcode.problems.lc800.lc871.MinimumNumberOfRefuelingStops.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

@@ -1,6 +1,6 @@
-package com.leetcode.problems.heap.hard
+package com.leetcode.problems.lc295
 
-import com.leetcode.problems.heap.hard.FindMedianFromDataStream.MedianFinder as MF
+import com.leetcode.problems.lc295.FindMedianFromDataStream.MedianFinder as MF
 import spock.lang.Specification
 import spock.lang.Unroll
 

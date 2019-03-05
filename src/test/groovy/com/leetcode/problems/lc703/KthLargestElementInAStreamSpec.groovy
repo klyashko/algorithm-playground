@@ -1,9 +1,9 @@
-package com.leetcode.problems.heap.easy
+package com.leetcode.problems.lc703
 
 import spock.lang.Specification
 import spock.lang.Unroll
 
-import static com.leetcode.problems.heap.easy.KthLargestElementInAStream.kthLargest
+import static com.leetcode.problems.lc703.KthLargestElementInAStream.kthLargest
 
 class KthLargestElementInAStreamSpec extends Specification {
 

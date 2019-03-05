@@ -1,4 +1,4 @@
-package com.leetcode.problems.heap.easy;
+package com.leetcode.problems.lc703;
 
 import java.util.PriorityQueue;
 import java.util.Queue;
