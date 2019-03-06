@@ -1,6 +1,6 @@
-package com.leetcode.problems.hashtable.hard
+package com.leetcode.problems.lc700.lc710
 
-import com.leetcode.problems.hashtable.hard.RandomPickWithBlacklist as S
+import com.leetcode.problems.lc700.lc710.RandomPickWithBlacklist as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

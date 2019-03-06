@@ -1,4 +1,4 @@
-package com.leetcode.problems.hashtable.hard;
+package com.leetcode.problems.lc700.lc710;
 
 import java.util.ArrayList;
 import java.util.Arrays;

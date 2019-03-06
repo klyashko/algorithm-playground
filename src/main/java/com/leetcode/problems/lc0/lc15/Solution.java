@@ -1,4 +1,4 @@
-package com.leetcode.problems.lc15;
+package com.leetcode.problems.lc0.lc15;
 
 import java.util.ArrayList;
 import java.util.Arrays;

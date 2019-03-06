@@ -1,4 +1,4 @@
-package com.leetcode.problems.lc41;
+package com.leetcode.problems.lc0.lc41;
 
 /**
  * https://leetcode.com/problems/first-missing-positive/description/

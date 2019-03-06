@@ -1,7 +1,7 @@
-package com.leetcode.problems.hashtable.hard
+package com.leetcode.problems.lc0.lc85
 
-import com.leetcode.problems.hashtable.hard.MaximalRectangle.SlowSolution as SS
-import com.leetcode.problems.hashtable.hard.MaximalRectangle.Solution as S
+import com.leetcode.problems.lc0.lc85.MaximalRectangle.SlowSolution as SS
+import com.leetcode.problems.lc0.lc85.MaximalRectangle.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 
