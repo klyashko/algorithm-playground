@@ -1,4 +1,4 @@
-package com.leetcode.problems.hashtable.medium;
+package com.leetcode.problems.lc500.lc560;
 
 import java.util.HashMap;
 import java.util.Map;

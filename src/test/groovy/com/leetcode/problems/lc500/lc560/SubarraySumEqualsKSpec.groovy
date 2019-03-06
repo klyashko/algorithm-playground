@@ -1,7 +1,7 @@
-package com.leetcode.problems.hashtable.medium
+package com.leetcode.problems.lc500.lc560
 
-import com.leetcode.problems.hashtable.medium.SubarraySumEqualsK.CamSumSolution as CSS
-import com.leetcode.problems.hashtable.medium.SubarraySumEqualsK.Solution as S
+import com.leetcode.problems.lc500.lc560.SubarraySumEqualsK.CamSumSolution as CSS
+import com.leetcode.problems.lc500.lc560.SubarraySumEqualsK.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

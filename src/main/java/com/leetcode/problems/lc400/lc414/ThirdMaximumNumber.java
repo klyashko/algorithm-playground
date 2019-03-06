@@ -1,4 +1,4 @@
-package com.leetcode.problems.lc414;
+package com.leetcode.problems.lc400.lc414;
 
 import java.util.Arrays;
 

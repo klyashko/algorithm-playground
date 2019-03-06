@@ -1,4 +1,4 @@
-package com.leetcode.problems.hashtable.medium;
+package com.leetcode.problems.lc400.lc451;
 
 import java.util.Arrays;
 import java.util.Comparator;
@@ -9,6 +9,7 @@ import java.util.function.ToIntFunction;
 /**
  * https://leetcode.com/problems/sort-characters-by-frequency/description/
  */
+@SuppressWarnings("Duplicates")
 public class SortCharactersByFrequency {
 
 	class Solution {

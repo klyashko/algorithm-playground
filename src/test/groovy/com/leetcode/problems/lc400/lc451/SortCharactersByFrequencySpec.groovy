@@ -1,6 +1,6 @@
-package com.leetcode.problems.hashtable.medium
+package com.leetcode.problems.lc400.lc451
 
-import com.leetcode.problems.hashtable.medium.SortCharactersByFrequency.Solution as S
+import com.leetcode.problems.lc400.lc451.SortCharactersByFrequency.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

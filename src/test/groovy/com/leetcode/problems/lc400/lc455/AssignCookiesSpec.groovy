@@ -1,6 +1,6 @@
-package com.leetcode.problems.greedy.easy
+package com.leetcode.problems.lc400.lc455
 
-import com.leetcode.problems.greedy.easy.AssignCookies.Solution as S
+import com.leetcode.problems.lc400.lc455.AssignCookies.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

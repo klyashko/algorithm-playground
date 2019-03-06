@@ -1,4 +1,4 @@
-package com.leetcode.problems.greedy.easy;
+package com.leetcode.problems.lc400.lc455;
 
 import java.util.Arrays;
 
