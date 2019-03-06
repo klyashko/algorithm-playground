@@ -1,4 +1,4 @@
-package com.leetcode.problems.lc136
+package com.leetcode.problems.lc100.lc136
 
 import com.leetcode.problems.lc100.lc136.SingleNumber.Solution as S
 import spock.lang.Specification
