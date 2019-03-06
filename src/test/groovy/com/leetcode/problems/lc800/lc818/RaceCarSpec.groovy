@@ -1,6 +1,6 @@
 package com.leetcode.problems.lc800.lc818
 
-import RaceCar.Solution as S
+import com.leetcode.problems.lc800.lc818.RaceCar.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 
