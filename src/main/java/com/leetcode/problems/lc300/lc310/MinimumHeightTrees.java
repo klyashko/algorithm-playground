@@ -1,4 +1,4 @@
-package com.leetcode.problems.lc310;
+package com.leetcode.problems.lc300.lc310;
 
 import java.util.*;
 

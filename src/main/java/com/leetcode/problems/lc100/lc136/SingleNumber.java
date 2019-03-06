@@ -1,4 +1,4 @@
-package com.leetcode.problems.hashtable.easy;
+package com.leetcode.problems.lc100.lc136;
 
 /**
  * https://leetcode.com/problems/single-number/description/

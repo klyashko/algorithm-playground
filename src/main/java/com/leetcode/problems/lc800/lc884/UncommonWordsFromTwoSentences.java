@@ -1,4 +1,4 @@
-package com.leetcode.problems.hashtable.easy;
+package com.leetcode.problems.lc800.lc884;
 
 import java.util.HashSet;
 import java.util.Set;

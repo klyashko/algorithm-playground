@@ -1,6 +1,6 @@
-package com.leetcode.problems.hashtable.easy
+package com.leetcode.problems.lc136
 
-import com.leetcode.problems.hashtable.easy.SingleNumber.Solution as S
+import com.leetcode.problems.lc100.lc136.SingleNumber.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

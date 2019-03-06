@@ -1,6 +1,6 @@
-package com.leetcode.problems.hashtable.easy
+package com.leetcode.problems.lc800.lc884
 
-import com.leetcode.problems.hashtable.easy.UncommonWordsFromTwoSentences.Solution as S
+import com.leetcode.problems.lc800.lc884.UncommonWordsFromTwoSentences.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

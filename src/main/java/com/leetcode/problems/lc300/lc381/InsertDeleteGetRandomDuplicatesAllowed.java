@@ -1,4 +1,4 @@
-package com.leetcode.problems.hashtable.hard;
+package com.leetcode.problems.lc300.lc381;
 
 import java.util.*;
 

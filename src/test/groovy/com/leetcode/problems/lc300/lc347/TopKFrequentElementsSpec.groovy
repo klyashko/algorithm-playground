@@ -1,7 +1,7 @@
-package com.leetcode.problems.lc347
+package com.leetcode.problems.lc300.lc347
 
-import com.leetcode.problems.lc347.TopKFrequentElements.BucketSortSolution as BSS
-import com.leetcode.problems.lc347.TopKFrequentElements.Solution as S
+import com.leetcode.problems.lc300.lc347.TopKFrequentElements.BucketSortSolution as BSS
+import com.leetcode.problems.lc300.lc347.TopKFrequentElements.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

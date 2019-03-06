@@ -1,6 +1,6 @@
-package com.leetcode.problems.lc310
+package com.leetcode.problems.lc300.lc310
 
-import com.leetcode.problems.lc310.MinimumHeightTrees.Solution as S
+import com.leetcode.problems.lc300.lc310.MinimumHeightTrees.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 
