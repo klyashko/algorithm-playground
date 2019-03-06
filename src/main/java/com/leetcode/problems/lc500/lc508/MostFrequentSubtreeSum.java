@@ -1,4 +1,4 @@
-package com.leetcode.problems.hashtable.medium;
+package com.leetcode.problems.lc500.lc508;
 
 import com.leetcode.problems.tree.TreeNode;
 

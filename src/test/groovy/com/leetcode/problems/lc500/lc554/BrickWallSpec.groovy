@@ -1,6 +1,6 @@
-package com.leetcode.problems.hashtable.medium
+package com.leetcode.problems.lc500.lc554
 
-import com.leetcode.problems.hashtable.medium.BrickWall.Solution as S
+import com.leetcode.problems.lc500.lc554.BrickWall.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

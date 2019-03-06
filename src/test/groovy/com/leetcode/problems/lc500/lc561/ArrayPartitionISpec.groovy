@@ -1,6 +1,6 @@
-package com.leetcode.problems.lc561
+package com.leetcode.problems.lc500.lc561
 
-import com.leetcode.problems.lc561.Solution as S
+import com.leetcode.problems.lc500.lc561.Solution as S
 import spock.lang.Specification
 
 class ArrayPartitionISpec extends Specification {

@@ -1,6 +1,6 @@
-package com.leetcode.problems.hashtable.medium
+package com.leetcode.problems.lc700.lc739
 
-import com.leetcode.problems.hashtable.medium.DailyTemperatures.Solution as S
+import com.leetcode.problems.lc700.lc739.DailyTemperatures.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 
