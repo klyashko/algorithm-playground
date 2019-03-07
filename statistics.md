@@ -96,6 +96,7 @@
    * [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
    * [Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/description/)
    * [Binary Tree Pruning](https://leetcode.com/problems/binary-tree-pruning/description/)
+   * [Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/)
    
  * hard:
    * [SerializeAndDeserializeBinaryTree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/)
@@ -416,4 +417,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/description/)
 
-##### Total: 212
+##### Total: 213
