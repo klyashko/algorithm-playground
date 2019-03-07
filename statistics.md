@@ -91,6 +91,7 @@
    
  * medium:
    * [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
+   * [Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/)
    * [All Possible Full Binary Trees](https://leetcode.com/problems/all-possible-full-binary-trees/description/)
    * [All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/)
    * [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
@@ -417,4 +418,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/description/)
 
-##### Total: 213
+##### Total: 214
