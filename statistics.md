@@ -86,6 +86,7 @@
    * [Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/description/)
    * [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/)
    * [Leaf Similar Trees](https://leetcode.com/problems/leaf-similar-trees/description/)
+   * [Path Sum](https://leetcode.com/problems/path-sum/)
    
  * medium:
    * [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
@@ -413,4 +414,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/description/)
 
-##### Total: 209
+##### Total: 210
