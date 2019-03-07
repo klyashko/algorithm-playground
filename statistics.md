@@ -83,6 +83,7 @@
 
  * easy:
    * [Maximum Depth Of N Tree](https://leetcode.com/problems/maximum-depth-of-n-ary-tree/description/)
+   * [Find Mode in Binary Search Tree](https://leetcode.com/problems/find-mode-in-binary-search-tree/)
    * [Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/description/)
    * [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/)
    * [Leaf Similar Trees](https://leetcode.com/problems/leaf-similar-trees/description/)
@@ -414,4 +415,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/description/)
 
-##### Total: 210
+##### Total: 211
