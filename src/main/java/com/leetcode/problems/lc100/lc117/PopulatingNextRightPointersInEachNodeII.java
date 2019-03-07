@@ -10,11 +10,10 @@ public class PopulatingNextRightPointersInEachNodeII {
 
 	class Solution {
 		public Node connect(Node root) {
-			connect(root, new ArrayList<>(), 0);
-			return root;
+			return connect(root, new ArrayList<>(), 0);
 		}
 
-		private void connect(Node root, List<Node> nodes, int depth) {
+		private Node connect(Node root, List<Node> nodes, int depth) {
 			if (root != null) {
 				if (depth == nodes.size()) {
 					nodes.add(root);
@@ -25,24 +24,9 @@ public class PopulatingNextRightPointersInEachNodeII {
 				connect(root.right, nodes, depth + 1);
 				connect(root.left, nodes, depth + 1);
 			}
+			return root;
 		}
 
-	}
-
-	class Node {
-		public int val;
-		public Node left;
-		public Node right;
-		public Node next;
-
-		public Node() {}
-
-		public Node(int _val, Node _left, Node _right, Node _next) {
-			val = _val;
-			left = _left;
-			right = _right;
-			next = _next;
-		}
 	}
 
 }

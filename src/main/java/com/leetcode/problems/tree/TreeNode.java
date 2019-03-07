@@ -2,7 +2,6 @@ package com.leetcode.problems.tree;
 
 import java.util.*;
 
-@SuppressWarnings("Duplicates")
 public class TreeNode {
 
 	private static final String NULL = "null";
@@ -12,9 +11,7 @@ public class TreeNode {
 	public TreeNode left;
 	public TreeNode right;
 
-	public TreeNode() {
-
-	}
+	public TreeNode() { }
 
 	public TreeNode(int x) { val = x; }
 
@@ -133,7 +130,7 @@ public class TreeNode {
 			builder.append(NULL).append(DELIMITER);
 			return;
 		}
-		builder.append(String.valueOf(node.val)).append(DELIMITER);
+		builder.append(node.val).append(DELIMITER);
 		toStringBuilder(node.left, builder);
 		toStringBuilder(node.right, builder);
 	}
