@@ -93,6 +93,7 @@
    * [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
    * [All Possible Full Binary Trees](https://leetcode.com/problems/all-possible-full-binary-trees/description/)
    * [All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/)
+   * [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
    * [Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/description/)
    * [Binary Tree Pruning](https://leetcode.com/problems/binary-tree-pruning/description/)
    
@@ -415,4 +416,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/description/)
 
-##### Total: 211
+##### Total: 212
