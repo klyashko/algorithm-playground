@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.dynamicprogramming.hard
+package com.algorithm.playground.leetcode.problems.lc400.lc410
 
-
+import com.algorithm.playground.leetcode.problems.lc400.lc410.SplitArrayLargestSum
 import spock.lang.Specification
 import spock.lang.Unroll
 

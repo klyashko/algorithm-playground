@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.dynamicprogramming.hard;
+package com.algorithm.playground.leetcode.problems.lc0.lc10;
 
 /**
  * https://leetcode.com/problems/regular-expression-matching/description/

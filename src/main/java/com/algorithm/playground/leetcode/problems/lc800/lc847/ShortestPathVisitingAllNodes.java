@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.dynamicprogramming.hard;
+package com.algorithm.playground.leetcode.problems.lc800.lc847;
 
 import java.util.Arrays;
 import java.util.LinkedList;

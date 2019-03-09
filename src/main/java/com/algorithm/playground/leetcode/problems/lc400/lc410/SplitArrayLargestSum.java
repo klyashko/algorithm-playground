@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.dynamicprogramming.hard;
+package com.algorithm.playground.leetcode.problems.lc400.lc410;
 
 /**
  * https://leetcode.com/problems/split-array-largest-sum/description/
