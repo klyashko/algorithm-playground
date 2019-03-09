@@ -7,7 +7,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.example</groupId>
-	<artifactId>leetcode.problems</artifactId>
+	<artifactId>algorithm-playground</artifactId>
 	<version>0.1.0</version>
 
 	<properties>

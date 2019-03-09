@@ -1,6 +1,5 @@
 package com.algorithm.playground.leetcode.problems.lc0.lc32
 
-import com.algorithm.playground.leetcode.problems.lc0.lc32.LongestValidParentheses
 import spock.lang.Specification
 import spock.lang.Unroll
 
