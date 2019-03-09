@@ -34,7 +34,6 @@ public class RedundantConnectionII {
 
 				while (!queue.isEmpty()) {
 					Integer current = queue.poll();
-					//noinspection ConstantConditions
 					for (int to : parentToChild.getOrDefault(current, Collections.emptyList())) {
 						if (visited.contains(to)) {
 							edgesToDelete.addAll(childToParent.getOrDefault(to, Collections.emptyList()));
