@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.dynamicprogramming.easy;
+package com.algorithm.playground.leetcode.problems.lc300.lc303;
 
 /**
  * https://leetcode.com/problems/range-sum-query-immutable/

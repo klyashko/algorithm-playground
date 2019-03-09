@@ -1,5 +1,6 @@
-package com.algorithm.playground.leetcode.problems.dynamicprogramming.easy
+package com.algorithm.playground.leetcode.problems.lc300.lc303
 
+import com.algorithm.playground.leetcode.problems.lc300.lc303.NumArray
 import spock.lang.Specification
 import spock.lang.Unroll
 

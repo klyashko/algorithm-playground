@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.dynamicprogramming.easy;
+package com.algorithm.playground.leetcode.problems.lc0.lc53;
 
 /**
  * https://leetcode.com/problems/maximum-subarray/description/

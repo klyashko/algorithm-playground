@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.dynamicprogramming.easy;
+package com.algorithm.playground.leetcode.problems.lc700.lc746;
 
 /**
  * https://leetcode.com/problems/min-cost-climbing-stairs/description/

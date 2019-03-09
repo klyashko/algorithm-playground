@@ -1,5 +1,6 @@
-package com.algorithm.playground.leetcode.problems.dynamicprogramming.easy
+package com.algorithm.playground.leetcode.problems.lc0.lc53
 
+import com.algorithm.playground.leetcode.problems.lc0.lc53.MaximumSubarray
 import spock.lang.Specification
 import spock.lang.Unroll
 
