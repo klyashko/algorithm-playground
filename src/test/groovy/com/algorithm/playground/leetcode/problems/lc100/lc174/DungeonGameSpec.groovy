@@ -1,5 +1,6 @@
-package com.algorithm.playground.leetcode.problems.dynamicprogramming.hard
+package com.algorithm.playground.leetcode.problems.lc100.lc174
 
+import com.algorithm.playground.leetcode.problems.lc100.lc174.DungeonGame
 import spock.lang.Specification
 import spock.lang.Unroll
 
