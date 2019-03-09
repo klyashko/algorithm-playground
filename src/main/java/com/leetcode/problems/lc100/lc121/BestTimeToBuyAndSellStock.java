@@ -1,4 +1,4 @@
-package com.leetcode.problems.dynamicprogramming.easy;
+package com.leetcode.problems.lc100.lc121;
 
 /**
  * https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/

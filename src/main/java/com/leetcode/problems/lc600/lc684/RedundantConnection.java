@@ -1,4 +1,4 @@
-package com.leetcode.problems.graph.medium;
+package com.leetcode.problems.lc600.lc684;
 
 import java.util.*;
 

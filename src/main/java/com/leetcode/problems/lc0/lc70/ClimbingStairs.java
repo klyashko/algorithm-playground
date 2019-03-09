@@ -1,4 +1,4 @@
-package com.leetcode.problems.dynamicprogramming.easy;
+package com.leetcode.problems.lc0.lc70;
 
 /**
  * https://leetcode.com/problems/climbing-stairs/description/

@@ -1,5 +1,6 @@
-package com.leetcode.problems.dynamicprogramming.easy
+package com.leetcode.problems.lc100.lc121
 
+import com.leetcode.problems.lc100.lc121.BestTimeToBuyAndSellStock
 import spock.lang.Specification
 import spock.lang.Unroll
 
