@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.lc100.lc133
+package com.algorithm.playground.leetcode.problems.lc100.lc130.lc133
 
-
+import com.algorithm.playground.leetcode.problems.lc100.lc130.lc133.CloneGraph.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 
@@ -23,7 +23,7 @@ class CloneGraphSpec extends Specification {
 
 		expect:
 
-			equalsButNotSame(new CloneGraph.Solution().cloneGraph(one), one, [] as Set)
+			equalsButNotSame(new S().cloneGraph(one), one, [] as Set)
 
 	}
 

@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.lc100.lc136
+package com.algorithm.playground.leetcode.problems.lc100.lc130.lc136
 
-import com.algorithm.playground.leetcode.problems.lc100.lc136.SingleNumber.Solution as S
+import com.algorithm.playground.leetcode.problems.lc100.lc130.lc136.SingleNumber.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

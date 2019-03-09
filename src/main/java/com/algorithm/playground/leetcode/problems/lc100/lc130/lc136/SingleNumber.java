@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.lc100.lc136;
+package com.algorithm.playground.leetcode.problems.lc100.lc130.lc136;
 
 /**
  * https://leetcode.com/problems/single-number/description/

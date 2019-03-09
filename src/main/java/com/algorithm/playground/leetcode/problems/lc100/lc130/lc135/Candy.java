@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.lc100.lc135;
+package com.algorithm.playground.leetcode.problems.lc100.lc130.lc135;
 
 /**
  * https://leetcode.com/problems/candy/description/

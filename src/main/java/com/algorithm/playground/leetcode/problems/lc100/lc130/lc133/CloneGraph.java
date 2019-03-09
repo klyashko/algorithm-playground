@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.lc100.lc133;
+package com.algorithm.playground.leetcode.problems.lc100.lc130.lc133;
 
 import java.util.ArrayList;
 import java.util.HashMap;
