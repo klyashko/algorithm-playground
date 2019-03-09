@@ -1,4 +1,4 @@
-package com.leetcode.problems.dynamicprogramming.easy;
+package com.leetcode.problems.lc100.lc198;
 
 /**
  * https://leetcode.com/problems/house-robber/description/

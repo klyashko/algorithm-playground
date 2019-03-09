@@ -1,5 +1,6 @@
-package com.leetcode.problems.dynamicprogramming.easy
+package com.leetcode.problems.lc100.lc198
 
+import com.leetcode.problems.lc100.lc198.HouseRobber
 import spock.lang.Specification
 import spock.lang.Unroll
 
