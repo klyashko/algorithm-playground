@@ -1,4 +1,4 @@
-package com.leetcode.problems.graph.medium;
+package com.leetcode.problems.lc800.lc802;
 
 import java.util.ArrayList;
 import java.util.List;

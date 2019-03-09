@@ -1,10 +1,13 @@
-package com.leetcode.problems.graph.medium;
+package com.leetcode.problems.lc300.lc399;
 
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
+/**
+ * https://leetcode.com/problems/evaluate-division/
+ */
 public class EvaluateDivision {
 
 	class Solution {

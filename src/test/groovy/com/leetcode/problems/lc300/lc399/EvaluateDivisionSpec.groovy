@@ -1,6 +1,6 @@
-package com.leetcode.problems.graph.medium
+package com.leetcode.problems.lc300.lc399
 
-import com.leetcode.problems.graph.medium.EvaluateDivision.Solution as S
+import com.leetcode.problems.lc300.lc399.EvaluateDivision.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

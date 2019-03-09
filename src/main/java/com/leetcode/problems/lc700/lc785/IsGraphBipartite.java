@@ -1,4 +1,4 @@
-package com.leetcode.problems.graph.medium;
+package com.leetcode.problems.lc700.lc785;
 
 /**
  * https://leetcode.com/problems/is-graph-bipartite/description/
