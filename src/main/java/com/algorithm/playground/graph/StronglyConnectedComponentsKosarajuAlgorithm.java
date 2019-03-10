@@ -52,15 +52,12 @@ public class StronglyConnectedComponentsKosarajuAlgorithm<V> {
 	}
 
 	private void firstDFS(Map<V, List<V>> graph, Set<V> seen, LinkedList<V> stack, V curr) {
-		if (!seen.add(curr)) {
-			return;
-		}
-		for (V next : graph.getOrDefault(curr, emptyList())) {
-			if (!seen.contains(next)) {
+		if (seen.add(curr)) {
+			for (V next : graph.getOrDefault(curr, emptyList())) {
 				firstDFS(graph, seen, stack, next);
 			}
+			stack.push(curr);
 		}
-		stack.push(curr);
 	}
 
 	private Map<V, List<V>> reverse(Map<V, List<V>> graph) {
