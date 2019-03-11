@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.dynamicprogramming.medium;
+package com.algorithm.playground.leetcode.problems.lc600.lc650;
 
 /**
  * https://leetcode.com/problems/2-keys-keyboard/description/
