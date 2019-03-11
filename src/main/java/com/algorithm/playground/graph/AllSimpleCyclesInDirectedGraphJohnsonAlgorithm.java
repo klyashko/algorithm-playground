@@ -18,12 +18,18 @@ public class AllSimpleCyclesInDirectedGraphJohnsonAlgorithm<V> {
 			List<Set<V>> components = scc.getComponents(graph);
 			int size = cycles.size();
 
+			stack.clear();
+			blockingSet.clear();
+			blockingMap.clear();
+
 			for (int i = 0; i < components.size() && size == cycles.size(); i++) {
 				for (V curr : components.get(i)) {
+					stack.push(curr);
 					if (getCycles(curr, curr, curr, cycles, stack, blockingSet, blockingMap, graph)) {
 						remove(curr, graph);
 						break;
 					}
+					stack.pop();
 				}
 			}
 
