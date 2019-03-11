@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.dynamicprogramming.medium;
+package com.algorithm.playground.leetcode.problems.lc300.lc357;
 
 /**
  * https://leetcode.com/problems/count-numbers-with-unique-digits/description/
