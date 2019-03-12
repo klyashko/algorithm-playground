@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.lc700.lc714;
+package com.algorithm.playground.leetcode.problems.lc700.lc710.lc714;
 
 /**
  * https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/description/

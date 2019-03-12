@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.dynamicprogramming.medium;
+package com.algorithm.playground.leetcode.problems.lc600.lc646;
 
 import java.util.Arrays;
 import java.util.Comparator;

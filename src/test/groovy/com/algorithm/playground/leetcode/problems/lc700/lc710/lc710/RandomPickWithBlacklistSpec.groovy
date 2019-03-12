@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.lc700.lc710
+package com.algorithm.playground.leetcode.problems.lc700.lc710.lc710
 
-import com.algorithm.playground.leetcode.problems.lc700.lc710.RandomPickWithBlacklist as S
+import com.algorithm.playground.leetcode.problems.lc700.lc710.lc710.RandomPickWithBlacklist as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

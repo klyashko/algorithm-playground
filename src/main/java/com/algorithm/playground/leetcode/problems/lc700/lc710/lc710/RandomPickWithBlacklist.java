@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.lc700.lc710;
+package com.algorithm.playground.leetcode.problems.lc700.lc710.lc710;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.dynamicprogramming.medium;
+package com.algorithm.playground.leetcode.problems.lc700.lc710.lc712;
 
 /**
  * https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings
