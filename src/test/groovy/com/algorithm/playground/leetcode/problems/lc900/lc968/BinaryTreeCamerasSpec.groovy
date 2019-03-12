@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.lc968
+package com.algorithm.playground.leetcode.problems.lc900.lc968
 
-import com.algorithm.playground.leetcode.problems.lc968.BinaryTreeCameras.Solution as S
+import com.algorithm.playground.leetcode.problems.lc900.lc968.BinaryTreeCameras.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

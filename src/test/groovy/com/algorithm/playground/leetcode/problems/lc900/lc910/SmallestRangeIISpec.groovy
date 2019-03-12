@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.lc910
+package com.algorithm.playground.leetcode.problems.lc900.lc910
 
-import com.algorithm.playground.leetcode.problems.lc910.SmallestRangeII.Solution as S
+import com.algorithm.playground.leetcode.problems.lc900.lc910.SmallestRangeII.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 
