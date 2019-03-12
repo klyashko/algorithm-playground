@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.divideandconquer.hard;
+package com.algorithm.playground.leetcode.problems.lc300.lc312;
 
 /**
  * https://leetcode.com/problems/burst-balloons/description/

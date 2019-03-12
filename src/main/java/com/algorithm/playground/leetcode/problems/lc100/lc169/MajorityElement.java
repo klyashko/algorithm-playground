@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.divideandconquer.easy;
+package com.algorithm.playground.leetcode.problems.lc100.lc169;
 
 import java.util.HashMap;
 import java.util.Map;

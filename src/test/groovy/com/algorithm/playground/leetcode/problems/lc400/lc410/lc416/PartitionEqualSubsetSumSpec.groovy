@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.dynamicprogramming.medium
+package com.algorithm.playground.leetcode.problems.lc400.lc410.lc416
 
-
+import com.algorithm.playground.leetcode.problems.lc400.lc410.lc416.PartitionEqualSubsetSum
 import spock.lang.Specification
 import spock.lang.Unroll
 

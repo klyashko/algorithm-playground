@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.divideandconquer.easy
+package com.algorithm.playground.leetcode.problems.lc100.lc169
 
-
+import com.algorithm.playground.leetcode.problems.lc100.lc169.MajorityElement
 import spock.lang.Specification
 import spock.lang.Unroll
 

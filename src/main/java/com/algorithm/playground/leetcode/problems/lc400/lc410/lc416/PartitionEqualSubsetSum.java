@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.dynamicprogramming.medium;
+package com.algorithm.playground.leetcode.problems.lc400.lc410.lc416;
 
 import java.util.Arrays;
 

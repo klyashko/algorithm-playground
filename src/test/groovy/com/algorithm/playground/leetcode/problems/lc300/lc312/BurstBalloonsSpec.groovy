@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.divideandconquer.hard
+package com.algorithm.playground.leetcode.problems.lc300.lc312
 
-
+import com.algorithm.playground.leetcode.problems.lc300.lc312.BurstBalloons
 import spock.lang.Specification
 import spock.lang.Unroll
 

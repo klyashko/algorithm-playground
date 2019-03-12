@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.dynamicprogramming.medium;
+package com.algorithm.playground.leetcode.problems.lc600.lc647;
 
 /**
  * https://leetcode.com/problems/palindromic-substrings/description/
