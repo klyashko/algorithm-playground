@@ -16,16 +16,15 @@ public class BinaryTreePaths {
 		}
 
 		private List<String> binaryTreePaths(TreeNode root, String curr, List<String> values) {
-			if (root != null && root.left == null && root.right == null) {
-				if (curr.isEmpty()) {
-					values.add(curr + root.val);
+			if (root != null) {
+				curr += root.val;
+				if (root.left == null && root.right == null) {
+					values.add(curr);
 				} else {
-					values.add(curr.substring(2) + "->" + root.val);
+					curr = curr + "->";
+					binaryTreePaths(root.left, curr, values);
+					binaryTreePaths(root.right, curr, values);
 				}
-			} else if (root != null) {
-				curr = curr + "->" + root.val;
-				binaryTreePaths(root.left, curr, values);
-				binaryTreePaths(root.right, curr, values);
 			}
 			return values;
 		}
