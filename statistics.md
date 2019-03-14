@@ -130,6 +130,7 @@
    * [Maximum Depth Of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/)
    * [Employee Importance](https://leetcode.com/problems/employee-importance/description/)
    * [Max Area of Island](https://leetcode.com/problems/max-area-of-island/description/)
+   * [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)
    
  * medium:
    * [Find Largest Value in Each Tree Row](https://leetcode.com/problems/find-largest-value-in-each-tree-row/description/)
@@ -421,4 +422,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/description/)
 
-##### Total: 217
+##### Total: 218
