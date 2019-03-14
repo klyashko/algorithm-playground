@@ -18,7 +18,7 @@ public class BalancedBinaryTree {
 			}
 			int left = checkDepth(root.left);
 			int right = checkDepth(root.right);
-			if (left == -1 || right == -1 || (left != right && Math.max(left, right) - 1 != Math.min(left, right))) {
+			if (left == -1 || right == -1 || Math.abs(left - right) > 1) {
 				return -1;
 			} else {
 				return Math.max(left, right) + 1;
