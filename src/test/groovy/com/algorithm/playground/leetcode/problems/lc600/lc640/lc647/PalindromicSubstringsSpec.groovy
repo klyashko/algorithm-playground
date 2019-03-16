@@ -1,6 +1,5 @@
-package com.algorithm.playground.leetcode.problems.lc600.lc647
+package com.algorithm.playground.leetcode.problems.lc600.lc640.lc647
 
-import com.algorithm.playground.leetcode.problems.lc600.lc647.PalindromicSubstrings
 import spock.lang.Specification
 import spock.lang.Unroll
 

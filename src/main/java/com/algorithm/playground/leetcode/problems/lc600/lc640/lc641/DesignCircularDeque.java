@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.design.medium;
+package com.algorithm.playground.leetcode.problems.lc600.lc640.lc641;
 
 /**
  * https://leetcode.com/problems/design-circular-deque/description/

@@ -1,10 +1,10 @@
-package com.algorithm.playground.leetcode.problems.design.medium
+package com.algorithm.playground.leetcode.problems.lc300.lc341
 
 import spock.lang.Specification
 import spock.lang.Unroll
 
-import static FlattenNestedListIterator.nestedInteger as i
-import static FlattenNestedListIterator.nestedIterator as iterator
+import static com.algorithm.playground.leetcode.problems.lc300.lc341.FlattenNestedListIterator.nestedInteger as i
+import static com.algorithm.playground.leetcode.problems.lc300.lc341.FlattenNestedListIterator.nestedIterator as iterator
 
 class FlattenNestedListIteratorSpec extends Specification {
 

@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.design.medium;
+package com.algorithm.playground.leetcode.problems.lc300.lc341;
 
 import java.util.Iterator;
 import java.util.LinkedList;

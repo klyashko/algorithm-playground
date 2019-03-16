@@ -1,6 +1,5 @@
-package com.algorithm.playground.leetcode.problems.lc600.lc646
+package com.algorithm.playground.leetcode.problems.lc600.lc640.lc646
 
-import com.algorithm.playground.leetcode.problems.lc600.lc646.MaximumLengthOfPairChain
 import spock.lang.Specification
 import spock.lang.Unroll
 
