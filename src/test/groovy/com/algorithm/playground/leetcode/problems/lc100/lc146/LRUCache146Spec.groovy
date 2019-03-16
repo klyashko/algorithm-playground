@@ -1,9 +1,9 @@
-package com.algorithm.playground.leetcode.problems.design.hard
+package com.algorithm.playground.leetcode.problems.lc100.lc146
 
 import spock.lang.Specification
 import spock.lang.Unroll
 
-import static LRUCache146.lruCache as cache
+import static com.algorithm.playground.leetcode.problems.lc100.lc146.LRUCache146.lruCache as cache
 
 class LRUCache146Spec extends Specification {
 

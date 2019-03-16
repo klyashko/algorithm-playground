@@ -37,7 +37,7 @@ public class SurroundedRegions {
 		}
 
 		private void dfs(char[][] board, boolean[][] visited, int r, int c, int rows, int cols) {
-			if (!isInRange(r, rows) || !isInRange(c, cols) || visited[r][c] || board[r][c] == 'X') {
+			if (isNotInRange(r, rows) || isNotInRange(c, cols) || visited[r][c] || board[r][c] == 'X') {
 				return;
 			}
 			visited[r][c] = true;
@@ -48,8 +48,8 @@ public class SurroundedRegions {
 			}
 		}
 
-		private boolean isInRange(int n, int to) {
-			return n >= 0 && n < to;
+		private boolean isNotInRange(int n, int to) {
+			return n < 0 || n >= to;
 		}
 
 	}

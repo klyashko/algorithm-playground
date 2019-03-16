@@ -1,9 +1,9 @@
-package com.algorithm.playground.leetcode.problems.design.hard
+package com.algorithm.playground.leetcode.problems.lc400.lc460
 
 import spock.lang.Specification
 import spock.lang.Unroll
 
-import static LFUCache460.lfuCache as cache
+import static com.algorithm.playground.leetcode.problems.lc400.lc460.LFUCache460.lfuCache as cache
 
 class LFUCache460Spec extends Specification {
 
