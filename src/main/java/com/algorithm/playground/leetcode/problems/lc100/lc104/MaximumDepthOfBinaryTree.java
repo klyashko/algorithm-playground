@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.depthfirstsearch.easy;
+package com.algorithm.playground.leetcode.problems.lc100.lc104;
 
 import com.algorithm.playground.leetcode.problems.tree.TreeNode;
 

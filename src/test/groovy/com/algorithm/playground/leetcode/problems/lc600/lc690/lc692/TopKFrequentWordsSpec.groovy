@@ -1,7 +1,7 @@
-package com.algorithm.playground.leetcode.problems.lc600.lc692
+package com.algorithm.playground.leetcode.problems.lc600.lc690.lc692
 
-import com.algorithm.playground.leetcode.problems.lc600.lc692.TopKFrequentWords.PriorityQueueSolution as PQS
-import com.algorithm.playground.leetcode.problems.lc600.lc692.TopKFrequentWords.Solution as S
+import com.algorithm.playground.leetcode.problems.lc600.lc690.lc692.TopKFrequentWords.PriorityQueueSolution as PQS
+import com.algorithm.playground.leetcode.problems.lc600.lc690.lc692.TopKFrequentWords.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

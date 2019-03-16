@@ -1,10 +1,10 @@
-package com.algorithm.playground.leetcode.problems.depthfirstsearch.easy
+package com.algorithm.playground.leetcode.problems.lc600.lc690.lc690
 
-
+import com.algorithm.playground.leetcode.problems.lc600.lc690.lc690.EmployeeImportance
 import spock.lang.Specification
 import spock.lang.Unroll
 
-import static EmployeeImportance.e
+import static com.algorithm.playground.leetcode.problems.lc600.lc690.lc690.EmployeeImportance.e
 
 class EmployeeImportanceSpec extends Specification {
 

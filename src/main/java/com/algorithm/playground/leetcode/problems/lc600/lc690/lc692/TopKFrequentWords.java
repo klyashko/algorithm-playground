@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.lc600.lc692;
+package com.algorithm.playground.leetcode.problems.lc600.lc690.lc692;
 
 import java.util.*;
 
