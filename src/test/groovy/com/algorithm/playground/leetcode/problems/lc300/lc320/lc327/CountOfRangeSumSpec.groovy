@@ -1,6 +1,5 @@
-package com.algorithm.playground.leetcode.problems.lc300.lc327
+package com.algorithm.playground.leetcode.problems.lc300.lc320.lc327
 
-import com.algorithm.playground.leetcode.problems.lc300.lc327.CountOfRangeSum
 import spock.lang.Specification
 import spock.lang.Unroll
 

@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.depthfirstsearch.hard;
+package com.algorithm.playground.leetcode.problems.lc500.lc546;
 
 /**
  * https://leetcode.com/problems/remove-boxes/description/

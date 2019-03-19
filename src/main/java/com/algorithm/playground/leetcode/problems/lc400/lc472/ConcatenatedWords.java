@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.depthfirstsearch.hard;
+package com.algorithm.playground.leetcode.problems.lc400.lc472;
 
 import java.util.ArrayList;
 import java.util.List;

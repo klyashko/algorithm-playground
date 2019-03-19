@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.lc300.lc321
+package com.algorithm.playground.leetcode.problems.lc300.lc320.lc321
 
-import com.algorithm.playground.leetcode.problems.lc300.lc321.CreateMaximumNumber.Solution as S
+import com.algorithm.playground.leetcode.problems.lc300.lc320.lc321.CreateMaximumNumber.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

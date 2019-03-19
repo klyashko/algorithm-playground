@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.depthfirstsearch.hard
+package com.algorithm.playground.leetcode.problems.lc500.lc546
 
-
+import com.algorithm.playground.leetcode.problems.lc500.lc546.RemoveBoxes
 import spock.lang.Specification
 import spock.lang.Unroll
 

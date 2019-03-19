@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.lc300.lc327;
+package com.algorithm.playground.leetcode.problems.lc300.lc320.lc327;
 
 /**
  * https://leetcode.com/problems/count-of-range-sum/description/

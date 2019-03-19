@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.lc300.lc321;
+package com.algorithm.playground.leetcode.problems.lc300.lc320.lc321;
 
 /**
  * https://leetcode.com/problems/create-maximum-number/description/

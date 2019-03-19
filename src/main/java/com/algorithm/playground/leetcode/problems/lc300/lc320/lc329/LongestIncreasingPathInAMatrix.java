@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.depthfirstsearch.hard;
+package com.algorithm.playground.leetcode.problems.lc300.lc320.lc329;
 
 /**
  * https://leetcode.com/problems/longest-increasing-path-in-a-matrix/description/
