@@ -139,6 +139,7 @@
    * [Find Bottom Left Tree Value](https://leetcode.com/problems/find-bottom-left-tree-value/)
    * [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/)
    * [Keys and Rooms](https://leetcode.com/problems/keys-and-rooms/)
+   * [01 Matrix](https://leetcode.com/problems/01-matrix/)
    
  * hard:
    * [Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/)
@@ -425,4 +426,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/)
 
-##### Total: 221
+##### Total: 222
