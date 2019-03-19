@@ -9,6 +9,46 @@ public class Matrix01 {
 
 	class Solution {
 
+		public int[][] updateMatrix(int[][] matrix) {
+			int rows = matrix.length;
+			int cols = matrix[0].length;
+			int[][] ans = new int[rows][cols];
+			for (int[] row : ans) {
+				Arrays.fill(row, Integer.MAX_VALUE / 2);
+			}
+			for (int r = 0; r < rows; r++) {
+				for (int c = 0; c < cols; c++) {
+					if (matrix[r][c] == 0) {
+						ans[r][c] = 0;
+					} else {
+						if (r > 0) {
+							ans[r][c] = Math.min(ans[r][c], ans[r - 1][c] + 1);
+						}
+						if (c > 0) {
+							ans[r][c] = Math.min(ans[r][c], ans[r][c - 1] + 1);
+						}
+					}
+				}
+			}
+
+			for (int r = rows - 1; r >= 0; r--) {
+				for (int c = cols - 1; c >= 0; c--) {
+					if (r < rows - 1) {
+						ans[r][c] = Math.min(ans[r][c], ans[r + 1][c] + 1);
+					}
+					if (c < cols - 1) {
+						ans[r][c] = Math.min(ans[r][c], ans[r][c + 1] + 1);
+					}
+				}
+			}
+
+			return ans;
+		}
+
+	}
+
+	class DFSSolution {
+
 		private final int[] dr = {1, -1, 0, 0};
 		private final int[] dc = {0, 0, 1, -1};
 
