@@ -5,6 +5,7 @@ import java.util.Arrays;
 /**
  * https://leetcode.com/problems/01-matrix/
  */
+@SuppressWarnings("Duplicates")
 public class Matrix01 {
 
 	class Solution {
