@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.breadthfirstsearch.hard
+package com.algorithm.playground.leetcode.problems.lc800.lc854
 
-
+import com.algorithm.playground.leetcode.problems.lc800.lc854.KSimilarStrings
 import spock.lang.Specification
 import spock.lang.Unroll
 

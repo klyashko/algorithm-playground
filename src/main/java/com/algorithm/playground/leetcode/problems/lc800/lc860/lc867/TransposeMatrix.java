@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.lc800.lc867;
+package com.algorithm.playground.leetcode.problems.lc800.lc860.lc867;
 
 /**
  * https://leetcode.com/problems/transpose-matrix/description/

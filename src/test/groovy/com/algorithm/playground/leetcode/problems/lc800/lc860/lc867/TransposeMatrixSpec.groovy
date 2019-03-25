@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.lc800.lc867
+package com.algorithm.playground.leetcode.problems.lc800.lc860.lc867
 
-import com.algorithm.playground.leetcode.problems.lc800.lc867.TransposeMatrix.Solution
+import com.algorithm.playground.leetcode.problems.lc800.lc860.lc867.TransposeMatrix.Solution
 import spock.lang.Specification
 import spock.lang.Unroll
 

@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.breadthfirstsearch.hard
+package com.algorithm.playground.leetcode.problems.lc600.lc675
 
-
+import com.algorithm.playground.leetcode.problems.lc600.lc675.CutOffTreesForGolfEvent
 import spock.lang.Specification
 import spock.lang.Unroll
 

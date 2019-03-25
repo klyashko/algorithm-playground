@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.breadthfirstsearch.hard;
+package com.algorithm.playground.leetcode.problems.lc600.lc675;
 
 import java.util.*;
 

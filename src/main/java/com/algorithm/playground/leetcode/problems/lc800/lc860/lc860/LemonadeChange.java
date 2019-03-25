@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.lc800.lc860;
+package com.algorithm.playground.leetcode.problems.lc800.lc860.lc860;
 
 /**
  * https://leetcode.com/problems/lemonade-change/description/

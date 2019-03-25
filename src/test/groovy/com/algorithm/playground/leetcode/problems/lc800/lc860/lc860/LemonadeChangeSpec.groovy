@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.lc800.lc860
+package com.algorithm.playground.leetcode.problems.lc800.lc860.lc860
 
-import com.algorithm.playground.leetcode.problems.lc800.lc860.LemonadeChange.Solution as S
+import com.algorithm.playground.leetcode.problems.lc800.lc860.lc860.LemonadeChange.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

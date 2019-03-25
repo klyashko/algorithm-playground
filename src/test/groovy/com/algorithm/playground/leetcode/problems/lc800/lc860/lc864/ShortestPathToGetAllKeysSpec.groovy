@@ -1,5 +1,4 @@
-package com.algorithm.playground.leetcode.problems.breadthfirstsearch.hard
-
+package com.algorithm.playground.leetcode.problems.lc800.lc860.lc864
 
 import spock.lang.Specification
 import spock.lang.Unroll
