@@ -1,7 +1,7 @@
-package com.algorithm.playground.leetcode.problems.bitmanipulation.easy
+package com.algorithm.playground.leetcode.problems.lc400.lc470.lc476
 
-import com.algorithm.playground.leetcode.problems.bitmanipulation.easy.NumberComplement.FastSolution as FS
-import com.algorithm.playground.leetcode.problems.bitmanipulation.easy.NumberComplement.Solution as S
+import com.algorithm.playground.leetcode.problems.lc400.lc470.lc476.NumberComplement.FastSolution as FS
+import com.algorithm.playground.leetcode.problems.lc400.lc470.lc476.NumberComplement.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

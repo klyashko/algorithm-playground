@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.bitmanipulation.easy;
+package com.algorithm.playground.leetcode.problems.lc600.lc690.lc693;
 
 /**
  * https://leetcode.com/problems/binary-number-with-alternating-bits/description/

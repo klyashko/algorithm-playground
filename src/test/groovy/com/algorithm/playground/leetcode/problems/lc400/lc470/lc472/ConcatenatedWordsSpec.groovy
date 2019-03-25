@@ -1,6 +1,5 @@
-package com.algorithm.playground.leetcode.problems.lc400.lc472
+package com.algorithm.playground.leetcode.problems.lc400.lc470.lc472
 
-import com.algorithm.playground.leetcode.problems.lc400.lc472.ConcatenatedWords
 import spock.lang.Specification
 import spock.lang.Unroll
 

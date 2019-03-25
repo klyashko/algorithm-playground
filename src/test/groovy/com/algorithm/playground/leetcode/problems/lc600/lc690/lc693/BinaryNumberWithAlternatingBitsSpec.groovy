@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.bitmanipulation.easy
+package com.algorithm.playground.leetcode.problems.lc600.lc690.lc693
 
-import com.algorithm.playground.leetcode.problems.bitmanipulation.easy.BinaryNumberWithAlternatingBits.Solution as S
+import com.algorithm.playground.leetcode.problems.lc600.lc690.lc693.BinaryNumberWithAlternatingBits.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

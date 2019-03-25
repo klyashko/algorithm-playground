@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.lc400.lc473
+package com.algorithm.playground.leetcode.problems.lc400.lc470.lc473
 
-import com.algorithm.playground.leetcode.problems.lc400.lc473.MatchsticksToSquare.Solution as S
+import com.algorithm.playground.leetcode.problems.lc400.lc470.lc473.MatchsticksToSquare.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

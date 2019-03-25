@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.bitmanipulation.easy;
+package com.algorithm.playground.leetcode.problems.lc400.lc470.lc476;
 
 /**
  * https://leetcode.com/problems/number-complement/description/
