@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.breadthfirstsearch.medium;
+package com.algorithm.playground.leetcode.problems.lc700.lc752;
 
 import java.util.*;
 

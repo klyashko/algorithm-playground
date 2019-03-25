@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.breadthfirstsearch.medium
+package com.algorithm.playground.leetcode.problems.lc100.lc100.lc102
 
-
+import com.algorithm.playground.leetcode.problems.lc100.lc100.lc102.BinaryTreeLevelOrderTraversal
 import spock.lang.Specification
 import spock.lang.Unroll
 

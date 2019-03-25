@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.breadthfirstsearch.medium
+package com.algorithm.playground.leetcode.problems.lc100.lc199
 
-
+import com.algorithm.playground.leetcode.problems.lc100.lc199.BinaryTreeRightSideView
 import spock.lang.Specification
 import spock.lang.Unroll
 

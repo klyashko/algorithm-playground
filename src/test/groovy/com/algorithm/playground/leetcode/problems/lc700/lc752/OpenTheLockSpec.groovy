@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.breadthfirstsearch.medium
+package com.algorithm.playground.leetcode.problems.lc700.lc752
 
-
+import com.algorithm.playground.leetcode.problems.lc700.lc752.OpenTheLock
 import spock.lang.Specification
 import spock.lang.Unroll
 
