@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.bitmanipulation.medium
+package com.algorithm.playground.leetcode.problems.lc400.lc421
 
-import com.algorithm.playground.leetcode.problems.bitmanipulation.medium.MaximumXOROfTwoNumbersInAnArray.Solution as S
+import com.algorithm.playground.leetcode.problems.lc400.lc421.MaximumXOROfTwoNumbersInAnArray.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

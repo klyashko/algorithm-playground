@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.bitmanipulation.medium;
+package com.algorithm.playground.leetcode.problems.lc400.lc421;
 
 import java.util.HashSet;
 import java.util.Set;

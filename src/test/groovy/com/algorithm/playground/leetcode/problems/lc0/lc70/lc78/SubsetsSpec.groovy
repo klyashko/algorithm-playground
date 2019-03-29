@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.bitmanipulation.medium
+package com.algorithm.playground.leetcode.problems.lc0.lc70.lc78
 
-import com.algorithm.playground.leetcode.problems.bitmanipulation.medium.Subsets.Solution as S
+import com.algorithm.playground.leetcode.problems.lc0.lc70.lc78.Subsets.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

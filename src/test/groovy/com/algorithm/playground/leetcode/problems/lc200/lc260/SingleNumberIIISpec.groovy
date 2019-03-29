@@ -1,7 +1,7 @@
-package com.algorithm.playground.leetcode.problems.bitmanipulation.medium
+package com.algorithm.playground.leetcode.problems.lc200.lc260
 
-import com.algorithm.playground.leetcode.problems.bitmanipulation.medium.SingleNumberIII.FastSolution as FS
-import com.algorithm.playground.leetcode.problems.bitmanipulation.medium.SingleNumberIII.Solution as S
+import com.algorithm.playground.leetcode.problems.lc200.lc260.SingleNumberIII.FastSolution as FS
+import com.algorithm.playground.leetcode.problems.lc200.lc260.SingleNumberIII.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.bitmanipulation.medium;
+package com.algorithm.playground.leetcode.problems.lc400.lc470.lc477;
 
 /**
  * https://leetcode.com/problems/total-hamming-distance/description/

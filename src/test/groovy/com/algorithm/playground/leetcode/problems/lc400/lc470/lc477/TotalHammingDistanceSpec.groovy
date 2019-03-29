@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.bitmanipulation.medium
+package com.algorithm.playground.leetcode.problems.lc400.lc470.lc477
 
-import com.algorithm.playground.leetcode.problems.bitmanipulation.medium.TotalHammingDistance.Solution as S
+import com.algorithm.playground.leetcode.problems.lc400.lc470.lc477.TotalHammingDistance.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.lc0.lc70;
+package com.algorithm.playground.leetcode.problems.lc0.lc70.lc70;
 
 /**
  * https://leetcode.com/problems/climbing-stairs/description/

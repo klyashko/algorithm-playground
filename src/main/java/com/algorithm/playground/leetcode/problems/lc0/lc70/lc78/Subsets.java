@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.bitmanipulation.medium;
+package com.algorithm.playground.leetcode.problems.lc0.lc70.lc78;
 
 import java.util.ArrayList;
 import java.util.List;

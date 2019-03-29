@@ -1,7 +1,7 @@
-package com.algorithm.playground.leetcode.problems.lc0.lc76
+package com.algorithm.playground.leetcode.problems.lc0.lc70.lc76
 
-import com.algorithm.playground.leetcode.problems.lc0.lc76.MinimumWindowSubstring.Solution as S
-import com.algorithm.playground.leetcode.problems.lc0.lc76.MinimumWindowSubstring.SolutionOptimized as SO
+import com.algorithm.playground.leetcode.problems.lc0.lc70.lc76.MinimumWindowSubstring.Solution as S
+import com.algorithm.playground.leetcode.problems.lc0.lc70.lc76.MinimumWindowSubstring.SolutionOptimized as SO
 import spock.lang.Specification
 import spock.lang.Unroll
 

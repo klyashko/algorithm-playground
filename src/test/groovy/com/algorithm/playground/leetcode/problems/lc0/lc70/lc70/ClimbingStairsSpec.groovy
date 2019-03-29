@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.lc0.lc70
+package com.algorithm.playground.leetcode.problems.lc0.lc70.lc70
 
-
+import com.algorithm.playground.leetcode.problems.lc0.lc70.lc70.ClimbingStairs
 import spock.lang.Specification
 import spock.lang.Unroll
 

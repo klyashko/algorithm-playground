@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.lc0.lc76;
+package com.algorithm.playground.leetcode.problems.lc0.lc70.lc76;
 
 import java.util.ArrayList;
 import java.util.HashMap;
