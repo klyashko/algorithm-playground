@@ -99,9 +99,8 @@ public class BinaryMinHeap<K, V extends Comparable<V>> {
 			values.set(idx, new Tuple2<>(key, value));
 		}
 
-		if (!validateParent(idx)) {
-			validateChildren(idx);
-		}
+		shiftUp(idx);
+		shiftDown(idx);
 	}
 
 	/**
@@ -127,17 +126,13 @@ public class BinaryMinHeap<K, V extends Comparable<V>> {
 	 *
 	 * @return true if values were swapped at least once
 	 */
-	private boolean validateParent(int idx) {
-		if (idx == 0) {
-			return false;
-		}
-		int parentIdx = parent(idx);
-		if (values.get(parentIdx)._2.compareTo(values.get(idx)._2) < 0) {
-			return false;
-		} else {
-			swap(idx, parentIdx);
-			validateParent(parentIdx);
-			return true;
+	private void shiftUp(int idx) {
+		if (idx != 0) {
+			int parentIdx = parent(idx);
+			if (values.get(parentIdx)._2.compareTo(values.get(idx)._2) >= 0) {
+				swap(idx, parentIdx);
+				shiftUp(parentIdx);
+			}
 		}
 	}
 
@@ -149,7 +144,7 @@ public class BinaryMinHeap<K, V extends Comparable<V>> {
 	 *
 	 * @param idx an index in the heap
 	 */
-	private void validateChildren(int idx) {
+	private void shiftDown(int idx) {
 		int min = idx;
 		V weight = values.get(idx)._2;
 		for (int child : children(idx)) {
@@ -163,7 +158,7 @@ public class BinaryMinHeap<K, V extends Comparable<V>> {
 		}
 		if (min != idx) {
 			swap(idx, min);
-			validateChildren(min);
+			shiftDown(min);
 		}
 	}
 
