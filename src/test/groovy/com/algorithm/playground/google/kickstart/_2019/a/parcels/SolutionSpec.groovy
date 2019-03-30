@@ -1,6 +1,5 @@
 package com.algorithm.playground.google.kickstart._2019.a.parcels
 
-import com.algorithm.playground.google.kickstart._2019.a.parcels.Solution
 import spock.lang.Specification
 import spock.lang.Unroll
 
@@ -16,26 +15,26 @@ class SolutionSpec extends Specification {
 
 		expect:
 
-			Solution.solve(grid as int[][], rows, cols) == out
+			Solution.solve(grid as char[][], rows, cols) == out
 
 		where:
 
-			grid              || out
-			[[1, 0, 1],
-			 [0, 0, 0],
-			 [1, 0, 1]]       || 1
-			[[1, 1]]          || 0
-			[[1, 0, 0, 0, 1],
-			 [0, 0, 0, 0, 0],
-			 [0, 0, 0, 0, 0],
-			 [0, 0, 0, 0, 0],
-			 [1, 0, 0, 0, 1]] || 2
-			[[0, 1, 0],
-			 [0, 0, 0],
-			 [0, 1, 0]]       || 1
-			[[1, 1, 1],
-			 [1, 1, 1],
-			 [1, 1, 1]]       || 0
+			grid                        || out
+			[['1', '0', '1'],
+			 ['0', '0', '0'],
+			 ['1', '0', '1']]           || 1
+			[['1', '1']]                || 0
+			[['1', '0', '0', '0', '1'],
+			 ['0', '0', '0', '0', '0'],
+			 ['0', '0', '0', '0', '0'],
+			 ['0', '0', '0', '0', '0'],
+			 ['1', '0', '0', '0', '1']] || 2
+			[['0', '1', '0'],
+			 ['0', '0', '0'],
+			 ['0', '1', '0']]           || 1
+			[['1', '1', '1'],
+			 ['1', '1', '1'],
+			 ['1', '1', '1']]           || 0
 
 	}
 

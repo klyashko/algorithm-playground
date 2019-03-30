@@ -3,6 +3,9 @@ package com.algorithm.playground.google.kickstart._2019.a.training;
 import java.util.Arrays;
 import java.util.Scanner;
 
+/**
+ * https://codingcompetitions.withgoogle.com/kickstart/round/0000000000050e01/00000000000698d6
+ */
 public class Solution {
 
 	public static void main(String[] args) {
@@ -24,7 +27,7 @@ public class Solution {
 
 	}
 
-	private static int solve(int[] players, int n) {
+	static int solve(int[] players, int n) {
 		Arrays.sort(players);
 		int sum = 0;
 		for (int idx = 0; idx < n; idx++) {

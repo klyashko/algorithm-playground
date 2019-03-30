@@ -2,6 +2,9 @@ package com.algorithm.playground.google.kickstart._2019.a.parcels;
 
 import java.util.Scanner;
 
+/**
+ * https://codingcompetitions.withgoogle.com/kickstart/round/0000000000050e01/000000000006987d
+ */
 @SuppressWarnings("Duplicates")
 public class Solution {
 
@@ -12,8 +15,7 @@ public class Solution {
 			for (int test = 1; test <= tests; test++) {
 				int rows = console.nextInt();
 				int cols = console.nextInt();
-				int[][] grid = new int[rows][cols];
-				readGrid(grid, console);
+				char[][] grid = readGrid(rows, console);
 
 				int ans = solve(grid, rows, cols);
 				System.out.println(String.format("Case #%s: %s", test, ans));
@@ -23,7 +25,7 @@ public class Solution {
 		}
 	}
 
-	static int solve(int[][] grid, int rows, int cols) {
+	static int solve(char[][] grid, int rows, int cols) {
 		int[][] cache = new int[rows][cols];
 		int li = 0;
 		int ri = distance(cache, grid);
@@ -68,23 +70,22 @@ public class Solution {
 		return false;
 	}
 
-	private static void readGrid(int[][] grid, Scanner console) {
-		for (int[] row : grid) {
-			char[] line = console.next().toCharArray();
-			for (int j = 0; j < row.length; j++) {
-				row[j] = line[j] - '0';
-			}
+	private static char[][] readGrid(int rows, Scanner console) {
+		char[][] grid = new char[rows][];
+		for (int i = 0; i < grid.length; i++) {
+			grid[i] = console.next().toCharArray();
 		}
+		return grid;
 	}
 
-	private static int distance(int[][] cache, int[][] grid) {
+	private static int distance(int[][] cache, char[][] grid) {
 		int rows = grid.length;
 		int cols = grid[0].length;
 		for (int r = 0; r < rows; r++) {
 			for (int c = 0; c < cols; c++) {
 				cache[r][c] = Integer.MAX_VALUE / 2;
 
-				if (grid[r][c] == 1) {
+				if (grid[r][c] == '1') {
 					cache[r][c] = 0;
 				} else {
 					if (r > 0) {
