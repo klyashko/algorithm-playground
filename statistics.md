@@ -207,6 +207,7 @@
    * [Min Stack](https://leetcode.com/problems/min-stack/)
    
  * medium:
+   * [Next Greater Node In Linked List](https://leetcode.com/problems/next-greater-node-in-linked-list/)
    * [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/)
    * [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)
    * [Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii/)
@@ -428,4 +429,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/)
 
-##### Total: 224
+##### Total: 225
