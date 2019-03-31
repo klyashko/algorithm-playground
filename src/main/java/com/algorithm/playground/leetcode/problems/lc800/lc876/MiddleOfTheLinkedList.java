@@ -1,6 +1,6 @@
 package com.algorithm.playground.leetcode.problems.lc800.lc876;
 
-import com.algorithm.playground.leetcode.problems.linkedlist.ListNode;
+import com.algorithm.playground.leetcode.problems.utils.ListNode;
 
 /**
  * https://leetcode.com/problems/middle-of-the-linked-list/description/

@@ -4,7 +4,7 @@ import com.algorithm.playground.leetcode.problems.sort.medium.SortList.Solution 
 import spock.lang.Specification
 import spock.lang.Unroll
 
-import static com.algorithm.playground.leetcode.problems.linkedlist.ListNode.valueOf as node
+import static com.algorithm.playground.leetcode.problems.utils.ListNode.valueOf as node
 
 class SortListSpec extends Specification {
 

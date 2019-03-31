@@ -5,7 +5,7 @@ import com.algorithm.playground.leetcode.problems.lc200.lc206.ReverseLinkedList.
 import spock.lang.Specification
 import spock.lang.Unroll
 
-import static com.algorithm.playground.leetcode.problems.linkedlist.ListNode.valueOf as node
+import static com.algorithm.playground.leetcode.problems.utils.ListNode.valueOf as node
 
 class ReverseLinkedListSpec extends Specification {
 

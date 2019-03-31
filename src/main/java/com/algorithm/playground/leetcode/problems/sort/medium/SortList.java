@@ -1,6 +1,6 @@
 package com.algorithm.playground.leetcode.problems.sort.medium;
 
-import com.algorithm.playground.leetcode.problems.linkedlist.ListNode;
+import com.algorithm.playground.leetcode.problems.utils.ListNode;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;
