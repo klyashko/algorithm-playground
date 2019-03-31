@@ -46,16 +46,24 @@ public class AVLTree {
 		node.height = calcHeight(node);
 		int balance = getBalance(node);
 
-		if (balance > 1 && val < node.left.value) {
-			return rightRotate(node);
-		} else if (balance < -1 && val > node.right.value) {
-			return leftRotate(node);
-		} else if (balance > 1 && val > node.left.value) {
-			node.left = leftRotate(node.left);
-			return rightRotate(node);
-		} else if (balance < -1 && val < node.right.value) {
-			node.right = rightRotate(node.right);
-			return leftRotate(node);
+		if (balance > 1) {
+			if (val < node.left.value) {
+				/**left left case */
+				return rightRotate(node);
+			} else {
+				/** left right case */
+				node.left = leftRotate(node.left);
+				return rightRotate(node);
+			}
+		} else if (balance < -1) {
+			if (val > node.right.value) {
+				/** right right case */
+				return leftRotate(node);
+			} else {
+				/** right left case */
+				node.right = rightRotate(node.right);
+				return leftRotate(node);
+			}
 		}
 
 		return node;

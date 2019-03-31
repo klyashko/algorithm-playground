@@ -12,6 +12,7 @@ class AVLTreeSpec extends Specification {
 		given:
 
 			def tree = new AVLTree()
+			println("Data: ${data}")
 
 		when:
 
