@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.math.easy
+package com.algorithm.playground.leetcode.problems.lc200.lc258
 
-import com.algorithm.playground.leetcode.problems.math.easy.AddDigits.Solution as S
+import com.algorithm.playground.leetcode.problems.lc200.lc258.AddDigits.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

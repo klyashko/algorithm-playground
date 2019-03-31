@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.math.easy
+package com.algorithm.playground.leetcode.problems.lc100.lc170.lc171
 
-import com.algorithm.playground.leetcode.problems.math.easy.ExcelSheetColumnNumber.Solution as S
+import com.algorithm.playground.leetcode.problems.lc100.lc170.lc171.ExcelSheetColumnNumber.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

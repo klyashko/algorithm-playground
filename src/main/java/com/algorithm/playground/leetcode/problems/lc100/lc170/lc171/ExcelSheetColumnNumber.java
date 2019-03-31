@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.math.easy;
+package com.algorithm.playground.leetcode.problems.lc100.lc170.lc171;
 
 /**
  * https://leetcode.com/problems/excel-sheet-column-number/description/

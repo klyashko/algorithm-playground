@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.lc100.lc174;
+package com.algorithm.playground.leetcode.problems.lc100.lc170.lc174;
 
 /**
  * https://leetcode.com/problems/dungeon-game/description/

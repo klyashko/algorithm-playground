@@ -1,9 +1,9 @@
-package com.algorithm.playground.leetcode.problems.lc100.lc173
+package com.algorithm.playground.leetcode.problems.lc100.lc170.lc173
 
 import spock.lang.Specification
 import spock.lang.Unroll
 
-import static com.algorithm.playground.leetcode.problems.lc100.lc173.BinarySearchTreeIterator.bstIterator as iterator
+import static com.algorithm.playground.leetcode.problems.lc100.lc170.lc173.BinarySearchTreeIterator.bstIterator as iterator
 import static com.algorithm.playground.leetcode.problems.tree.TreeNode.valueOf as node
 
 class BinarySearchTreeIteratorSpec extends Specification {

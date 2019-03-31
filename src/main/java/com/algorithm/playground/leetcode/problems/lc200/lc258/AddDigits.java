@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.math.easy;
+package com.algorithm.playground.leetcode.problems.lc200.lc258;
 
 /**
  * https://leetcode.com/problems/add-digits/description/

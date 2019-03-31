@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.lc100.lc174
+package com.algorithm.playground.leetcode.problems.lc100.lc170.lc174
 
 import spock.lang.Specification
 import spock.lang.Unroll
