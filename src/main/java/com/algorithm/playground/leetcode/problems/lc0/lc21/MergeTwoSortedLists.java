@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.linkedlist.easy;
+package com.algorithm.playground.leetcode.problems.lc0.lc21;
 
 import com.algorithm.playground.leetcode.problems.linkedlist.ListNode;
 

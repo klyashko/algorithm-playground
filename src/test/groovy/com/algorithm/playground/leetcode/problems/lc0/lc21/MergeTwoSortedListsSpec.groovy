@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.linkedlist.easy
+package com.algorithm.playground.leetcode.problems.lc0.lc21
 
-import com.algorithm.playground.leetcode.problems.linkedlist.easy.MergeTwoSortedLists.Solution as S
+import com.algorithm.playground.leetcode.problems.lc0.lc21.MergeTwoSortedLists.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

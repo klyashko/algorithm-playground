@@ -1,7 +1,7 @@
-package com.algorithm.playground.leetcode.problems.linkedlist.easy
+package com.algorithm.playground.leetcode.problems.lc800.lc876
 
-import com.algorithm.playground.leetcode.problems.linkedlist.easy.MiddleOfTheLinkedList.SizeCountingSolution as SCS
-import com.algorithm.playground.leetcode.problems.linkedlist.easy.MiddleOfTheLinkedList.Solution as S
+import com.algorithm.playground.leetcode.problems.lc800.lc876.MiddleOfTheLinkedList.SizeCountingSolution as SCS
+import com.algorithm.playground.leetcode.problems.lc800.lc876.MiddleOfTheLinkedList.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

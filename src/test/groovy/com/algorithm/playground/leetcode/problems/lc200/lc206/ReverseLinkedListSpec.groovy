@@ -1,7 +1,7 @@
-package com.algorithm.playground.leetcode.problems.linkedlist.easy
+package com.algorithm.playground.leetcode.problems.lc200.lc206
 
-import com.algorithm.playground.leetcode.problems.linkedlist.easy.ReverseLinkedList.IterativeSolution as IS
-import com.algorithm.playground.leetcode.problems.linkedlist.easy.ReverseLinkedList.Solution as S
+import com.algorithm.playground.leetcode.problems.lc200.lc206.ReverseLinkedList.IterativeSolution as IS
+import com.algorithm.playground.leetcode.problems.lc200.lc206.ReverseLinkedList.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 
