@@ -41,6 +41,7 @@
  * hard:
    * [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)
    * [Wildcard Matching](https://leetcode.com/problems/wildcard-matching/)
+   * [Edit Distance](https://leetcode.com/problems/edit-distance/)
 
 #### String
 
@@ -427,4 +428,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/)
 
-##### Total: 223
+##### Total: 224
