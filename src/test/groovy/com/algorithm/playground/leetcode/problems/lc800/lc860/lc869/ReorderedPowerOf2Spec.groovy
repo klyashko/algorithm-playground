@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.math.medium
+package com.algorithm.playground.leetcode.problems.lc800.lc860.lc869
 
-import com.algorithm.playground.leetcode.problems.math.medium.ReorderedPowerOf2.Solution as S
+import com.algorithm.playground.leetcode.problems.lc800.lc860.lc869.ReorderedPowerOf2.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

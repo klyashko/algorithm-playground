@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.math.medium
+package com.algorithm.playground.leetcode.problems.lc500.lc535
 
-import com.algorithm.playground.leetcode.problems.math.medium.EncodeAndDecodeTinyURL.Codec as C
+import com.algorithm.playground.leetcode.problems.lc500.lc535.EncodeAndDecodeTinyURL.Codec as C
 import spock.lang.Specification
 import spock.lang.Unroll
 

@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.math.medium;
+package com.algorithm.playground.leetcode.problems.lc600.lc670;
 
 /**
  * https://leetcode.com/problems/maximum-swap/description/

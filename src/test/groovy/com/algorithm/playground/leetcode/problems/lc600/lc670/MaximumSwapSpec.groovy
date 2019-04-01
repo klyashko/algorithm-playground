@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.math.medium
+package com.algorithm.playground.leetcode.problems.lc600.lc670
 
-import com.algorithm.playground.leetcode.problems.math.medium.MaximumSwap.Solution as S
+import com.algorithm.playground.leetcode.problems.lc600.lc670.MaximumSwap.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 
