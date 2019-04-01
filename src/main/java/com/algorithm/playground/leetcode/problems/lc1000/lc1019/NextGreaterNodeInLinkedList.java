@@ -11,21 +11,20 @@ public class NextGreaterNodeInLinkedList {
 
 	class Solution {
 		public int[] nextLargerNodes(ListNode head) {
-			LinkedList<Integer> nodes = new LinkedList<>();
-			for (; head != null; head = head.next) {
-				nodes.push(head.val);
+			int size = 0;
+			for (ListNode curr = head; curr != null; curr = curr.next) {
+				size++;
 			}
 
-			LinkedList<Integer> stack = new LinkedList<>();
-			int[] ans = new int[nodes.size()];
+			LinkedList<int[]> stack = new LinkedList<>();
+			int[] ans = new int[size];
 
-			for (int i = nodes.size() - 1; !nodes.isEmpty(); i--) {
-				//noinspection ConstantConditions
-				while (!stack.isEmpty() && nodes.peek() >= stack.peek()) {
-					stack.pop();
+			for (int i = 0; i < size; i++) {
+				while (!stack.isEmpty() && head.val > stack.peek()[1]) {
+					ans[stack.pop()[0]] = head.val;
 				}
-				ans[i] = stack.isEmpty() ? 0 : stack.peek();
-				stack.push(nodes.pop());
+				stack.push(new int[]{i, head.val});
+				head = head.next;
 			}
 
 			return ans;
