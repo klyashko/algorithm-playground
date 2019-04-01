@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.lc800.lc871;
+package com.algorithm.playground.leetcode.problems.lc800.lc870.lc871;
 
 import java.util.Collections;
 import java.util.PriorityQueue;

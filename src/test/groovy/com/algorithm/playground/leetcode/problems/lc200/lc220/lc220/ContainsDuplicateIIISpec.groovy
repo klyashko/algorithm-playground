@@ -1,7 +1,7 @@
-package com.algorithm.playground.leetcode.problems.lc200.lc220
+package com.algorithm.playground.leetcode.problems.lc200.lc220.lc220
 
-import com.algorithm.playground.leetcode.problems.lc200.lc220.ContainsDuplicateIII.SecondSolution as SS
-import com.algorithm.playground.leetcode.problems.lc200.lc220.ContainsDuplicateIII.Solution as S
+import com.algorithm.playground.leetcode.problems.lc200.lc220.lc220.ContainsDuplicateIII.SecondSolution as SS
+import com.algorithm.playground.leetcode.problems.lc200.lc220.lc220.ContainsDuplicateIII.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

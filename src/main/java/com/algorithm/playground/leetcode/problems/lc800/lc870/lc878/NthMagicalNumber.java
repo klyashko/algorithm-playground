@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.math.hard;
+package com.algorithm.playground.leetcode.problems.lc800.lc870.lc878;
 
 /**
  * https://leetcode.com/problems/nth-magical-number/description/

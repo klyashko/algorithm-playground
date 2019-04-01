@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.math.hard
+package com.algorithm.playground.leetcode.problems.lc700.lc780.lc780
 
-import com.algorithm.playground.leetcode.problems.math.hard.ReachingPoints.Solution as S
+import com.algorithm.playground.leetcode.problems.lc700.lc780.lc780.ReachingPoints.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

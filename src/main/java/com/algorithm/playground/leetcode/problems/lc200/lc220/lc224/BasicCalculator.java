@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.math.hard;
+package com.algorithm.playground.leetcode.problems.lc200.lc220.lc224;
 
 import java.util.LinkedList;
 import java.util.regex.Pattern;

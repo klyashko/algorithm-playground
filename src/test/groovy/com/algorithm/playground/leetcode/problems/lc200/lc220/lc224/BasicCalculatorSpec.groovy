@@ -1,7 +1,7 @@
-package com.algorithm.playground.leetcode.problems.math.hard
+package com.algorithm.playground.leetcode.problems.lc200.lc220.lc224
 
-import com.algorithm.playground.leetcode.problems.math.hard.BasicCalculator.Solution as S
-import com.algorithm.playground.leetcode.problems.math.hard.BasicCalculator.SolutionFast as SF
+import com.algorithm.playground.leetcode.problems.lc200.lc220.lc224.BasicCalculator.Solution as S
+import com.algorithm.playground.leetcode.problems.lc200.lc220.lc224.BasicCalculator.SolutionFast as SF
 import spock.lang.Specification
 import spock.lang.Unroll
 

@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.lc200.lc220;
+package com.algorithm.playground.leetcode.problems.lc200.lc220.lc220;
 
 import java.util.Map;
 import java.util.TreeMap;

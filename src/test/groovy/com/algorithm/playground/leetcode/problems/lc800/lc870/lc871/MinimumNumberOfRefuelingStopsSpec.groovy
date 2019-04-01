@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.lc800.lc871
+package com.algorithm.playground.leetcode.problems.lc800.lc870.lc871
 
-import com.algorithm.playground.leetcode.problems.lc800.lc871.MinimumNumberOfRefuelingStops.Solution as S
+import com.algorithm.playground.leetcode.problems.lc800.lc870.lc871.MinimumNumberOfRefuelingStops.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

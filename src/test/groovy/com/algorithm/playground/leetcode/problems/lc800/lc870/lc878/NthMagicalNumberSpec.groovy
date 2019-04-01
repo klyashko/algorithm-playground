@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.math.hard
+package com.algorithm.playground.leetcode.problems.lc800.lc870.lc878
 
-import com.algorithm.playground.leetcode.problems.math.hard.NthMagicalNumber.Solution as S
+import com.algorithm.playground.leetcode.problems.lc800.lc870.lc878.NthMagicalNumber.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.math.hard;
+package com.algorithm.playground.leetcode.problems.lc700.lc780.lc780;
 
 /**
  * https://leetcode.com/problems/reaching-points/description/
