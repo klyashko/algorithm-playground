@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.math.hard
+package com.algorithm.playground.leetcode.problems.lc500.lc510.lc517
 
-import com.algorithm.playground.leetcode.problems.math.hard.SuperWashingMachines.Solution as S
+import com.algorithm.playground.leetcode.problems.lc500.lc510.lc517.SuperWashingMachines.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

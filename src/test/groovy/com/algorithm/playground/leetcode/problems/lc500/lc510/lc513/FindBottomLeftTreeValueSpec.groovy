@@ -1,6 +1,5 @@
-package com.algorithm.playground.leetcode.problems.lc500.lc513
+package com.algorithm.playground.leetcode.problems.lc500.lc510.lc513
 
-import com.algorithm.playground.leetcode.problems.lc500.lc513.FindBottomLeftTreeValue
 import spock.lang.Specification
 import spock.lang.Unroll
 

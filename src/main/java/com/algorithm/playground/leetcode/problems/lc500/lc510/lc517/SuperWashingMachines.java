@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.math.hard;
+package com.algorithm.playground.leetcode.problems.lc500.lc510.lc517;
 
 /**
  * https://leetcode.com/problems/super-washing-machines/description/

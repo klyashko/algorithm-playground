@@ -1,7 +1,7 @@
-package com.algorithm.playground.leetcode.problems.math.hard
+package com.algorithm.playground.leetcode.problems.lc800.lc805
 
-import com.algorithm.playground.leetcode.problems.math.hard.SplitArrayWithSameAverage.DynamicProgrammingSolution as DPS
-import com.algorithm.playground.leetcode.problems.math.hard.SplitArrayWithSameAverage.Solution as S
+import com.algorithm.playground.leetcode.problems.lc800.lc805.SplitArrayWithSameAverage.DynamicProgrammingSolution as DPS
+import com.algorithm.playground.leetcode.problems.lc800.lc805.SplitArrayWithSameAverage.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 
