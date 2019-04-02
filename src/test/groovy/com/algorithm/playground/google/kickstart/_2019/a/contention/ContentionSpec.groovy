@@ -38,9 +38,6 @@ class ContentionSpec extends Specification {
 			def out = Solution.solve(intervals as int[][], 1_000_000)
 			println(out)
 
-		expect:
-
-			true
 	}
 
 }
