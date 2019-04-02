@@ -10,11 +10,11 @@ class ContentionSpec extends Specification {
 
 		expect:
 
-			Solution.solve(intervales as int[][], n) == out
+			Solution.solve(intervals as int[][], n) == out
 
 		where:
 
-			intervales | n  || out
+			intervals  | n  || out
 			[[1, 2],
 			 [3, 4],
 			 [2, 5]]   | 5  || 1
@@ -26,6 +26,21 @@ class ContentionSpec extends Specification {
 			 [3, 6],
 			 [2, 7]]   | 10  | 2
 
+	}
+
+	@Unroll
+	def "solve_tmp"() {
+
+		given:
+
+			def intervals = []
+			300.times { intervals << [1, 1_000_000] }
+			def out = Solution.solve(intervals as int[][], 1_000_000)
+			println(out)
+
+		expect:
+
+			true
 	}
 
 }

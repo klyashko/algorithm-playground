@@ -37,6 +37,9 @@ public class Solution {
 			int[] curr = next(tree, rest);
 			rest.remove(curr);
 			min = Math.min(min, tree.available(curr[0], curr[1]));
+			if (min == 0) {
+				break;
+			}
 			for (int i = curr[0]; i <= curr[1]; i++) {
 				tree.update(i);
 			}
