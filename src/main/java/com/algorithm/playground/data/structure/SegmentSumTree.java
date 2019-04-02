@@ -4,6 +4,7 @@ package com.algorithm.playground.data.structure;
  * An implementation of Segment sum tree based on idea from this video:
  * https://www.youtube.com/watch?v=ZBHKZF5w4YU&list=PLrmLmBdmIlpv_jNDXtJGYTPNQ2L1gdHxu&index=22
  */
+@SuppressWarnings("Duplicates")
 public class SegmentSumTree {
 
 	/** the tree */

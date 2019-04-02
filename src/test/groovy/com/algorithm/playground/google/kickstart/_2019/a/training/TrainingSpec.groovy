@@ -3,7 +3,7 @@ package com.algorithm.playground.google.kickstart._2019.a.training
 import spock.lang.Specification
 import spock.lang.Unroll
 
-class SolutionSpec extends Specification {
+class TrainingSpec extends Specification {
 
 	@Unroll
 	def "solve"() {
