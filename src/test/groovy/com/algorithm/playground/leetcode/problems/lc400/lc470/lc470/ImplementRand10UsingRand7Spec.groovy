@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.random.medium
+package com.algorithm.playground.leetcode.problems.lc400.lc470.lc470
 
-import com.algorithm.playground.leetcode.problems.random.medium.ImplementRand10UsingRand7.Solution as S
+import com.algorithm.playground.leetcode.problems.lc400.lc470.lc470.ImplementRand10UsingRand7.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

@@ -1,4 +1,6 @@
-package com.algorithm.playground.leetcode.problems.random.medium;
+package com.algorithm.playground.leetcode.problems.lc400.lc470.lc470;
+
+import java.util.Random;
 
 /**
  * https://leetcode.com/problems/implement-rand10-using-rand7/description/
@@ -18,6 +20,14 @@ public class ImplementRand10UsingRand7 {
 			curr = ((curr + rand7()) % 10) + 1;
 			return curr;
 		}
+	}
+
+	private class SolBase {
+
+		int rand7() {
+			return new Random().nextInt(9) + 1;
+		}
+
 	}
 
 }

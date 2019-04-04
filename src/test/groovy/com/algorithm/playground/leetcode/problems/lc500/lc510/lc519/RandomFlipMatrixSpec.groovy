@@ -1,9 +1,9 @@
-package com.algorithm.playground.leetcode.problems.random.medium
+package com.algorithm.playground.leetcode.problems.lc500.lc510.lc519
 
 import spock.lang.Specification
 import spock.lang.Unroll
 
-import static RandomFlipMatrix.solution
+import static com.algorithm.playground.leetcode.problems.lc500.lc510.lc519.RandomFlipMatrix.solution
 
 class RandomFlipMatrixSpec extends Specification {
 

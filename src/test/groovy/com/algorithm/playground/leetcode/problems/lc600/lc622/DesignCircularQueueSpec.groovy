@@ -1,9 +1,9 @@
-package com.algorithm.playground.leetcode.problems.queue.medium
+package com.algorithm.playground.leetcode.problems.lc600.lc622
 
 import spock.lang.Specification
 import spock.lang.Unroll
 
-import static DesignCircularQueue.myCircularQueue as queue
+import static com.algorithm.playground.leetcode.problems.lc600.lc622.DesignCircularQueue.myCircularQueue as queue
 
 class DesignCircularQueueSpec extends Specification {
 

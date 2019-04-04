@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.random.medium;
+package com.algorithm.playground.leetcode.problems.lc500.lc510.lc519;
 
 import java.util.HashMap;
 import java.util.Map;

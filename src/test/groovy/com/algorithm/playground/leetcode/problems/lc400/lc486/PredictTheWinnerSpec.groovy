@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.minimax.medium
+package com.algorithm.playground.leetcode.problems.lc400.lc486
 
-import com.algorithm.playground.leetcode.problems.minimax.medium.PredictTheWinner.Solution as S
+import com.algorithm.playground.leetcode.problems.lc400.lc486.PredictTheWinner.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

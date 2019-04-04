@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.minimax.medium;
+package com.algorithm.playground.leetcode.problems.lc400.lc486;
 
 /**
  * https://leetcode.com/problems/predict-the-winner/description/

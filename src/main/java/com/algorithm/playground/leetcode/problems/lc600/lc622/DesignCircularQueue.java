@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.queue.medium;
+package com.algorithm.playground.leetcode.problems.lc600.lc622;
 
 /**
  * https://leetcode.com/problems/design-circular-queue/description/

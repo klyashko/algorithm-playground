@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.random.medium;
+package com.algorithm.playground.leetcode.problems.lc500.lc528;
 
 import java.util.Arrays;
 import java.util.Random;
