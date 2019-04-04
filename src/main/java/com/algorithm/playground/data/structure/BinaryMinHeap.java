@@ -46,6 +46,10 @@ public class BinaryMinHeap<K, V extends Comparable<V>> {
 			values.remove(values.size() - 1);
 			indexes.remove(value._1);
 
+			if (!isEmpty()) {
+				shiftDown(0);
+			}
+
 			return value;
 		}
 		throw new NoSuchElementException();
