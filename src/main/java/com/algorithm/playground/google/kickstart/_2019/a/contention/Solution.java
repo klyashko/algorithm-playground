@@ -6,7 +6,6 @@ import java.util.Map.Entry;
 /**
  * https://codingcompetitions.withgoogle.com/kickstart/round/0000000000050e01/0000000000069881
  */
-@SuppressWarnings("Duplicates")
 public class Solution {
 
 	public static void main(String[] args) {
@@ -14,11 +13,11 @@ public class Solution {
 			int tests = console.nextInt();
 			for (int test = 1; test <= tests; test++) {
 				//number of seats
-				int n = console.nextInt();
+				console.nextInt();
 				//number of intervals
 				int q = console.nextInt();
 				int[][] intervals = readIntervals(console, new int[q][2]);
-				int ans = solve(intervals, n);
+				int ans = solve(intervals);
 				System.out.println(String.format("Case #%s: %s", test, ans));
 			}
 		} catch (Exception e) {
@@ -26,33 +25,39 @@ public class Solution {
 		}
 	}
 
-	static int solve(int[][] intervals, int n) {
+	static int solve(int[][] intervals) {
 		TreeMap<Integer, Integer> points = new TreeMap<>();
 		for (int[] interval : intervals) {
 			points.put(interval[0], points.getOrDefault(interval[0], 0) + 1);
+			points.putIfAbsent(interval[1], 0);
 			points.put(interval[1] + 1, points.getOrDefault(interval[1] + 1, 0) - 1);
 		}
 
-		int[] seats = new int[n + 2];
-		Arrays.fill(seats, -1);
+		Map<Integer, Integer> indexes = new HashMap<>();
+		int[] seats = new int[points.size() - 1];
+		int[] multipliers = new int[points.size() - 1];
 		int val = 0;
+		int idx = 0;
 		for (Entry<Integer, Integer> entry : points.entrySet()) {
-			val += entry.getValue();
-			seats[entry.getKey()] = val;
-		}
-
-		val = 0;
-		for (int i = 0; i < seats.length; i++) {
-			if (seats[i] != -1) {
-				val = seats[i];
-			} else {
-				seats[i] = val;
+			Integer next = points.ceilingKey(entry.getKey() + 1);
+			if (next != null) {
+				val += entry.getValue();
+				seats[idx] = val;
+				int multiplier = next - entry.getKey();
+				multipliers[idx] = multiplier;
+				indexes.put(entry.getKey(), idx++);
 			}
 		}
 
-		SegmentTree tree = new SegmentTree(seats);
 		Set<int[]> rest = new HashSet<>();
-		Collections.addAll(rest, intervals);
+		for (int[] interval : intervals) {
+			int li = indexes.get(interval[0]);
+			int ri = indexes.get(interval[1]);
+			rest.add(new int[]{li, ri});
+		}
+
+		SegmentTree tree = new SegmentTree(seats, multipliers);
+
 		int min = Integer.MAX_VALUE;
 		while (!rest.isEmpty()) {
 			int[] curr = next(tree, rest);
@@ -93,14 +98,16 @@ public class Solution {
 
 		private final int[] tree;
 		private final int[] values;
+		private final int[] multipliers;
 		private final int n;
 
-		SegmentTree(int[] values) {
+		SegmentTree(int[] values, int[] multipliers) {
 			int size = 1;
 			while (size < values.length) {
 				size = size << 1;
 			}
 			this.values = values;
+			this.multipliers = multipliers;
 			this.n = values.length - 1;
 			this.tree = new int[size << 1];
 			buildTree(values, 1, 0, n);
@@ -112,8 +119,8 @@ public class Solution {
 
 		void decrease(int idx) {
 			values[idx]--;
-			if (values[idx] < 2) {
-				update(0, n, 1, idx, values[idx]);
+			if (values[idx] == 1) {
+				update(0, n, 1, idx, multipliers[idx]);
 			}
 		}
 
@@ -135,7 +142,7 @@ public class Solution {
 				return tree[idx - 1];
 			} else if (li == origin && ri == origin) {
 				tree[idx - 1] = val;
-				return 1;
+				return val;
 			} else {
 				int mid = (ri - li) / 2 + li;
 				int left = update(li, mid, idx * 2, origin, val);
@@ -147,7 +154,7 @@ public class Solution {
 
 		private int buildTree(int[] values, int idx, int from, int to) {
 			if (from == to) {
-				int val = values[from] == 1 ? 1 : 0;
+				int val = values[from] == 1 ? multipliers[from] : 0;
 				tree[idx - 1] = val;
 				return val;
 			}
