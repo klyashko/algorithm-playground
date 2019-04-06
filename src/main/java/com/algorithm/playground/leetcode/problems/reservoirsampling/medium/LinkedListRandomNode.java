@@ -18,8 +18,8 @@ public class LinkedListRandomNode {
 	}
 
 	/**
-	 * Your Solution object will be instantiated and called as such:
-	 * Solution obj = new Solution(head);
+	 * Your Solution_ object will be instantiated and called as such:
+	 * Solution_ obj = new Solution_(head);
 	 * int param_1 = obj.getRandom();
 	 */
 	class Solution {

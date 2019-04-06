@@ -17,8 +17,8 @@ public class RandomPickWithWeight {
 	}
 
 	/**
-	 * Your Solution object will be instantiated and called as such:
-	 * Solution obj = new Solution(w);
+	 * Your Solution_ object will be instantiated and called as such:
+	 * Solution_ obj = new Solution_(w);
 	 * int param_1 = obj.pickIndex();
 	 */
 	class Solution {

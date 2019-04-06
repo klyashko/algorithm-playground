@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class Solution {
+public class Solution_ {
 
 	public static void main(String[] args) {
 		try (Scanner console = new Scanner(System.in)) {
