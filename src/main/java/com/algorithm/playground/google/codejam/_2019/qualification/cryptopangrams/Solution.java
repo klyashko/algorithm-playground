@@ -1,7 +1,6 @@
 package com.algorithm.playground.google.codejam._2019.qualification.cryptopangrams;
 
 import java.math.BigInteger;
-import java.util.Arrays;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.TreeMap;
@@ -47,16 +46,18 @@ public class Solution {
 		BigInteger gcb = first.gcd(second);
 		TreeMap<BigInteger, String> letters = new TreeMap<>();
 
-		phrase[idx] = first.divide(gcb);
-		letters.put(first.divide(gcb), "");
+		first = first.divide(gcb);
+		phrase[idx] = first;
+		letters.put(first, "");
 
 		phrase[idx + 1] = gcb;
 		letters.put(gcb, "");
 
-		phrase[idx + 2] = second.divide(gcb);
-		letters.put(second.divide(gcb), "");
+		second = second.divide(gcb);
+		phrase[idx + 2] = second;
+		letters.put(second, "");
 
-		BigInteger prev = second.divide(gcb);
+		BigInteger prev = second;
 
 		for (int i = idx + 2; i < k; i++) {
 			BigInteger curr = integers[i].divide(prev);
@@ -70,8 +71,6 @@ public class Solution {
 			phrase[i] = curr;
 			letters.put(curr, "");
 		}
-
-		System.out.println(Arrays.toString(phrase));
 
 		char ch = 'A';
 
