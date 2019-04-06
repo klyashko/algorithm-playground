@@ -8,21 +8,17 @@ class ForegoneSolutionSpec extends Specification {
 	@Unroll
 	def "solve"() {
 
-		when:
+		given:
 
 			def ans = Solution.solve(n)
 			println(ans)
 
-		then:
-
-			!ans.toString().contains("4")
-
 		where:
 
-			n    || out
-			4    || [2, 2]
-			940  || [852, 88]
-			4444 || [667, 3777]
+			n      || out
+			"4"    || _
+			"940"  || _
+			"4444" || _
 
 	}
 

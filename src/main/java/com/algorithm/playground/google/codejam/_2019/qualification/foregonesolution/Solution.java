@@ -8,33 +8,43 @@ public class Solution {
 		try (Scanner console = new Scanner(System.in)) {
 			int tests = console.nextInt();
 			for (int test = 1; test <= tests; test++) {
-				int[] ans = solve(console.nextInt());
-				System.out.println(String.format("Case #%s: %s %s", test, ans[0], ans[1]));
+				int[][] ans = solve(console.next().trim());
+				System.out.print(String.format("Case #%s: ", test));
+				print(ans[0]);
+				System.out.print(" ");
+				print(ans[1]);
+				System.out.println();
 			}
 		} catch (Exception e) {
 			e.printStackTrace(System.out);
 		}
 	}
 
-	static int[] solve(int n) {
-		String s = Integer.toString(n);
-		int start = 1;
-		for (int i = 0; i < s.length() - 1; i++) {
-			if (s.charAt(i) == '4') {
-				start += Math.pow(10, (s.length() - 1 - i));
+	private static void print(int[] n) {
+		int idx = 0;
+		for (; idx < n.length; idx++) {
+			if (n[idx] != 0) {
+				break;
 			}
 		}
-		for (; start < n - 1; start++) {
-			int b = n - start;
-			if (notContains4(start) && notContains4(b)) {
-				return new int[]{start, b};
-			}
+		for (; idx < n.length; idx++) {
+			System.out.print(n[idx]);
 		}
-		return new int[2];
 	}
 
-	private static boolean notContains4(int n) {
-		return !Integer.toString(n).contains("4");
+	static int[][] solve(String n) {
+		int[] a = new int[n.length()];
+		int[] b = new int[n.length()];
+		for (int i = 0; i < n.length(); i++) {
+			char ch = n.charAt(i);
+			if (ch == '4') {
+				b[i] = 1;
+				a[i] = 3;
+			} else {
+				a[i] = ch - '0';
+			}
+		}
+		return new int[][]{a, b};
 	}
 
 }
