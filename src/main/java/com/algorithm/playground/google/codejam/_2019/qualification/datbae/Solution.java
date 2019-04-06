@@ -24,14 +24,18 @@ public class Solution {
 				for (int i = 0; i < F; i++) {
 					char[] toSend = new char[N];
 					root.fill(toSend);
-					System.out.print(String.valueOf(toSend));
-					String response = "";
-					while (response.isEmpty()) {
-						response = console.nextLine().trim();
-					}
+					System.out.println(String.valueOf(toSend));
+					String response = readResponse(console);
 //					System.out.println(response);
 					root.set(response.toCharArray(), new int[]{0});
 					if (root.count() == B) {
+						for (; i < F; i++) {
+							for (int j = 0; j < N; j++) {
+								System.out.print('0');
+							}
+							System.out.println();
+							readResponse(console);
+						}
 						break;
 					}
 				}
@@ -49,6 +53,14 @@ public class Solution {
 		} catch (Exception e) {
 			e.printStackTrace(System.out);
 		}
+	}
+
+	private static String readResponse(Scanner console) {
+		String response = "";
+		while (response.isEmpty()) {
+			response = console.nextLine().trim();
+		}
+		return response;
 	}
 
 	private static class Node {
