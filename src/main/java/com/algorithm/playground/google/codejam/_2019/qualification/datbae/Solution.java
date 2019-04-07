@@ -63,7 +63,7 @@ public class Solution {
 	private static String join(int[] nodes) {
 		StringBuilder builder = new StringBuilder();
 		for (int i = 0; i < nodes.length - 1; i++) {
-			builder.append(i).append(" ");
+			builder.append(nodes[i]).append(" ");
 		}
 		return builder.append(nodes[nodes.length - 1]).toString();
 	}
