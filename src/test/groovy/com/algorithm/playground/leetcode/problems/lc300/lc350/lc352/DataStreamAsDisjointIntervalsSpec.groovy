@@ -4,7 +4,7 @@ import com.algorithm.playground.leetcode.problems.lc300.lc350.lc352.DataStreamAs
 import spock.lang.Specification
 import spock.lang.Unroll
 
-import static com.algorithm.playground.leetcode.problems.sort.Interval.valueOf as i
+import static com.algorithm.playground.leetcode.problems.utils.Interval.valueOf as i
 
 class DataStreamAsDisjointIntervalsSpec extends Specification {
 

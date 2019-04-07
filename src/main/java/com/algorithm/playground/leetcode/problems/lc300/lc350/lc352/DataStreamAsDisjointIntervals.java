@@ -1,6 +1,6 @@
 package com.algorithm.playground.leetcode.problems.lc300.lc350.lc352;
 
-import com.algorithm.playground.leetcode.problems.sort.Interval;
+import com.algorithm.playground.leetcode.problems.utils.Interval;
 
 import java.util.*;
 
