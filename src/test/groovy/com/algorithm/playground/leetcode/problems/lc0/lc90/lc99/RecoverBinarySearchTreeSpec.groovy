@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.lc0.lc99
+package com.algorithm.playground.leetcode.problems.lc0.lc90.lc99
 
-import com.algorithm.playground.leetcode.problems.lc0.lc99.RecoverBinarySearchTree.Solution as S
+import com.algorithm.playground.leetcode.problems.lc0.lc90.lc99.RecoverBinarySearchTree.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

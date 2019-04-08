@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.stack.medium
+package com.algorithm.playground.leetcode.problems.lc100.lc140.lc144
 
-import com.algorithm.playground.leetcode.problems.stack.medium.BinaryTreePreorderTraversal.Solution as S
+import com.algorithm.playground.leetcode.problems.lc100.lc140.lc144.BinaryTreePreorderTraversal.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

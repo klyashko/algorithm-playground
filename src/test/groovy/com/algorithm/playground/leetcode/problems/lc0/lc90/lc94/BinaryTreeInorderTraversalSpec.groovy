@@ -1,7 +1,7 @@
-package com.algorithm.playground.leetcode.problems.stack.medium
+package com.algorithm.playground.leetcode.problems.lc0.lc90.lc94
 
-import com.algorithm.playground.leetcode.problems.stack.medium.BinaryTreeInorderTraversal.MSolution as MS
-import com.algorithm.playground.leetcode.problems.stack.medium.BinaryTreeInorderTraversal.Solution as S
+import com.algorithm.playground.leetcode.problems.lc0.lc90.lc94.BinaryTreeInorderTraversal.MSolution as MS
+import com.algorithm.playground.leetcode.problems.lc0.lc90.lc94.BinaryTreeInorderTraversal.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

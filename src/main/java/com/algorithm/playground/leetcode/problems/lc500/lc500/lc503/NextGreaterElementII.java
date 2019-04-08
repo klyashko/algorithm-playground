@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.stack.medium;
+package com.algorithm.playground.leetcode.problems.lc500.lc500.lc503;
 
 import java.util.LinkedList;
 
@@ -16,7 +16,6 @@ public class NextGreaterElementII {
 			LinkedList<Integer> stack = new LinkedList<>();
 			for (int i = nums.length * 2; i >= 0; i--) {
 				int idx = i % nums.length;
-				//noinspection ConstantConditions
 				while (!stack.isEmpty() && nums[idx] >= stack.peek()) {
 					stack.pop();
 				}
