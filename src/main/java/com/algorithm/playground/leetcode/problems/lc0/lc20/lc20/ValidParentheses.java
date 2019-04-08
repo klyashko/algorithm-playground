@@ -13,7 +13,8 @@ public class ValidParentheses {
 				if (ch == '(' || ch == '{' || ch == '[') {
 					stack[top++] = ch;
 				} else {
-					if (top == 0 || stack[--top] != convert(ch)) {
+					char expected = (char) (ch - (ch == ')' ? 1 : 2));
+					if (top == 0 || stack[--top] != expected) {
 						return false;
 					}
 				}
@@ -21,18 +22,6 @@ public class ValidParentheses {
 			return top == 0;
 		}
 
-		private char convert(char ch) {
-			switch (ch) {
-				case ')':
-					return '(';
-				case '}':
-					return '{';
-				case ']':
-					return '[';
-				default:
-					throw new IllegalArgumentException();
-			}
-		}
 	}
 
 }
