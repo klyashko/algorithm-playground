@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.lc700.lc728;
+package com.algorithm.playground.leetcode.problems.lc700.lc720.lc728;
 
 import java.util.LinkedList;
 import java.util.List;

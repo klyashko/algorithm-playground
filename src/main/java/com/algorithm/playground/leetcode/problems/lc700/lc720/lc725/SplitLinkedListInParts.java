@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.lc700.lc725;
+package com.algorithm.playground.leetcode.problems.lc700.lc720.lc725;
 
 import com.algorithm.playground.leetcode.problems.utils.ListNode;
 

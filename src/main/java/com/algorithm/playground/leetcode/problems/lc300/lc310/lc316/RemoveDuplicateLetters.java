@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.stack.hard;
+package com.algorithm.playground.leetcode.problems.lc300.lc310.lc316;
 
 import java.util.LinkedList;
 
@@ -25,7 +25,6 @@ public class RemoveDuplicateLetters {
 					continue;
 				}
 
-				//noinspection ConstantConditions
 				while (!stack.isEmpty() && stack.peek() > ch && counts[stack.peek() - 'a'] > 0) {
 					present[stack.pop() - 'a'] = false;
 				}

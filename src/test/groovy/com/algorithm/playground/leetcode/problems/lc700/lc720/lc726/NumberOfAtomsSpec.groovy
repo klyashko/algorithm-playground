@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.stack.hard
+package com.algorithm.playground.leetcode.problems.lc700.lc720.lc726
 
-import com.algorithm.playground.leetcode.problems.stack.hard.NumberOfAtoms.Solution as S
+import com.algorithm.playground.leetcode.problems.lc700.lc720.lc726.NumberOfAtoms.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.stack.hard
+package com.algorithm.playground.leetcode.problems.lc300.lc310.lc316
 
-import com.algorithm.playground.leetcode.problems.stack.hard.RemoveDuplicateLetters.Solution as S
+import com.algorithm.playground.leetcode.problems.lc300.lc310.lc316.RemoveDuplicateLetters.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

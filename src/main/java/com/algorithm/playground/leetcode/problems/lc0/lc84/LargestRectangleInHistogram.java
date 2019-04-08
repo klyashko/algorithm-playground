@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.stack.hard;
+package com.algorithm.playground.leetcode.problems.lc0.lc84;
 
 /**
  * https://leetcode.com/problems/largest-rectangle-in-histogram/description/
