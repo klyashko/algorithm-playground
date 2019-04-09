@@ -36,7 +36,7 @@ public class Solution {
 			points.put(interval[1] + 1, points.getOrDefault(interval[1] + 1, 0) - 1);
 		}
 
-		Map<Integer, Integer> indexes = new HashMap<>();
+		Map<Integer, Integer> indexes = new HashMap<>(points.size());
 		int[] seats = new int[points.size() - 1];
 		int[] multipliers = new int[points.size() - 1];
 		int val = 0;
@@ -52,7 +52,7 @@ public class Solution {
 			}
 		}
 
-		List<int[]> rest = new ArrayList<>();
+		List<int[]> rest = new ArrayList<>(intervals.length);
 		for (int[] interval : intervals) {
 			int li = indexes.get(interval[0]);
 			int ri = indexes.get(interval[1]);
