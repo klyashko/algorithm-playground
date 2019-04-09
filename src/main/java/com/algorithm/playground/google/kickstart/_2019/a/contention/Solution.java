@@ -3,9 +3,12 @@ package com.algorithm.playground.google.kickstart._2019.a.contention;
 import java.util.*;
 import java.util.Map.Entry;
 
+import static java.util.Comparator.comparingInt;
+
 /**
  * https://codingcompetitions.withgoogle.com/kickstart/round/0000000000050e01/0000000000069881
  */
+@SuppressWarnings("Duplicates")
 public class Solution {
 
 	public static void main(String[] args) {
@@ -49,19 +52,23 @@ public class Solution {
 			}
 		}
 
-		Set<int[]> rest = new HashSet<>();
+		List<int[]> rest = new ArrayList<>();
 		for (int[] interval : intervals) {
 			int li = indexes.get(interval[0]);
 			int ri = indexes.get(interval[1]);
 			rest.add(new int[]{li, ri});
 		}
 
+		// compare by left increasing then by right deceasing
+		rest.sort(comparingInt((int[] a) -> a[0]).thenComparing(comparingInt((int[] a) -> a[1]).reversed()));
+
 		SegmentTree tree = new SegmentTree(seats, multipliers);
 
 		int min = Integer.MAX_VALUE;
 		while (!rest.isEmpty()) {
-			int[] curr = next(tree, rest);
-			rest.remove(curr);
+			int index = next(tree, rest);
+			int[] curr = rest.get(index);
+			rest.remove(index);
 			min = Math.min(min, tree.query(curr[0], curr[1]));
 			if (min == 0) {
 				break;
@@ -73,14 +80,20 @@ public class Solution {
 		return min;
 	}
 
-	private static int[] next(SegmentTree tree, Set<int[]> intervals) {
-		int[] curr = null;
+	private static int next(SegmentTree tree, List<int[]> intervals) {
+		int curr = 0;
 		int max = Integer.MIN_VALUE;
-		for (int[] interval : intervals) {
-			int sum = tree.query(interval[0], interval[1]);
-			if (sum > max) {
-				curr = interval;
-				max = sum;
+		int right = -1;
+		for (int i = 0; i < intervals.size(); i++) {
+			int[] interval = intervals.get(i);
+			int left = Math.max(interval[0], right);
+			if (left <= interval[1]) {
+				int sum = tree.query(left, interval[1]);
+				if (sum > max) {
+					curr = i;
+					max = sum;
+				}
+				right = interval[1] + 1;
 			}
 		}
 		return curr;
