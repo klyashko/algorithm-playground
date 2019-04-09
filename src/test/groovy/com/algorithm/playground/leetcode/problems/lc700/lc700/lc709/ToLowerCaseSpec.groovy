@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.string.easy
+package com.algorithm.playground.leetcode.problems.lc700.lc700.lc709
 
-import com.algorithm.playground.leetcode.problems.string.easy.ToLowerCase.Solution as S
+import com.algorithm.playground.leetcode.problems.lc700.lc700.lc709.ToLowerCase.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.string.easy;
+package com.algorithm.playground.leetcode.problems.lc300.lc340.lc344;
 
 /**
  * https://leetcode.com/problems/reverse-string/description/

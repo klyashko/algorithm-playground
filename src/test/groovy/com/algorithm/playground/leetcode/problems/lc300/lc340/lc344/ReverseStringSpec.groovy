@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.string.easy
+package com.algorithm.playground.leetcode.problems.lc300.lc340.lc344
 
-import com.algorithm.playground.leetcode.problems.string.easy.ReverseString.Solution as S
+import com.algorithm.playground.leetcode.problems.lc300.lc340.lc344.ReverseString.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

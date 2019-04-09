@@ -1,7 +1,7 @@
-package com.algorithm.playground.leetcode.problems.string.easy;
+package com.algorithm.playground.leetcode.problems.lc600.lc657;
 
 /**
- * https://leetcode.com/problems/judge-route-circle/description/
+ * https://leetcode.com/problems/robot-return-to-origin/
  */
 public class JudgeRouteCircle {
 

@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.string.easy;
+package com.algorithm.playground.leetcode.problems.lc700.lc700.lc709;
 
 /**
  * https://leetcode.com/problems/to-lower-case/description/

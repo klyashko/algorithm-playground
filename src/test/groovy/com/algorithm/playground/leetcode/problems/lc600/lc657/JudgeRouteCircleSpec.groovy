@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.string.easy
+package com.algorithm.playground.leetcode.problems.lc600.lc657
 
-import com.algorithm.playground.leetcode.problems.string.easy.JudgeRouteCircle.Solution as S
+import com.algorithm.playground.leetcode.problems.lc600.lc657.JudgeRouteCircle.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 
