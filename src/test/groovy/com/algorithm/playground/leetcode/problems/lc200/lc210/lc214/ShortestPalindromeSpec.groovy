@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.string.hard
+package com.algorithm.playground.leetcode.problems.lc200.lc210.lc214
 
-import com.algorithm.playground.leetcode.problems.string.hard.ShortestPalindrome.Solution as S
+import com.algorithm.playground.leetcode.problems.lc200.lc210.lc214.ShortestPalindrome.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

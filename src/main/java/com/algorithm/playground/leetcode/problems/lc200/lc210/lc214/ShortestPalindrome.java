@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.string.hard;
+package com.algorithm.playground.leetcode.problems.lc200.lc210.lc214;
 
 /**
  * https://leetcode.com/problems/shortest-palindrome/description/

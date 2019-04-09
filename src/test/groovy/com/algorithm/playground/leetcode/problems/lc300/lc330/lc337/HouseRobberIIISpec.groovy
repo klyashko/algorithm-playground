@@ -1,6 +1,5 @@
-package com.algorithm.playground.leetcode.problems.lc300.lc337
+package com.algorithm.playground.leetcode.problems.lc300.lc330.lc337
 
-import com.algorithm.playground.leetcode.problems.lc300.lc337.HouseRobberIII
 import spock.lang.Specification
 import spock.lang.Unroll
 

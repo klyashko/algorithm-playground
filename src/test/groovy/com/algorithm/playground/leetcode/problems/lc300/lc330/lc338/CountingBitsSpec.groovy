@@ -1,6 +1,5 @@
-package com.algorithm.playground.leetcode.problems.lc300.lc338
+package com.algorithm.playground.leetcode.problems.lc300.lc330.lc338
 
-import com.algorithm.playground.leetcode.problems.lc300.lc338.CountingBits
 import spock.lang.Specification
 import spock.lang.Unroll
 

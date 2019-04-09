@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.lc300.lc338;
+package com.algorithm.playground.leetcode.problems.lc300.lc330.lc338;
 
 /**
  * https://leetcode.com/problems/counting-bits/description/

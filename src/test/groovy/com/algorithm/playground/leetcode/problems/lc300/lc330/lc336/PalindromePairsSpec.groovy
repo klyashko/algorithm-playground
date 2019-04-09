@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.string.hard
+package com.algorithm.playground.leetcode.problems.lc300.lc330.lc336
 
-import com.algorithm.playground.leetcode.problems.string.hard.PalindromePairs.Solution as S
+import com.algorithm.playground.leetcode.problems.lc300.lc330.lc336.PalindromePairs.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

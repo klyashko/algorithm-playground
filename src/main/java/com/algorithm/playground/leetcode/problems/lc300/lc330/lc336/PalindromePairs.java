@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.string.hard;
+package com.algorithm.playground.leetcode.problems.lc300.lc330.lc336;
 
 import java.util.*;
 
