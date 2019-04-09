@@ -1,13 +1,11 @@
 package com.algorithm.playground.leetcode.problems.lc800.lc841
 
-import com.algorithm.playground.leetcode.problems.lc800.lc841.KeysAndRooms
 import spock.lang.Specification
 import spock.lang.Unroll
 
 class KeysAndRoomsSpec extends Specification {
 
 	@Unroll
-	@SuppressWarnings("GroovyPointlessBoolean")
 	def "canVisitAllRooms"() {
 
 		expect:
@@ -23,7 +21,6 @@ class KeysAndRoomsSpec extends Specification {
 	}
 
 	@Unroll
-	@SuppressWarnings("GroovyPointlessBoolean")
 	def "canVisitAllRooms_iterative"() {
 
 		expect:

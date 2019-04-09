@@ -9,7 +9,6 @@ import static com.algorithm.playground.leetcode.problems.utils.Interval.valueOf 
 class DataStreamAsDisjointIntervalsSpec extends Specification {
 
 	@Unroll
-	@SuppressWarnings("GroovyAssignabilityCheck")
 	def "summaryRanges"() {
 
 		given:

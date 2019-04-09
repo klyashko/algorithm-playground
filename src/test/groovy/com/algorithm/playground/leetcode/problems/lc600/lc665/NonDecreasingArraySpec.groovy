@@ -7,7 +7,6 @@ import spock.lang.Unroll
 class NonDecreasingArraySpec extends Specification {
 
 	@Unroll
-	@SuppressWarnings("GroovyPointlessBoolean")
 	def "checkPossibility"() {
 
 		expect:

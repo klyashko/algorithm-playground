@@ -7,7 +7,6 @@ import spock.lang.Unroll
 class ReachingPointsSpec extends Specification {
 
 	@Unroll
-	@SuppressWarnings("GroovyPointlessBoolean")
 	def "reachingPoints"() {
 
 		expect:
@@ -17,11 +16,11 @@ class ReachingPointsSpec extends Specification {
 
 		where:
 
-			input        || output
-			[1, 1, 3, 5] || true
-//			[1, 1, 2, 2]                   || false
-//			[1, 1, 1, 1]                   || true
-//			[35, 13, 455955547, 420098884] || false
+			input                          || output
+			[1, 1, 3, 5]                   || true
+			[1, 1, 2, 2]                   || false
+			[1, 1, 1, 1]                   || true
+			[35, 13, 455955547, 420098884] || false
 
 	}
 

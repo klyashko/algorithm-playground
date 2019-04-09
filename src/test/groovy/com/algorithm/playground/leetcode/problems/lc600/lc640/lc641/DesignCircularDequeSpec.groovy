@@ -8,7 +8,6 @@ import static com.algorithm.playground.leetcode.problems.lc600.lc640.lc641.Desig
 class DesignCircularDequeSpec extends Specification {
 
 	@Unroll
-	@SuppressWarnings("GroovyAssignabilityCheck")
 	def "myCircularDeque"() {
 
 		given:

@@ -9,7 +9,6 @@ import static com.algorithm.playground.leetcode.problems.tree.TreeNode.node
 class BalancedBinaryTreeSpec extends Specification {
 
 	@Unroll
-	@SuppressWarnings("GroovyPointlessBoolean")
 	def "isBalanced"() {
 
 		expect:

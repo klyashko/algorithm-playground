@@ -7,7 +7,6 @@ import spock.lang.Unroll
 class MinimumNumberOfRefuelingStopsSpec extends Specification {
 
 	@Unroll
-	@SuppressWarnings("GroovyAssignabilityCheck")
 	def "minRefuelStops"() {
 
 		expect:

@@ -7,7 +7,6 @@ import spock.lang.Unroll
 class LongPressedNameSpec extends Specification {
 
 	@Unroll
-	@SuppressWarnings("GroovyPointlessBoolean")
 	def "isLongPressedName"() {
 
 		expect:

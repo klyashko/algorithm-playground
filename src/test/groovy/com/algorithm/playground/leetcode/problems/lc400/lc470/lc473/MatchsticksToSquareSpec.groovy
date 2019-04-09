@@ -7,7 +7,6 @@ import spock.lang.Unroll
 class MatchsticksToSquareSpec extends Specification {
 
 	@Unroll
-	@SuppressWarnings("GroovyPointlessBoolean")
 	def "makesquare"() {
 
 		expect:

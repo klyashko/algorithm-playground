@@ -7,7 +7,6 @@ import spock.lang.Unroll
 class PartitionToKEqualSumSubsetsSpec extends Specification {
 
 	@Unroll
-	@SuppressWarnings("GroovyPointlessBoolean")
 	def "canPartitionKSubsets"() {
 
 		expect:

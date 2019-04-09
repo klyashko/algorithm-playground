@@ -6,7 +6,6 @@ import spock.lang.Unroll
 class WildcardMatchingSpec extends Specification {
 
 	@Unroll
-	@SuppressWarnings("GroovyPointlessBoolean")
 	def "isMatch"() {
 
 		expect:

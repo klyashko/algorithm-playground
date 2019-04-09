@@ -9,7 +9,6 @@ import spock.lang.Unroll
 class CheapestFlightsWithinKStopsSpec extends Specification {
 
 	@Unroll
-	@SuppressWarnings("GroovyAssignabilityCheck")
 	def "findCheapestPrice_dijkstra"() {
 
 		expect:
@@ -26,7 +25,6 @@ class CheapestFlightsWithinKStopsSpec extends Specification {
 	}
 
 	@Unroll
-	@SuppressWarnings("GroovyAssignabilityCheck")
 	def "findCheapestPrice"() {
 
 		expect:
@@ -42,7 +40,6 @@ class CheapestFlightsWithinKStopsSpec extends Specification {
 	}
 
 	@Unroll
-	@SuppressWarnings("GroovyAssignabilityCheck")
 	def "findCheapestPrice_dfs"() {
 
 		expect:

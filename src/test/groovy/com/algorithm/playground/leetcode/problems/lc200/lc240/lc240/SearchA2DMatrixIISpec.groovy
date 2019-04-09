@@ -1,13 +1,11 @@
 package com.algorithm.playground.leetcode.problems.lc200.lc240.lc240
 
-import com.algorithm.playground.leetcode.problems.lc200.lc240.lc240.SearchA2DMatrixII
 import spock.lang.Specification
 import spock.lang.Unroll
 
 class SearchA2DMatrixIISpec extends Specification {
 
 	@Unroll
-	@SuppressWarnings("GroovyPointlessBoolean")
 	def "searchMatrix"() {
 
 		expect:

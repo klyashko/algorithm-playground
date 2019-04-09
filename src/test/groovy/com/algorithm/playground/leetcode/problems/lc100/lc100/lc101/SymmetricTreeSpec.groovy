@@ -8,7 +8,6 @@ import static com.algorithm.playground.leetcode.problems.tree.TreeNode.valueOf a
 class SymmetricTreeSpec extends Specification {
 
 	@Unroll
-	@SuppressWarnings("GroovyPointlessBoolean")
 	def "isSymmetric"() {
 
 		expect:
@@ -25,7 +24,6 @@ class SymmetricTreeSpec extends Specification {
 	}
 
 	@Unroll
-	@SuppressWarnings("GroovyPointlessBoolean")
 	def "isSymmetric_iterative"() {
 
 		expect:

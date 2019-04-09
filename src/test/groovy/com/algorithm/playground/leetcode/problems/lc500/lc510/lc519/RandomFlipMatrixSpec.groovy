@@ -8,7 +8,6 @@ import static com.algorithm.playground.leetcode.problems.lc500.lc510.lc519.Rando
 class RandomFlipMatrixSpec extends Specification {
 
 	@Unroll
-	@SuppressWarnings("GroovyAssignabilityCheck")
 	def "randomFlipMatrix"() {
 
 		given:

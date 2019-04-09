@@ -7,7 +7,6 @@ import spock.lang.Unroll
 class InterleavingStringSpec extends Specification {
 
 	@Unroll
-	@SuppressWarnings("GroovyPointlessBoolean")
 	def "isInterleave"() {
 
 		expect:

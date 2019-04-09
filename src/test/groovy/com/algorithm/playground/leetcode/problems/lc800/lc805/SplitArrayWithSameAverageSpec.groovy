@@ -8,7 +8,6 @@ import spock.lang.Unroll
 class SplitArrayWithSameAverageSpec extends Specification {
 
 	@Unroll
-	@SuppressWarnings("GroovyPointlessBoolean")
 	def "splitArraySameAverage"() {
 
 		expect:
@@ -36,7 +35,6 @@ class SplitArrayWithSameAverageSpec extends Specification {
 	}
 
 	@Unroll
-	@SuppressWarnings("GroovyPointlessBoolean")
 	def "splitArraySameAverageDP"() {
 
 		expect:

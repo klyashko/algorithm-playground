@@ -8,7 +8,6 @@ import spock.lang.Unroll
 class ContainsDuplicateIIISpec extends Specification {
 
 	@Unroll
-	@SuppressWarnings("GroovyPointlessBoolean")
 	def "containsNearbyAlmostDuplicate"() {
 
 		expect:
@@ -30,7 +29,6 @@ class ContainsDuplicateIIISpec extends Specification {
 	}
 
 	@Unroll
-	@SuppressWarnings("GroovyPointlessBoolean")
 	def "containsNearbyAlmostDuplicate_second"() {
 
 		expect:

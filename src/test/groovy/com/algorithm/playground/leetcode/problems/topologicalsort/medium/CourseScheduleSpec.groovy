@@ -7,7 +7,6 @@ import spock.lang.Unroll
 class CourseScheduleSpec extends Specification {
 
 	@Unroll
-	@SuppressWarnings(["GroovyAssignabilityCheck", "GroovyPointlessBoolean"])
 	def "canFinish"() {
 
 		expect:

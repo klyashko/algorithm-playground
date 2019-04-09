@@ -6,7 +6,6 @@ import spock.lang.Unroll
 class SumOfDistancesInTreeSpec extends Specification {
 
 	@Unroll
-	@SuppressWarnings("GroovyAssignabilityCheck")
 	def "sumOfDistancesInTree"() {
 
 		expect:

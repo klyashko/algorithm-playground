@@ -8,7 +8,6 @@ import static PrefixAndSuffixSearch.wordFilter
 class PrefixAndSuffixSearchSpec extends Specification {
 
 	@Unroll
-	@SuppressWarnings("GroovyAssignabilityCheck")
 	def "wordFilter"() {
 
 		given:

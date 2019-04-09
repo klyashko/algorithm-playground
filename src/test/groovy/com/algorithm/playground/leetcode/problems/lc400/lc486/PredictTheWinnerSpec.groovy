@@ -7,7 +7,6 @@ import spock.lang.Unroll
 class PredictTheWinnerSpec extends Specification {
 
 	@Unroll
-	@SuppressWarnings("GroovyPointlessBoolean")
 	def "PredictTheWinner"() {
 
 		expect:

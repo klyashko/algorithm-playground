@@ -8,7 +8,6 @@ import static KthLargestElementInAStream.kthLargest
 class KthLargestElementInAStreamSpec extends Specification {
 
 	@Unroll
-	@SuppressWarnings("GroovyAssignabilityCheck")
 	def "kthLargest"() {
 
 		given:
@@ -30,7 +29,6 @@ class KthLargestElementInAStreamSpec extends Specification {
 	}
 
 	@Unroll
-	@SuppressWarnings("GroovyAssignabilityCheck")
 	def "kthLargest_quick_check"() {
 
 		given:

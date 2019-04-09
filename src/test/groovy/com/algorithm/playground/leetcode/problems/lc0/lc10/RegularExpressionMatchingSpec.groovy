@@ -1,13 +1,11 @@
 package com.algorithm.playground.leetcode.problems.lc0.lc10
 
-import com.algorithm.playground.leetcode.problems.lc0.lc10.RegularExpressionMatching
 import spock.lang.Specification
 import spock.lang.Unroll
 
 class RegularExpressionMatchingSpec extends Specification {
 
     @Unroll
-    @SuppressWarnings("GroovyPointlessBoolean")
     def "isMatch"() {
 
         expect:

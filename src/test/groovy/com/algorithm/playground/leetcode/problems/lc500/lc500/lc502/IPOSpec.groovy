@@ -7,7 +7,6 @@ import spock.lang.Unroll
 class IPOSpec extends Specification {
 
 	@Unroll
-	@SuppressWarnings("GroovyAssignabilityCheck")
 	def "findMaximizedCapital"() {
 
 		expect:

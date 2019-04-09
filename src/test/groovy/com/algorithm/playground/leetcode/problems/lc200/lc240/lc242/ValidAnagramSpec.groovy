@@ -7,7 +7,6 @@ import spock.lang.Unroll
 class ValidAnagramSpec extends Specification {
 
 	@Unroll
-	@SuppressWarnings("GroovyPointlessBoolean")
 	def "isAnagram"() {
 
 		expect:

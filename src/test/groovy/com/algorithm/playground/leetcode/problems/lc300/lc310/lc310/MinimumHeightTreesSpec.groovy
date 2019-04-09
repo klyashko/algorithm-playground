@@ -7,7 +7,6 @@ import spock.lang.Unroll
 class MinimumHeightTreesSpec extends Specification {
 
 	@Unroll
-	@SuppressWarnings("GroovyAssignabilityCheck")
 	def "findMinHeightTrees"() {
 
 		expect:

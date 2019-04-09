@@ -7,7 +7,6 @@ import spock.lang.Unroll
 class ReorderedPowerOf2Spec extends Specification {
 
 	@Unroll
-	@SuppressWarnings("GroovyPointlessBoolean")
 	def "reorderedPowerOf2"() {
 
 		expect:

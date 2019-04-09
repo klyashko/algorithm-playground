@@ -7,7 +7,6 @@ import spock.lang.Unroll
 class CourseScheduleIISpec extends Specification {
 
 	@Unroll
-	@SuppressWarnings("GroovyAssignabilityCheck")
 	def "findOrder"() {
 
 		expect:

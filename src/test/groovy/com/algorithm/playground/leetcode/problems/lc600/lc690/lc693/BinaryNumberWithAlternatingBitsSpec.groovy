@@ -7,7 +7,6 @@ import spock.lang.Unroll
 class BinaryNumberWithAlternatingBitsSpec extends Specification {
 
 	@Unroll
-	@SuppressWarnings("GroovyPointlessBoolean")
 	def "hasAlternatingBits"() {
 
 		expect:

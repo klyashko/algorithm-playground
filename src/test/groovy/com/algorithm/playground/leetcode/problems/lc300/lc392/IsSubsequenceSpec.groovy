@@ -7,7 +7,6 @@ import spock.lang.Unroll
 class IsSubsequenceSpec extends Specification {
 
 	@Unroll
-	@SuppressWarnings("GroovyPointlessBoolean")
 	def "isSubsequence"() {
 
 		expect:

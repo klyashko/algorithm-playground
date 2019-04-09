@@ -22,7 +22,6 @@ class SingleNumberIIISpec extends Specification {
 	}
 
 	@Unroll
-	@SuppressWarnings("GroovyAssignabilityCheck")
 	def "singleNumber_fast"() {
 
 		expect:

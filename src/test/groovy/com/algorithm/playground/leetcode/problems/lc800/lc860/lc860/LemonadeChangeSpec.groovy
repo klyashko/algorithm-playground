@@ -7,7 +7,6 @@ import spock.lang.Unroll
 class LemonadeChangeSpec extends Specification {
 
 	@Unroll
-	@SuppressWarnings("GroovyPointlessBoolean")
 	def "lemonadeChange"() {
 
 		expect:

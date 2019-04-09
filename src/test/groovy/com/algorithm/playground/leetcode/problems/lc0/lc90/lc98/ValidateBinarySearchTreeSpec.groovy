@@ -5,7 +5,6 @@ import spock.lang.Unroll
 
 import static com.algorithm.playground.leetcode.problems.tree.TreeNode.node
 
-@SuppressWarnings("GroovyPointlessBoolean")
 class ValidateBinarySearchTreeSpec extends Specification {
 
 	@Unroll

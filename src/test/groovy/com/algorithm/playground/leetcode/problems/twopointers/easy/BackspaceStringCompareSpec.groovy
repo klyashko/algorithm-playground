@@ -7,7 +7,6 @@ import spock.lang.Unroll
 class BackspaceStringCompareSpec extends Specification {
 
 	@Unroll
-	@SuppressWarnings("GroovyPointlessBoolean")
 	def "backspaceCompare"() {
 
 		expect:

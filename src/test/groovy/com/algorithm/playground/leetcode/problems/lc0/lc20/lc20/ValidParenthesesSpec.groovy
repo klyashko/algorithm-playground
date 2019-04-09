@@ -7,7 +7,6 @@ import spock.lang.Unroll
 class ValidParenthesesSpec extends Specification {
 
 	@Unroll
-	@SuppressWarnings("GroovyPointlessBoolean")
 	def "isValid"() {
 
 		expect:

@@ -7,7 +7,6 @@ import spock.lang.Unroll
 class PartitionEqualSubsetSumSpec extends Specification {
 
 	@Unroll
-	@SuppressWarnings("GroovyPointlessBoolean")
 	def "canPartition"() {
 
 		expect:

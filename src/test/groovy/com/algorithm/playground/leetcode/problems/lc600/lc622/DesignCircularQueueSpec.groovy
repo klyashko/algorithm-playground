@@ -8,7 +8,6 @@ import static com.algorithm.playground.leetcode.problems.lc600.lc622.DesignCircu
 class DesignCircularQueueSpec extends Specification {
 
 	@Unroll
-	@SuppressWarnings("GroovyAssignabilityCheck")
 	def "myCircularQueue"() {
 
 		given:

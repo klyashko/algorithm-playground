@@ -7,7 +7,6 @@ import spock.lang.Unroll
 class HandOfStraightsSpec extends Specification {
 
 	@Unroll
-	@SuppressWarnings("GroovyPointlessBoolean")
 	def "isNStraightHand"() {
 
 		expect:

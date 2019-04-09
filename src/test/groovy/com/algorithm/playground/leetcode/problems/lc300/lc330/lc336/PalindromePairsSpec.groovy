@@ -7,7 +7,6 @@ import spock.lang.Unroll
 class PalindromePairsSpec extends Specification {
 
 	@Unroll
-	@SuppressWarnings("GroovyInArgumentCheck")
 	def "palindromePairs"() {
 
 		when:

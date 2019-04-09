@@ -7,7 +7,6 @@ import spock.lang.Unroll
 class IsGraphBipartiteSpec extends Specification {
 
 	@Unroll
-	@SuppressWarnings("GroovyPointlessBoolean")
 	def "isBipartite"() {
 
 		expect:

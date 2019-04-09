@@ -7,7 +7,6 @@ import spock.lang.Unroll
 class ImplementMagicDictionarySpec extends Specification {
 
 	@Unroll
-	@SuppressWarnings("GroovyAssignabilityCheck")
 	def "magicDictionary"() {
 
 		given:

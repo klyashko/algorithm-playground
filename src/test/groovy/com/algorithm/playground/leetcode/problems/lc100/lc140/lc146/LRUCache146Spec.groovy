@@ -8,7 +8,6 @@ import static com.algorithm.playground.leetcode.problems.lc100.lc140.lc146.LRUCa
 class LRUCache146Spec extends Specification {
 
 	@Unroll
-	@SuppressWarnings("GroovyAssignabilityCheck")
 	def "LRUCache"() {
 
 		given:

@@ -23,11 +23,9 @@ class CloneGraphSpec extends Specification {
 
 		expect:
 
-			equalsButNotSame(new S().cloneGraph(one), one, [] as Set)
+			equalsButNotSame(new S().cloneGraph(one), one, [] as Set<Node>)
 
 	}
-
-	@SuppressWarnings("GroovyAssignabilityCheck")
 	private boolean equalsButNotSame(Node node1, Node node2, Set<Node> seen) {
 		if (node1.val != node2.val || node1 == node2 || node1.neighbors.size() != node2.neighbors.size()) {
 			return false

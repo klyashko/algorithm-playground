@@ -3,7 +3,6 @@ package com.algorithm.playground.data.structure
 import spock.lang.Specification
 import spock.lang.Unroll
 
-@SuppressWarnings("GroovyAccessibility")
 class AVLTreeSpec extends Specification {
 
 	@Unroll("#name")
@@ -21,6 +20,7 @@ class AVLTreeSpec extends Specification {
 
 		then:
 
+			//noinspection GroovyAccessibility
 			checkDepth(tree.root) != -1
 			tree.inOrder() == data.toSet().sort()
 
@@ -45,7 +45,9 @@ class AVLTreeSpec extends Specification {
 		if (root == null) {
 			return 0
 		}
+		//noinspection GroovyAccessibility
 		int left = checkDepth(root.left)
+		//noinspection GroovyAccessibility
 		int right = checkDepth(root.right)
 		if (left == -1 || right == -1 || Math.abs(left - right) > 1) {
 			return -1

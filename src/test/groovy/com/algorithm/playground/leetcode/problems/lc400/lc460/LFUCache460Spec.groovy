@@ -8,7 +8,6 @@ import static com.algorithm.playground.leetcode.problems.lc400.lc460.LFUCache460
 class LFUCache460Spec extends Specification {
 
 	@Unroll
-	@SuppressWarnings("GroovyAssignabilityCheck")
 	def "lfuCache"() {
 
 		given:

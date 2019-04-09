@@ -7,7 +7,6 @@ import spock.lang.Unroll
 class MyCalendarIISpec extends Specification {
 
 	@Unroll
-	@SuppressWarnings("GroovyAssignabilityCheck")
 	def "myCalendarTwo"() {
 
 		given:
