@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.topologicalsort.medium
+package com.algorithm.playground.leetcode.problems.lc200.lc210.lc210
 
-import com.algorithm.playground.leetcode.problems.topologicalsort.medium.CourseScheduleII.Solution as S
+import com.algorithm.playground.leetcode.problems.lc200.lc210.lc210.CourseScheduleII.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

@@ -1,7 +1,7 @@
-package com.algorithm.playground.leetcode.problems.tree.easy
+package com.algorithm.playground.leetcode.problems.lc600.lc617
 
+import com.algorithm.playground.leetcode.problems.lc600.lc617.MergeTwoBinaryTrees.Solution as S
 import com.algorithm.playground.leetcode.problems.tree.TreeNode as N
-import com.algorithm.playground.leetcode.problems.tree.easy.MergeTwoBinaryTrees.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 
