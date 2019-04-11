@@ -2,6 +2,9 @@ package com.algorithm.playground.google.codejam._2019.qualification.datbae;
 
 import java.util.Scanner;
 
+/**
+ * https://codingcompetitions.withgoogle.com/codejam/round/0000000000051705/00000000000881de
+ */
 public class Solution {
 
 	public static void main(String[] args) {

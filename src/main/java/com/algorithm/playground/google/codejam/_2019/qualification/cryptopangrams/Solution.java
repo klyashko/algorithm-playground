@@ -5,6 +5,9 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.TreeMap;
 
+/**
+ * https://codingcompetitions.withgoogle.com/codejam/round/0000000000051705/000000000008830b
+ */
 public class Solution {
 
 	public static void main(String[] args) {
