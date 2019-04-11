@@ -1,7 +1,7 @@
-package com.algorithm.playground.leetcode.problems.tree.hard
+package com.algorithm.playground.leetcode.problems.lc600.lc680.lc685
 
-import com.algorithm.playground.leetcode.problems.tree.hard.RedundantConnectionII.Solution as S
-import com.algorithm.playground.leetcode.problems.tree.hard.RedundantConnectionII.SolutionFast as SF
+import com.algorithm.playground.leetcode.problems.lc600.lc680.lc685.RedundantConnectionII.Solution as S
+import com.algorithm.playground.leetcode.problems.lc600.lc680.lc685.RedundantConnectionII.SolutionFast as SF
 import spock.lang.Specification
 import spock.lang.Unroll
 

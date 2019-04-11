@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.tree.hard
+package com.algorithm.playground.leetcode.problems.lc100.lc120.lc124
 
-import com.algorithm.playground.leetcode.problems.tree.hard.BinaryTreeMaximumPathSum.Solution as S
+import com.algorithm.playground.leetcode.problems.lc100.lc120.lc124.BinaryTreeMaximumPathSum.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.tree.hard
+package com.algorithm.playground.leetcode.problems.lc200.lc297
 
-import com.algorithm.playground.leetcode.problems.tree.hard.SerializeAndDeserializeBinaryTree.Codec as C
+import com.algorithm.playground.leetcode.problems.lc200.lc297.SerializeAndDeserializeBinaryTree.Codec as C
 import spock.lang.Specification
 import spock.lang.Unroll
 

@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.lc200.lc297
+package com.algorithm.playground.leetcode.problems.lc200.lc207
 
 import com.algorithm.playground.leetcode.problems.lc200.lc207.CourseSchedule.Solution as S
 import spock.lang.Specification

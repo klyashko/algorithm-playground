@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.tree.hard;
+package com.algorithm.playground.leetcode.problems.lc600.lc680.lc685;
 
 import java.util.*;
 
@@ -151,11 +151,11 @@ public class RedundantConnectionII {
 			return new Result(node, seen);
 		}
 
-		class Result {
+		private class Result {
 			int node;
 			Set<Integer> cycle;
 
-			public Result(int node, Set<Integer> cycle) {
+			private Result(int node, Set<Integer> cycle) {
 				this.node = node;
 				this.cycle = cycle;
 			}

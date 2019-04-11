@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.tree.hard;
+package com.algorithm.playground.leetcode.problems.lc100.lc120.lc124;
 
 import com.algorithm.playground.leetcode.problems.tree.TreeNode;
 
