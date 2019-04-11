@@ -10,7 +10,7 @@ class ContentionSpec extends Specification {
 
 		expect:
 
-			Solution.solve(intervals as int[][]) == out
+			Solution.solve(intervals as int[][], intervals.max { it[1] }[1] + 2) == out
 
 		where:
 
@@ -29,17 +29,6 @@ class ContentionSpec extends Specification {
 			 [50, 80]]  | 21
 			[[1, 4],
 			 [2, 10]]   | 4
-
-	}
-
-	def "solve_tmp"() {
-
-		given:
-
-			def intervals = []
-			300.times { intervals << [1, 1_000_000] }
-			def out = Solution.solve(intervals as int[][])
-			println(out)
 
 	}
 
@@ -62,8 +51,7 @@ class ContentionSpec extends Specification {
 					"3 6\n" +
 					"2 7"
 
-			def is = new ByteArrayInputStream(data.getBytes())
-			System.in = is
+			System.in = new ByteArrayInputStream(data.bytes)
 			Solution.main()
 
 	}

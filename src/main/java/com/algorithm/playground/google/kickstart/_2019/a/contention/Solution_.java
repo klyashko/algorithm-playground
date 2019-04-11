@@ -1,15 +1,16 @@
 package com.algorithm.playground.google.kickstart._2019.a.contention;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
+
+import static java.util.Comparator.comparingInt;
 
 /**
  * https://codingcompetitions.withgoogle.com/kickstart/round/0000000000050e01/0000000000069881
  */
 @SuppressWarnings("Duplicates")
-public class Solution {
+public class Solution_ {
 
 	public static void main(String[] args) {
 		try (Scanner console = new Scanner(System.in)) {
@@ -73,15 +74,7 @@ public class Solution {
 		}
 
 		// compare by left increasing then by right deceasing
-		rest.sort(new Comparator<int[]>() {
-			@Override
-			public int compare(int[] a1, int[] a2) {
-				if (a1[0] == a2[0]) {
-					return a2[1] - a1[1];
-				}
-				return a1[0] - a2[0];
-			}
-		});
+		rest.sort(comparingInt((int[] a) -> a[0]).thenComparing(comparingInt((int[] a) -> a[1]).reversed()));
 
 		SegmentTree tree = new SegmentTree(seats, multipliers);
 
