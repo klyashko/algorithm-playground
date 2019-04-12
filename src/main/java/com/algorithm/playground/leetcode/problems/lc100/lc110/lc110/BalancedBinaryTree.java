@@ -1,6 +1,6 @@
 package com.algorithm.playground.leetcode.problems.lc100.lc110.lc110;
 
-import com.algorithm.playground.leetcode.problems.tree.TreeNode;
+import com.algorithm.playground.leetcode.problems.utils.TreeNode;
 
 /**
  * https://leetcode.com/problems/balanced-binary-tree/

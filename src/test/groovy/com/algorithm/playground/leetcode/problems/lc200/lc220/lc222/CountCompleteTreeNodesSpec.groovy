@@ -3,7 +3,7 @@ package com.algorithm.playground.leetcode.problems.lc200.lc220.lc222
 import spock.lang.Specification
 import spock.lang.Unroll
 
-import static com.algorithm.playground.leetcode.problems.tree.TreeNode.node
+import static com.algorithm.playground.leetcode.problems.utils.TreeNode.node
 
 class CountCompleteTreeNodesSpec extends Specification {
 

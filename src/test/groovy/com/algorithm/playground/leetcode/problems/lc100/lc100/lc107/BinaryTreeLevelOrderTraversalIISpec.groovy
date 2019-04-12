@@ -1,10 +1,10 @@
 package com.algorithm.playground.leetcode.problems.lc100.lc100.lc107
 
-import com.algorithm.playground.leetcode.problems.lc100.lc100.lc107.BinaryTreeLevelOrderTraversalII
+
 import spock.lang.Specification
 import spock.lang.Unroll
 
-import static com.algorithm.playground.leetcode.problems.tree.TreeNode.valueOf as node
+import static com.algorithm.playground.leetcode.problems.utils.TreeNode.valueOf as node
 
 class BinaryTreeLevelOrderTraversalIISpec extends Specification {
 

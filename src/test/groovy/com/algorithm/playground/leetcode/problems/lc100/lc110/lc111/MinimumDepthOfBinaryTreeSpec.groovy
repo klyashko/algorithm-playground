@@ -4,7 +4,7 @@ package com.algorithm.playground.leetcode.problems.lc100.lc110.lc111
 import spock.lang.Specification
 import spock.lang.Unroll
 
-import static com.algorithm.playground.leetcode.problems.tree.TreeNode.node
+import static com.algorithm.playground.leetcode.problems.utils.TreeNode.node
 
 class MinimumDepthOfBinaryTreeSpec extends Specification {
 

@@ -1,6 +1,6 @@
 package com.algorithm.playground.leetcode.problems.lc100.lc170.lc173;
 
-import com.algorithm.playground.leetcode.problems.tree.TreeNode;
+import com.algorithm.playground.leetcode.problems.utils.TreeNode;
 
 import java.util.LinkedList;
 
@@ -22,7 +22,7 @@ public class BinarySearchTreeIterator {
 		private LinkedList<TreeNode> stack = new LinkedList<>();
 		private TreeNode curr;
 
-		public BSTIterator(TreeNode root) {
+		BSTIterator(TreeNode root) {
 			curr = root;
 		}
 

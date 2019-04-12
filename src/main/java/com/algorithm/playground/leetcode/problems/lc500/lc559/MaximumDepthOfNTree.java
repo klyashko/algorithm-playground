@@ -1,6 +1,6 @@
 package com.algorithm.playground.leetcode.problems.lc500.lc559;
 
-import com.algorithm.playground.leetcode.problems.tree.Node;
+import com.algorithm.playground.leetcode.problems.utils.Node;
 
 /**
  * https://leetcode.com/problems/maximum-depth-of-n-ary-tree/description/

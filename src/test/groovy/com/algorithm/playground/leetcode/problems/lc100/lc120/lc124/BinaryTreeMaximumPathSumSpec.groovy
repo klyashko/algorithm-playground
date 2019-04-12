@@ -4,7 +4,7 @@ import com.algorithm.playground.leetcode.problems.lc100.lc120.lc124.BinaryTreeMa
 import spock.lang.Specification
 import spock.lang.Unroll
 
-import static com.algorithm.playground.leetcode.problems.tree.TreeNode.valueOf as node
+import static com.algorithm.playground.leetcode.problems.utils.TreeNode.valueOf as node
 
 class BinaryTreeMaximumPathSumSpec extends Specification {
 

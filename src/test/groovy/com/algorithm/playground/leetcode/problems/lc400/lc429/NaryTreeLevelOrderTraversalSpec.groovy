@@ -1,10 +1,10 @@
 package com.algorithm.playground.leetcode.problems.lc400.lc429
 
-import com.algorithm.playground.leetcode.problems.lc400.lc429.NaryTreeLevelOrderTraversal
+
 import spock.lang.Specification
 import spock.lang.Unroll
 
-import static com.algorithm.playground.leetcode.problems.tree.Node.valueOf as node
+import static com.algorithm.playground.leetcode.problems.utils.Node.valueOf as node
 
 class NaryTreeLevelOrderTraversalSpec extends Specification {
 

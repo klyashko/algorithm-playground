@@ -1,6 +1,6 @@
 package com.algorithm.playground.leetcode.problems.lc400.lc429;
 
-import com.algorithm.playground.leetcode.problems.tree.Node;
+import com.algorithm.playground.leetcode.problems.utils.Node;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;

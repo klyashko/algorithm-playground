@@ -1,7 +1,7 @@
 package com.algorithm.playground.leetcode.problems.lc800.lc870.lc872
 
 import com.algorithm.playground.leetcode.problems.lc800.lc870.lc872.LeafSimilarTrees.Solution as S
-import com.algorithm.playground.leetcode.problems.tree.TreeNode as N
+import com.algorithm.playground.leetcode.problems.utils.TreeNode as N
 import spock.lang.Specification
 import spock.lang.Unroll
 

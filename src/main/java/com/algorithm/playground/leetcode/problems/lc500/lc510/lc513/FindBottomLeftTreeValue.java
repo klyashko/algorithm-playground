@@ -1,6 +1,6 @@
 package com.algorithm.playground.leetcode.problems.lc500.lc510.lc513;
 
-import com.algorithm.playground.leetcode.problems.tree.TreeNode;
+import com.algorithm.playground.leetcode.problems.utils.TreeNode;
 
 /**
  * https://leetcode.com/problems/find-bottom-left-tree-value/description/

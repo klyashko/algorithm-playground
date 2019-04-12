@@ -1,6 +1,6 @@
 package com.algorithm.playground.leetcode.problems.lc100.lc100.lc102;
 
-import com.algorithm.playground.leetcode.problems.tree.TreeNode;
+import com.algorithm.playground.leetcode.problems.utils.TreeNode;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

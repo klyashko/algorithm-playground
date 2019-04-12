@@ -1,6 +1,6 @@
 package com.algorithm.playground.leetcode.problems.lc600.lc617;
 
-import com.algorithm.playground.leetcode.problems.tree.TreeNode;
+import com.algorithm.playground.leetcode.problems.utils.TreeNode;
 
 /**
  * https://leetcode.com/problems/merge-two-binary-trees/description/

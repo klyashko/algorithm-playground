@@ -4,7 +4,7 @@ import com.algorithm.playground.leetcode.problems.lc500.lc530.MinimumAbsoluteDif
 import spock.lang.Specification
 import spock.lang.Unroll
 
-import static com.algorithm.playground.leetcode.problems.tree.TreeNode.valueOf as node
+import static com.algorithm.playground.leetcode.problems.utils.TreeNode.valueOf as node
 
 class MinimumAbsoluteDifferenceInBSTSpec extends Specification {
 

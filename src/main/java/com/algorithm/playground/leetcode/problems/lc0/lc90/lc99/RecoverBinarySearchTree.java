@@ -1,6 +1,6 @@
 package com.algorithm.playground.leetcode.problems.lc0.lc90.lc99;
 
-import com.algorithm.playground.leetcode.problems.tree.TreeNode;
+import com.algorithm.playground.leetcode.problems.utils.TreeNode;
 
 import java.util.PriorityQueue;
 

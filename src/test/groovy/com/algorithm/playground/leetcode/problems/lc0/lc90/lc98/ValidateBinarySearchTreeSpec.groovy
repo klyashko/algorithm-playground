@@ -3,7 +3,7 @@ package com.algorithm.playground.leetcode.problems.lc0.lc90.lc98
 import spock.lang.Specification
 import spock.lang.Unroll
 
-import static com.algorithm.playground.leetcode.problems.tree.TreeNode.node
+import static com.algorithm.playground.leetcode.problems.utils.TreeNode.node
 
 class ValidateBinarySearchTreeSpec extends Specification {
 
