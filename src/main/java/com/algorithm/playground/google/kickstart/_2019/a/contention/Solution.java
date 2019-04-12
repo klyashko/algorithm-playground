@@ -1,15 +1,10 @@
 package com.algorithm.playground.google.kickstart._2019.a.contention;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
-
-import static java.util.Comparator.comparingInt;
+import java.util.*;
 
 /**
  * https://codingcompetitions.withgoogle.com/kickstart/round/0000000000050e01/0000000000069881
  */
-@SuppressWarnings("Duplicates")
 public class Solution {
 
 	public static void main(String[] args) {
@@ -53,12 +48,12 @@ public class Solution {
 		//noinspection StatementWithEmptyBody
 		for (; !present[index]; index++) {}
 
-		while (index < present.length) {
+		while (index < max) {
 			int prev = index;
 			//noinspection StatementWithEmptyBody
 			for (index++; index < present.length && !present[index]; index++) { }
 
-			if (index != present.length) {
+			if (index != max) {
 				val += points[prev];
 				seats[idx] = val;
 				multipliers[idx] = index - prev;
@@ -66,51 +61,43 @@ public class Solution {
 			}
 		}
 
-		List<int[]> rest = new ArrayList<>(intervals.length);
-		for (int[] interval : intervals) {
-			int li = indexes[interval[0]];
-			int ri = indexes[interval[1]];
-			rest.add(new int[]{li, ri});
+		@SuppressWarnings("unchecked")
+		Set<Interval>[] map = new Set[seats.length];
+		Heap heap = new Heap();
+		for (int[] row : intervals) {
+			int li = indexes[row[0]];
+			int ri = indexes[row[1]];
+			Interval interval = new Interval(li, ri);
+			for (int i = li; i <= ri; i++) {
+				if (seats[i] == 1) {
+					interval.score += multipliers[i];
+				}
+				if (map[i] == null) {
+					map[i] = new HashSet<>();
+				}
+				map[i].add(interval);
+			}
+			heap.put(interval);
 		}
 
-		// compare by left increasing then by right deceasing
-		rest.sort(comparingInt((int[] a) -> a[0]).thenComparing(comparingInt((int[] a) -> a[1]).reversed()));
-
-		SegmentTree tree = new SegmentTree(seats, multipliers);
-
 		int min = Integer.MAX_VALUE;
-		while (!rest.isEmpty()) {
-			int[] meta = next(tree, rest);
-			int[] curr = rest.get(meta[0]);
-			rest.remove(meta[0]);
-			min = Math.min(min, meta[1]);
+		while (heap.isNotEmpty()) {
+			Interval curr = heap.pollMax();
+			min = Math.min(min, curr.score);
 			if (min == 0) {
 				break;
 			}
-			for (int i = curr[0]; i <= curr[1]; i++) {
-				tree.decrease(i);
+			for (int i = curr.from; i <= curr.to; i++) {
+				seats[i]--;
+				map[i].remove(curr);
+				if (seats[i] == 1) {
+					Interval toUpdate = map[i].iterator().next();
+					toUpdate.score += multipliers[i];
+					heap.put(toUpdate);
+				}
 			}
 		}
 		return min;
-	}
-
-	private static int[] next(SegmentTree tree, List<int[]> intervals) {
-		int curr = 0;
-		int max = Integer.MIN_VALUE;
-		int right = -1;
-		for (int i = 0; i < intervals.size(); i++) {
-			int[] interval = intervals.get(i);
-			int left = Math.max(interval[0], right);
-			if (left <= interval[1]) {
-				int sum = tree.query(left, interval[1]);
-				if (sum > max) {
-					curr = i;
-					max = sum;
-				}
-				right = interval[1] + 1;
-			}
-		}
-		return new int[]{curr, max};
 	}
 
 	private static int readIntervals(Scanner console, int[][] rows) {
@@ -123,75 +110,124 @@ public class Solution {
 		return max;
 	}
 
-	private static class SegmentTree {
+	private static class Interval {
 
-		private final int[] tree;
-		private final int[] values;
-		private final int[] multipliers;
-		private final int n;
+		private final int from, to;
+		private int score = 0;
 
-		SegmentTree(int[] values, int[] multipliers) {
-			int size = 1;
-			while (size < values.length) {
-				size = size << 1;
+		private Interval(int from, int to) {
+			this.from = from;
+			this.to = to;
+		}
+
+		@Override
+		public String toString() {
+			return "Interval{" +
+					"from=" + from +
+					", to=" + to +
+					", score=" + score +
+					'}';
+		}
+
+	}
+
+	private static class Heap {
+
+		/** Heap */
+		private List<Interval> values;
+		private Map<Interval, Integer> indexes;
+
+		private Heap() {
+			values = new ArrayList<>();
+			indexes = new HashMap<>();
+		}
+
+		private Interval pollMax() {
+			if (isNotEmpty()) {
+				Interval value = values.get(0);
+				swap(0, values.size() - 1);
+
+				values.remove(values.size() - 1);
+				indexes.remove(value);
+
+				if (isNotEmpty()) {
+					shiftDown(0);
+				}
+
+				return value;
 			}
-			this.values = values;
-			this.multipliers = multipliers;
-			this.n = values.length - 1;
-			this.tree = new int[size << 1];
-			buildTree(values, 1, 0, n);
+			throw new NoSuchElementException();
 		}
 
-		int query(int li, int ri) {
-			return query(0, n, li, ri, 1);
+		private boolean isNotEmpty() {
+			return !indexes.isEmpty();
 		}
 
-		void decrease(int idx) {
-			values[idx]--;
-			if (values[idx] == 1) {
-				update(0, n, 1, idx, multipliers[idx]);
-			}
-		}
-
-		private int query(int li, int ri, int from, int to, int idx) {
-			if (li > to || ri < from) {
-				return 0;
-			} else if (li >= from && ri <= to) {
-				return tree[idx - 1];
+		/**
+		 * Puts a key and associated value to the heap
+		 * If there is already a value associated with this key the old value will be overwritten
+		 * The position of the key in the heap will be recalculated with respect of new value
+		 */
+		private void put(Interval interval) {
+			int idx = indexes.getOrDefault(interval, values.size());
+			indexes.put(interval, idx);
+			if (idx == values.size()) {
+				values.add(interval);
 			} else {
-				int mid = (ri - li) / 2 + li;
-				int left = query(li, mid, from, to, idx * 2);
-				int right = query(mid + 1, ri, from, to, idx * 2 + 1);
-				return left + right;
+				values.set(idx, interval);
+			}
+
+			shiftUp(idx);
+			shiftDown(idx);
+		}
+
+		private void shiftUp(int idx) {
+			if (idx != 0) {
+				int parentIdx = parent(idx);
+				if (values.get(parentIdx).score < values.get(idx).score) {
+					swap(idx, parentIdx);
+					shiftUp(parentIdx);
+				}
 			}
 		}
 
-		private int update(int li, int ri, int idx, int origin, int val) {
-			if (li > origin || ri < origin) {
-				return tree[idx - 1];
-			} else if (li == origin && ri == origin) {
-				tree[idx - 1] = val;
-				return val;
-			} else {
-				int mid = (ri - li) / 2 + li;
-				int left = update(li, mid, idx * 2, origin, val);
-				int right = update(mid + 1, ri, idx * 2 + 1, origin, val);
-				tree[idx - 1] = left + right;
-				return tree[idx - 1];
+		private void shiftDown(int idx) {
+			int max = idx;
+			int weight = values.get(idx).score;
+			for (int child : children(idx)) {
+				if (child < values.size()) {
+					int curr = values.get(child).score;
+					if (curr > weight) {
+						max = child;
+						weight = curr;
+					}
+				}
+			}
+			if (max != idx) {
+				swap(idx, max);
+				shiftDown(max);
 			}
 		}
 
-		private int buildTree(int[] values, int idx, int from, int to) {
-			if (from == to) {
-				int val = values[from] == 1 ? multipliers[from] : 0;
-				tree[idx - 1] = val;
-				return val;
-			}
-			int mid = (to - from) / 2 + from;
-			int left = buildTree(values, idx * 2, from, mid);
-			int right = buildTree(values, idx * 2 + 1, mid + 1, to);
-			tree[idx - 1] = left + right;
-			return tree[idx - 1];
+		private void swap(int idx1, int idx2) {
+			Interval value1 = values.get(idx1);
+			Interval value2 = values.get(idx2);
+
+			values.set(idx1, value2);
+			values.set(idx2, value1);
+
+			indexes.put(value1, idx2);
+			indexes.put(value2, idx1);
+		}
+
+		private int[] children(int idx) {
+			int right = (idx + 1) * 2;
+			int left = right - 1;
+			return new int[]{left, right};
+		}
+
+		private int parent(int idx) {
+			return (idx - 1) / 2;
 		}
 
 	}
