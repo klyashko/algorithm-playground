@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.twopointers.easy
+package com.algorithm.playground.leetcode.problems.lc300.lc340.lc349
 
-import com.algorithm.playground.leetcode.problems.twopointers.easy.IntersectionOfTwoArrays.Solution as S
+import com.algorithm.playground.leetcode.problems.lc300.lc340.lc349.IntersectionOfTwoArrays.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

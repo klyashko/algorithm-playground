@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.twopointers.easy;
+package com.algorithm.playground.leetcode.problems.lc800.lc840.lc844;
 
 import java.util.Arrays;
 
