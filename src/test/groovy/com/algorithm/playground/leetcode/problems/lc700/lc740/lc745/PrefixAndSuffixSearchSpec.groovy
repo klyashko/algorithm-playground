@@ -1,9 +1,9 @@
-package com.algorithm.playground.leetcode.problems.trie.hard
+package com.algorithm.playground.leetcode.problems.lc700.lc740.lc745
 
 import spock.lang.Specification
 import spock.lang.Unroll
 
-import static PrefixAndSuffixSearch.wordFilter
+import static com.algorithm.playground.leetcode.problems.lc700.lc740.lc745.PrefixAndSuffixSearch.wordFilter
 
 class PrefixAndSuffixSearchSpec extends Specification {
 

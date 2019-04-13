@@ -1,11 +1,11 @@
-package com.algorithm.playground.leetcode.problems.trie.medium;
+package com.algorithm.playground.leetcode.problems.lc600.lc640.lc648;
 
 import java.util.List;
 
 /**
  * https://leetcode.com/problems/replace-words/description/
  */
-@SuppressWarnings({"ForLoopReplaceableByWhile", "Duplicates"})
+@SuppressWarnings("Duplicates")
 public class ReplaceWords {
 
 	class Solution {

@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.trie.medium
+package com.algorithm.playground.leetcode.problems.lc600.lc670.lc677
 
-import com.algorithm.playground.leetcode.problems.trie.medium.MapSumPairs.MapSum as MS
+import com.algorithm.playground.leetcode.problems.lc600.lc670.lc677.MapSumPairs.MapSum as MS
 import spock.lang.Specification
 import spock.lang.Unroll
 

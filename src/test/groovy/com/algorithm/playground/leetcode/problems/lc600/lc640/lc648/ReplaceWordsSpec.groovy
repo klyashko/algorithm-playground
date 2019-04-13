@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.trie.medium
+package com.algorithm.playground.leetcode.problems.lc600.lc640.lc648
 
-import com.algorithm.playground.leetcode.problems.trie.medium.ReplaceWords.Solution as S
+import com.algorithm.playground.leetcode.problems.lc600.lc640.lc648.ReplaceWords.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

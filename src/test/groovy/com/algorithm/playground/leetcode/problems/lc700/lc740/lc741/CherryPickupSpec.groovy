@@ -1,6 +1,5 @@
-package com.algorithm.playground.leetcode.problems.lc700.lc741
+package com.algorithm.playground.leetcode.problems.lc700.lc740.lc741
 
-import com.algorithm.playground.leetcode.problems.lc700.lc741.CherryPickup
 import spock.lang.Specification
 import spock.lang.Unroll
 

@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.trie.medium;
+package com.algorithm.playground.leetcode.problems.lc200.lc208;
 
 /**
  * https://leetcode.com/problems/implement-trie-prefix-tree/

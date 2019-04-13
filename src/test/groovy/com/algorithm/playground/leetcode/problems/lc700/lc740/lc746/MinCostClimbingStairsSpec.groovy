@@ -1,6 +1,5 @@
-package com.algorithm.playground.leetcode.problems.lc700.lc746
+package com.algorithm.playground.leetcode.problems.lc700.lc740.lc746
 
-import com.algorithm.playground.leetcode.problems.lc700.lc746.MinCostClimbingStairs
 import spock.lang.Specification
 import spock.lang.Unroll
 

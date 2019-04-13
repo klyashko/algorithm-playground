@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.trie.medium;
+package com.algorithm.playground.leetcode.problems.lc600.lc670.lc677;
 
 /**
  * https://leetcode.com/problems/map-sum-pairs/description/

@@ -1,12 +1,13 @@
-package com.algorithm.playground.leetcode.problems.trie.medium
+package com.algorithm.playground.leetcode.problems.lc600.lc670.lc676
 
-import com.algorithm.playground.leetcode.problems.trie.medium.ImplementMagicDictionary.MagicDictionary as MD
+import com.algorithm.playground.leetcode.problems.lc600.lc670.lc676.ImplementMagicDictionary.MagicDictionary as MD
 import spock.lang.Specification
 import spock.lang.Unroll
 
 class ImplementMagicDictionarySpec extends Specification {
 
 	@Unroll
+	@SuppressWarnings("GroovyAssignabilityCheck")
 	def "magicDictionary"() {
 
 		given:

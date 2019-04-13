@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.trie.medium
+package com.algorithm.playground.leetcode.problems.lc200.lc208
 
-import com.algorithm.playground.leetcode.problems.trie.medium.ImplementTrie.Trie as T
+import com.algorithm.playground.leetcode.problems.lc200.lc208.ImplementTrie.Trie as T
 import spock.lang.Specification
 import spock.lang.Unroll
 

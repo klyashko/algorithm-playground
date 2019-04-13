@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.trie.hard;
+package com.algorithm.playground.leetcode.problems.lc700.lc740.lc745;
 
 import java.util.ArrayList;
 import java.util.List;
