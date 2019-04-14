@@ -26,14 +26,10 @@ public class Solution {
 
 	static int solve(String[] words) {
 		Trie trie = new Trie();
-		for (String word : words) {
-			trie.insert(word);
-		}
-
 		Queue<Pair> pairs = new PriorityQueue<>(Comparator.comparingInt((Pair p) -> p.suffix.length()).reversed());
-
 		for (String word : words) {
 			pairs.addAll(trie.search(word));
+			trie.insert(word);
 		}
 
 		Set<String> used = new HashSet<>();
@@ -50,7 +46,6 @@ public class Solution {
 						pairs.offer(new Pair(curr.word1, curr.word2, suffix));
 					}
 				} else {
-//					System.out.println(curr);
 					used.add(curr.word1);
 					used.add(curr.word2);
 
@@ -105,23 +100,25 @@ public class Solution {
 		 */
 		private void search(TrieNode node, String word, StringBuilder suffix, Set<Pair> pairs, int idx, boolean closed) {
 			if (node != null) {
-				if (node.word != null && !word.equals(node.word)) {
+				if (node.word != null) {
 					pairs.add(new Pair(word, node.word, suffix.toString()));
 				}
-				if (idx >= 0) {
+				if (!closed && idx >= 0) {
 					char ch = word.charAt(idx);
 					for (int i = 0; i < node.children.length; i++) {
 						TrieNode next = node.children[i];
 						char val = (char) (i + 'A');
-						if (!closed && ch == val) {
-							if (idx != 0) {
-								suffix.insert(0, val);
-								search(next, word, suffix, pairs, idx - 1, false);
-								suffix.deleteCharAt(0);
-							}
+						if (ch == val) {
+							suffix.insert(0, val);
+							search(next, word, suffix, pairs, idx - 1, false);
+							suffix.deleteCharAt(0);
 						} else {
 							search(next, word, suffix, pairs, idx, true);
 						}
+					}
+				} else {
+					for (TrieNode next : node.children) {
+						search(next, word, suffix, pairs, idx, true);
 					}
 				}
 			}
