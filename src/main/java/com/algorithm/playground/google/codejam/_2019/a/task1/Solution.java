@@ -1,7 +1,6 @@
 package com.algorithm.playground.google.codejam._2019.a.task1;
 
-import java.util.LinkedList;
-import java.util.Scanner;
+import java.util.*;
 
 /**
  * https://codingcompetitions.withgoogle.com/codejam/round/0000000000051635/0000000000104e03
@@ -20,7 +19,7 @@ public class Solution {
 				} else {
 					System.out.println(String.format("Case #%s: POSSIBLE", test));
 					for (int[] p : ans) {
-						System.out.println((p[1] + 1) + " " + (p[0] + 1));
+						System.out.println(p[0] + " " + p[1]);
 					}
 				}
 			}
@@ -31,13 +30,21 @@ public class Solution {
 
 	static LinkedList<int[]> solve(int rows, int cols) {
 		boolean[] used = new boolean[rows * cols];
-		LinkedList<int[]> path = new LinkedList<>();
+		List<Integer> moves = new ArrayList<>();
 		for (int i = 0; i < used.length; i++) {
+			moves.add(i);
+		}
+
+		Collections.shuffle(moves);
+		Collections.shuffle(moves);
+
+		LinkedList<int[]> path = new LinkedList<>();
+		for (Integer i : moves) {
 			used[i] = true;
-			int r = i / rows;
-			int c = i % rows;
-			path.addLast(new int[]{r, c});
-			if (dp(used, i, rows, cols, path)) {
+			int r = i / cols;
+			int c = i % cols;
+			path.addLast(new int[]{r + 1, c + 1});
+			if (dp(used, moves, r, c, cols, path)) {
 				break;
 			}
 			path.removeLast();
@@ -46,19 +53,17 @@ public class Solution {
 		return path;
 	}
 
-	private static boolean dp(boolean[] used, int curr, int rows, int cols, LinkedList<int[]> path) {
-		int r = curr / rows;
-		int c = curr % rows;
+	private static boolean dp(boolean[] used, List<Integer> moves, int r, int c, int cols, LinkedList<int[]> path) {
 		boolean done = true;
-		for (int next = 0; next < used.length; next++) {
+		for (int next : moves) {
 			if (!used[next]) {
 				done = false;
-				int tr = next / rows;
-				int tc = next % rows;
+				int tr = next / cols;
+				int tc = next % cols;
 				if (tr != r && tc != c && (r + c) != (tr + tc) && (r - c) != (tr - tc)) {
 					used[next] = true;
-					path.addLast(new int[]{tr, tc});
-					if (dp(used, next, rows, cols, path)) {
+					path.addLast(new int[]{tr + 1, tc + 1});
+					if (dp(used, moves, tr, tc, cols, path)) {
 						return true;
 					}
 					path.removeLast();

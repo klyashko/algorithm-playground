@@ -12,12 +12,15 @@ class PylonsSpec extends Specification {
 
 			def path = Solution.solve(rows, cols)
 			validate(path)
+			println(path)
 
 		where:
 
 			rows | cols
 			2    | 2
 			2    | 5
+			3    | 3
+			2    | 3
 
 	}
 
