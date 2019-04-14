@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.twopointers.medium
+package com.algorithm.playground.leetcode.problems.lc700.lc760.lc763
 
-import com.algorithm.playground.leetcode.problems.twopointers.medium.PartitionLabels.Solution as S
+import com.algorithm.playground.leetcode.problems.lc700.lc760.lc763.PartitionLabels.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

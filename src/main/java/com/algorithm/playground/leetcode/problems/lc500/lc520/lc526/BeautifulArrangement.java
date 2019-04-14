@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.lc500.lc526;
+package com.algorithm.playground.leetcode.problems.lc500.lc520.lc526;
 
 /**
  * https://leetcode.com/problems/beautiful-arrangement/description/

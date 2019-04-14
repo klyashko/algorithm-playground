@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.lc200.lc283
+package com.algorithm.playground.leetcode.problems.lc200.lc280.lc283
 
-import com.algorithm.playground.leetcode.problems.lc200.lc283.MoveZeroes.Solution as S
+import com.algorithm.playground.leetcode.problems.lc200.lc280.lc283.MoveZeroes.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

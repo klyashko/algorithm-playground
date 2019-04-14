@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.lc500.lc526
+package com.algorithm.playground.leetcode.problems.lc500.lc520.lc526
 
-import com.algorithm.playground.leetcode.problems.lc500.lc526.BeautifulArrangement.Solution as S
+import com.algorithm.playground.leetcode.problems.lc500.lc520.lc526.BeautifulArrangement.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

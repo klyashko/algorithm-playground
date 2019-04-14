@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.twopointers.medium
+package com.algorithm.playground.leetcode.problems.lc500.lc520.lc524
 
-import com.algorithm.playground.leetcode.problems.twopointers.medium.LongestWordInDictionaryThroughDeleting.Solution as S
+import com.algorithm.playground.leetcode.problems.lc500.lc520.lc524.LongestWordInDictionaryThroughDeleting.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

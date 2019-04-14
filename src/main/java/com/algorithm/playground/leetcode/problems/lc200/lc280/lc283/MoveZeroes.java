@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.lc200.lc283;
+package com.algorithm.playground.leetcode.problems.lc200.lc280.lc283;
 
 /**
  * https://leetcode.com/problems/move-zeroes/description/

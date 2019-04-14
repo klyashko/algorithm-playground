@@ -1,9 +1,9 @@
-package com.algorithm.playground.leetcode.problems.lc500.lc528
+package com.algorithm.playground.leetcode.problems.lc500.lc520.lc528
 
 import spock.lang.Specification
 import spock.lang.Unroll
 
-import static com.algorithm.playground.leetcode.problems.lc500.lc528.RandomPickWithWeight.solution
+import static com.algorithm.playground.leetcode.problems.lc500.lc520.lc528.RandomPickWithWeight.solution
 
 class RandomPickWithWeightSpec extends Specification {
 

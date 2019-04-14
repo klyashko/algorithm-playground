@@ -1,7 +1,7 @@
-package com.algorithm.playground.leetcode.problems.twopointers.medium
+package com.algorithm.playground.leetcode.problems.lc200.lc280.lc287
 
-import com.algorithm.playground.leetcode.problems.twopointers.medium.FindTheDuplicateNumber.PigeonholeSolution as PS
-import com.algorithm.playground.leetcode.problems.twopointers.medium.FindTheDuplicateNumber.Solution as S
+import com.algorithm.playground.leetcode.problems.lc200.lc280.lc287.FindTheDuplicateNumber.PigeonholeSolution as PS
+import com.algorithm.playground.leetcode.problems.lc200.lc280.lc287.FindTheDuplicateNumber.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 
