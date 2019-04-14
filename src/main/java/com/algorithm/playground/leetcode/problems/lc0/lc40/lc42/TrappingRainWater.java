@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.twopointers.hard;
+package com.algorithm.playground.leetcode.problems.lc0.lc40.lc42;
 
 import java.util.LinkedList;
 
@@ -15,7 +15,6 @@ public class TrappingRainWater {
 				int val = height[i];
 				int max = 0;
 				while (!stack.isEmpty()) {
-					//noinspection ConstantConditions
 					int prev = stack.peek();
 					if (height[prev] != 0) {
 						count += (i - prev - 1) * (Math.min(height[prev], val) - max);

@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.twopointers.hard;
+package com.algorithm.playground.leetcode.problems.lc800.lc828;
 
 import java.util.ArrayList;
 import java.util.HashMap;

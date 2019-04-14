@@ -1,7 +1,7 @@
-package com.algorithm.playground.leetcode.problems.twopointers.hard
+package com.algorithm.playground.leetcode.problems.lc0.lc40.lc42
 
-import com.algorithm.playground.leetcode.problems.twopointers.hard.TrappingRainWater.Solution as S
-import com.algorithm.playground.leetcode.problems.twopointers.hard.TrappingRainWater.TwoPointersSolution as TPS
+import com.algorithm.playground.leetcode.problems.lc0.lc40.lc42.TrappingRainWater.Solution as S
+import com.algorithm.playground.leetcode.problems.lc0.lc40.lc42.TrappingRainWater.TwoPointersSolution as TPS
 import spock.lang.Specification
 import spock.lang.Unroll
 

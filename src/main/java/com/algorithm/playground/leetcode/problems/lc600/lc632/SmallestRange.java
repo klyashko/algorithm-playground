@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.twopointers.hard;
+package com.algorithm.playground.leetcode.problems.lc600.lc632;
 
 import java.util.Comparator;
 import java.util.List;

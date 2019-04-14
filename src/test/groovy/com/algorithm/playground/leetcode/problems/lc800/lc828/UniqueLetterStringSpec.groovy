@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.twopointers.hard
+package com.algorithm.playground.leetcode.problems.lc800.lc828
 
-import com.algorithm.playground.leetcode.problems.twopointers.hard.UniqueLetterString.Solution as S
+import com.algorithm.playground.leetcode.problems.lc800.lc828.UniqueLetterString.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

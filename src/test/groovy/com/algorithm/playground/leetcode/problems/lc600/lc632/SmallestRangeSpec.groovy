@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.twopointers.hard
+package com.algorithm.playground.leetcode.problems.lc600.lc632
 
-import com.algorithm.playground.leetcode.problems.twopointers.hard.SmallestRange.Solution as S
+import com.algorithm.playground.leetcode.problems.lc600.lc632.SmallestRange.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 
