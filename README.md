@@ -38,6 +38,10 @@ This repository contains:
             * [You Can Go Your Own Way](https://codingcompetitions.withgoogle.com/codejam/round/0000000000051705/00000000000881da) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/codejam/_2019/qualification/youcangoyourownway/Solution.java)
             * [Cryptopangrams](https://codingcompetitions.withgoogle.com/codejam/round/0000000000051705/000000000008830b) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/codejam/_2019/qualification/cryptopangrams/Solution.java)
             * [Dat Bae](https://codingcompetitions.withgoogle.com/codejam/round/0000000000051705/00000000000881de) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/codejam/_2019/qualification/datbae/Solution.java)
+        * #### Round A:
+            * [Pylons](https://codingcompetitions.withgoogle.com/codejam/round/0000000000051635/0000000000104e03) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/codejam/_2019/a/task1/Solution.java)
+            * [Golf Gophers](https://codingcompetitions.withgoogle.com/codejam/round/0000000000051635/0000000000104f1a) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/codejam/_2019/a/task2/Solution.java)
+            * [Alien Rhyme](https://codingcompetitions.withgoogle.com/codejam/round/0000000000051635/0000000000104e05) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/codejam/_2019/a/task3/Solution.java)
             
             
 ## Leetcode problems:
