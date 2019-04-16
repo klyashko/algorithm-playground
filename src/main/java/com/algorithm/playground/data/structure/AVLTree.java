@@ -77,7 +77,7 @@ public class AVLTree {
 		node.right = left;
 
 		node.height = calcHeight(node);
-		right.height = calcHeight(right.left);
+		right.height = calcHeight(right);
 
 		return right;
 	}
