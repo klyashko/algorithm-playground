@@ -31,6 +31,7 @@ This repository contains:
     * #### 2018:
         * #### Qualification Round:
             * [Saving The Universe Again](https://codingcompetitions.withgoogle.com/codejam/round/00000000000000cb/0000000000007966) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/codejam/_2018/qualification/task1/Solution.java)
+            * [Trouble Sort](https://codingcompetitions.withgoogle.com/codejam/round/00000000000000cb/00000000000079cb) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/codejam/_2018/qualification/task2/Solution.java)
             
     * #### 2019:
         * #### Qualification Round:
