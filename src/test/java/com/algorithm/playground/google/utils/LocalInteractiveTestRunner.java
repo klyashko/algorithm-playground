@@ -125,6 +125,9 @@ public class LocalInteractiveTestRunner {
 		}
 
 		private static boolean endsWithSeparator(byte[] b, int off, int len) {
+			if (len < SEP.length) {
+				return false;
+			}
 			for (int i = SEP.length - 1; i >= 0; i--) {
 				if (SEP[i] != b[off + i]) {
 					return false;
