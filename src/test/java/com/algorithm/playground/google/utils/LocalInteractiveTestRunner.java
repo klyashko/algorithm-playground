@@ -117,22 +117,20 @@ public class LocalInteractiveTestRunner {
 		private final OutputStream logger;
 		private final OutputStream process;
 
+		private boolean newLine = true;
+
 		private TupleOutputStream(OutputStream logger, OutputStream process) {
 			this.logger = logger;
 			this.process = process;
 		}
 
-		private static boolean isNotSeparator(byte[] b, int off, int len) {
-			if (len != SEP.length) {
-				return false;
-			} else {
-				for (int i = 0; i < SEP.length; i++) {
-					if (SEP[i] != b[off + i]) {
-						return false;
-					}
+		private static boolean endsWithSeparator(byte[] b, int off, int len) {
+			for (int i = SEP.length - 1; i >= 0; i--) {
+				if (SEP[i] != b[off + i]) {
+					return false;
 				}
-				return true;
 			}
+			return true;
 		}
 
 		@Override
@@ -149,9 +147,10 @@ public class LocalInteractiveTestRunner {
 
 		@Override
 		public void write(byte[] b, int off, int len) throws IOException {
-			if (!isNotSeparator(b, off, len)) {
+			if (newLine) {
 				logger.write(MARKER);
 			}
+			newLine = endsWithSeparator(b, off, len);
 			logger.write(b, off, len);
 			process.write(b, off, len);
 		}
