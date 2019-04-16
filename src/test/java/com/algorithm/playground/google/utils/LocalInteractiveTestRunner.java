@@ -144,8 +144,7 @@ public class LocalInteractiveTestRunner {
 
 		@Override
 		public void write(byte[] b) throws IOException {
-			logger.write(b);
-			process.write(b);
+			write(b, 0, b.length);
 		}
 
 		@Override
