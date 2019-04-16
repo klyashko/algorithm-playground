@@ -17,6 +17,9 @@ public class LocalInteractiveTestRunner {
 		String argsLine = String.join(" ", args);
 		String command = String.format(COMMAND, folder, argsLine);
 
+		PrintStream ps = System.out;
+		InputStream is = System.in;
+
 		try {
 			/** start process */
 			Process process = new ProcessBuilder().command(command.split(" "))
@@ -26,8 +29,8 @@ public class LocalInteractiveTestRunner {
 			/** set up io */
 
 			/**Set new system in stream with redirect to default system out*/
-			System.setIn(new RedirectInputStream(process.getInputStream(), System.out));
-			TupleOutputStream os = new TupleOutputStream(System.out, process.getOutputStream());
+			System.setIn(new RedirectInputStream(process.getInputStream(), ps));
+			TupleOutputStream os = new TupleOutputStream(ps, process.getOutputStream());
 			/**Set new system out stream with duplication writs to process output and default system out*/
 			System.setOut(new PrintStream(os, true));
 
@@ -35,6 +38,9 @@ public class LocalInteractiveTestRunner {
 			runner.run();
 		} catch (IOException e) {
 			throw new RuntimeException(e);
+		} finally {
+			System.setIn(is);
+			System.setOut(ps);
 		}
 	}
 
@@ -85,10 +91,7 @@ public class LocalInteractiveTestRunner {
 		}
 
 		@Override
-		public void close() throws IOException {
-			source.close();
-			redirect.close();
-		}
+		public void close() { }
 
 		@Override
 		public synchronized void mark(int readlimit) {
@@ -161,7 +164,6 @@ public class LocalInteractiveTestRunner {
 
 		@Override
 		public void close() throws IOException {
-			logger.close();
 			process.close();
 		}
 
