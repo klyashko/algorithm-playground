@@ -1,5 +1,6 @@
 package com.algorithm.playground.google.codejam._2019.a.task1
 
+import com.algorithm.playground.google.utils.GoogleUtils
 import spock.lang.Specification
 import spock.lang.Unroll
 
@@ -8,32 +9,20 @@ class PylonsSpec extends Specification {
 	@Unroll
 	def "solve"() {
 
-		given:
+		expect:
 
-			def path = Solution.solve(rows, cols)
-			validate(path)
-			println(path)
+			output == expected
 
 		where:
 
-			rows | cols
-			2    | 2
-			2    | 5
-			3    | 3
-			2    | 3
+			[output, expected] << GoogleUtils.exec(
+					{ -> Solution.main() },
+					["2 2", "IMPOSSIBLE"],
+					["2 5", "POSSIBLE"],
+					["3 3", "IMPOSSIBLE"],
+					["2 3", "IMPOSSIBLE"]
+			)
 
-	}
-
-	def validate(LinkedList<int[]> path) {
-		if (path) {
-			int[] prev = null
-			path.each {
-				if (prev) {
-					assert prev[0] != it[0] && prev[1] != it[1] && prev.sum() != it.sum() && prev[0] - prev[1] != it[0] - it[1]
-				}
-				prev = it
-			}
-		}
 	}
 
 }
