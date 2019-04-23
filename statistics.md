@@ -164,6 +164,7 @@
    * [4Sum II](https://leetcode.com/problems/4sum-ii/)
    
  * hard:
+   * [Kth Smallest Number in Multiplication Table](https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/)
    * [Max Sum of Rectangle no Larger Than K](https://leetcode.com/problems/max-sum-of-rectangle-no-larger-than-k/)
    * [Russian Doll Envelopes](https://leetcode.com/problems/russian-doll-envelopes/)
    * [Swim In Rising Water](https://leetcode.com/problems/swim-in-rising-water/)
@@ -433,4 +434,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/)
 
-##### Total: 229
+##### Total: 230
