@@ -33,6 +33,7 @@
    * [Count Numbers with Unique Digits](https://leetcode.com/problems/count-numbers-with-unique-digits/)
    * [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)
    * [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/)
+   * [Minimum Cost For Tickets](https://leetcode.com/problems/minimum-cost-for-tickets/)
    * [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)
    * [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)
    * [Arithmetic Slices](https://leetcode.com/problems/arithmetic-slices/)
@@ -435,4 +436,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/)
 
-##### Total: 231
+##### Total: 232
