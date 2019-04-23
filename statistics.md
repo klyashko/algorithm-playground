@@ -167,6 +167,7 @@
    * [Max Sum of Rectangle no Larger Than K](https://leetcode.com/problems/max-sum-of-rectangle-no-larger-than-k/)
    * [Russian Doll Envelopes](https://leetcode.com/problems/russian-doll-envelopes/)
    * [Swim In Rising Water](https://leetcode.com/problems/swim-in-rising-water/)
+   * [Three Equal Parts](https://leetcode.com/problems/three-equal-parts/)
    * [Dungeon Game](https://leetcode.com/problems/dungeon-game/)
    
 #### Two Points
@@ -432,4 +433,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/)
 
-##### Total: 228
+##### Total: 229

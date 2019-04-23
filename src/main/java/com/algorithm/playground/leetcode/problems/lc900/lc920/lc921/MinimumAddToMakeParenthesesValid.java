@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.lc900.lc921;
+package com.algorithm.playground.leetcode.problems.lc900.lc920.lc921;
 
 /**
  * https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/

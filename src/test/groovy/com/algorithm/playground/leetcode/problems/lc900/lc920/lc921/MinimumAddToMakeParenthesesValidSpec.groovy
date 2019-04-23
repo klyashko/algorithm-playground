@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.lc900.lc921
+package com.algorithm.playground.leetcode.problems.lc900.lc920.lc921
 
-import com.algorithm.playground.leetcode.problems.lc900.lc921.MinimumAddToMakeParenthesesValid.Solution as S
+import com.algorithm.playground.leetcode.problems.lc900.lc920.lc921.MinimumAddToMakeParenthesesValid.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

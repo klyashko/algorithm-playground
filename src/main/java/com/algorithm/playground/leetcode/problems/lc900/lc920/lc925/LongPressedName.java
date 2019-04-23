@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.lc900.lc925;
+package com.algorithm.playground.leetcode.problems.lc900.lc920.lc925;
 
 /**
  * https://leetcode.com/problems/long-pressed-name/

@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.lc900.lc925
+package com.algorithm.playground.leetcode.problems.lc900.lc920.lc925
 
-import com.algorithm.playground.leetcode.problems.lc900.lc925.LongPressedName.Solution as S
+import com.algorithm.playground.leetcode.problems.lc900.lc920.lc925.LongPressedName.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 
