@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.lc0.lc85;
+package com.algorithm.playground.leetcode.problems.lc0.lc80.lc85;
 
 /**
  * https://leetcode.com/problems/maximal-rectangle/description/

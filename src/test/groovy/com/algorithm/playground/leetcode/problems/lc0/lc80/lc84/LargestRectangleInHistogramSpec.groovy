@@ -1,7 +1,7 @@
-package com.algorithm.playground.leetcode.problems.lc0.lc84
+package com.algorithm.playground.leetcode.problems.lc0.lc80.lc84
 
-import com.algorithm.playground.leetcode.problems.lc0.lc84.LargestRectangleInHistogram.SimpleSolution as SS
-import com.algorithm.playground.leetcode.problems.lc0.lc84.LargestRectangleInHistogram.Solution as S
+import com.algorithm.playground.leetcode.problems.lc0.lc80.lc84.LargestRectangleInHistogram.SimpleSolution as SS
+import com.algorithm.playground.leetcode.problems.lc0.lc80.lc84.LargestRectangleInHistogram.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

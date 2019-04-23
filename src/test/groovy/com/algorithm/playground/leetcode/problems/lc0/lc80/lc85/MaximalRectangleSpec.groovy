@@ -1,7 +1,7 @@
-package com.algorithm.playground.leetcode.problems.lc0.lc85
+package com.algorithm.playground.leetcode.problems.lc0.lc80.lc85
 
-import com.algorithm.playground.leetcode.problems.lc0.lc85.MaximalRectangle.SlowSolution as SS
-import com.algorithm.playground.leetcode.problems.lc0.lc85.MaximalRectangle.Solution as S
+import com.algorithm.playground.leetcode.problems.lc0.lc80.lc85.MaximalRectangle.SlowSolution as SS
+import com.algorithm.playground.leetcode.problems.lc0.lc80.lc85.MaximalRectangle.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 
