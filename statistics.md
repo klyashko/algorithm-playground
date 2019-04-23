@@ -29,6 +29,7 @@
    * [Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/)
    
  * medium:
+   * [Minimum Falling Path Sum](https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/)
    * [Count Numbers with Unique Digits](https://leetcode.com/problems/count-numbers-with-unique-digits/)
    * [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)
    * [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/)
@@ -434,4 +435,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/)
 
-##### Total: 230
+##### Total: 231
