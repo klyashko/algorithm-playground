@@ -39,6 +39,7 @@
    * [Arithmetic Slices](https://leetcode.com/problems/arithmetic-slices/)
    * [Keys Key board](https://leetcode.com/problems/2-keys-keyboard/)
    * [Integer Break](https://leetcode.com/problems/integer-break/)
+   * [Decode Ways](https://leetcode.com/problems/decode-ways/)
    
  * hard:
    * [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)
@@ -436,4 +437,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/)
 
-##### Total: 232
+##### Total: 233
