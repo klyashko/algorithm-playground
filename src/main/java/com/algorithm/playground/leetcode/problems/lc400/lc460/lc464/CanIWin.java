@@ -36,15 +36,12 @@ public class CanIWin {
 						cache[state] = true;
 						return true;
 					} else {
-						state |= 1 << (moves.length - i);
 						moves[i - 1] = true;
-						if (!move(moves, curr, target, cache, state)) {
-							state ^= (1 << (moves.length - i));
+						if (!move(moves, curr, target, cache, state | (1 << moves.length - i))) {
 							cache[state] = true;
 							moves[i - 1] = false;
 							return true;
 						}
-						state ^= (1 << (moves.length - i));
 						moves[i - 1] = false;
 					}
 
