@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.lc400.lc461;
+package com.algorithm.playground.leetcode.problems.lc400.lc460.lc461;
 
 /**
  * https://leetcode.com/problems/hamming-distance/description/

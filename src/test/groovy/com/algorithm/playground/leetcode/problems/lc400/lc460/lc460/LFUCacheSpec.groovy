@@ -1,18 +1,16 @@
-package com.algorithm.playground.leetcode.problems.lc400.lc460
+package com.algorithm.playground.leetcode.problems.lc400.lc460.lc460
 
 import spock.lang.Specification
 import spock.lang.Unroll
 
-import static com.algorithm.playground.leetcode.problems.lc400.lc460.LFUCache460.lfuCache as cache
-
-class LFUCache460Spec extends Specification {
+class LFUCacheSpec extends Specification {
 
 	@Unroll
 	def "lfuCache"() {
 
 		given:
 
-			def cache = cache(capacity)
+			def cache = new LFUCache(capacity)
 
 		expect:
 
