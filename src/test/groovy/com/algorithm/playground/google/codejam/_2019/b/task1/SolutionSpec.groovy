@@ -17,10 +17,27 @@ class SolutionSpec extends Specification {
 
 			[output, expected] << GoogleUtils.exec(
 					{ -> Solution.main() },
-					["2 2", "IMPOSSIBLE"],
-					["2 5", "POSSIBLE"],
-					["3 3", "IMPOSSIBLE"],
-					["2 3", "IMPOSSIBLE"]
+					["""1 10
+							5 5 N""", "0 6"],
+					["""4 10
+							2 4 N
+							2 6 S
+							1 5 E
+							3 5 W""", "2 5"],
+					["""8 10
+							0 2 S
+							0 3 N
+							0 3 N
+							0 4 N
+							0 5 S
+							0 5 S
+							0 8 S
+							1 5 W""", "0 4"],
+					["""4 10
+							0 1 N
+							1 1 N
+							0 5 S
+							0 5 S""", "0 2"],
 			)
 
 	}
