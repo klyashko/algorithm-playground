@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.lc600.lc632;
+package com.algorithm.playground.leetcode.problems.lc600.lc630.lc632;
 
 import java.util.Comparator;
 import java.util.List;
