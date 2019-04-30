@@ -336,4 +336,5 @@ This repository contains:
  * [983 Minimum Cost For Tickets](https://leetcode.com/problems/minimum-cost-for-tickets/) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/leetcode/problems/lc900/lc983/MinimumCostForTickets.java)
  * [1011 Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/leetcode/problems/lc1000/lc1011/CapacityToShipPackagesWithinDDays.java)
  * [1019 Next Greater Node In Linked List](https://leetcode.com/problems/next-greater-node-in-linked-list/) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/leetcode/problems/lc1000/lc1019/NextGreaterNodeInLinkedList.java)
+ * [1036 Escape a Large Maze](https://leetcode.com/problems/escape-a-large-maze/) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/leetcode/problems/lc1000/lc1036/EscapeALargeMaze.java)
         

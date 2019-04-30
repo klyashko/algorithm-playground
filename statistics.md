@@ -210,6 +210,7 @@
  * hard:
    * [Shortest Path To Get All Keys](https://leetcode.com/problems/shortest-path-to-get-all-keys/)
    * [Cut Off Trees For Golf Event](https://leetcode.com/problems/cut-off-trees-for-golf-event/)
+   * [Escape a Large Maze](https://leetcode.com/problems/escape-a-large-maze/)
    * [KSimilar Strings](https://leetcode.com/problems/k-similar-strings/)
    * [Sliding Puzzle](https://leetcode.com/problems/sliding-puzzle/)
    
@@ -443,4 +444,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/)
 
-##### Total: 239
+##### Total: 240
