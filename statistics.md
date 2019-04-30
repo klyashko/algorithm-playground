@@ -90,6 +90,7 @@
 #### Tree
 
  * easy:
+   * [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)
    * [Find Mode in Binary Search Tree](https://leetcode.com/problems/find-mode-in-binary-search-tree/)
    * [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/)
    * [Maximum Depth Of N Tree](https://leetcode.com/problems/maximum-depth-of-n-ary-tree/)
@@ -441,4 +442,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/)
 
-##### Total: 237
+##### Total: 238
