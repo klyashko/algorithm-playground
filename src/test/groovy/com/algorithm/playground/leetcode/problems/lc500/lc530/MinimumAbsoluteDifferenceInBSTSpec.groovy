@@ -4,7 +4,7 @@ import com.algorithm.playground.leetcode.problems.lc500.lc530.MinimumAbsoluteDif
 import spock.lang.Specification
 import spock.lang.Unroll
 
-import static com.algorithm.playground.leetcode.problems.utils.TreeNode.valueOf as node
+import static com.algorithm.playground.leetcode.problems.utils.TreeNode.node
 
 class MinimumAbsoluteDifferenceInBSTSpec extends Specification {
 
@@ -17,8 +17,8 @@ class MinimumAbsoluteDifferenceInBSTSpec extends Specification {
 
 		where:
 
-			root                        || output
-			[1, null, 3, null, null, 2] || 1
+			root            || output
+			[1, null, 3, 2] || 1
 
 	}
 

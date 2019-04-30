@@ -4,7 +4,7 @@ import com.algorithm.playground.leetcode.problems.lc700.lc780.lc783.MinimumDista
 import spock.lang.Specification
 import spock.lang.Unroll
 
-import static com.algorithm.playground.leetcode.problems.utils.TreeNode.valueOf as node
+import static com.algorithm.playground.leetcode.problems.utils.TreeNode.node
 
 class MinimumDistanceBetweenBSTNodesSpec extends Specification {
 
@@ -19,7 +19,6 @@ class MinimumDistanceBetweenBSTNodesSpec extends Specification {
 
 			root                                         || output
 			[4, 2, 6, 1, 3, null, null]                  || 1
-			[90, 69, null, 49, 89, null, null, null, 52] || 1
 
 	}
 

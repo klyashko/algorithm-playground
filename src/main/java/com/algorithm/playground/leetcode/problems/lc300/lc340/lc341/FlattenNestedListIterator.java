@@ -93,7 +93,6 @@ public class FlattenNestedListIterator {
 		@Override
 		public boolean hasNext() {
 			while (!stack.isEmpty()) {
-				//noinspection ConstantConditions
 				if (stack.peek().isInteger()) {
 					return true;
 				}

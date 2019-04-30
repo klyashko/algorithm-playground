@@ -4,6 +4,7 @@ import spock.lang.Specification
 import spock.lang.Unroll
 
 import static com.algorithm.playground.leetcode.problems.lc300.lc340.lc341.FlattenNestedListIterator.nestedInteger as i
+import static com.algorithm.playground.leetcode.problems.lc300.lc340.lc341.FlattenNestedListIterator.nestedIterator as iterator
 
 class FlattenNestedListIteratorSpec extends Specification {
 

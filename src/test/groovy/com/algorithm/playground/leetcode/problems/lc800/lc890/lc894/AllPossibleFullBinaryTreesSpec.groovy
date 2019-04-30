@@ -6,7 +6,7 @@ import com.algorithm.playground.leetcode.problems.lc800.lc890.lc894.AllPossibleF
 import spock.lang.Specification
 import spock.lang.Unroll
 
-import static com.algorithm.playground.leetcode.problems.utils.TreeNode.valueOf as node
+import static com.algorithm.playground.leetcode.problems.utils.TreeNode.node
 
 class AllPossibleFullBinaryTreesSpec extends Specification {
 

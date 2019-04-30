@@ -4,7 +4,7 @@ import com.algorithm.playground.leetcode.problems.lc100.lc140.lc144.BinaryTreePr
 import spock.lang.Specification
 import spock.lang.Unroll
 
-import static com.algorithm.playground.leetcode.problems.utils.TreeNode.valueOf as node
+import static com.algorithm.playground.leetcode.problems.utils.TreeNode.node
 
 class BinaryTreePreorderTraversalSpec extends Specification {
 
@@ -17,8 +17,8 @@ class BinaryTreePreorderTraversalSpec extends Specification {
 
 		where:
 
-			values                      || output
-			[1, null, 2, null, null, 3] || [1, 2, 3]
+			values          || output
+			[1, null, 2, 3] || [1, 2, 3]
 
 	}
 

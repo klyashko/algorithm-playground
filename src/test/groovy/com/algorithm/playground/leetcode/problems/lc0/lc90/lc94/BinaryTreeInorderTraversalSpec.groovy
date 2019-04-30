@@ -5,7 +5,7 @@ import com.algorithm.playground.leetcode.problems.lc0.lc90.lc94.BinaryTreeInorde
 import spock.lang.Specification
 import spock.lang.Unroll
 
-import static com.algorithm.playground.leetcode.problems.utils.TreeNode.valueOf as node
+import static com.algorithm.playground.leetcode.problems.utils.TreeNode.node
 
 class BinaryTreeInorderTraversalSpec extends Specification {
 
@@ -18,8 +18,8 @@ class BinaryTreeInorderTraversalSpec extends Specification {
 
 		where:
 
-			values                      || output
-			[1, null, 2, null, null, 3] || [1, 3, 2]
+			values          || output
+			[1, null, 2, 3] || [1, 3, 2]
 
 	}
 
@@ -32,8 +32,8 @@ class BinaryTreeInorderTraversalSpec extends Specification {
 
 		where:
 
-			values                      || output
-			[1, null, 2, null, null, 3] || [1, 3, 2]
+			values          || output
+			[1, null, 2, 3] || [1, 3, 2]
 
 	}
 

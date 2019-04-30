@@ -3,7 +3,7 @@ package com.algorithm.playground.leetcode.problems.lc100.lc100.lc104
 import spock.lang.Specification
 import spock.lang.Unroll
 
-import static com.algorithm.playground.leetcode.problems.utils.TreeNode.valueOf as node
+import static com.algorithm.playground.leetcode.problems.utils.TreeNode.node
 
 class MaximumDepthOfBinaryTreeSpec extends Specification {
 

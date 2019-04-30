@@ -5,7 +5,7 @@ import com.algorithm.playground.leetcode.problems.lc800.lc860.lc863.AllNodesDist
 import spock.lang.Specification
 import spock.lang.Unroll
 
-import static com.algorithm.playground.leetcode.problems.utils.TreeNode.valueOf as node
+import static com.algorithm.playground.leetcode.problems.utils.TreeNode.node
 
 class AllNodesDistanceKInBinaryTreeSpec extends Specification {
 

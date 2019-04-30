@@ -18,8 +18,7 @@ class ConvertSortedArrayToBinarySearchTreeSpec extends Specification {
 		where:
 
 			nums               || root
-			[-10, -3, 0, 5, 9] || [0, -3, 9, -10, null, 5]
-			[0, 1, 2, 3, 4, 5] || [3, 1, 5, 0, 2, 4]
+			[-10, -3, 0, 5, 9] || [0, -10, 5, null, -3, null, 9]
 
 	}
 

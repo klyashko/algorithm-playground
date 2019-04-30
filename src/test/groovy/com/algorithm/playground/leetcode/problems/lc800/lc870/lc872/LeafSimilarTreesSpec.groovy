@@ -5,6 +5,8 @@ import com.algorithm.playground.leetcode.problems.utils.TreeNode as N
 import spock.lang.Specification
 import spock.lang.Unroll
 
+import static com.algorithm.playground.leetcode.problems.utils.TreeNode.node
+
 class LeafSimilarTreesSpec extends Specification {
 
 	@Unroll
@@ -12,8 +14,7 @@ class LeafSimilarTreesSpec extends Specification {
 
 		expect:
 
-			new S().leafSimilar(N.valueOf(n1 as Integer[]), N.valueOf(n2 as Integer[]))
-
+			new S().leafSimilar(node(n1), node(n2))
 
 		where:
 

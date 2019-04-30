@@ -13,7 +13,7 @@ class InsertIntervalSpec extends Specification {
 
 		expect:
 
-			new S().insert(interval(values), interval(*new_interval)) == interval(output)
+			new S().insert(interval(values), interval(new_interval[0], new_interval[1])) == interval(output)
 
 		where:
 

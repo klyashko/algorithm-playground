@@ -4,7 +4,7 @@ import com.algorithm.playground.leetcode.problems.lc800.lc814.BinaryTreePruning.
 import spock.lang.Specification
 import spock.lang.Unroll
 
-import static com.algorithm.playground.leetcode.problems.utils.TreeNode.valueOf as node
+import static com.algorithm.playground.leetcode.problems.utils.TreeNode.node
 
 class BinaryTreePruningSpec extends Specification {
 
@@ -17,10 +17,10 @@ class BinaryTreePruningSpec extends Specification {
 
 		where:
 
-			input                          || output
-			[1, null, 0, null, null, 0, 1] || [1, null, 0, null, null, null, 1]
-			[1, 0, 1, 0, 0, 0, 1]          || [1, null, 1, null, null, null, 1]
-			[1, 1, 0, 1, 1, 0, 1, 0]       || [1, 1, 0, 1, 1, null, 1]
+			input                    || output
+			[1, null, 0, 0, 1]       || [1, null, 0, null, 1]
+			[1, 0, 1, 0, 0, 0, 1]    || [1, null, 1, null, 1]
+			[1, 1, 0, 1, 1, 0, 1, 0] || [1, 1, 0, 1, 1, null, 1]
 	}
 
 }
