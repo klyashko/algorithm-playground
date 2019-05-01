@@ -4,7 +4,7 @@ import com.algorithm.playground.google.utils.GoogleUtils
 import spock.lang.Specification
 import spock.lang.Unroll
 
-class SolutionSpec extends Specification {
+class ManhattanCrepeCartSpec extends Specification {
 
 	@Unroll
 	def "solve"() {

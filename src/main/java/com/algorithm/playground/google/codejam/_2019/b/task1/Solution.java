@@ -4,7 +4,9 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.TreeMap;
 
-@SuppressWarnings("Duplicates")
+/**
+ * https://codingcompetitions.withgoogle.com/codejam/round/0000000000051706/000000000012295c
+ */
 public class Solution {
 
 	public static void main(String[] args) {
@@ -48,33 +50,26 @@ public class Solution {
 							break;
 					}
 				}
-				int y = 0;
-				int max = south;
-				int curr = south;
-				for (Map.Entry<Integer, Integer> entry : vertical.entrySet()) {
-					curr += entry.getValue();
-					if (curr > max) {
-						max = curr;
-						y = entry.getKey() + 1;
-					}
-				}
-
-				int x = 0;
-				max = west;
-				curr = west;
-				for (Map.Entry<Integer, Integer> entry : horizontal.entrySet()) {
-					curr += entry.getValue();
-					if (curr > max) {
-						max = curr;
-						x = entry.getKey() + 1;
-					}
-				}
+				int y = getCoordinate(vertical, south);
+				int x = getCoordinate(horizontal, west);
 
 				System.out.println(String.format("Case #%s: %s %s", test, x, y));
 			}
 		} catch (Exception e) {
 			e.printStackTrace(System.out);
 		}
+	}
+
+	private static int getCoordinate(TreeMap<Integer, Integer> map, int initial) {
+		int x = 0, max = initial, curr = initial;
+		for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+			curr += entry.getValue();
+			if (curr > max) {
+				max = curr;
+				x = entry.getKey() + 1;
+			}
+		}
+		return x;
 	}
 
 }
