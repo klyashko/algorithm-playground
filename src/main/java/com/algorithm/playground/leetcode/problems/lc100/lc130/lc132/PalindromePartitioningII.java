@@ -14,6 +14,39 @@ public class PalindromePartitioningII {
 
 	class Solution {
 
+		public int minCut(String s) {
+			int[][] dp = new int[s.length()][s.length()];
+			for (int i = 1; i < s.length(); i++) {
+				for (int j = 0; j < s.length() - i; j++) {
+					if (isPalindrome(s, j, j + i)) {
+						dp[j][j + i] = 0;
+					} else {
+						int min = i;
+						for (int k = j; k < i; k++) {
+							min = Math.min(min, 1 + dp[j][k] + dp[k + 1][j + i]);
+						}
+						dp[j][j + i] = min;
+					}
+				}
+			}
+			return dp[0][s.length() - 1];
+		}
+
+		private boolean isPalindrome(String s, int left, int right) {
+			int len = right - left + 1;
+			int r = (len >> 1) + left;
+			int l = r - (1 - (len & 1));
+			while (l >= left && r <= right) {
+				if (s.charAt(l--) != s.charAt(r++)) {
+					return false;
+				}
+			}
+			return true;
+		}
+	}
+
+	class SolutionCached {
+
 		private Map<String, Integer> cache = new HashMap<>();
 
 		public int minCut(String s) {
