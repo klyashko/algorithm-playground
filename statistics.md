@@ -268,6 +268,7 @@
 #### Greedy
 
  * easy:
+   * [Maximize Sum Of Array After K Negations](https://leetcode.com/problems/maximize-sum-of-array-after-k-negations/)
    * [Two City Scheduling](https://leetcode.com/problems/two-city-scheduling/)
    * [Lemonade Change](https://leetcode.com/problems/lemonade-change/)
    * [Assign Cookies](https://leetcode.com/problems/assign-cookies/)
@@ -445,4 +446,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/)
 
-##### Total: 241
+##### Total: 242
