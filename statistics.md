@@ -268,6 +268,7 @@
 #### Greedy
 
  * easy:
+   * [Two City Scheduling](https://leetcode.com/problems/two-city-scheduling/)
    * [Lemonade Change](https://leetcode.com/problems/lemonade-change/)
    * [Assign Cookies](https://leetcode.com/problems/assign-cookies/)
    
@@ -444,4 +445,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/)
 
-##### Total: 240
+##### Total: 241

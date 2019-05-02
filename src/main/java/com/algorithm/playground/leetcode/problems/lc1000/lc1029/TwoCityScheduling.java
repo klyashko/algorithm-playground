@@ -10,31 +10,18 @@ public class TwoCityScheduling {
 
 	class Solution {
 		public int twoCitySchedCost(int[][] costs) {
-			int a = costs.length >> 1;
-			int b = a;
-			int cost = 0;
-			int idx = 0;
 			Arrays.sort(costs, Comparator.comparingInt((int[] i) -> Math.abs(i[0] - i[1])).reversed());
 
-			while (a > 0 && b > 0) {
-				int[] curr = costs[idx++];
-				if (curr[0] < curr[1]) {
+			int a = costs.length >> 1, b = a, cost = 0;
+
+			for (int[] curr : costs) {
+				if (b == 0 || (curr[0] < curr[1] && a > 0)) {
 					cost += curr[0];
 					a--;
 				} else {
 					cost += curr[1];
 					b--;
 				}
-			}
-
-			while (a > 0) {
-				cost += costs[idx++][0];
-				a--;
-			}
-
-			while (b > 0) {
-				cost += costs[idx++][1];
-				b--;
 			}
 
 			return cost;
