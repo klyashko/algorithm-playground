@@ -278,6 +278,7 @@
    * [Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/)
    * [Is Subsequence](https://leetcode.com/problems/is-subsequence/)
    * [Task Scheduler](https://leetcode.com/problems/task-scheduler/)
+   * [Gas Station](https://leetcode.com/problems/gas-station/)
    
  * hard:
    * [Couples Holding Hands](https://leetcode.com/problems/couples-holding-hands/)
@@ -446,4 +447,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/)
 
-##### Total: 242
+##### Total: 243
