@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.lc0.lc4
+package com.algorithm.playground.leetcode.problems.lc0.lc0.lc4
 
-import com.algorithm.playground.leetcode.problems.lc0.lc4.MedianOfTwoSortedArrays.Solution
+import com.algorithm.playground.leetcode.problems.lc0.lc0.lc4.MedianOfTwoSortedArrays.Solution
 import spock.lang.Specification
 import spock.lang.Unroll
 

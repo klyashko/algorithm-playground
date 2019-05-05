@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.lc0.lc2;
+package com.algorithm.playground.leetcode.problems.lc0.lc0.lc2;
 
 import com.algorithm.playground.leetcode.problems.utils.ListNode;
 

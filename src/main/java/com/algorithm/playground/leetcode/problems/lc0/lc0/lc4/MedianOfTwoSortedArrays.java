@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.lc0.lc4;
+package com.algorithm.playground.leetcode.problems.lc0.lc0.lc4;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;
@@ -38,6 +38,7 @@ public class MedianOfTwoSortedArrays {
             if (q2.size() > q1.size()) {
                 return q2.poll();
             } else {
+                //noinspection ConstantConditions
                 return (q1.poll() + q2.poll()) / 2.;
             }
         }
