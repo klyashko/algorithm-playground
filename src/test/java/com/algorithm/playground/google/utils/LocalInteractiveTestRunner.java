@@ -4,10 +4,15 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.PrintStream;
+import java.util.concurrent.TimeUnit;
+
+import static java.util.concurrent.CompletableFuture.runAsync;
 
 public class LocalInteractiveTestRunner {
 
 	private static final String COMMAND = "python %stesting_tool.py %s";
+	@SuppressWarnings("FieldCanBeLocal")
+	private static long TIMEOUT = 5 * 1000;
 
 	public static void runWithArgs(Runnable runner, String... args) {
 		run(runner, "", args);
@@ -35,8 +40,8 @@ public class LocalInteractiveTestRunner {
 			System.setOut(new PrintStream(os, true));
 
 			/** run the program */
-			runner.run();
-		} catch (IOException e) {
+			runAsync(runner).get(TIMEOUT, TimeUnit.MILLISECONDS);
+		} catch (Exception e) {
 			throw new RuntimeException(e);
 		} finally {
 			System.setIn(is);
@@ -113,23 +118,25 @@ public class LocalInteractiveTestRunner {
 
 		private static final byte[] SEP = System.getProperty("line.separator").getBytes();
 		private static final byte[] MARKER = "OUT: ".getBytes();
+		private static final byte[] DEBUG_MARKER = "DEBUG: ".getBytes();
 
 		private final OutputStream logger;
 		private final OutputStream process;
 
 		private boolean newLine = true;
+		private boolean ignore = false;
 
 		private TupleOutputStream(OutputStream logger, OutputStream process) {
 			this.logger = logger;
 			this.process = process;
 		}
 
-		private static boolean endsWithSeparator(byte[] b, int off, int len) {
-			if (len < SEP.length) {
+		private static boolean equals(byte[] b, int off, int len, byte[] b2) {
+			if (len < b2.length) {
 				return false;
 			}
-			for (int i = SEP.length - 1; i >= 0; i--) {
-				if (SEP[i] != b[off + i]) {
+			for (int i = b2.length - 1; i >= 0; i--) {
+				if (b2[i] != b[off + i]) {
 					return false;
 				}
 			}
@@ -150,11 +157,16 @@ public class LocalInteractiveTestRunner {
 		@Override
 		public void write(byte[] b, int off, int len) throws IOException {
 			if (newLine) {
-				logger.write(MARKER);
+				ignore = equals(b, off, len, DEBUG_MARKER);
+				if (!ignore) {
+					logger.write(MARKER);
+				}
 			}
-			newLine = endsWithSeparator(b, off, len);
+			newLine = equals(b, off, len, SEP);
 			logger.write(b, off, len);
-			process.write(b, off, len);
+			if (!ignore) {
+				process.write(b, off, len);
+			}
 		}
 
 		@Override
@@ -171,4 +183,3 @@ public class LocalInteractiveTestRunner {
 	}
 
 }
-
