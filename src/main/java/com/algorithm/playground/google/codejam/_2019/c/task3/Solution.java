@@ -41,20 +41,35 @@ public class Solution {
 			return result;
 		}
 		result = 0;
+		boolean[] y = new boolean[cols];
+		boolean[] x = new boolean[rows];
 		for (int r = 0; r < rows; r++) {
 			for (int c = 0; c < cols; c++) {
 				if (grid[r][c] == '.') {
-					int[] vertical = vertical(grid, r, c);
-					if (vertical(grid, c, vertical) && dp(grid) == 0) {
+					if (!y[c]) {
+						int[] vertical = vertical(grid, r, c);
+						if (vertical(grid, c, vertical) && dp(grid) == 0) {
+							result++;
+							y[c] = true;
+						}
+						vertical(grid, vertical, c);
+					} else {
 						result++;
 					}
-					vertical(grid, vertical, c);
 
-					int[] horizontal = horizontal(grid, r, c);
-					if (horizontal(grid, r, horizontal) && dp(grid) == 0) {
+					if (!x[r]) {
+						int[] horizontal = horizontal(grid, r, c);
+						if (horizontal(grid, r, horizontal) && dp(grid) == 0) {
+							result++;
+							x[r] = true;
+						}
+						horizontal(grid, horizontal, r);
+					} else {
 						result++;
 					}
-					horizontal(grid, horizontal, r);
+				} else {
+					y[c] = false;
+					x[r] = false;
 				}
 			}
 		}
