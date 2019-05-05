@@ -45,6 +45,7 @@ This repository contains:
             * [Alien Rhyme](https://codingcompetitions.withgoogle.com/codejam/round/0000000000051635/0000000000104e05) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/codejam/_2019/a/task3/Solution.java)
         * #### Round B:
             * [Manhattan Crepe Cart](https://codingcompetitions.withgoogle.com/codejam/round/0000000000051706/000000000012295c) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/codejam/_2019/b/task1/Solution.java)
+            * [Draupnir](https://codingcompetitions.withgoogle.com/codejam/round/0000000000051706/0000000000122837) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/codejam/_2019/b/task2/Solution.java)
             
             
 ## Leetcode problems:
