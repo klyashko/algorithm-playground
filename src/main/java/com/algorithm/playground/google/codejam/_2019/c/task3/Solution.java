@@ -1,6 +1,9 @@
 package com.algorithm.playground.google.codejam._2019.c.task3;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
 
 @SuppressWarnings("Duplicates")
 public class Solution {
@@ -9,15 +12,22 @@ public class Solution {
 	private static int cols;
 	private static int[][] vertical;
 	private static int[][] horizontal;
-	private static Map<String, Integer> cache = new HashMap<>();
+	private static int[][][][] cache;
 
 	public static void main(String[] args) {
 		try (Scanner console = new Scanner(System.in)) {
 			int tests = console.nextInt();
 			for (int test = 1; test <= tests; test++) {
-				cache.clear();
 				rows = console.nextInt();
 				cols = console.nextInt();
+				cache = new int[rows][cols][rows][cols];
+				for (int[][][] i : cache) {
+					for (int[][] ii : i) {
+						for (int[] iii : ii) {
+							Arrays.fill(iii, -1);
+						}
+					}
+				}
 				char[][] grid = new char[rows][];
 				for (int i = 0; i < rows; i++) {
 					grid[i] = console.next().toCharArray();
@@ -54,18 +64,6 @@ public class Solution {
 			}
 		}
 
-//		for (int[] row : vertical) {
-//			System.out.println(Arrays.toString(row));
-//		}
-//
-//		System.out.println();
-//
-//		for (int[] row : horizontal) {
-//			System.out.println(Arrays.toString(row));
-//		}
-
-//		return dp(grid);
-//		return dp(0, 0, rows - 1, cols - 1);
 		int validRows = getRows(0, 0, rows - 1, cols - 1);
 		int validCols = getCols(0, 0, rows - 1, cols - 1);
 
@@ -96,6 +94,8 @@ public class Solution {
 	private static int grundy(int r1, int c1, int r2, int c2) {
 		if (r2 < r1 || c2 < c1) {
 			return 0;
+		} else if (cache[r1][c1][r2][c2] != -1) {
+			return cache[r1][c1][r2][c2];
 		} else {
 			int rows = getRows(r1, c1, r2, c2);
 			int cols = getCols(r1, c1, r2, c2);
@@ -119,14 +119,10 @@ public class Solution {
 			}
 			for (int i = 0; ; i++) {
 				if (!grundy.contains(i)) {
-					return i;
+					return cache[r1][c1][r2][c2] = i;
 				}
 			}
 		}
-	}
-
-	private static int getCount(int left, int right) {
-		return (left == 0 && right == 0) || (left != 0 && right != 0) ? 1 : 0;
 	}
 
 	private static int getRows(int r1, int c1, int r2, int c2) {
@@ -147,123 +143,6 @@ public class Solution {
 			}
 		}
 		return cols;
-	}
-
-	private static int dp(char[][] grid) {
-		String key = key(grid);
-		Integer result = cache.get(key);
-		if (result != null) {
-			return result;
-		}
-		result = 0;
-		int y = 0;
-		int x = 0;
-		for (int r = 0; r < rows; r++) {
-			for (int c = 0; c < cols; c++) {
-				if (grid[r][c] == '.') {
-					if ((y & (1 << c)) == 0) {
-						int[] vertical = vertical(grid, r, c);
-						if (vertical(grid, c, vertical) && dp(grid) == 0) {
-							result++;
-							y |= 1 << c;
-						}
-						vertical(grid, vertical, c);
-					} else {
-						result++;
-					}
-
-					if ((x & (1 << r)) == 0) {
-						int[] horizontal = horizontal(grid, r, c);
-						if (horizontal(grid, r, horizontal) && dp(grid) == 0) {
-							result++;
-							x |= 1 << r;
-						}
-						horizontal(grid, horizontal, r);
-					} else {
-						result++;
-					}
-				} else {
-					if ((y & (1 << c)) == 1) {
-						y ^= 1 << c;
-					}
-					if ((x & (1 << r)) == 1) {
-						x ^= 1 << r;
-					}
-				}
-			}
-		}
-		cache.put(key, result);
-		return result;
-	}
-
-	private static boolean vertical(char[][] grid, int c, int[] interval) {
-		int from = interval[0], to = interval[1];
-		return (from == 0 || grid[from - 1][c] != '#') && (to == rows - 1 || grid[to + 1][c] != '#');
-	}
-
-	private static boolean horizontal(char[][] grid, int r, int[] interval) {
-		int from = interval[0], to = interval[1];
-		return (from == 0 || grid[r][from - 1] != '#') && (to == cols - 1 || grid[r][to + 1] != '#');
-	}
-
-	private static String key(char[][] grid) {
-		StringBuilder builder = new StringBuilder();
-		for (char[] row : grid) {
-			builder.append(row);
-		}
-		return builder.toString();
-	}
-
-	private static void vertical(char[][] grid, int[] r, int c) {
-		for (int i = r[0]; i <= r[1]; i++) {
-			grid[i][c] = '.';
-		}
-	}
-
-	private static void horizontal(char[][] grid, int[] c, int r) {
-		for (int i = c[0]; i <= c[1]; i++) {
-			grid[r][i] = '.';
-		}
-	}
-
-	private static int[] vertical(char[][] grid, int r, int c) {
-		int[] interval = {r, r};
-		for (int i = r; i >= 0; i--) {
-			if (grid[i][c] != '.') {
-				break;
-			}
-			grid[i][c] = '*';
-			interval[0] = i;
-		}
-
-		for (int i = r + 1; i < rows; i++) {
-			if (grid[i][c] != '.') {
-				break;
-			}
-			grid[i][c] = '*';
-			interval[1] = i;
-		}
-		return interval;
-	}
-
-	private static int[] horizontal(char[][] grid, int r, int c) {
-		int[] interval = {c, c};
-		for (int i = c; i >= 0; i--) {
-			if (grid[r][i] != '.') {
-				break;
-			}
-			grid[r][i] = '*';
-			interval[0] = i;
-		}
-
-		for (int i = c + 1; i < cols; i++) {
-			if (grid[r][i] != '.') {
-				break;
-			}
-			grid[r][i] = '*';
-			interval[1] = i;
-		}
-		return interval;
 	}
 
 }
