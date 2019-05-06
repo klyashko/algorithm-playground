@@ -35,15 +35,15 @@ public class Solution {
 	}
 
 	private static int solve() {
-		int validRows = getRows(0, 0, rows - 1, cols - 1);
-		int validCols = getCols(0, 0, rows - 1, cols - 1);
+		int validRows = getRows(0, 0, rows, cols);
+		int validCols = getCols(0, 0, rows, cols);
 
 		int count = 0;
 		for (int r = 0; r < rows; r++) {
 			int curr = 1 << r;
 			if ((validRows & curr) == curr) {
-				int left = grundy(0, 0, r - 1, cols - 1);
-				int right = grundy(r + 1, 0, rows - 1, cols - 1);
+				int left = grundy(0, 0, r, cols);
+				int right = grundy(r + 1, 0, rows, cols);
 				if ((left ^ right) == 0) {
 					count += cols;
 				}
@@ -52,8 +52,8 @@ public class Solution {
 		for (int c = 0; c < cols; c++) {
 			int curr = 1 << c;
 			if ((validCols & curr) == curr) {
-				int left = grundy(0, 0, rows - 1, c - 1);
-				int right = grundy(0, c + 1, rows - 1, cols - 1);
+				int left = grundy(0, 0, rows, c);
+				int right = grundy(0, c + 1, rows, cols);
 				if ((left ^ right) == 0) {
 					count += rows;
 				}
@@ -63,34 +63,34 @@ public class Solution {
 	}
 
 	private static int grundy(int r1, int c1, int r2, int c2) {
-		if (r2 < r1 || c2 < c1) {
+		if (r2 == r1 || c2 == c1) {
 			return 0;
-		} else if (cache[r1][c1][r2][c2] != -1) {
-			return cache[r1][c1][r2][c2];
+		} else if (cache[r1][c1][r2 - 1][c2 - 1] != -1) {
+			return cache[r1][c1][r2 - 1][c2 - 1];
 		} else {
 			int rows = getRows(r1, c1, r2, c2);
 			int cols = getCols(r1, c1, r2, c2);
 
 			Set<Integer> grundy = new HashSet<>();
-			for (int r = r1; r <= r2; r++) {
+			for (int r = r1; r < r2; r++) {
 				int curr = 1 << r;
 				if ((rows & curr) == curr) {
-					int left = grundy(r1, c1, r - 1, c2);
+					int left = grundy(r1, c1, r, c2);
 					int right = grundy(r + 1, c1, r2, c2);
 					grundy.add(left ^ right);
 				}
 			}
-			for (int c = c1; c <= c2; c++) {
+			for (int c = c1; c < c2; c++) {
 				int curr = 1 << c;
 				if ((cols & curr) == curr) {
-					int left = grundy(r1, c1, r2, c - 1);
+					int left = grundy(r1, c1, r2, c);
 					int right = grundy(r1, c + 1, r2, c2);
 					grundy.add(left ^ right);
 				}
 			}
 			for (int i = 0; ; i++) {
 				if (!grundy.contains(i)) {
-					return cache[r1][c1][r2][c2] = i;
+					return cache[r1][c1][r2 - 1][c2 - 1] = i;
 				}
 			}
 		}
@@ -135,8 +135,8 @@ public class Solution {
 
 	private static int getRows(int r1, int c1, int r2, int c2) {
 		int rows = 0;
-		for (int r = r1; r <= r2; r++) {
-			if (horizontal[r][c1] < c1 && horizontal[r][c2] == horizontal[r][c1]) {
+		for (int r = r1; r < r2; r++) {
+			if (horizontal[r][c1] < c1 && horizontal[r][c2 - 1] == horizontal[r][c1]) {
 				rows |= 1 << r;
 			}
 		}
@@ -145,8 +145,8 @@ public class Solution {
 
 	private static int getCols(int r1, int c1, int r2, int c2) {
 		int cols = 0;
-		for (int c = c1; c <= c2; c++) {
-			if (vertical[r1][c] < r1 && vertical[r2][c] == vertical[r1][c]) {
+		for (int c = c1; c < c2; c++) {
+			if (vertical[r1][c] < r1 && vertical[r2 - 1][c] == vertical[r1][c]) {
 				cols |= 1 << c;
 			}
 		}
