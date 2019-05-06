@@ -1,6 +1,5 @@
 package com.algorithm.playground.google.codejam._2019.c.task3
 
-
 import spock.lang.Specification
 import spock.lang.Unroll
 
@@ -20,6 +19,7 @@ class BacterialTacticsSpec extends Specification {
 
 			[output, expected] << exec(
 					{ main() },
+//					{ sample() },
 					["""2 2
 						..
 						.#""", "0"],
@@ -32,6 +32,14 @@ class BacterialTacticsSpec extends Specification {
 						#.##
 						....
 						#.##""", "7"],
+					["""3 4
+						....
+						....
+						....""", "12"],
+					["""3 3
+						...
+						...
+						...""", "6"],
 					["""1 1
 						.""", "2"],
 					["""1 2
