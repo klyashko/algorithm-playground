@@ -5,7 +5,9 @@ import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
 
-@SuppressWarnings("Duplicates")
+/**
+ * https://codingcompetitions.withgoogle.com/codejam/round/00000000000516b9/0000000000134cdf
+ */
 public class Solution {
 
 	private static int rows;
@@ -13,26 +15,18 @@ public class Solution {
 	private static int[][] vertical;
 	private static int[][] horizontal;
 	private static int[][][][] cache;
+	private static Scanner console;
 
 	public static void main(String[] args) {
 		try (Scanner console = new Scanner(System.in)) {
+			Solution.console = console;
 			int tests = console.nextInt();
 			for (int test = 1; test <= tests; test++) {
 				rows = console.nextInt();
 				cols = console.nextInt();
-				cache = new int[rows][cols][rows][cols];
-				for (int[][][] i : cache) {
-					for (int[][] ii : i) {
-						for (int[] iii : ii) {
-							Arrays.fill(iii, -1);
-						}
-					}
-				}
-				char[][] grid = new char[rows][];
-				for (int i = 0; i < rows; i++) {
-					grid[i] = console.next().toCharArray();
-				}
-				int ans = solve(grid);
+				initCache();
+				initIndexes();
+				int ans = solve();
 				System.out.println(String.format("Case #%s: %s", test, ans));
 			}
 		} catch (Exception e) {
@@ -40,30 +34,7 @@ public class Solution {
 		}
 	}
 
-	private static int solve(char[][] grid) {
-		vertical = new int[rows][cols];
-		horizontal = new int[rows][cols];
-
-		for (int c = 0; c < cols; c++) {
-			vertical[0][c] = -1;
-		}
-
-		for (int r = 0; r < rows; r++) {
-			horizontal[r][0] = -1;
-		}
-
-		for (int r = 0; r < rows; r++) {
-			for (int c = 0; c < cols; c++) {
-				if (grid[r][c] == '#') {
-					vertical[r][c] = r;
-					horizontal[r][c] = c;
-				} else {
-					vertical[r][c] = vertical[Math.max(0, r - 1)][c];
-					horizontal[r][c] = horizontal[r][Math.max(0, c - 1)];
-				}
-			}
-		}
-
+	private static int solve() {
 		int validRows = getRows(0, 0, rows - 1, cols - 1);
 		int validCols = getCols(0, 0, rows - 1, cols - 1);
 
@@ -120,6 +91,43 @@ public class Solution {
 			for (int i = 0; ; i++) {
 				if (!grundy.contains(i)) {
 					return cache[r1][c1][r2][c2] = i;
+				}
+			}
+		}
+	}
+
+	private static void initIndexes() {
+		vertical = new int[rows][cols];
+		horizontal = new int[rows][cols];
+
+		for (int c = 0; c < cols; c++) {
+			vertical[0][c] = -1;
+		}
+
+		for (int r = 0; r < rows; r++) {
+			horizontal[r][0] = -1;
+		}
+
+		for (int r = 0; r < rows; r++) {
+			char[] row = console.next().toCharArray();
+			for (int c = 0; c < cols; c++) {
+				if (row[c] == '#') {
+					vertical[r][c] = r;
+					horizontal[r][c] = c;
+				} else {
+					vertical[r][c] = vertical[Math.max(0, r - 1)][c];
+					horizontal[r][c] = horizontal[r][Math.max(0, c - 1)];
+				}
+			}
+		}
+	}
+
+	private static void initCache() {
+		cache = new int[rows][cols][rows][cols];
+		for (int[][][] i : cache) {
+			for (int[][] ii : i) {
+				for (int[] iii : ii) {
+					Arrays.fill(iii, -1);
 				}
 			}
 		}
