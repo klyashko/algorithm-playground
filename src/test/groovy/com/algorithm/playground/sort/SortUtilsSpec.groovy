@@ -1,6 +1,6 @@
 package com.algorithm.playground.sort
 
-import com.algorithm.playground.utils.Repeat
+import com.algorithm.playground.Repeat
 import spock.lang.Specification
 
 class SortUtilsSpec extends Specification {

@@ -1,4 +1,4 @@
-package com.algorithm.playground.utils
+package com.algorithm.playground
 
 import org.spockframework.runtime.extension.ExtensionAnnotation
 

@@ -1,6 +1,6 @@
 package com.algorithm.playground.data.structure
 
-import com.algorithm.playground.utils.Repeat
+import com.algorithm.playground.Repeat
 import spock.lang.Specification
 
 class BitMapSpec extends Specification {
