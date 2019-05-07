@@ -8,12 +8,12 @@ This repository contains:
  * Google Code Jam solutions
  
 ## Data structure:
- * [Binary Indexed Tree](https://github.com/klyashko/data-structure-example/blob/master/src/main/java/com/example/BinaryIndexedSumTree.java)
+ * [Binary Indexed Tree](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/BinaryIndexedSumTree.java)
  * [Interval Tree](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/IntervalTree.java)
- * [Segment Tree](https://github.com/klyashko/data-structure-example/blob/master/src/main/java/com/example/SegmentSumTree.java)
+ * [Segment Tree](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/SegmentSumTree.java)
  * [AVL tree](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/AVLTree.java)
- * [MapHeap](https://github.com/klyashko/data-structure-example/blob/master/src/main/java/com/example/BinaryMinHeap.java)
- * [Bit Map](https://github.com/klyashko/data-structure-example/blob/master/src/main/java/com/example/BitMap.java)
+ * [MapHeap](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/BinaryMinHeap.java)
+ * [Bit Map](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/BitMap.java)
  
 ## Graph algorithms:
  * [Johnson's algorithm detection all simple cycles in directed graph](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/graph/AllSimpleCyclesInDirectedGraphJohnsonAlgorithm.java)
