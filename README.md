@@ -13,6 +13,7 @@ This repository contains:
  * [Segment Tree](https://github.com/klyashko/data-structure-example/blob/master/src/main/java/com/example/SegmentSumTree.java)
  * [AVL tree](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/AVLTree.java)
  * [MapHeap](https://github.com/klyashko/data-structure-example/blob/master/src/main/java/com/example/BinaryMinHeap.java)
+ * [Bit Map](https://github.com/klyashko/data-structure-example/blob/master/src/main/java/com/example/BitMap.java)
  
 ## Graph algorithms:
  * [Johnson's algorithm detection all simple cycles in directed graph](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/graph/AllSimpleCyclesInDirectedGraphJohnsonAlgorithm.java)
