@@ -12,7 +12,7 @@ public class LocalInteractiveTestRunner {
 
 	private static final String COMMAND = "python %stesting_tool.py %s";
 	@SuppressWarnings("FieldCanBeLocal")
-	private static long TIMEOUT = 5 * 1000;
+	public static long TIMEOUT = 5 * 1000;
 
 	public static void runWithArgs(Runnable runner, String... args) {
 		run(runner, "", args);
