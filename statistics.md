@@ -277,6 +277,7 @@
  * medium:
    * [Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/)
    * [Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/)
+   * [Score After Flipping Matrix](https://leetcode.com/problems/score-after-flipping-matrix/)
    * [Is Subsequence](https://leetcode.com/problems/is-subsequence/)
    * [Task Scheduler](https://leetcode.com/problems/task-scheduler/)
    * [Gas Station](https://leetcode.com/problems/gas-station/)
@@ -448,4 +449,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/)
 
-##### Total: 244
+##### Total: 245
