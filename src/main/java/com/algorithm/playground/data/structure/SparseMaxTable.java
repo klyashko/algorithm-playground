@@ -8,6 +8,7 @@ import static java.lang.Integer.numberOfLeadingZeros;
  * An implementation of Sparse max tamle based on idea from this video:
  * https://www.youtube.com/watch?v=c5O7E_PDO4U
  */
+@SuppressWarnings("Duplicates")
 public class SparseMaxTable {
 
 	private int[] values;
