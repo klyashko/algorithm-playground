@@ -278,6 +278,7 @@
  * medium:
    * [Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/)
    * [Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/)
+   * [Delete Columns to Make Sorted II](https://leetcode.com/problems/delete-columns-to-make-sorted-ii/)
    * [Score After Flipping Matrix](https://leetcode.com/problems/score-after-flipping-matrix/)
    * [Is Subsequence](https://leetcode.com/problems/is-subsequence/)
    * [Task Scheduler](https://leetcode.com/problems/task-scheduler/)
@@ -450,4 +451,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/)
 
-##### Total: 246
+##### Total: 247
