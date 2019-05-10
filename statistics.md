@@ -77,6 +77,7 @@
  * easy:
    * [Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/)
    * [Self Dividing Numbers](https://leetcode.com/problems/self-dividing-numbers/)
+   * [Smallest Range I](https://leetcode.com/problems/smallest-range-i/)
    * [Add Digits](https://leetcode.com/problems/add-digits/)
    
  * medium:
@@ -449,4 +450,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/)
 
-##### Total: 245
+##### Total: 246
