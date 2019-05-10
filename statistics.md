@@ -283,6 +283,7 @@
    * [Is Subsequence](https://leetcode.com/problems/is-subsequence/)
    * [Task Scheduler](https://leetcode.com/problems/task-scheduler/)
    * [Gas Station](https://leetcode.com/problems/gas-station/)
+   * [Jump Game](https://leetcode.com/problems/jump-game/)
    
  * hard:
    * [Couples Holding Hands](https://leetcode.com/problems/couples-holding-hands/)
@@ -451,4 +452,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/)
 
-##### Total: 247
+##### Total: 248
