@@ -19,7 +19,6 @@ class BacterialTacticsSpec extends Specification {
 
 			[output, expected] << exec(
 					{ main() },
-//					{ sample() },
 					["""2 2
 						..
 						.#""", "0"],
