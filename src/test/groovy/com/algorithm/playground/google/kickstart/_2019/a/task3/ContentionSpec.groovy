@@ -1,4 +1,4 @@
-package com.algorithm.playground.google.kickstart._2019.a.contention
+package com.algorithm.playground.google.kickstart._2019.a.task3
 
 import spock.lang.Specification
 import spock.lang.Unroll

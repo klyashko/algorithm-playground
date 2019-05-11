@@ -1,4 +1,4 @@
-package com.algorithm.playground.google.kickstart._2019.a.training;
+package com.algorithm.playground.google.kickstart._2019.a.task1;
 
 import java.util.Arrays;
 import java.util.Scanner;

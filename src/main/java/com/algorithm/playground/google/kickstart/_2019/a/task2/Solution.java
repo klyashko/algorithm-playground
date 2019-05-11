@@ -1,4 +1,4 @@
-package com.algorithm.playground.google.kickstart._2019.a.parcels;
+package com.algorithm.playground.google.kickstart._2019.a.task2;
 
 import java.util.Scanner;
 
