@@ -31,6 +31,7 @@ This repository contains:
         * #### Round B:
             * [Building Palindromes](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000050eda/0000000000119866) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/kickstart/_2019/b/task1/Solution.java)
             * [Energy Stones](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000050eda/00000000001198c3) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/kickstart/_2019/b/task2/Solution.java)
+            * [Diverse Subarray](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000050eda/00000000001198c1) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/kickstart/_2019/b/task3/Solution.java)
  
  * ### Google Code Jam
     * #### 2018:
