@@ -12,13 +12,25 @@ class TestUtils {
 		return RND.nextInt(bound)
 	}
 
+	static int nextInt(int leftBound, int rightBound) {
+		return RND.nextInt(rightBound - leftBound) + leftBound
+	}
+
 	static List<Integer> nextList(int size, int bound) {
-		return (0..size).collect { RND.nextInt(bound) }
+		return (0..size).collect { nextInt(bound) }
+	}
+
+	static List<Integer> nextList(int size, int leftBound, int rightBound) {
+		return (0..size).collect { nextInt(leftBound, rightBound) }
+	}
+
+	static <V> List<V> nextList(int size, Closure<V> closure) {
+		return (0..size).collect { closure() }
 	}
 
 	static int[] nextQueryInterval(int bound) {
-		def lo = RND.nextInt(bound)
-		def hi = RND.nextInt(bound - lo) + lo
+		def lo = nextInt(bound)
+		def hi = nextInt(lo, bound)
 		return [lo, hi]
 	}
 
