@@ -27,6 +27,7 @@
 
  * easy:
    * [Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/)
+   * [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
    
  * medium:
    * [Count Numbers with Unique Digits](https://leetcode.com/problems/count-numbers-with-unique-digits/)
@@ -452,4 +453,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/)
 
-##### Total: 248
+##### Total: 249

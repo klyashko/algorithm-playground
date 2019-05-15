@@ -6,17 +6,15 @@ package com.algorithm.playground.leetcode.problems.lc0.lc50.lc53;
 public class MaximumSubarray {
 
     class Solution {
-
         public int maxSubArray(int[] nums) {
-            int cur = nums[0];
-            int res = nums[0];
-            for (int i = 1; i < nums.length; i++) {
-                cur = Math.max(nums[i], cur + nums[i]);
-                res = Math.max(res, cur);
+			int max = Integer.MIN_VALUE;
+			int curr = 0;
+			for (int i : nums) {
+				curr = Math.max(i, curr + i);
+				max = Math.max(max, curr);
             }
-            return res;
+			return max;
         }
-
     }
 
 }
