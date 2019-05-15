@@ -23,6 +23,9 @@ This repository contains:
  * [Johnson's algorithm detection all simple cycles in directed graph](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/graph/AllSimpleCyclesInDirectedGraphJohnsonAlgorithm.java)
  * [Kosaraju's algorithm detection strongly connected components](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/graph/StronglyConnectedComponentsKosarajuAlgorithm.java)
  
+## Other algorithms:
+ * [Max sum subarray](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/algorithm/Algorithms.java)
+ 
 ## Competitions:
 
  * ### Google Kick Start:
