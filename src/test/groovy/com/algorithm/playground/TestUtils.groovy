@@ -1,8 +1,18 @@
 package com.algorithm.playground
 
+import static java.util.UUID.randomUUID
+
 class TestUtils {
 
 	private static final Random RND = new Random()
+
+	static String getNextStringWithLettersOnly() {
+		return nextString.replaceAll("[0-9]", "")
+	}
+
+	static String getNextString() {
+		return randomUUID().toString().replaceAll("-", "")
+	}
 
 	static int getNextInt() {
 		return RND.nextInt()

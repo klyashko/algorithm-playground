@@ -8,16 +8,17 @@ This repository contains:
  * Google Code Jam solutions
  
 ## Data structure:
+ * [AVL tree](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/AVLTree.java)
  * [Binary Indexed Tree](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/BinaryIndexedSumTree.java)
+ * [Bit Map](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/BitMap.java)
+ * [Huffman Tree](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/HuffmanTree.java)
  * [Interval Tree](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/IntervalTree.java)
- * [Segment Tree](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/SegmentSumTree.java)
- * [Mutable Segment Tree](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/SegmentMaxTree.java)
  * [Lazy Propagation Segment Tree](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/SegmentMinLazyTree.java)
+ * [MapHeap](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/BinaryMinHeap.java)
+ * [Mutable Segment Tree](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/SegmentMaxTree.java)
  * [Sparse Segment Tree](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/SegmentSumSparseTree.java)
  * [Sparse Table](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/SparseMaxTable.java)
- * [AVL tree](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/AVLTree.java)
- * [MapHeap](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/BinaryMinHeap.java)
- * [Bit Map](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/BitMap.java)
+ * [Segment Tree](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/SegmentSumTree.java)
  
 ## Graph algorithms:
  * [Johnson's algorithm detection all simple cycles in directed graph](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/graph/AllSimpleCyclesInDirectedGraphJohnsonAlgorithm.java)
