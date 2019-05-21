@@ -26,6 +26,7 @@
 #### Dynamic programming
 
  * easy:
+   * [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
    * [Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/)
    * [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
    
@@ -453,4 +454,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/)
 
-##### Total: 249
+##### Total: 250
