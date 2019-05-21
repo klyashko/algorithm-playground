@@ -3,8 +3,8 @@ package com.algorithm.playground.algorithm
 import com.algorithm.playground.Repeat
 import spock.lang.Specification
 
-import static com.algorithm.playground.TestUtils.nextInt
-import static com.algorithm.playground.TestUtils.nextList
+import static com.algorithm.playground.TestUtils.*
+import static com.algorithm.playground.algorithm.Algorithms.kmpPatternSearch
 import static com.algorithm.playground.algorithm.Algorithms.maxSumSubArray
 
 class AlgorithmsSpec extends Specification {
@@ -33,6 +33,34 @@ class AlgorithmsSpec extends Specification {
 			}
 		}
 		return max
+	}
+
+	@Repeat(10)
+	def "kmpPatternSearch"() {
+
+		given:
+
+			def patternPart = nextString(nextInt(0, 5))
+			def pattern = patternPart + nextString(nextInt(0, 3)) + patternPart.reverse()
+			def str = nextString(pattern.length() << 1)
+			def N = nextInt(1, 10)
+			int offset = 0
+			N.times {
+				int idx = nextInt(offset, str.length())
+				str = str.substring(0, idx) + pattern + str.substring(idx)
+				offset = idx + pattern.length()
+			}
+			int expected = 0
+			int idx = 0
+			while ((idx = str.indexOf(pattern, idx)) != -1) {
+				idx++
+				expected++
+			}
+
+		expect:
+
+			expected == kmpPatternSearch(str, pattern)
+
 	}
 
 }

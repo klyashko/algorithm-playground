@@ -14,6 +14,14 @@ class TestUtils {
 		return randomUUID().toString().replaceAll("-", "")
 	}
 
+	static String nextString(int len) {
+		String s = nextString
+		while (s.length() < len) {
+			s += nextString
+		}
+		return s[0..len - 1]
+	}
+
 	static int getNextInt() {
 		return RND.nextInt()
 	}

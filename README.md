@@ -25,6 +25,7 @@ This repository contains:
  * [Kosaraju's algorithm detection strongly connected components](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/graph/StronglyConnectedComponentsKosarajuAlgorithm.java)
  
 ## Other algorithms:
+ * [KMP Pattern Search](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/algorithm/Algorithms.java)
  * [Max sum subarray](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/algorithm/Algorithms.java)
  
 ## Competitions:
