@@ -1,5 +1,4 @@
 package com.algorithm.playground
-
 import static java.util.UUID.randomUUID
 
 class TestUtils {
@@ -22,6 +21,14 @@ class TestUtils {
 		return s[0..len - 1]
 	}
 
+	static String nextString(int len, Closure<Boolean> filter) {
+		String s = nextString(len)
+		while (!filter(s)) {
+			s = nextString(len)
+		}
+		return s
+	}
+
 	static int getNextInt() {
 		return RND.nextInt()
 	}
@@ -31,6 +38,9 @@ class TestUtils {
 	}
 
 	static int nextInt(int leftBound, int rightBound) {
+		if (leftBound == rightBound) {
+			return leftBound
+		}
 		return RND.nextInt(rightBound - leftBound) + leftBound
 	}
 
