@@ -42,6 +42,7 @@
    * [Arithmetic Slices](https://leetcode.com/problems/arithmetic-slices/)
    * [Keys Key board](https://leetcode.com/problems/2-keys-keyboard/)
    * [Integer Break](https://leetcode.com/problems/integer-break/)
+   * [Unique Paths](https://leetcode.com/problems/unique-paths/)
    * [Decode Ways](https://leetcode.com/problems/decode-ways/)
    * [Can I Win](https://leetcode.com/problems/can-i-win/)
    
@@ -454,4 +455,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/)
 
-##### Total: 250
+##### Total: 251
