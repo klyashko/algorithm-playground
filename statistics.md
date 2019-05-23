@@ -44,6 +44,7 @@
    * [Integer Break](https://leetcode.com/problems/integer-break/)
    * [Unique Paths](https://leetcode.com/problems/unique-paths/)
    * [Decode Ways](https://leetcode.com/problems/decode-ways/)
+   * [Coin Change](https://leetcode.com/problems/coin-change/)
    * [Can I Win](https://leetcode.com/problems/can-i-win/)
    
  * hard:
@@ -455,4 +456,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/)
 
-##### Total: 251
+##### Total: 252
