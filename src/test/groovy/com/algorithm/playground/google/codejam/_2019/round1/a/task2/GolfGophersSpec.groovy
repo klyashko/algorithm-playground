@@ -12,7 +12,7 @@ class GolfGophersSpec extends Specification {
 
 		expect:
 
-			run({ -> Solution.main() }, "src/test/resources/google/GolfGophers/", arg)
+			run({ -> Solution.main() }, "src/test/resources/google/codejam/_2019/GolfGophers/", arg)
 
 		where:
 

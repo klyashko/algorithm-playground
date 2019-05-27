@@ -12,7 +12,7 @@ class PowerArrangersSpec extends Specification {
 	def "solve"() {
 		given:
 
-			run({ main() }, "src/test/resources/google/PowerArrangers/", arg)
+			run({ main() }, "src/test/resources/google/codejam/_2019/PowerArrangers/", arg)
 
 		where:
 

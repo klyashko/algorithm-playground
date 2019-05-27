@@ -13,7 +13,7 @@ class DraupnirSpec extends Specification {
 
 		given:
 
-			run({ main() }, "src/test/resources/google/Draupnir/", arg)
+			run({ main() }, "src/test/resources/google/codejam/_2019/Draupnir/", arg)
 
 		where:
 
