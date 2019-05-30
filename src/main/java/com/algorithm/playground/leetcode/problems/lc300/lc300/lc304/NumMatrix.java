@@ -14,15 +14,11 @@ public class NumMatrix {
 		} else {
 			int cols = matrix[0].length;
 			this.matrix = new int[rows + 1][cols + 1];
-			for (int r = 0; r < rows; r++) {
-				for (int c = 0; c < cols; c++) {
-					this.matrix[r + 1][c + 1] = this.matrix[r + 1][c] + matrix[r][c];
-				}
-			}
-
+			int[][] tmp = new int[rows + 1][cols + 1];
 			for (int r = 1; r <= rows; r++) {
 				for (int c = 1; c <= cols; c++) {
-					this.matrix[r][c] = this.matrix[r - 1][c] + this.matrix[r][c];
+					tmp[r][c] = tmp[r][c - 1] + matrix[r - 1][c - 1];
+					this.matrix[r][c] = tmp[r][c] + this.matrix[r - 1][c];
 				}
 			}
 		}
