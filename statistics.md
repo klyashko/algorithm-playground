@@ -39,6 +39,7 @@
    * [Minimum Cost For Tickets](https://leetcode.com/problems/minimum-cost-for-tickets/)
    * [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)
    * [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)
+   * [Out of Boundary Paths](https://leetcode.com/problems/out-of-boundary-paths/)
    * [Arithmetic Slices](https://leetcode.com/problems/arithmetic-slices/)
    * [Keys Key board](https://leetcode.com/problems/2-keys-keyboard/)
    * [Integer Break](https://leetcode.com/problems/integer-break/)
@@ -456,4 +457,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/)
 
-##### Total: 252
+##### Total: 253
