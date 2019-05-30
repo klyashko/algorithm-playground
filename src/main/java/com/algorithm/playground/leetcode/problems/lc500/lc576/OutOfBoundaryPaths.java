@@ -24,10 +24,10 @@ public class OutOfBoundaryPaths {
 		}
 
 		private long dp(int m, int n, int N, int r, int c, long[][][] cache) {
-			if (N < 0) {
-				return 0;
-			} else if (r < 0 || c < 0 || r == m || c == n) {
+			if (r < 0 || c < 0 || r == m || c == n) {
 				return 1;
+			} else if (N == 0) {
+				return 0;
 			} else if (cache[r][c][N] != -1) {
 				return cache[r][c][N];
 			} else {
