@@ -13,21 +13,25 @@ public class NumMatrix {
 			this.matrix = new int[0][0];
 		} else {
 			int cols = matrix[0].length;
-			this.matrix = new int[rows][cols + 1];
+			this.matrix = new int[rows + 1][cols + 1];
 			for (int r = 0; r < rows; r++) {
 				for (int c = 0; c < cols; c++) {
-					this.matrix[r][c + 1] = this.matrix[r][c] + matrix[r][c];
+					this.matrix[r + 1][c + 1] = this.matrix[r + 1][c] + matrix[r][c];
+				}
+			}
+
+			for (int r = 1; r <= rows; r++) {
+				for (int c = 1; c <= cols; c++) {
+					this.matrix[r][c] = this.matrix[r - 1][c] + this.matrix[r][c];
 				}
 			}
 		}
 	}
 
 	public int sumRegion(int row1, int col1, int row2, int col2) {
-		int sum = 0;
-		for (int i = row1; i <= row2; i++) {
-			sum += matrix[i][col2 + 1] - matrix[i][col1];
-		}
-		return sum;
+		int a = matrix[row2 + 1][col2 + 1] - matrix[row1][col2 + 1];
+		int b = matrix[row2 + 1][col1] - matrix[row1][col1];
+		return a - b;
 	}
 
 }
