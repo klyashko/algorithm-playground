@@ -34,6 +34,7 @@
    * [Count Numbers with Unique Digits](https://leetcode.com/problems/count-numbers-with-unique-digits/)
    * [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)
    * [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
+   * [Range Sum Query 2D - Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable/)
    * [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/)
    * [Minimum Falling Path Sum](https://leetcode.com/problems/minimum-falling-path-sum/)
    * [Minimum Cost For Tickets](https://leetcode.com/problems/minimum-cost-for-tickets/)
@@ -457,4 +458,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/)
 
-##### Total: 253
+##### Total: 254
