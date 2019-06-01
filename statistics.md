@@ -56,6 +56,7 @@
    * [Wildcard Matching](https://leetcode.com/problems/wildcard-matching/)
    * [Decode Ways II](https://leetcode.com/problems/decode-ways-ii/)
    * [Edit Distance](https://leetcode.com/problems/edit-distance/)
+   * [Odd Even Jump](https://leetcode.com/problems/odd-even-jump/)
 
 #### String
 
@@ -458,4 +459,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/)
 
-##### Total: 254
+##### Total: 255

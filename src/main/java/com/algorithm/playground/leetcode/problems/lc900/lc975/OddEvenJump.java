@@ -1,5 +1,6 @@
 package com.algorithm.playground.leetcode.problems.lc900.lc975;
 
+import java.util.Map;
 import java.util.TreeMap;
 
 /**
@@ -9,7 +10,7 @@ public class OddEvenJump {
 
 	class Solution {
 		public int oddEvenJumps(int[] A) {
-			Boolean[][] cache = new Boolean[2][A.length];
+			boolean[][] cache = new boolean[2][A.length];
 			cache[0][A.length - 1] = true;
 			cache[1][A.length - 1] = true;
 			TreeMap<Integer, Integer> map = new TreeMap<>();
@@ -17,18 +18,14 @@ public class OddEvenJump {
 			int count = 1;
 			for (int i = A.length - 2; i >= 0; i--) {
 				int curr = A[i];
-				Integer min = map.floorKey(curr);
-				if (min == null || min > curr) {
-					cache[0][i] = false;
-				} else {
-					cache[0][i] = cache[1][map.get(min)];
+				Map.Entry<Integer, Integer> minEntry = map.floorEntry(curr);
+				if (minEntry != null && minEntry.getKey() <= curr) {
+					cache[0][i] = cache[1][minEntry.getValue()];
 				}
 
-				Integer max = map.ceilingKey(curr);
-				if (max == null) {
-					cache[1][i] = false;
-				} else {
-					cache[1][i] = cache[0][map.get(max)];
+				Map.Entry<Integer, Integer> maxEntry = map.ceilingEntry(curr);
+				if (maxEntry != null) {
+					cache[1][i] = cache[0][maxEntry.getValue()];
 					if (cache[1][i]) {
 						count++;
 					}
