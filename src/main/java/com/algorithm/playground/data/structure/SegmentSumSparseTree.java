@@ -122,7 +122,7 @@ public class SegmentSumSparseTree {
 			} else {
 				int left = query(node.left, from, to);
 				int right = query(node.right, from, to);
-				return left + right;
+				return merge(left, right);
 			}
 		}
 
@@ -145,8 +145,12 @@ public class SegmentSumSparseTree {
 			}
 			int left = getValue(node.left);
 			int right = getValue(node.right);
-			node.value = left + right;
+			node.value = merge(left, right);
 			return node;
+		}
+
+		private static int merge(int left, int right) {
+			return left + right;
 		}
 
 		@Override
