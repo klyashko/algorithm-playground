@@ -39,7 +39,7 @@ public class SegmentMaxTree {
 			for (int c = l; c < r; c++) {
 				int left = c << 1;
 				int right = left + 1;
-				tree[level][c] = Math.max(tree[level + 1][left], tree[level + 1][right]);
+				tree[level][c] = merge(tree[level + 1][left], tree[level + 1][right]);
 			}
 		}
 		if (--size <= values.length >> 2) {
@@ -57,7 +57,7 @@ public class SegmentMaxTree {
 		for (idx >>= 1; level >= 0; idx >>= 1, level--) {
 			int left = idx << 1;
 			int right = left + 1;
-			tree[level][idx] = Math.max(tree[level + 1][left], tree[level + 1][right]);
+			tree[level][idx] = merge(tree[level + 1][left], tree[level + 1][right]);
 		}
 	}
 
@@ -95,7 +95,7 @@ public class SegmentMaxTree {
 		} else {
 			int left = idx << 1;
 			int right = left + 1;
-			return Math.max(
+			return merge(
 					query(lo, hi, level + 1, left),
 					query(lo, hi, level + 1, right)
 			);
@@ -108,9 +108,13 @@ public class SegmentMaxTree {
 			for (int c = 0; c < rightBound; c++) {
 				int left = c << 1;
 				int right = left + 1;
-				tree[r][c] = Math.max(tree[r + 1][left], tree[r + 1][right]);
+				tree[r][c] = merge(tree[r + 1][left], tree[r + 1][right]);
 			}
 		}
+	}
+
+	private int merge(int left, int right) {
+		return Math.max(left, right);
 	}
 
 	@Override
