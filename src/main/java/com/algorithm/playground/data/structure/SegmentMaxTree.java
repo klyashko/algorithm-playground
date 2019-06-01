@@ -6,6 +6,7 @@ import static java.lang.Integer.numberOfLeadingZeros;
 import static java.lang.System.arraycopy;
 import static java.util.Arrays.copyOfRange;
 
+@SuppressWarnings("Duplicates")
 public class SegmentMaxTree {
 
 	private int[][] tree;

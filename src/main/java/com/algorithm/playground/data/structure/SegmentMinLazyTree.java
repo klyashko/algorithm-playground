@@ -5,6 +5,7 @@ import java.util.Arrays;
 import static java.lang.Integer.numberOfLeadingZeros;
 import static java.lang.System.arraycopy;
 
+@SuppressWarnings("Duplicates")
 public class SegmentMinLazyTree {
 
 	private int[][] tree;
@@ -32,7 +33,7 @@ public class SegmentMinLazyTree {
 		for (idx >>= 1; level >= 0; idx >>= 1, level--) {
 			int left = idx << 1;
 			int right = left + 1;
-			tree[level][idx] = Math.min(tree[level + 1][left], tree[level + 1][right]);
+			tree[level][idx] = merge(tree[level + 1][left], tree[level + 1][right]);
 		}
 	}
 
@@ -60,7 +61,7 @@ public class SegmentMinLazyTree {
 				lazy[level + 1][right] += val;
 			}
 		} else if (intersect(l, r, lo, hi)) {
-			tree[level][idx] = Math.min(
+			tree[level][idx] = merge(
 					increment(lo, hi, level + 1, left, val),
 					increment(lo, hi, level + 1, right, val)
 			);
@@ -105,7 +106,7 @@ public class SegmentMinLazyTree {
 			int left = idx << 1;
 			int right = left + 1;
 
-			return Math.min(
+			return merge(
 					query(lo, hi, level + 1, left),
 					query(lo, hi, level + 1, right)
 			);
@@ -118,9 +119,13 @@ public class SegmentMinLazyTree {
 			for (int c = 0; c < rightBound; c++) {
 				int left = c << 1;
 				int right = left + 1;
-				tree[r][c] = Math.min(tree[r + 1][left], tree[r + 1][right]);
+				tree[r][c] = merge(tree[r + 1][left], tree[r + 1][right]);
 			}
 		}
+	}
+
+	private int merge(int left, int right) {
+		return Math.min(left, right);
 	}
 
 	@Override
