@@ -68,7 +68,7 @@ public class SegmentSumTree {
 			int mid = (ri - li) / 2 + li;
 			int left = query(li, mid, from, to, idx * 2);
 			int right = query(mid + 1, ri, from, to, idx * 2 + 1);
-			return left + right;
+			return merge(left, right);
 		}
 	}
 
@@ -93,7 +93,7 @@ public class SegmentSumTree {
 		int mid = (ri - li) / 2 + li;
 		int left = update(li, mid, i, val, idx * 2);
 		int right = update(mid + 1, ri, i, val, idx * 2 + 1);
-		tree[idx - 1] = left + right;
+		tree[idx - 1] = merge(left, right);
 		return tree[idx - 1];
 	}
 
@@ -115,8 +115,12 @@ public class SegmentSumTree {
 		int mid = (to - from) / 2 + from;
 		int left = buildTree(values, idx * 2, from, mid);
 		int right = buildTree(values, idx * 2 + 1, mid + 1, to);
-		tree[idx - 1] = left + right;
+		tree[idx - 1] = merge(left, right);
 		return tree[idx - 1];
+	}
+
+	private int merge(int left, int right) {
+		return left + right;
 	}
 
 }
