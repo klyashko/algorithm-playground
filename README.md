@@ -44,6 +44,7 @@ This repository contains:
         * #### Round C:
             * [Wiggle Walk](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000050ff2/0000000000150aac) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/kickstart/c/task1/Solution.java)
             * [Circuit Board](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000050ff2/0000000000150aae) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/kickstart/c/task2/Solution.java)
+            * [Catch Some](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000050ff2/0000000000150a0d) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/kickstart/c/task3/Solution.java)
  
  * ### Google Code Jam
     * #### 2018:
