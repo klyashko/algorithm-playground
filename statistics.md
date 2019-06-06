@@ -359,6 +359,9 @@
    
 #### Graph
 
+ * easy:
+   * [Find the Town Judge](https://leetcode.com/problems/find-the-town-judge/)
+
  * medium:
    * [Find Eventual Safe States](https://leetcode.com/problems/find-eventual-safe-states/)
    * [Redundant Connection](https://leetcode.com/problems/redundant-connection/)
@@ -459,4 +462,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/)
 
-##### Total: 255
+##### Total: 256
