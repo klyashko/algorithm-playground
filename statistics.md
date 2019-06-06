@@ -364,6 +364,7 @@
 
  * medium:
    * [Find Eventual Safe States](https://leetcode.com/problems/find-eventual-safe-states/)
+   * [Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/)
    * [Redundant Connection](https://leetcode.com/problems/redundant-connection/)
    * [Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/)
    * [Is Graph Bipartite](https://leetcode.com/problems/is-graph-bipartite/)
@@ -462,4 +463,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/)
 
-##### Total: 256
+##### Total: 257
