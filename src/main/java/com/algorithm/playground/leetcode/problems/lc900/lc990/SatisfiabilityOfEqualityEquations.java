@@ -59,10 +59,6 @@ public class SatisfiabilityOfEqualityEquations {
 				edges.put(key, new HashSet<>());
 			}
 			edges.get(key).add(node);
-//			if (!edges.containsKey(node)) {
-//				edges.put(node, new HashSet<>());
-//			}
-//			edges.get(node).add(key);
 		}
 
 		private class Node {
