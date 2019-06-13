@@ -15,9 +15,8 @@ public class SatisfiabilityOfEqualityEquations {
 					return false;
 				}
 			}
-
 			for (char ch = 'a'; ch <= 'z'; ch++) {
-				if (!dfs(edges, new Node(ch, false), ch, new HashSet<>())) {
+				if (dfs(edges, new Node(ch, false), ch, new HashSet<>())) {
 					return false;
 				}
 			}
@@ -25,23 +24,21 @@ public class SatisfiabilityOfEqualityEquations {
 			return true;
 		}
 
-		@SuppressWarnings("BooleanMethodIsAlwaysInverted")
 		private boolean dfs(Map<Node, Set<Node>> edges, Node curr, char ch, Set<Node> visited) {
-			if (!visited.add(curr)) {
-				return true;
-			}
-			for (Node next : edges.getOrDefault(curr, Collections.emptySet())) {
-				if (next.ch == ch) {
-					if (next.negate) {
-						return false;
-					}
-				} else if (!curr.negate) {
-					if (!dfs(edges, next, ch, visited)) {
-						return false;
+			if (visited.add(curr)) {
+				for (Node next : edges.getOrDefault(curr, Collections.emptySet())) {
+					if (next.ch == ch) {
+						if (next.negate) {
+							return true;
+						}
+					} else if (!curr.negate) {
+						if (dfs(edges, next, ch, visited)) {
+							return true;
+						}
 					}
 				}
 			}
-			return true;
+			return false;
 		}
 
 		private boolean parse(String eq, Map<Node, Set<Node>> edges) {
