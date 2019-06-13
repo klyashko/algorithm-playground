@@ -10,14 +10,18 @@ public class SatisfiabilityOfEqualityEquations {
 	class Solution {
 		public boolean equationsPossible(String[] equations) {
 			DSU dsu = new DSU();
+			int idx = 0, len = equations.length;
 			for (String eq : equations) {
 				if (eq.charAt(1) == '=') {
 					int i1 = eq.charAt(0) - 'a';
 					int i2 = eq.charAt(3) - 'a';
 					dsu.union(i1, i2);
+					len--;
+				} else {
+					equations[idx++] = eq;
 				}
 			}
-			for (String eq : equations) {
+			for (String eq : Arrays.copyOf(equations, len)) {
 				if (eq.charAt(1) == '!') {
 					int i1 = eq.charAt(0) - 'a';
 					int i2 = eq.charAt(3) - 'a';
