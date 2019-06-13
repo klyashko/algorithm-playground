@@ -363,6 +363,7 @@
    * [Find the Town Judge](https://leetcode.com/problems/find-the-town-judge/)
 
  * medium:
+   * [Satisfiability of Equality Equations](https://leetcode.com/problems/satisfiability-of-equality-equations/)
    * [Find Eventual Safe States](https://leetcode.com/problems/find-eventual-safe-states/)
    * [Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/)
    * [Redundant Connection](https://leetcode.com/problems/redundant-connection/)
@@ -463,4 +464,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/)
 
-##### Total: 257
+##### Total: 258
