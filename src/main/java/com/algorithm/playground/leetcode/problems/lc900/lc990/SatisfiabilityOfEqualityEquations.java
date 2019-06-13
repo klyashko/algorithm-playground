@@ -9,6 +9,52 @@ public class SatisfiabilityOfEqualityEquations {
 
 	class Solution {
 		public boolean equationsPossible(String[] equations) {
+			DSU dsu = new DSU();
+			for (String eq : equations) {
+				if (eq.charAt(1) == '=') {
+					int i1 = eq.charAt(0) - 'a';
+					int i2 = eq.charAt(3) - 'a';
+					dsu.union(i1, i2);
+				}
+			}
+			for (String eq : equations) {
+				if (eq.charAt(1) == '!') {
+					int i1 = eq.charAt(0) - 'a';
+					int i2 = eq.charAt(3) - 'a';
+					if (dsu.find(i1) == dsu.find(i2)) {
+						return false;
+					}
+				}
+			}
+			return true;
+		}
+
+		class DSU {
+
+			private int[] groups = new int[26];
+
+			private DSU() {
+				for (int i = 0; i < groups.length; i++) {
+					groups[i] = i;
+				}
+			}
+
+			private int find(int key) {
+				if (groups[key] == key) {
+					return key;
+				}
+				return groups[key] = find(groups[key]);
+			}
+
+			private void union(int key1, int key2) {
+				groups[find(key1)] = find(key2);
+			}
+
+		}
+	}
+
+	class Solution_ {
+		public boolean equationsPossible(String[] equations) {
 			Map<Node, Set<Node>> edges = new HashMap<>();
 			for (String eq : equations) {
 				if (parse(eq, edges)) {
