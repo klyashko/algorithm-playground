@@ -10,16 +10,17 @@ This repository contains:
 ## Data structure:
  * [AVL tree](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/AVLTree.java)
  * [Binary Indexed Tree](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/BinaryIndexedSumTree.java)
+ * [Binary Min Heap (HeapMap)](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/BinaryMinHeap.java)
  * [Bit Map](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/BitMap.java)
  * [Huffman Tree](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/HuffmanTree.java)
  * [Interval Tree](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/IntervalTree.java)
- * [Lazy Propagation Segment Tree](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/SegmentMinLazyTree.java)
- * [MapHeap](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/BinaryMinHeap.java)
- * [Mutable Segment Tree](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/SegmentMaxTree.java)
- * [Sparse Segment Tree](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/SegmentSumSparseTree.java)
- * [Sparse Table](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/SparseMaxTable.java)
  * [Segment Tree](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/SegmentSumTree.java)
+ * [Segment Tree Lazy](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/SegmentMinLazyTree.java)
+ * [Segment Tree Mutable ](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/SegmentMaxTree.java)
+ * [Segment Tree Sparse ](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/SegmentSumSparseTree.java)
+ * [Sparse Table](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/SparseMaxTable.java)
  * [Suffix Array](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/SuffixArray.java)
+ * [Suffix Automation](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/SuffixAutomation.java)
  
 ## Graph algorithms:
  * [Johnson's algorithm detection all simple cycles in directed graph](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/graph/AllSimpleCyclesInDirectedGraphJohnsonAlgorithm.java)

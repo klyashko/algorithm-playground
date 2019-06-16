@@ -1,4 +1,5 @@
 package com.algorithm.playground
+
 import static java.util.UUID.randomUUID
 
 class TestUtils {
@@ -27,6 +28,36 @@ class TestUtils {
 			s = nextString(len)
 		}
 		return s
+	}
+
+	static String nextSubString(String str) {
+		def idx = nextInt(str.length())
+		def len = nextInt(str.length() - idx)
+		return str[idx..idx + len]
+	}
+
+	static String nextStringWithPattern(String p, int count) {
+		def s = nextString(nextInt(1, 5))
+		for (int i = 0; i < count; i++) {
+			s += p + nextString(nextInt(1, 5))
+		}
+		return s
+	}
+
+	static List<Integer> findAll(String s, String p) {
+		def list = []
+		for (int idx = 0; ; idx++) {
+			idx = s.indexOf(p, idx)
+			if (idx == -1) {
+				break
+			}
+			list << idx
+		}
+		return list
+	}
+
+	static int count(String s, String p) {
+		return findAll(s, p).size()
 	}
 
 	static int getNextInt() {
