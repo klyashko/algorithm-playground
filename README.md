@@ -76,6 +76,8 @@ This repository contains:
             * [Pottery Lottery](https://codingcompetitions.withgoogle.com/codejam/round/0000000000051679/00000000001461c8) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/codejam/_2019/round2/task2/Solution.java)
             * [New Elements: Part 2](https://codingcompetitions.withgoogle.com/codejam/round/0000000000051679/0000000000146184) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/codejam/_2019/round2/task3/Solution.java)
             * [Contransmutation](https://codingcompetitions.withgoogle.com/codejam/round/0000000000051679/0000000000146185) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/codejam/_2019/round2/task4/Solution.java)
+        * #### Round 2:
+            * * [Zillionim](https://codingcompetitions.withgoogle.com/codejam/round/0000000000051707/0000000000158f1a) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/codejam/_2019/round3/task1/Solution.java)
             
             
 ## Leetcode problems:
