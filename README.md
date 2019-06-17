@@ -80,6 +80,7 @@ This repository contains:
             * [Zillionim](https://codingcompetitions.withgoogle.com/codejam/round/0000000000051707/0000000000158f1a) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/codejam/_2019/round3/task1/Solution.java)
             * [Pancake Pyramid](https://codingcompetitions.withgoogle.com/codejam/round/0000000000051707/00000000001591be) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/codejam/_2019/round3/task2/Solution.java)
             * [Datacenter Duplex](https://codingcompetitions.withgoogle.com/codejam/round/0000000000051707/0000000000158f1c) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/codejam/_2019/round3/task3/Solution.java)
+            * [Napkin Folding](https://codingcompetitions.withgoogle.com/codejam/round/0000000000051707/0000000000159170) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/codejam/_2019/round3/task4/Solution.java)
             
             
 ## Leetcode problems:
