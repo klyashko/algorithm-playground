@@ -37,7 +37,7 @@ This repository contains:
         * #### Round A:
             * [Training](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000050e01/00000000000698d6) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/kickstart/_2019/a/task1/Solution.java)
             * [Parcels](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000050e01/000000000006987d) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/kickstart/_2019/a/task2/Solution.java)
-            * [Contention](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000050e01/0000000000069881) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/kickstart/_2019/a/task3/Solution.java)
+            * [Contention](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000050e01/0000000000069881) [[solution](without hidden test set)](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/kickstart/_2019/a/task3/Solution.java)
         * #### Round B:
             * [Building Palindromes](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000050eda/0000000000119866) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/kickstart/_2019/b/task1/Solution.java)
             * [Energy Stones](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000050eda/00000000001198c3) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/kickstart/_2019/b/task2/Solution.java)
@@ -76,11 +76,11 @@ This repository contains:
             * [Pottery Lottery](https://codingcompetitions.withgoogle.com/codejam/round/0000000000051679/00000000001461c8) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/codejam/_2019/round2/task2/Solution.java)
             * [New Elements: Part 2](https://codingcompetitions.withgoogle.com/codejam/round/0000000000051679/0000000000146184) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/codejam/_2019/round2/task3/Solution.java)
             * [Contransmutation](https://codingcompetitions.withgoogle.com/codejam/round/0000000000051679/0000000000146185) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/codejam/_2019/round2/task4/Solution.java)
-        * #### Round 2:
+        * #### Round 3:
             * [Zillionim](https://codingcompetitions.withgoogle.com/codejam/round/0000000000051707/0000000000158f1a) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/codejam/_2019/round3/task1/Solution.java)
             * [Pancake Pyramid](https://codingcompetitions.withgoogle.com/codejam/round/0000000000051707/00000000001591be) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/codejam/_2019/round3/task2/Solution.java)
             * [Datacenter Duplex](https://codingcompetitions.withgoogle.com/codejam/round/0000000000051707/0000000000158f1c) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/codejam/_2019/round3/task3/Solution.java)
-            * [Napkin Folding](https://codingcompetitions.withgoogle.com/codejam/round/0000000000051707/0000000000159170) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/codejam/_2019/round3/task4/Solution.java)
+            * [Napkin Folding](https://codingcompetitions.withgoogle.com/codejam/round/0000000000051707/0000000000159170) [[solution] (without hidden test set)](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/codejam/_2019/round3/task4/Solution.java)
             
             
 ## Leetcode problems:
