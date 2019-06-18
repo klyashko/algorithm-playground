@@ -62,6 +62,7 @@
 #### String
 
  * easy:
+   * [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)
    * [Judge Route Circle](https://leetcode.com/problems/judge-route-circle/)
    * [Long Pressed Name](https://leetcode.com/problems/long-pressed-name/)
    * [Reverse String](https://leetcode.com/problems/reverse-string/)
@@ -467,4 +468,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/)
 
-##### Total: 261
+##### Total: 262
