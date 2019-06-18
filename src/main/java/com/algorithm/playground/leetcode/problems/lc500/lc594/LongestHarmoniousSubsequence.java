@@ -1,7 +1,7 @@
 package com.algorithm.playground.leetcode.problems.lc500.lc594;
 
+import java.util.HashMap;
 import java.util.Map;
-import java.util.TreeMap;
 
 /**
  * https://leetcode.com/problems/longest-harmonious-subsequence/
@@ -10,7 +10,7 @@ public class LongestHarmoniousSubsequence {
 
 	class Solution {
 		public int findLHS(int[] nums) {
-			TreeMap<Integer, Integer> counts = new TreeMap<>();
+			Map<Integer, Integer> counts = new HashMap<>();
 			for (int i : nums) {
 				counts.put(i, counts.getOrDefault(i, 0) + 1);
 			}
