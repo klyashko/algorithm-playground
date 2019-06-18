@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.lc0.lc14
+package com.algorithm.playground.leetcode.problems.lc0.lc10.lc14
 
-import com.algorithm.playground.leetcode.problems.lc0.lc14.LongestCommonPrefix.Solution as S
+import com.algorithm.playground.leetcode.problems.lc0.lc10.lc14.LongestCommonPrefix.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.lc0.lc15
+package com.algorithm.playground.leetcode.problems.lc0.lc10.lc15
 
 import spock.lang.Specification
 import spock.lang.Unroll

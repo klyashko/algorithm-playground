@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.lc0.lc14;
+package com.algorithm.playground.leetcode.problems.lc0.lc10.lc14;
 
 /**
  * https://leetcode.com/problems/longest-common-prefix/
