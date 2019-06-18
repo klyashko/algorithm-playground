@@ -1,6 +1,7 @@
 #### Arrays
 
  * easy:
+   * [Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence/)
    * [Third Maximum Number](https://leetcode.com/problems/third-maximum-number/)
    * [Non-decreasing Array](https://leetcode.com/problems/non-decreasing-array/)
    * [Array Partition I](https://leetcode.com/problems/array-partition-i/)
@@ -465,4 +466,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/)
 
-##### Total: 259
+##### Total: 260
