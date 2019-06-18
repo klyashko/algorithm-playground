@@ -7,22 +7,19 @@ public class LongestPalindrome {
 
 	class Solution {
 		public int longestPalindrome(String s) {
-			int[] lowercase = new int[26];
-			int[] uppercase = new int[26];
+			int[] counts = new int[128];
 			for (int i = 0; i < s.length(); i++) {
-				char ch = s.charAt(i);
-				if (ch <= 'Z') {
-					uppercase[ch - 'A']++;
+				counts[s.charAt(i)]++;
+			}
+			int count = 0;
+			for (int i : counts) {
+				if ((i & 1) == 0) {
+					count += i;
 				} else {
-					lowercase[ch - 'a']++;
+					count += i - 1;
 				}
 			}
-			int count = 0, sum = 0;
-			for (int i = 0; i < 26; i++) {
-				count += ((lowercase[i] >> 1) + (uppercase[i] >> 1)) << 1;
-				sum += (lowercase[i] & 1) + (uppercase[i] & 1);
-			}
-			return sum > 0 ? count + 1 : count;
+			return count == s.length() ? count : count + 1;
 		}
 	}
 

@@ -129,6 +129,7 @@
 
  * easy:
    * [Uncommon Words From Two Sentences](https://leetcode.com/problems/uncommon-words-from-two-sentences/)
+   * [Longest Palindrome](https://leetcode.com/problems/longest-palindrome/)
    * [Jewels And Stones](https://leetcode.com/problems/jewels-and-stones/)
    * [Single Number](https://leetcode.com/problems/single-number/)
    
@@ -464,4 +465,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/)
 
-##### Total: 258
+##### Total: 259
