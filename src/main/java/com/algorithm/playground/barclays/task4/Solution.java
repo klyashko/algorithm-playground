@@ -23,7 +23,6 @@ public class Solution {
 	private static void process(int n) {
 		IntList data = new IntList(10);
 		data.add(0);
-//		TreeMap<Integer, Integer> index = new TreeMap<>();
 		SegmentSumSparseTree tree = new SegmentSumSparseTree(1_000_000_001);
 
 		for (int i = 0; i < n; i++) {
@@ -36,28 +35,17 @@ public class Solution {
 			if (c.c == 'I') {
 				data.add(c.i2);
 				tree.increment(c.i2, 1);
-//				index.put(c.i2, index.getOrDefault(c.i2, 0) + 1);
 			} else if (c.c == 'U') {
 				int old = data.get(c.i1);
 				tree.increment(old, -1);
-//				Integer count = index.get(old);
-//				if (count > 1) {
-//					index.put(old, count - 1);
-//				} else {
-//					index.remove(old);
-//				}
 				data.set(c.i1, c.i2);
 				tree.increment(c.i2, 1);
-//				index.put(c.i2, index.getOrDefault(c.i2, 0) + 1);
 			} else if (c.c == 'S') {
 				if (c.i2 < c.i1) {
 					System.out.println(0);
 					continue;
 				}
 				long sum = tree.sum(c.i1, c.i2);
-//				for (Map.Entry<Integer, Integer> e : index.subMap(c.i1, true, c.i2, true).entrySet()) {
-//					sum += ((long) e.getKey() * (long) e.getValue());
-//				}
 				System.out.println(sum);
 			} else if (c.c == 'C') {
 				if (c.i2 < c.i1) {
@@ -65,9 +53,6 @@ public class Solution {
 					continue;
 				}
 				int count = tree.count(c.i1, c.i2);
-//				for (Map.Entry<Integer, Integer> e : index.subMap(c.i1, true, c.i2, true).entrySet()) {
-//					count += e.getValue();
-//				}
 				System.out.println(count);
 			}
 		}
@@ -173,10 +158,6 @@ public class Solution {
 		public long sum(int lo, int hi) {
 			return Node.sum(root, lo, hi);
 		}
-
-//		public void update(int idx, int val) {
-//			root = Node.update(root, 0, size - 1, idx, val);
-//		}
 
 		private void increment(int idx, int val) {
 			root = Node.update(root, 0, size - 1, idx, val);
