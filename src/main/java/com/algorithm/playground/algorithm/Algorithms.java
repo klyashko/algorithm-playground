@@ -2,6 +2,20 @@ package com.algorithm.playground.algorithm;
 
 public class Algorithms {
 
+	public static String minRepetitionSubstring(String s) {
+		int len = s.length();
+		int[] dp = new int[len + 1];
+		dp[0] = -1;
+		for (int i = 0, j = -1; i < len; ) {
+			while (j > -1 && s.charAt(i) != s.charAt(j)) {
+				j = dp[j];
+			}
+			dp[++i] = ++j;
+		}
+		int length = len % (len - dp[len]) == 0 ? len / (len - dp[len]) : 1;
+		return s.substring(0, len / length);
+	}
+
 	public static int maxSumSubArray(int[] arr) {
 		int max = Integer.MIN_VALUE;
 		int curr = 0;

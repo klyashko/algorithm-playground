@@ -4,10 +4,48 @@ import com.algorithm.playground.Repeat
 import spock.lang.Specification
 
 import static com.algorithm.playground.TestUtils.*
-import static com.algorithm.playground.algorithm.Algorithms.kmpPatternSearch
-import static com.algorithm.playground.algorithm.Algorithms.maxSumSubArray
+import static com.algorithm.playground.algorithm.Algorithms.*
 
 class AlgorithmsSpec extends Specification {
+
+	@Repeat(10)
+	def "minRepetitionSubstring_success"() {
+
+		given:
+
+			def p = nextString(nextInt(4, 10), AlgorithmsSpec.&withoutRepetitions)
+			def s = p * nextInt(2, 10)
+
+		expect:
+
+			minRepetitionSubstring(s) == p
+
+	}
+
+	@Repeat(10)
+	def "minRepetitionSubstring_failure"() {
+
+		given:
+
+			def s = nextString(nextInt(15, 50), AlgorithmsSpec.&withoutRepetitions)
+
+		expect:
+
+			minRepetitionSubstring(s) == s
+
+	}
+
+	private static boolean withoutRepetitions(String s) {
+		for (int i = 1; i <= s.length() >> 1; i++) {
+			if (s.length() % i == 0) {
+				def tmp = s.substring(0, i) * (s.length() / i)
+				if (tmp == s) {
+					return false
+				}
+			}
+		}
+		return true
+	}
 
 	@Repeat(10)
 	def "maxSumSubArray"() {
