@@ -1,8 +1,12 @@
 package com.algorithm.playground.barclays.task4;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
+import java.util.StringTokenizer;
 
 import static java.lang.Integer.numberOfLeadingZeros;
 import static java.util.Collections.emptyList;
@@ -52,6 +56,54 @@ public class Solution {
 				}
 				int count = tree.count(c.i1, c.i2);
 				System.out.println(count);
+			}
+		}
+	}
+
+	private static class Scanner implements AutoCloseable {
+
+		private final BufferedReader br;
+		private StringTokenizer st;
+
+		private Scanner(InputStream is) {
+			this.br = new BufferedReader(new InputStreamReader(is));
+		}
+
+		@Override
+		public void close() {
+			try {
+				br.close();
+			} catch (IOException e) {
+				throw new RuntimeException(e);
+			}
+		}
+
+		public String next() {
+			read();
+			return st == null ? null : st.nextToken();
+		}
+
+		public boolean hasNext() {
+			read();
+			return st != null;
+		}
+
+		public int nextInt() {
+			return Integer.parseInt(next());
+		}
+
+		private void read() {
+			if (st == null || !st.hasMoreTokens()) {
+				try {
+					String line = br.readLine();
+					if (line == null) {
+						st = null;
+					} else {
+						st = new StringTokenizer(line);
+					}
+				} catch (IOException e) {
+					throw new RuntimeException(e);
+				}
 			}
 		}
 	}
