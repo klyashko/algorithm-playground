@@ -1,6 +1,5 @@
 package com.algorithm.playground.barclays.task4;
 
-import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -13,8 +12,7 @@ public class Solution {
 	private static Scanner scanner;
 
 	public static void main(String[] args) {
-		scanner = new Scanner(new InputStreamReader(System.in));
-
+		scanner = new Scanner(System.in);
 		int n = scanner.nextInt();
 		process(n);
 		scanner.close();
@@ -82,7 +80,8 @@ public class Solution {
 
 		private void ensureCapacity() {
 			if (size == data.length) {
-				int[] newData = new int[size << 1];
+				int newSize = Math.min(size << 1, 1_000_000_001);
+				int[] newData = new int[newSize];
 				System.arraycopy(data, 0, newData, 0, data.length);
 				this.data = newData;
 			}
