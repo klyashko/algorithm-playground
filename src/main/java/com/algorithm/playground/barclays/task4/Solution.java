@@ -4,9 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.StringTokenizer;
+import java.util.*;
 
 import static java.lang.Integer.numberOfLeadingZeros;
 import static java.util.Collections.emptyList;
@@ -23,8 +21,7 @@ public class Solution {
 	}
 
 	private static void process(int n) {
-		IntList data = new IntList(10);
-		data.add(0);
+		Map<Integer, Integer> data = new HashMap<>();
 		SegmentSumSparseTree tree = new SegmentSumSparseTree(1_000_000_001);
 
 		for (int i = 0; i < n; i++) {
@@ -35,12 +32,13 @@ public class Solution {
 			);
 
 			if (c.c == 'I') {
-				data.add(c.i2);
+				data.put(c.i1, c.i2);
 				tree.increment(c.i2, 1);
 			} else if (c.c == 'U') {
-				int old = data.get(c.i1);
-				tree.increment(old, -1);
-				data.set(c.i1, c.i2);
+				Integer old = data.put(c.i1, c.i2);
+				if (old != null) {
+					tree.increment(old, -1);
+				}
 				tree.increment(c.i2, 1);
 			} else if (c.c == 'S') {
 				if (c.i2 < c.i1) {
@@ -106,39 +104,6 @@ public class Solution {
 				}
 			}
 		}
-	}
-
-	private static class IntList {
-
-		private int[] data;
-		private int size;
-
-		private IntList(int capacity) {
-			this.data = new int[capacity];
-		}
-
-		private void add(int val) {
-			ensureCapacity();
-			data[size++] = val;
-		}
-
-		private void set(int idx, int val) {
-			data[idx] = val;
-		}
-
-		private int get(int idx) {
-			return data[idx];
-		}
-
-		private void ensureCapacity() {
-			if (size == data.length) {
-				int newSize = Math.min(size << 1, 1_000_000_001);
-				int[] newData = new int[newSize];
-				System.arraycopy(data, 0, newData, 0, data.length);
-				this.data = newData;
-			}
-		}
-
 	}
 
 	private static class Command {
