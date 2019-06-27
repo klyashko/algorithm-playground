@@ -21,6 +21,7 @@ This repository contains:
  * [Sparse Table](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/SparseMaxTable.java)
  * [Suffix Array](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/SuffixArray.java)
  * [Suffix Automation](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/SuffixAutomation.java)
+ * [Suffix Tree](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/SuffixTree.java)
  
 ## Graph algorithms:
  * [Johnson's algorithm detection all simple cycles in directed graph](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/graph/AllSimpleCyclesInDirectedGraphJohnsonAlgorithm.java)
