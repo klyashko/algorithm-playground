@@ -12,6 +12,7 @@ This repository contains:
  * [Binary Indexed Tree](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/BinaryIndexedSumTree.java)
  * [Binary Min Heap (HeapMap)](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/BinaryMinHeap.java)
  * [Bit Map](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/BitMap.java)
+ * [Heavy Light Decomposition](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/HeavyLightDecomposition.java)
  * [Huffman Tree](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/HuffmanTree.java)
  * [Interval Tree](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/IntervalTree.java)
  * [Segment Tree](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/SegmentSumTree.java)

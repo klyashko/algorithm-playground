@@ -64,6 +64,10 @@ class TestUtils {
 		return RND.nextInt()
 	}
 
+	static int getNextSmallInt() {
+		return RND.nextInt(100)
+	}
+
 	static int nextInt(int bound) {
 		return RND.nextInt(bound)
 	}
@@ -76,15 +80,15 @@ class TestUtils {
 	}
 
 	static List<Integer> nextList(int size, int bound) {
-		return (0..size).collect { nextInt(bound) }
+		return (1..size).collect { nextInt(bound) }
 	}
 
 	static List<Integer> nextList(int size, int leftBound, int rightBound) {
-		return (0..size).collect { nextInt(leftBound, rightBound) }
+		return (1..size).collect { nextInt(leftBound, rightBound) }
 	}
 
 	static <V> List<V> nextList(int size, Closure<V> closure) {
-		return (0..size).collect { closure() }
+		return (1..size).collect { closure() }
 	}
 
 	static int[] nextQueryInterval(int bound) {
