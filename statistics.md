@@ -12,7 +12,7 @@
    * [3Sum](https://leetcode.com/problems/3sum/)
    
  * medium:
-   * [945. Minimum Increment to Make Array Unique](https://leetcode.com/problems/minimum-increment-to-make-array-unique/)
+   * [Minimum Increment to Make Array Unique](https://leetcode.com/problems/minimum-increment-to-make-array-unique/)
    * [Find all Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/)
    * [Product Of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)
    * [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)
@@ -398,6 +398,7 @@
    * [Accounts Merge](https://leetcode.com/problems/accounts-merge/)
    
  * hard:
+   * [Largest Component Size by Common Factor](https://leetcode.com/problems/largest-component-size-by-common-factor/)
    * [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)
    
 #### Trie
@@ -469,4 +470,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/)
 
-##### Total: 262
+##### Total: 263

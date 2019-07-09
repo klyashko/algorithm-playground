@@ -19,6 +19,7 @@ class LargestComponentSizeByCommonFactorSpec extends Specification {
 			[4, 6, 15, 35]              || 4
 			[20, 50, 9, 63]             || 2
 			[2, 3, 6, 7, 4, 12, 21, 39] || 8
+			[1, 2, 3, 4, 5, 6, 7, 8, 9] || 6
 
 	}
 
