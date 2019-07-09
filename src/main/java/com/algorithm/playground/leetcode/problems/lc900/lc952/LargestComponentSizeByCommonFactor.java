@@ -1,9 +1,6 @@
 package com.algorithm.playground.leetcode.problems.lc900.lc952;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.Arrays;
 
 /**
  * https://leetcode.com/problems/largest-component-size-by-common-factor/
@@ -13,7 +10,8 @@ public class LargestComponentSizeByCommonFactor {
 	class Solution {
 		public int largestComponentSize(int[] A) {
 			DSU dsu = new DSU(A.length);
-			Map<Integer, List<Integer>> graph = new HashMap<>();
+			int[] graph = new int[10000];
+			Arrays.fill(graph, -1);
 			for (int i = 0; i < A.length; i++) {
 				factorization(i, A[i], graph, dsu);
 			}
@@ -27,7 +25,7 @@ public class LargestComponentSizeByCommonFactor {
 			return max;
 		}
 
-		private void factorization(int key, int val, Map<Integer, List<Integer>> graph, DSU dsu) {
+		private void factorization(int key, int val, int[] graph, DSU dsu) {
 			int until = (int) (Math.sqrt(val) + 1);
 			for (int i = 2; val != 1 && i <= until; i++) {
 				if (val % i == 0) {
@@ -42,15 +40,12 @@ public class LargestComponentSizeByCommonFactor {
 			}
 		}
 
-		private void union(int key, int factor, Map<Integer, List<Integer>> graph, DSU dsu) {
-			List<Integer> list = graph.get(factor);
-			if (list == null) {
-				list = new ArrayList<>();
+		private void union(int key, int factor, int[] graph, DSU dsu) {
+			if (graph[factor] != -1) {
+				dsu.union(graph[factor], key);
 			} else {
-				dsu.union(list.get(0), key);
+				graph[factor] = key;
 			}
-			list.add(key);
-			graph.put(factor, list);
 		}
 
 		private class DSU {
