@@ -17,33 +17,40 @@ public class LargestComponentSizeByCommonFactor {
 			for (int i = 0; i < A.length; i++) {
 				factorization(i, A[i], graph, dsu);
 			}
-			Map<Integer, Integer> counts = new HashMap<>();
+			int[] counts = new int[A.length];
 			int max = 0;
 			for (int i = 0; i < A.length; i++) {
-				int curr = counts.merge(dsu.find(i), 1, Integer::sum);
-				max = Math.max(max, curr);
+				int p = dsu.find(i);
+				counts[p]++;
+				max = Math.max(max, counts[p]);
 			}
 			return max;
 		}
 
 		private void factorization(int key, int val, Map<Integer, List<Integer>> graph, DSU dsu) {
-			for (int i = 2; i <= val; i++) {
+			int until = (int) (Math.sqrt(val) + 1);
+			for (int i = 2; val != 1 && i <= until; i++) {
 				if (val % i == 0) {
 					while (val % i == 0) {
 						val /= i;
 					}
-					List<Integer> list = graph.get(i);
-					if (list == null) {
-						list = new ArrayList<>();
-					} else {
-						for (Integer n : list) {
-							dsu.union(n, key);
-						}
-					}
-					list.add(key);
-					graph.put(i, list);
+					union(key, i, graph, dsu);
 				}
 			}
+			if (val > 1) {
+				union(key, val, graph, dsu);
+			}
+		}
+
+		private void union(int key, int factor, Map<Integer, List<Integer>> graph, DSU dsu) {
+			List<Integer> list = graph.get(factor);
+			if (list == null) {
+				list = new ArrayList<>();
+			} else {
+				dsu.union(list.get(0), key);
+			}
+			list.add(key);
+			graph.put(factor, list);
 		}
 
 		private class DSU {
