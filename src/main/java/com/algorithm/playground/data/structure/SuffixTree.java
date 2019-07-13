@@ -32,6 +32,79 @@ public class SuffixTree {
 		return curr != null;
 	}
 
+	public String longestRepeatedSubstring() {
+		return longestRepeatedSubstring(2);
+	}
+
+	public String longestRepeatedSubstring(int repetitions) {
+		Tuple2<int[], Integer> maxSubstring = longestRepeatedSubstring(root, repetitions);
+		if (maxSubstring._2() < repetitions) {
+			return "";
+		}
+		return new String(values, maxSubstring._1()[0], length(maxSubstring._1()));
+	}
+
+	public String longestMostRepeatedSubstring() {
+		int[] max = {0, 0};
+		int maxCount = 0, maxLength = 0;
+		for (SuffixNode node : root.children.values()) {
+			Tuple2<int[], Integer> curr = longestMostRepeatedSubstring(node);
+			int len = length(curr._1());
+			if (curr._2() >= 2) {
+				if (curr._2() > maxCount || (curr._2() == maxCount && (len > maxLength || compare(max[0], curr._1()[0], len) > 0))) {
+					max = curr._1();
+					maxCount = curr._2();
+					maxLength = len;
+				}
+			}
+		}
+		return new String(values, max[0], maxLength);
+	}
+
+	private Tuple2<int[], Integer> longestRepeatedSubstring(SuffixNode node, int repetitions) {
+		int sum = 0, len = 0;
+		int[] max = {node.start, node.end.end};
+		for (SuffixNode next : node.children.values()) {
+			Tuple2<int[], Integer> curr = longestRepeatedSubstring(next, repetitions);
+			sum += curr._2();
+			int tmpLen = length(curr._1());
+			if (curr._2() >= repetitions) {
+				if (tmpLen > len || (tmpLen == len && compare(max[0], curr._1()[0], len) > 0)) {
+					len = tmpLen;
+					max = curr._1();
+				}
+			}
+		}
+		sum = Math.max(1, sum);
+		if (sum > repetitions && max[1] != node.end.end) {
+			max[0] = max[0] - (node.end.end - node.start + 1);
+		}
+		return new Tuple2<>(max, sum);
+	}
+
+	private Tuple2<int[], Integer> longestMostRepeatedSubstring(SuffixNode node) {
+		int sum = 0;
+		for (SuffixNode next : node.children.values()) {
+			Tuple2<int[], Integer> curr = longestMostRepeatedSubstring(next);
+			sum += curr._2();
+		}
+		sum = Math.max(1, sum);
+		return new Tuple2<>(new int[]{node.start, node.end.end}, sum);
+	}
+
+	private int compare(int a, int b, int len) {
+		for (int i = 0; i < len; i++) {
+			if (values[a + i] != values[b + i]) {
+				return values[a + i] - values[b + i];
+			}
+		}
+		return 0;
+	}
+
+	private int length(int[] substring) {
+		return substring[1] - substring[0] + 1;
+	}
+
 	private String[] dfs(SuffixNode node, StringBuilder builder, String[] list) {
 		int len = builder.length();
 		for (int i = node.start; i <= node.end.end; i++) {
