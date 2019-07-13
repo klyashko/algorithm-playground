@@ -8,6 +8,7 @@ This repository contains:
  * Google Code Jam solutions
  
 ## Data structure:
+ * [Aho Corasick](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/AhoCorasick.java)
  * [AVL tree](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/AVLTree.java)
  * [Binary Indexed Tree](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/BinaryIndexedSumTree.java)
  * [Binary Min Heap (HeapMap)](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/BinaryMinHeap.java)
