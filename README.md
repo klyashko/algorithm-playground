@@ -22,6 +22,7 @@ This repository contains:
  * [Segment Tree Mutable Size](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/SegmentMaxTree.java)
  * [Segment Tree Sparse](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/SegmentSumSparseTree.java)
  * [Sparse Table](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/SparseMaxTable.java)
+ * [Splay Tree](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/SplayTree.java)
  * [Suffix Array](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/SuffixArray.java)
  * [Suffix Automation](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/SuffixAutomation.java)
  * [Suffix Tree](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/SuffixTree.java)
