@@ -91,6 +91,16 @@ class TestUtils {
 		return (0..size - 1).collect { closure() }
 	}
 
+	static <V> List<V> nextList(int size, Closure<V> closure, Closure<V> filter) {
+		return (0..size - 1).collect {
+			V val = closure()
+			while (!filter(val)) {
+				val = closure()
+			}
+			return val
+		}
+	}
+
 	static int[] nextQueryInterval(int bound) {
 		def lo = nextInt(bound)
 		def hi = nextInt(lo, bound)
