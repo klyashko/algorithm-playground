@@ -17,6 +17,7 @@ This repository contains:
  * [Huffman Tree](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/HuffmanTree.java)
  * [Interval Tree](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/IntervalTree.java)
  * [KD Tree](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/KDTree.java)
+ * [Palindromic Tree](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/PalindromicTree.java)
  * [Segment Tree](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/SegmentSumTree.java)
  * [Segment Tree Lazy](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/SegmentMinLazyTree.java)
  * [Segment Tree Mutable Size](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/data/structure/SegmentMaxTree.java)
