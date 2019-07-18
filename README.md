@@ -404,4 +404,5 @@ This repository contains:
  * [1027 Longest Arithmetic Sequence](https://leetcode.com/problems/longest-arithmetic-sequence/) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/leetcode/problems/lc1000/lc1027/LongestArithmeticSequence.java)
  * [1029 Two City Scheduling](https://leetcode.com/problems/two-city-scheduling/) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/leetcode/problems/lc1000/lc1029/TwoCityScheduling.java)
  * [1036 Escape a Large Maze](https://leetcode.com/problems/escape-a-large-maze/) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/leetcode/problems/lc1000/lc1036/EscapeALargeMaze.java)
-        
+ * [1125 Smallest Sufficient Team](https://leetcode.com/problems/smallest-sufficient-team/) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/leetcode/problems/lc0/lc1125/SmallestSufficientTeam.java)
+ 

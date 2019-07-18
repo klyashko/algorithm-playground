@@ -55,6 +55,7 @@
    * [Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/)
    * [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)
    * [Palindrome Partitioning II](https://leetcode.com/problems/palindrome-partitioning-ii/)
+   * [Smallest Sufficient Team](https://leetcode.com/problems/smallest-sufficient-team/)
    * [Wildcard Matching](https://leetcode.com/problems/wildcard-matching/)
    * [Decode Ways II](https://leetcode.com/problems/decode-ways-ii/)
    * [Edit Distance](https://leetcode.com/problems/edit-distance/)
@@ -470,4 +471,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/)
 
-##### Total: 263
+##### Total: 265
