@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.lc1000.lc1019
+package com.algorithm.playground.leetcode.problems.lc1000.lc1000.lc1019
 
-import com.algorithm.playground.leetcode.problems.lc1000.lc1019.NextGreaterNodeInLinkedList.Solution as S
+import com.algorithm.playground.leetcode.problems.lc1000.lc1000.lc1019.NextGreaterNodeInLinkedList.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.lc1000.lc1029
+package com.algorithm.playground.leetcode.problems.lc1000.lc1000.lc1029
 
-import com.algorithm.playground.leetcode.problems.lc1000.lc1029.TwoCityScheduling.Solution as S
+import com.algorithm.playground.leetcode.problems.lc1000.lc1000.lc1029.TwoCityScheduling.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

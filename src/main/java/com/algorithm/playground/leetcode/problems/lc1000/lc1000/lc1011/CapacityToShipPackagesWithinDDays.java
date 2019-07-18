@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.lc1000.lc1011;
+package com.algorithm.playground.leetcode.problems.lc1000.lc1000.lc1011;
 
 /**
  * https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/

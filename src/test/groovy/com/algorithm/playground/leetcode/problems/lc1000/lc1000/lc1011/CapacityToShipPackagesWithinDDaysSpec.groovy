@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.lc1000.lc1011
+package com.algorithm.playground.leetcode.problems.lc1000.lc1000.lc1011
 
-import com.algorithm.playground.leetcode.problems.lc1000.lc1011.CapacityToShipPackagesWithinDDays.Solution as S
+import com.algorithm.playground.leetcode.problems.lc1000.lc1000.lc1011.CapacityToShipPackagesWithinDDays.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 
