@@ -232,6 +232,7 @@
 #### Stack
 
  * easy:
+   * [Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/)
    * [Implement Queue Using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)
    * [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
    * [Min Stack](https://leetcode.com/problems/min-stack/)
@@ -471,4 +472,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/)
 
-##### Total: 265
+##### Total: 266
