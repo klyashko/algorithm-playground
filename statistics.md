@@ -243,6 +243,7 @@
    * [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)
    * [Validate Stack Sequences](https://leetcode.com/problems/validate-stack-sequences/)
    * [Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii/)
+   * [Online Stock Span](https://leetcode.com/problems/online-stock-span/)
    
  * hard:
    * [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/)
@@ -473,4 +474,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/)
 
-##### Total: 267
+##### Total: 268
