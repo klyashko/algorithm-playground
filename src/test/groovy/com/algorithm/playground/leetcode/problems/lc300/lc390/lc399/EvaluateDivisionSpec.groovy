@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.lc300.lc399
+package com.algorithm.playground.leetcode.problems.lc300.lc390.lc399
 
-import com.algorithm.playground.leetcode.problems.lc300.lc399.EvaluateDivision.Solution as S
+import com.algorithm.playground.leetcode.problems.lc300.lc390.lc399.EvaluateDivision.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

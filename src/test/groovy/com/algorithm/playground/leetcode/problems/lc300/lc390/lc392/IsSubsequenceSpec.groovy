@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.lc300.lc392
+package com.algorithm.playground.leetcode.problems.lc300.lc390.lc392
 
-import com.algorithm.playground.leetcode.problems.lc300.lc392.IsSubsequence.Solution as S
+import com.algorithm.playground.leetcode.problems.lc300.lc390.lc392.IsSubsequence.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

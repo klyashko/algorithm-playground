@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.lc300.lc394
+package com.algorithm.playground.leetcode.problems.lc300.lc390.lc394
 
-import com.algorithm.playground.leetcode.problems.lc300.lc394.DecodeString.Solution as S
+import com.algorithm.playground.leetcode.problems.lc300.lc390.lc394.DecodeString.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

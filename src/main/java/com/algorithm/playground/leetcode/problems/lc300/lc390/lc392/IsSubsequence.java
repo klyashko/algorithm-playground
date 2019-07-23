@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.lc300.lc392;
+package com.algorithm.playground.leetcode.problems.lc300.lc390.lc392;
 
 /**
  * https://leetcode.com/problems/is-subsequence/description/
