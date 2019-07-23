@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.lc800.lc884
+package com.algorithm.playground.leetcode.problems.lc800.lc880.lc884
 
-import com.algorithm.playground.leetcode.problems.lc800.lc884.UncommonWordsFromTwoSentences.Solution as S
+import com.algorithm.playground.leetcode.problems.lc800.lc880.lc884.UncommonWordsFromTwoSentences.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

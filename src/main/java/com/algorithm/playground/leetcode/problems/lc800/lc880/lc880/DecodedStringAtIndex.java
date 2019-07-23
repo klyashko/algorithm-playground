@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.lc800.lc880;
+package com.algorithm.playground.leetcode.problems.lc800.lc880.lc880;
 
 import java.util.LinkedList;
 

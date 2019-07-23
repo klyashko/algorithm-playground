@@ -1,6 +1,5 @@
-package com.algorithm.playground.leetcode.problems.lc800.lc887
+package com.algorithm.playground.leetcode.problems.lc800.lc880.lc887
 
-import com.algorithm.playground.leetcode.problems.lc800.lc887.SuperEggDrop
 import spock.lang.Specification
 import spock.lang.Unroll
 

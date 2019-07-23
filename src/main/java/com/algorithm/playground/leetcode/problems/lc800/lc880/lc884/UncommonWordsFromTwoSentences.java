@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.lc800.lc884;
+package com.algorithm.playground.leetcode.problems.lc800.lc880.lc884;
 
 import java.util.HashSet;
 import java.util.Set;

@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.lc800.lc880
+package com.algorithm.playground.leetcode.problems.lc800.lc880.lc880
 
-import com.algorithm.playground.leetcode.problems.lc800.lc880.DecodedStringAtIndex.Solution as S
+import com.algorithm.playground.leetcode.problems.lc800.lc880.lc880.DecodedStringAtIndex.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.lc800.lc887;
+package com.algorithm.playground.leetcode.problems.lc800.lc880.lc887;
 
 /**
  * https://leetcode.com/problems/super-egg-drop/
