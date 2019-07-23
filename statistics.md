@@ -238,6 +238,7 @@
    * [Min Stack](https://leetcode.com/problems/min-stack/)
    
  * medium:
+   * [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)
    * [Next Greater Node In Linked List](https://leetcode.com/problems/next-greater-node-in-linked-list/)
    * [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/)
    * [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)
@@ -475,4 +476,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/)
 
-##### Total: 269
+##### Total: 270
