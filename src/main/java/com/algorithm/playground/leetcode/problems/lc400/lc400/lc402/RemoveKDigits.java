@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.lc400.lc402;
+package com.algorithm.playground.leetcode.problems.lc400.lc400.lc402;
 
 import java.util.ArrayDeque;
 import java.util.Deque;

@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.lc400.lc406;
+package com.algorithm.playground.leetcode.problems.lc400.lc400.lc406;
 
 import java.util.Arrays;
 import java.util.LinkedList;

@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.lc400.lc409;
+package com.algorithm.playground.leetcode.problems.lc400.lc400.lc409;
 
 /**
  * https://leetcode.com/problems/longest-palindrome/

@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.lc400.lc402
+package com.algorithm.playground.leetcode.problems.lc400.lc400.lc402
 
-import com.algorithm.playground.leetcode.problems.lc400.lc402.RemoveKDigits.Solution as S
+import com.algorithm.playground.leetcode.problems.lc400.lc400.lc402.RemoveKDigits.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

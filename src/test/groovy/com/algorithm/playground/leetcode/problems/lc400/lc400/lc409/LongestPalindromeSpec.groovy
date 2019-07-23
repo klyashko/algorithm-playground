@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.lc400.lc409
+package com.algorithm.playground.leetcode.problems.lc400.lc400.lc409
 
-import com.algorithm.playground.leetcode.problems.lc400.lc409.LongestPalindrome.Solution as S
+import com.algorithm.playground.leetcode.problems.lc400.lc400.lc409.LongestPalindrome.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 
