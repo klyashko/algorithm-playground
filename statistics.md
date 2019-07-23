@@ -244,6 +244,7 @@
    * [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)
    * [Validate Stack Sequences](https://leetcode.com/problems/validate-stack-sequences/)
    * [Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii/)
+   * [Decoded String at Index](https://leetcode.com/problems/decoded-string-at-index/)
    * [Online Stock Span](https://leetcode.com/problems/online-stock-span/)
    * [Decode String](https://leetcode.com/problems/decode-string/)
    
@@ -477,4 +478,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/)
 
-##### Total: 271
+##### Total: 272
