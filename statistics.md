@@ -250,6 +250,7 @@
  * hard:
    * [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/)
    * [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)
+   * [Maximum Frequency Stack](https://leetcode.com/problems/maximum-frequency-stack/)
    * [Number of Atoms](https://leetcode.com/problems/number-of-atoms/)
    
 #### Backtracking
@@ -476,4 +477,4 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/)
 
-##### Total: 270
+##### Total: 271
