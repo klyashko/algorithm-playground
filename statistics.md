@@ -478,4 +478,9 @@
  * medium:
    * [Hand of Straights](https://leetcode.com/problems/hand-of-straights/)
 
-##### Total: 272
+#### Sliding Window
+   
+ * hard:
+   * [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)
+
+##### Total: 273
