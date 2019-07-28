@@ -481,7 +481,10 @@
 
 #### Sliding Window
    
+ * medium:
+   * [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
+   
  * hard:
    * [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)
 
-##### Total: 274
+##### Total: 275
