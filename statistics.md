@@ -247,6 +247,7 @@
    * [Decoded String at Index](https://leetcode.com/problems/decoded-string-at-index/)
    * [Online Stock Span](https://leetcode.com/problems/online-stock-span/)
    * [Decode String](https://leetcode.com/problems/decode-string/)
+   * [132 Pattern](https://leetcode.com/problems/132-pattern/)
    
  * hard:
    * [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/)
@@ -483,4 +484,4 @@
  * hard:
    * [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)
 
-##### Total: 273
+##### Total: 274
