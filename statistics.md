@@ -17,6 +17,7 @@
    * [Product Of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)
    * [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)
    * [Teemo Attacking](https://leetcode.com/problems/teemo-attacking/)
+   * [Word Search](https://leetcode.com/problems/word-search/)
   
  * hard:
    * [Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/)
@@ -487,4 +488,4 @@
  * hard:
    * [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)
 
-##### Total: 275
+##### Total: 276
