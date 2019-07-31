@@ -46,6 +46,7 @@
    * [Out of Boundary Paths](https://leetcode.com/problems/out-of-boundary-paths/)
    * [Arithmetic Slices](https://leetcode.com/problems/arithmetic-slices/)
    * [Keys Key board](https://leetcode.com/problems/2-keys-keyboard/)
+   * [Maximal Square](https://leetcode.com/problems/maximal-square/)
    * [Integer Break](https://leetcode.com/problems/integer-break/)
    * [Unique Paths](https://leetcode.com/problems/unique-paths/)
    * [Decode Ways](https://leetcode.com/problems/decode-ways/)
@@ -491,4 +492,4 @@
  * hard:
    * [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)
 
-##### Total: 279
+##### Total: 280
