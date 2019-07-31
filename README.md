@@ -54,6 +54,7 @@ This repository contains:
             * [Catch Some](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000050ff2/0000000000150a0d) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/kickstart/c/task3/Solution.java)
         * #### Round D:
             * [X or What?](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000051061/0000000000161426) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/kickstart/d/task1/Solution.java)
+            * [Latest Guests](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000051061/0000000000161427) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/kickstart/d/task2/Solution.java)
  
  * ### Google Code Jam
     * #### 2018:
