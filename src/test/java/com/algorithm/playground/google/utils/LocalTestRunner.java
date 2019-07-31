@@ -69,6 +69,7 @@ public class LocalTestRunner {
 			String curr = new String(collector.toByteArray());
 			return Stream.of(curr.split(SEP))
 					.filter(line -> line.startsWith(PATTERN))
+					.map(String::trim)
 					.collect(toList());
 		}
 
