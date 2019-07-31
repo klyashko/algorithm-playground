@@ -51,6 +51,7 @@
    * [Unique Paths](https://leetcode.com/problems/unique-paths/)
    * [Decode Ways](https://leetcode.com/problems/decode-ways/)
    * [Coin Change](https://leetcode.com/problems/coin-change/)
+   * [Word Break](https://leetcode.com/problems/word-break/)
    * [Can I Win](https://leetcode.com/problems/can-i-win/)
    
  * hard:
@@ -494,4 +495,4 @@
  * hard:
    * [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)
 
-##### Total: 282
+##### Total: 283
