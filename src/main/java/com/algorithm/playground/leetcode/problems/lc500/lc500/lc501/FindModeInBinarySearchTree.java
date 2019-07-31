@@ -1,6 +1,6 @@
 package com.algorithm.playground.leetcode.problems.lc500.lc500.lc501;
 
-import com.algorithm.playground.leetcode.problems.utils.TreeNode;
+import com.algorithm.playground.leetcode.problems.utils.tree.TreeNode;
 
 import java.util.HashMap;
 import java.util.Map;

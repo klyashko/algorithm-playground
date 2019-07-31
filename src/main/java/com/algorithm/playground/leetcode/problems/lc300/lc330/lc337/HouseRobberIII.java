@@ -1,6 +1,6 @@
 package com.algorithm.playground.leetcode.problems.lc300.lc330.lc337;
 
-import com.algorithm.playground.leetcode.problems.utils.TreeNode;
+import com.algorithm.playground.leetcode.problems.utils.tree.TreeNode;
 
 /**
  * https://leetcode.com/problems/house-robber-iii/

@@ -4,7 +4,7 @@ import com.algorithm.playground.leetcode.problems.lc1000.lc1000.lc1019.NextGreat
 import spock.lang.Specification
 import spock.lang.Unroll
 
-import static com.algorithm.playground.leetcode.problems.utils.ListNode.valueOf as node
+import static com.algorithm.playground.leetcode.problems.utils.linkedlist.ListNode.valueOf as node
 
 class NextGreaterNodeInLinkedListSpec extends Specification {
 

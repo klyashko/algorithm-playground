@@ -1,6 +1,6 @@
 package com.algorithm.playground.leetcode.problems.lc100.lc120.lc124;
 
-import com.algorithm.playground.leetcode.problems.utils.TreeNode;
+import com.algorithm.playground.leetcode.problems.utils.tree.TreeNode;
 
 /**
  * https://leetcode.com/problems/binary-tree-maximum-path-sum/description/

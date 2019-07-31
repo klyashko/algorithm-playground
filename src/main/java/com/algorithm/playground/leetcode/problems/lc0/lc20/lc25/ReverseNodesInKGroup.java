@@ -1,6 +1,6 @@
 package com.algorithm.playground.leetcode.problems.lc0.lc20.lc25;
 
-import com.algorithm.playground.leetcode.problems.utils.ListNode;
+import com.algorithm.playground.leetcode.problems.utils.linkedlist.ListNode;
 
 /**
  * https://leetcode.com/problems/reverse-nodes-in-k-group/description/

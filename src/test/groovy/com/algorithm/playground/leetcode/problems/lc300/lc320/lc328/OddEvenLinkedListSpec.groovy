@@ -4,7 +4,7 @@ import com.algorithm.playground.leetcode.problems.lc300.lc320.lc328.OddEvenLinke
 import spock.lang.Specification
 import spock.lang.Unroll
 
-import static com.algorithm.playground.leetcode.problems.utils.ListNode.valueOf as node
+import static com.algorithm.playground.leetcode.problems.utils.linkedlist.ListNode.valueOf as node
 
 class OddEvenLinkedListSpec extends Specification {
 

@@ -4,7 +4,7 @@ import com.algorithm.playground.leetcode.problems.lc500.lc500.lc508.MostFrequent
 import spock.lang.Specification
 import spock.lang.Unroll
 
-import static com.algorithm.playground.leetcode.problems.utils.TreeNode.node
+import static com.algorithm.playground.leetcode.problems.utils.tree.TreeNode.node
 
 class MostFrequentSubtreeSumSpec extends Specification {
 

@@ -1,6 +1,6 @@
 package com.algorithm.playground.leetcode.problems.lc200.lc230.lc230;
 
-import com.algorithm.playground.leetcode.problems.utils.TreeNode;
+import com.algorithm.playground.leetcode.problems.utils.tree.TreeNode;
 
 /**
  * https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/

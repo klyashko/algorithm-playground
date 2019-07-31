@@ -1,6 +1,6 @@
 package com.algorithm.playground.leetcode.problems.lc100.lc140.lc142;
 
-import com.algorithm.playground.leetcode.problems.utils.ListNode;
+import com.algorithm.playground.leetcode.problems.utils.linkedlist.ListNode;
 
 import java.util.IdentityHashMap;
 import java.util.Map;

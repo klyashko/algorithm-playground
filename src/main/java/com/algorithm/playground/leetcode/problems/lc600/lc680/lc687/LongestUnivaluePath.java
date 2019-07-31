@@ -1,6 +1,6 @@
 package com.algorithm.playground.leetcode.problems.lc600.lc680.lc687;
 
-import com.algorithm.playground.leetcode.problems.utils.TreeNode;
+import com.algorithm.playground.leetcode.problems.utils.tree.TreeNode;
 
 /**
  * https://leetcode.com/problems/longest-univalue-path/description/

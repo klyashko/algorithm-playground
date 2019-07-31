@@ -1,6 +1,6 @@
 package com.algorithm.playground.leetcode.problems.lc0.lc0.lc2;
 
-import com.algorithm.playground.leetcode.problems.utils.ListNode;
+import com.algorithm.playground.leetcode.problems.utils.linkedlist.ListNode;
 
 /**
  * https://leetcode.com/problems/add-two-numbers/

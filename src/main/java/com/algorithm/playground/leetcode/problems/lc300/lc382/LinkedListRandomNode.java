@@ -1,6 +1,6 @@
 package com.algorithm.playground.leetcode.problems.lc300.lc382;
 
-import com.algorithm.playground.leetcode.problems.utils.ListNode;
+import com.algorithm.playground.leetcode.problems.utils.linkedlist.ListNode;
 
 import java.util.Random;
 

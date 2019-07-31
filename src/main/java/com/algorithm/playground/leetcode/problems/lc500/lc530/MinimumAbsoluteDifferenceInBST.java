@@ -1,6 +1,6 @@
 package com.algorithm.playground.leetcode.problems.lc500.lc530;
 
-import com.algorithm.playground.leetcode.problems.utils.TreeNode;
+import com.algorithm.playground.leetcode.problems.utils.tree.TreeNode;
 
 /**
  * https://leetcode.com/problems/minimum-absolute-difference-in-bst/description/

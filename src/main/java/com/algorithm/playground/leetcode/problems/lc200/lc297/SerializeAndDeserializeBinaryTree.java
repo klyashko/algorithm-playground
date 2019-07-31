@@ -1,6 +1,6 @@
 package com.algorithm.playground.leetcode.problems.lc200.lc297;
 
-import com.algorithm.playground.leetcode.problems.utils.TreeNode;
+import com.algorithm.playground.leetcode.problems.utils.tree.TreeNode;
 
 import java.util.Arrays;
 import java.util.Iterator;
@@ -40,7 +40,7 @@ public class SerializeAndDeserializeBinaryTree {
 			if (NULL.equals(value)) {
 				return null;
 			}
-			TreeNode node = new TreeNode(Integer.valueOf(value));
+			TreeNode node = new TreeNode(Integer.parseInt(value));
 			node.left = valueOf(values);
 			node.right = valueOf(values);
 			return node;

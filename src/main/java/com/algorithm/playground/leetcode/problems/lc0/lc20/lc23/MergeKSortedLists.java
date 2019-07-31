@@ -1,6 +1,6 @@
 package com.algorithm.playground.leetcode.problems.lc0.lc20.lc23;
 
-import com.algorithm.playground.leetcode.problems.utils.ListNode;
+import com.algorithm.playground.leetcode.problems.utils.linkedlist.ListNode;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;

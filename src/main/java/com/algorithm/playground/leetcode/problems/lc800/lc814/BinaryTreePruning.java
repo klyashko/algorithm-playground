@@ -1,6 +1,6 @@
 package com.algorithm.playground.leetcode.problems.lc800.lc814;
 
-import com.algorithm.playground.leetcode.problems.utils.TreeNode;
+import com.algorithm.playground.leetcode.problems.utils.tree.TreeNode;
 
 /**
  * https://leetcode.com/problems/binary-tree-pruning/description/

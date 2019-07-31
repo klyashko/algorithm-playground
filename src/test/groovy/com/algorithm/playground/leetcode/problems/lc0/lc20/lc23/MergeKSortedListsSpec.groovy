@@ -1,11 +1,11 @@
 package com.algorithm.playground.leetcode.problems.lc0.lc20.lc23
 
 import com.algorithm.playground.leetcode.problems.lc0.lc20.lc23.MergeKSortedLists.Solution as S
-import com.algorithm.playground.leetcode.problems.utils.ListNode
+import com.algorithm.playground.leetcode.problems.utils.linkedlist.ListNode
 import spock.lang.Specification
 import spock.lang.Unroll
 
-import static com.algorithm.playground.leetcode.problems.utils.ListNode.valueOf as node
+import static com.algorithm.playground.leetcode.problems.utils.linkedlist.ListNode.valueOf as node
 
 class MergeKSortedListsSpec extends Specification {
 

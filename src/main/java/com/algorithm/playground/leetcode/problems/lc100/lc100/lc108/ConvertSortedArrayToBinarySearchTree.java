@@ -1,6 +1,6 @@
 package com.algorithm.playground.leetcode.problems.lc100.lc100.lc108;
 
-import com.algorithm.playground.leetcode.problems.utils.TreeNode;
+import com.algorithm.playground.leetcode.problems.utils.tree.TreeNode;
 
 /**
  * https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/

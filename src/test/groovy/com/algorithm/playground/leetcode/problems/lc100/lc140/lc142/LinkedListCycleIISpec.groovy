@@ -2,11 +2,11 @@ package com.algorithm.playground.leetcode.problems.lc100.lc140.lc142
 
 import com.algorithm.playground.leetcode.problems.lc100.lc140.lc142.LinkedListCycleII.Solution as S
 import com.algorithm.playground.leetcode.problems.lc100.lc140.lc142.LinkedListCycleII.SolutionWithAdditionalMemory as SWAM
-import com.algorithm.playground.leetcode.problems.utils.ListNode
+import com.algorithm.playground.leetcode.problems.utils.linkedlist.ListNode
 import spock.lang.Specification
 import spock.lang.Unroll
 
-import static com.algorithm.playground.leetcode.problems.utils.ListNode.valueOf as node
+import static com.algorithm.playground.leetcode.problems.utils.linkedlist.ListNode.valueOf as node
 
 /**
  * Example 1:

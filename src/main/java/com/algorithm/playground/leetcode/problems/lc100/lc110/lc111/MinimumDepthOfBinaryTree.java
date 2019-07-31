@@ -1,6 +1,6 @@
 package com.algorithm.playground.leetcode.problems.lc100.lc110.lc111;
 
-import com.algorithm.playground.leetcode.problems.utils.TreeNode;
+import com.algorithm.playground.leetcode.problems.utils.tree.TreeNode;
 
 /**
  * https://leetcode.com/problems/minimum-depth-of-binary-tree/

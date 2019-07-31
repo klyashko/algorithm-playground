@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.utils;
+package com.algorithm.playground.leetcode.problems.utils.linkedlist;
 
 import java.util.ArrayList;
 import java.util.List;

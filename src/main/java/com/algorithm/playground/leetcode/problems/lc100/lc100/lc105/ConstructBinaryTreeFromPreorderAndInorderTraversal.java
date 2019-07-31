@@ -1,6 +1,6 @@
 package com.algorithm.playground.leetcode.problems.lc100.lc100.lc105;
 
-import com.algorithm.playground.leetcode.problems.utils.TreeNode;
+import com.algorithm.playground.leetcode.problems.utils.tree.TreeNode;
 
 /**
  * https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/

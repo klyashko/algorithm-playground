@@ -4,7 +4,7 @@ import com.algorithm.playground.leetcode.problems.lc600.lc680.lc687.LongestUniva
 import spock.lang.Specification
 import spock.lang.Unroll
 
-import static com.algorithm.playground.leetcode.problems.utils.TreeNode.node
+import static com.algorithm.playground.leetcode.problems.utils.tree.TreeNode.node
 
 class LongestUnivaluePathSpec extends Specification {
 

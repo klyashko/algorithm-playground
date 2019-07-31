@@ -1,6 +1,6 @@
 package com.algorithm.playground.leetcode.problems.lc100.lc100.lc104;
 
-import com.algorithm.playground.leetcode.problems.utils.TreeNode;
+import com.algorithm.playground.leetcode.problems.utils.tree.TreeNode;
 
 /**
  * https://leetcode.com/problems/maximum-depth-of-binary-tree/description/

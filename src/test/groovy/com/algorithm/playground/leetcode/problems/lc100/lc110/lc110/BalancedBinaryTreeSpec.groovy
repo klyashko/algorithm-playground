@@ -4,7 +4,7 @@ import com.algorithm.playground.leetcode.problems.lc100.lc110.lc110.BalancedBina
 import spock.lang.Specification
 import spock.lang.Unroll
 
-import static com.algorithm.playground.leetcode.problems.utils.TreeNode.node
+import static com.algorithm.playground.leetcode.problems.utils.tree.TreeNode.node
 
 class BalancedBinaryTreeSpec extends Specification {
 

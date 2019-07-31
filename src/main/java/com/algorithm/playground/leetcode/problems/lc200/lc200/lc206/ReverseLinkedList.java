@@ -1,6 +1,6 @@
 package com.algorithm.playground.leetcode.problems.lc200.lc200.lc206;
 
-import com.algorithm.playground.leetcode.problems.utils.ListNode;
+import com.algorithm.playground.leetcode.problems.utils.linkedlist.ListNode;
 
 /**
  * https://leetcode.com/problems/reverse-linked-list/description/

@@ -4,7 +4,7 @@ import com.algorithm.playground.leetcode.problems.lc0.lc20.lc21.MergeTwoSortedLi
 import spock.lang.Specification
 import spock.lang.Unroll
 
-import static com.algorithm.playground.leetcode.problems.utils.ListNode.valueOf as node
+import static com.algorithm.playground.leetcode.problems.utils.linkedlist.ListNode.valueOf as node
 
 class MergeTwoSortedListsSpec extends Specification {
 

@@ -1,11 +1,11 @@
 package com.algorithm.playground.leetcode.problems.lc700.lc720.lc725
 
 import com.algorithm.playground.leetcode.problems.lc700.lc720.lc725.SplitLinkedListInParts.Solution as S
-import com.algorithm.playground.leetcode.problems.utils.ListNode
+import com.algorithm.playground.leetcode.problems.utils.linkedlist.ListNode
 import spock.lang.Specification
 import spock.lang.Unroll
 
-import static com.algorithm.playground.leetcode.problems.utils.ListNode.valueOf as node
+import static com.algorithm.playground.leetcode.problems.utils.linkedlist.ListNode.valueOf as node
 
 class SplitLinkedListInPartsSpec extends Specification {
 

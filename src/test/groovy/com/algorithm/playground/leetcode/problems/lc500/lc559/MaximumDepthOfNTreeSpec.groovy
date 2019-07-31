@@ -1,7 +1,7 @@
 package com.algorithm.playground.leetcode.problems.lc500.lc559
 
 import com.algorithm.playground.leetcode.problems.lc500.lc559.MaximumDepthOfNTree.Solution as S
-import com.algorithm.playground.leetcode.problems.utils.Node as N
+import com.algorithm.playground.leetcode.problems.utils.tree.Node as N
 import spock.lang.Specification
 import spock.lang.Unroll
 

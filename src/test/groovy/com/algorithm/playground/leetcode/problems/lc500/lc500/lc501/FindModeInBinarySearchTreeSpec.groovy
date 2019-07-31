@@ -3,7 +3,7 @@ package com.algorithm.playground.leetcode.problems.lc500.lc500.lc501
 import spock.lang.Specification
 import spock.lang.Unroll
 
-import static com.algorithm.playground.leetcode.problems.utils.TreeNode.node
+import static com.algorithm.playground.leetcode.problems.utils.tree.TreeNode.node
 
 class FindModeInBinarySearchTreeSpec extends Specification {
 

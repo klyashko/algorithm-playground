@@ -1,11 +1,11 @@
 package com.algorithm.playground.leetcode.problems.lc200.lc230.lc235
 
 import com.algorithm.playground.leetcode.problems.lc200.lc230.lc235.LowestCommonAncestorOfABinarySearchTree.Solution as S
-import com.algorithm.playground.leetcode.problems.utils.TreeNode
+import com.algorithm.playground.leetcode.problems.utils.tree.TreeNode
 import spock.lang.Specification
 import spock.lang.Unroll
 
-import static com.algorithm.playground.leetcode.problems.utils.TreeNode.node
+import static com.algorithm.playground.leetcode.problems.utils.tree.TreeNode.node
 
 /**
  * Example 1:
