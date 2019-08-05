@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.lc400.lc495
+package com.algorithm.playground.leetcode.problems.lc400.lc490.lc495
 
-import com.algorithm.playground.leetcode.problems.lc400.lc495.TeemoAttacking.Solution
+import com.algorithm.playground.leetcode.problems.lc400.lc490.lc495.TeemoAttacking.Solution
 import spock.lang.Specification
 import spock.lang.Unroll
 

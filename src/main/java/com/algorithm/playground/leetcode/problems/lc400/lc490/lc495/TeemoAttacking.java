@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.lc400.lc495;
+package com.algorithm.playground.leetcode.problems.lc400.lc490.lc495;
 
 /**
  * https://leetcode.com/problems/teemo-attacking/description/

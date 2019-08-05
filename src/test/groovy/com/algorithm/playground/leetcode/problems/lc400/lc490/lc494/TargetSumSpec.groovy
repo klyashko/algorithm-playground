@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.lc400.lc494
+package com.algorithm.playground.leetcode.problems.lc400.lc490.lc494
 
-import com.algorithm.playground.leetcode.problems.lc400.lc494.TargetSum.Solution as S
+import com.algorithm.playground.leetcode.problems.lc400.lc490.lc494.TargetSum.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 
