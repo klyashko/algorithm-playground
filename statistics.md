@@ -119,6 +119,7 @@
    * [Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/)
    * [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)
    * [All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/)
+   * [Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/)
    * [All Possible Full Binary Trees](https://leetcode.com/problems/all-possible-full-binary-trees/)
    * [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
    * [Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/)
@@ -498,4 +499,4 @@
  * hard:
    * [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)
 
-##### Total: 286
+##### Total: 287
