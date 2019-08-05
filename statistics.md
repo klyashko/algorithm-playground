@@ -142,6 +142,7 @@
    * [Single Number](https://leetcode.com/problems/single-number/)
    
  * medium:
+   * [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)
    * [Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency/)
    * [Most Frequent Subtree Sum](https://leetcode.com/problems/most-frequent-subtree-sum/)
    * [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)
@@ -225,6 +226,7 @@
  * medium:
    * [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)
    * [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/)
+   * [Perfect Squares](https://leetcode.com/problems/perfect-squares/)
    * [Open The Lock](https://leetcode.com/problems/open-the-lock/)
    
  * hard:
@@ -266,6 +268,7 @@
    * [Letter Case Permutation](https://leetcode.com/problems/letter-case-permutation/)
    
  * medium:
+   * [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)
    * [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/)
    * [Beautiful Arrangement](https://leetcode.com/problems/beautiful-arrangement/)
    * [Combination Sum III](https://leetcode.com/problems/combination-sum-iii/)
@@ -495,4 +498,4 @@
  * hard:
    * [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)
 
-##### Total: 283
+##### Total: 286
