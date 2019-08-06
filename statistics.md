@@ -114,6 +114,7 @@
    * [Find Mode in Binary Search Tree](https://leetcode.com/problems/find-mode-in-binary-search-tree/)
    * [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/)
    * [Maximum Depth Of N Tree](https://leetcode.com/problems/maximum-depth-of-n-ary-tree/)
+   * [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)
    * [Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/)
    * [Leaf Similar Trees](https://leetcode.com/problems/leaf-similar-trees/)
    * [Path Sum III](https://leetcode.com/problems/path-sum-iii/)
@@ -510,4 +511,4 @@
  * hard:
    * [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)
 
-##### Total: 298
+##### Total: 299
