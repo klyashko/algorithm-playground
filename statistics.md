@@ -522,5 +522,6 @@
  * medium:    
     * [Print FooBar Alternately](https://leetcode.com/problems/print-foobar-alternately/)
     * [Print Zero Even Odd](https://leetcode.com/problems/print-zero-even-odd/)
+    * [Building H2O](https://leetcode.com/problems/building-h2o/)
 
-##### Total: 305
+##### Total: 306
