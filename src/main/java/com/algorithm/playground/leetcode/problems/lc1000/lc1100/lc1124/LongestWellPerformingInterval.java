@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.lc1000.lc1124;
+package com.algorithm.playground.leetcode.problems.lc1000.lc1100.lc1124;
 
 import java.util.HashMap;
 import java.util.Map;

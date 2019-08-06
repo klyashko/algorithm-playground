@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.lc1000.lc1124
+package com.algorithm.playground.leetcode.problems.lc1000.lc1100.lc1124
 
-import com.algorithm.playground.leetcode.problems.lc1000.lc1124.LongestWellPerformingInterval.Solution as S
+import com.algorithm.playground.leetcode.problems.lc1000.lc1100.lc1124.LongestWellPerformingInterval.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

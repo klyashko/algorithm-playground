@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.lc1000.lc1125;
+package com.algorithm.playground.leetcode.problems.lc1000.lc1100.lc1125;
 
 import java.util.*;
 
