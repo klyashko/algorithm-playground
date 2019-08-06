@@ -2,6 +2,7 @@
 
  * easy:
    * [Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence/)
+   * [Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/)
    * [Shortest Unsorted Continuous Subarray](https://leetcode.com/problems/shortest-unsorted-continuous-subarray/)
    * [Third Maximum Number](https://leetcode.com/problems/third-maximum-number/)
    * [Non-decreasing Array](https://leetcode.com/problems/non-decreasing-array/)
@@ -512,4 +513,4 @@
  * hard:
    * [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)
 
-##### Total: 300
+##### Total: 301
