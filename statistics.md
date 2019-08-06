@@ -2,6 +2,7 @@
 
  * easy:
    * [Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence/)
+   * [Shortest Unsorted Continuous Subarray](https://leetcode.com/problems/shortest-unsorted-continuous-subarray/)
    * [Third Maximum Number](https://leetcode.com/problems/third-maximum-number/)
    * [Non-decreasing Array](https://leetcode.com/problems/non-decreasing-array/)
    * [Array Partition I](https://leetcode.com/problems/array-partition-i/)
@@ -504,4 +505,4 @@
  * hard:
    * [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)
 
-##### Total: 292
+##### Total: 293
