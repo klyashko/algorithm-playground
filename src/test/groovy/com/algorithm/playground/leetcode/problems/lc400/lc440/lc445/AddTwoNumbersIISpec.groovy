@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.lc400.lc445
+package com.algorithm.playground.leetcode.problems.lc400.lc440.lc445
 
-import com.algorithm.playground.leetcode.problems.lc400.lc445.AddTwoNumbersII.Solution as S
+import com.algorithm.playground.leetcode.problems.lc400.lc440.lc445.AddTwoNumbersII.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

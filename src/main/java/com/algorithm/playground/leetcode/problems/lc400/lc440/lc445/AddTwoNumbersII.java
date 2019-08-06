@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.lc400.lc445;
+package com.algorithm.playground.leetcode.problems.lc400.lc440.lc445;
 
 import com.algorithm.playground.leetcode.problems.utils.linkedlist.ListNode;
 

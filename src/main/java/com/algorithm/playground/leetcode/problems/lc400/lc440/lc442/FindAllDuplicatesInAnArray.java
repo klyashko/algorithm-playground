@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.lc400.lc442;
+package com.algorithm.playground.leetcode.problems.lc400.lc440.lc442;
 
 import java.util.ArrayList;
 import java.util.List;

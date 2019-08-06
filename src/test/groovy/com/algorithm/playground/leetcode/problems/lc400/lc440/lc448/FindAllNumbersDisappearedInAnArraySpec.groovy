@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.lc400.lc448
+package com.algorithm.playground.leetcode.problems.lc400.lc440.lc448
 
-import com.algorithm.playground.leetcode.problems.lc400.lc448.FindAllNumbersDisappearedInAnArray.Solution as S
+import com.algorithm.playground.leetcode.problems.lc400.lc440.lc448.FindAllNumbersDisappearedInAnArray.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 
