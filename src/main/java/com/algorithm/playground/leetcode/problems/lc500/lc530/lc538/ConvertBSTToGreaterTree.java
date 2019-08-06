@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.lc500.lc538;
+package com.algorithm.playground.leetcode.problems.lc500.lc530.lc538;
 
 import com.algorithm.playground.leetcode.problems.utils.tree.TreeNode;
 

@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.lc500.lc538
+package com.algorithm.playground.leetcode.problems.lc500.lc530.lc538
 
-import com.algorithm.playground.leetcode.problems.lc500.lc538.ConvertBSTToGreaterTree.Solution as S
+import com.algorithm.playground.leetcode.problems.lc500.lc530.lc538.ConvertBSTToGreaterTree.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 
