@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.lc1000.lc1100.lc1115;
+package com.algorithm.playground.leetcode.problems.lc1000.lc1100.lc1110.lc1115;
 
 /**
  * https://leetcode.com/problems/print-foobar-alternately/

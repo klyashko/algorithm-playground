@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.lc1000.lc1100.lc1116;
+package com.algorithm.playground.leetcode.problems.lc1000.lc1100.lc1110.lc1116;
 
 import java.util.function.IntConsumer;
 
