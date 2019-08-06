@@ -513,5 +513,10 @@
    
  * hard:
    * [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)
+   
+#### Concurrency
+   
+ * easy:
+    * [Print in Order](https://leetcode.com/problems/print-in-order/)
 
-##### Total: 302
+##### Total: 303
