@@ -334,6 +334,7 @@
    * [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
    * [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)
    * [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)
+   * [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)
    
  * medium:
    * [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
@@ -507,4 +508,4 @@
  * hard:
    * [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)
 
-##### Total: 295
+##### Total: 296
