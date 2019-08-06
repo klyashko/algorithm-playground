@@ -329,9 +329,10 @@
 #### Linked List
 
  * easy:
-    [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)
+   * [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)
    * [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)
    * [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
+   * [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)
    * [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)
    
  * medium:
@@ -506,4 +507,4 @@
  * hard:
    * [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)
 
-##### Total: 294
+##### Total: 295
