@@ -119,6 +119,7 @@
    * [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)
    * [Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/)
    * [Leaf Similar Trees](https://leetcode.com/problems/leaf-similar-trees/)
+   * [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)
    * [Path Sum III](https://leetcode.com/problems/path-sum-iii/)
    * [Path Sum](https://leetcode.com/problems/path-sum/)
    
@@ -513,4 +514,4 @@
  * hard:
    * [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)
 
-##### Total: 301
+##### Total: 302
