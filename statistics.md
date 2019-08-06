@@ -116,6 +116,7 @@
    * [Maximum Depth Of N Tree](https://leetcode.com/problems/maximum-depth-of-n-ary-tree/)
    * [Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/)
    * [Leaf Similar Trees](https://leetcode.com/problems/leaf-similar-trees/)
+   * [Path Sum III](https://leetcode.com/problems/path-sum-iii/)
    * [Path Sum](https://leetcode.com/problems/path-sum/)
    
  * medium:
@@ -508,4 +509,4 @@
  * hard:
    * [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)
 
-##### Total: 296
+##### Total: 297
