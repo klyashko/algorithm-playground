@@ -146,6 +146,7 @@
    * [Longest Palindrome](https://leetcode.com/problems/longest-palindrome/)
    * [Jewels And Stones](https://leetcode.com/problems/jewels-and-stones/)
    * [Single Number](https://leetcode.com/problems/single-number/)
+   * [Two Sum](https://leetcode.com/problems/two-sum/)
    
  * medium:
    * [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)
@@ -509,4 +510,4 @@
  * hard:
    * [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)
 
-##### Total: 297
+##### Total: 298

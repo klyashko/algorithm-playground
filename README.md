@@ -94,6 +94,7 @@ This repository contains:
             
             
 ## Leetcode problems:
+ * [1 Two Sum](https://leetcode.com/problems/two-sum/) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/leetcode/problems/lc0/lc0/lc1/TwoSum.java)
  * [2 Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/leetcode/problems/lc0/lc0/lc2/AddTwoNumbers.java)
  * [3 Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/leetcode/problems/lc0/lc0/lc3/LongestSubstringWithoutRepeatingCharacters.java)
  * [4 Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/leetcode/problems/lc0/lc0/lc4/MedianOfTwoSortedArrays.java)
