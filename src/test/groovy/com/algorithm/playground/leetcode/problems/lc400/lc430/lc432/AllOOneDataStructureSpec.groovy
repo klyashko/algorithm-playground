@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.lc400.lc432
+package com.algorithm.playground.leetcode.problems.lc400.lc430.lc432
 
-import com.algorithm.playground.leetcode.problems.lc400.lc432.AllOOneDataStructure.AllOne as AO
+import com.algorithm.playground.leetcode.problems.lc400.lc430.lc432.AllOOneDataStructure.AllOne as AO
 import spock.lang.Specification
 import spock.lang.Unroll
 

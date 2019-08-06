@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.lc400.lc438
+package com.algorithm.playground.leetcode.problems.lc400.lc430.lc438
 
-import com.algorithm.playground.leetcode.problems.lc400.lc438.FindAllAnagramsInAString.Solution as S
+import com.algorithm.playground.leetcode.problems.lc400.lc430.lc438.FindAllAnagramsInAString.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 

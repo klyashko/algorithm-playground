@@ -1,6 +1,6 @@
-package com.algorithm.playground.leetcode.problems.lc400.lc437
+package com.algorithm.playground.leetcode.problems.lc400.lc430.lc437
 
-import com.algorithm.playground.leetcode.problems.lc400.lc437.PathSumIII.Solution as S
+import com.algorithm.playground.leetcode.problems.lc400.lc430.lc437.PathSumIII.Solution as S
 import spock.lang.Specification
 import spock.lang.Unroll
 
