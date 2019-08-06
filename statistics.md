@@ -518,5 +518,8 @@
    
  * easy:
     * [Print in Order](https://leetcode.com/problems/print-in-order/)
+    
+ * medium:    
+    * [Print FooBar Alternately](https://leetcode.com/problems/print-foobar-alternately/)
 
-##### Total: 303
+##### Total: 304
