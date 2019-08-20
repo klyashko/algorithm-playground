@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.lc900.lc908;
+package com.algorithm.playground.leetcode.problems.lc900.lc900.lc908;
 
 /**
  * https://leetcode.com/problems/smallest-range-i/

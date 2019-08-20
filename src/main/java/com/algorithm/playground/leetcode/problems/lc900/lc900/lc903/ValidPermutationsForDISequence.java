@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.lc900.lc903;
+package com.algorithm.playground.leetcode.problems.lc900.lc900.lc903;
 
 import java.util.Arrays;
 

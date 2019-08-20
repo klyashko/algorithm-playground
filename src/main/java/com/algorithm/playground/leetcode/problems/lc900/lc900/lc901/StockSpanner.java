@@ -1,4 +1,4 @@
-package com.algorithm.playground.leetcode.problems.lc900.lc901;
+package com.algorithm.playground.leetcode.problems.lc900.lc900.lc901;
 
 import java.util.LinkedList;
 

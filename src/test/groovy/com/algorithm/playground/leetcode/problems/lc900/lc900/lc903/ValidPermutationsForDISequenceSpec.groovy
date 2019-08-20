@@ -1,6 +1,5 @@
-package com.algorithm.playground.leetcode.problems.lc900.lc903
+package com.algorithm.playground.leetcode.problems.lc900.lc900.lc903
 
-import com.algorithm.playground.leetcode.problems.lc900.lc903.ValidPermutationsForDISequence
 import spock.lang.Specification
 import spock.lang.Unroll
 
