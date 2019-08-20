@@ -37,14 +37,10 @@ public class Twitter {
 		Queue<Data> queue = new PriorityQueue<>();
 		List<Integer> tweets = new ArrayList<>();
 
-		Set<Integer> followees = userToFollowee.getOrDefault(userId, Collections.emptySet());
+		next(queue, userToTweet.computeIfAbsent(userId, this::newLinkedList).iterator());
 
-		for (Integer next : followees) {
+		for (Integer next : userToFollowee.getOrDefault(userId, Collections.emptySet())) {
 			next(queue, userToTweet.computeIfAbsent(next, this::newLinkedList).iterator());
-		}
-
-		if (!followees.contains(userId)) {
-			next(queue, userToTweet.computeIfAbsent(userId, this::newLinkedList).iterator());
 		}
 
 		while (!queue.isEmpty() && tweets.size() < 10) {
@@ -61,7 +57,9 @@ public class Twitter {
 	 * If the operation is invalid, it should be a no-op.
 	 */
 	public void follow(int followerId, int followeeId) {
-		userToFollowee.computeIfAbsent(followerId, this::newHashSet).add(followeeId);
+		if (followerId != followeeId) {
+			userToFollowee.computeIfAbsent(followerId, this::newHashSet).add(followeeId);
+		}
 	}
 
 	/**
@@ -120,7 +118,7 @@ public class Twitter {
 
 		@Override
 		public String toString() {
-			return "Pair{" +
+			return "Data{" +
 					"twit=" + tweet +
 					", rest=" + rest +
 					'}';
