@@ -303,6 +303,7 @@
    * [Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/)
    * [Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/)
    * [Design Circular Deque](https://leetcode.com/problems/design-circular-deque/)
+   * [Design Twitter](https://leetcode.com/problems/design-twitter/)
    
  * hard:
    * [All O'One Data Structure](https://leetcode.com/problems/all-oone-data-structure/)
@@ -524,4 +525,4 @@
     * [Print Zero Even Odd](https://leetcode.com/problems/print-zero-even-odd/)
     * [Building H2O](https://leetcode.com/problems/building-h2o/)
 
-##### Total: 306
+##### Total: 307
