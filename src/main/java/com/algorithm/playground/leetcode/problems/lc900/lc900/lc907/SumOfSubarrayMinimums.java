@@ -1,7 +1,5 @@
 package com.algorithm.playground.leetcode.problems.lc900.lc900.lc907;
 
-import java.util.LinkedList;
-
 /**
  * https://leetcode.com/problems/sum-of-subarray-minimums/
  */
@@ -10,22 +8,20 @@ public class SumOfSubarrayMinimums {
 	class Solution {
 
 		public int sumSubarrayMins(int[] A) {
-			int MOD = 1000000007;
-			LinkedList<Integer> stack = new LinkedList<>();
-			long ans = 0;
-			for (int r = 0; r <= A.length; r++) {
+			int[] stack = new int[A.length + 1];
+			int top = 0, MOD = 1000000007, ans = 0;
+			for (int right = 0; right <= A.length; right++) {
+				int val = right == A.length ? 0 : A[right];
 
-				int val = r == A.length ? 0 : A[r];
-
-				while (!stack.isEmpty() && A[stack.peek()] > val) {
-					int m = stack.pop();
-					int l = stack.isEmpty() ? -1 : stack.peek();
-					ans += A[m] * (m - l) * (r - m);
+				while (top != 0 && A[stack[top]] > val) {
+					int min = stack[top--];
+					int left = top == 0 ? -1 : stack[top];
+					ans += A[min] * (min - left) * (right - min);
 					ans %= MOD;
 				}
-				stack.push(r);
+				stack[++top] = right;
 			}
-			return (int) ans;
+			return ans;
 		}
 
 	}
