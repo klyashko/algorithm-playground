@@ -58,6 +58,7 @@ This repository contains:
             * [Food Stalls](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000051061/0000000000161476) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/kickstart/d/task3/Solution.java)
         * #### Round D:
             * [Cherries Mesh](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000050edb/0000000000170721) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/kickstart/e/task1/Solution.java)
+            * [Street Checkers](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000050edb/00000000001707b9) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/kickstart/e/task3/Solution.java)
  
  * ### Google Code Jam
     * #### 2018:

@@ -27,9 +27,11 @@ public class Solution {
 		Set<Integer> set = new HashSet<>();
 
 		for (int i = 2; i <= Math.ceil(Math.sqrt(val)); i++) {
-			while (val % i == 0) {
+			if (val % i == 0) {
 				set.add(i);
-				val /= i;
+				while (val % i == 0) {
+					val /= i;
+				}
 			}
 		}
 		if (val > 2) {
@@ -38,24 +40,20 @@ public class Solution {
 		return set;
 	}
 
+	private static void dfs(int n, int curr, Set<Integer> primes, Set<Integer> result) {
+		if (n % curr == 0 && result.add(curr)) {
+			for (int p : primes) {
+				dfs(n, curr * p, primes, result);
+			}
+		}
+	}
+
 	private static Set<Integer> countMultipliers(Integer n) {
 		Set<Integer> primes = factorsOf(n);
-		Set<Integer> multipliers = new HashSet<>(primes);
+		Set<Integer> multipliers = new HashSet<>();
 
-		Set<Integer> tmp = new HashSet<>(primes);
-
-		while (!tmp.isEmpty()) {
-			Set<Integer> next = new HashSet<>();
-			for (Integer i : tmp) {
-				for (Integer p : primes) {
-					int c = i * p;
-					if (n % c == 0) {
-						next.add(c);
-					}
-				}
-			}
-			multipliers.addAll(tmp);
-			tmp = next;
+		for (int p : primes) {
+			dfs(n, p, primes, multipliers);
 		}
 		return multipliers;
 	}
