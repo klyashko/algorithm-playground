@@ -2,6 +2,11 @@ package com.algorithm.playground.google.kickstart._2019.e.task1;
 
 import java.util.*;
 
+import static java.util.Collections.emptySet;
+
+/**
+ * https://codingcompetitions.withgoogle.com/kickstart/round/0000000000050edb/0000000000170721
+ */
 public class Solution {
 
 	public static void main(String[] args) {
@@ -26,37 +31,24 @@ public class Solution {
 	}
 
 	private static int solve(int n, Map<Integer, Set<Integer>> edges) {
-		int visitedEdges = 0;
-		Set<Integer> visited = new HashSet<>();
+		int comp = 0;
+		BitSet visited = new BitSet();
 		for (int i = 1; i <= n; i++) {
-			if (edges.containsKey(i)) {
-				int size = visited.size();
+			if (!visited.get(i)) {
 				dfs(i, edges, visited);
-				visitedEdges += Math.max(0, visited.size() - size - 1);
+				comp++;
 			}
 		}
-		int expected = n - 1;
-//		System.out.println("VE=" + visitedEdges + " e=" + expected);
-//		int visitedCount = Math.max(0, visited.size() - 1);
-		if (visitedEdges > expected) {
-			return expected;
-		} else {
-			return visitedEdges + (expected - visitedEdges << 1);
-		}
+		int red = comp - 1;
+		int black = n - red - 1;
+		return black + (red << 1);
 	}
 
-	private static void dfs(Integer curr, Map<Integer, Set<Integer>> edges, Set<Integer> visited) {
-		if (visited.add(curr)) {
-			LinkedList<Integer> stack = new LinkedList<>();
-			stack.push(curr);
-
-			while (!stack.isEmpty()) {
-				curr = stack.pop();
-				for (Integer next : edges.getOrDefault(curr, Collections.emptySet())) {
-					if (visited.add(next)) {
-						stack.push(next);
-					}
-				}
+	private static void dfs(Integer curr, Map<Integer, Set<Integer>> edges, BitSet visited) {
+		if (!visited.get(curr)) {
+			visited.set(curr);
+			for (Integer next : edges.getOrDefault(curr, emptySet())) {
+				dfs(next, edges, visited);
 			}
 		}
 	}
