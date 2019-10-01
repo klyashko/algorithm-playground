@@ -56,10 +56,12 @@ This repository contains:
             * [X or What?](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000051061/0000000000161426) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/kickstart/d/task1/Solution.java)
             * [Latest Guests](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000051061/0000000000161427) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/kickstart/d/task2/Solution.java)
             * [Food Stalls](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000051061/0000000000161476) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/kickstart/d/task3/Solution.java)
-        * #### Round D:
+        * #### Round E:
             * [Cherries Mesh](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000050edb/0000000000170721) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/kickstart/e/task1/Solution.java)
             * [Code-Eat Switcher](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000050edb/00000000001707b8) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/kickstart/e/task2/Solution.java)
             * [Street Checkers](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000050edb/00000000001707b9) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/kickstart/e/task3/Solution.java)
+        * #### Round F:
+             * [Flattening](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000050edc/000000000018666c) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/google/kickstart/f/task1/Solution.java)
  
  * ### Google Code Jam
     * #### 2018:

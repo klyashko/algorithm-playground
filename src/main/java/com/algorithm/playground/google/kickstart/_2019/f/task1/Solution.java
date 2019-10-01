@@ -52,15 +52,7 @@ public class Solution {
 				}
 			}
 		}
-//		print(dp);
 		return dp[n - 1][k];
-	}
-
-	private static void print(int[][] matrix) {
-		for (int[] row : matrix) {
-			System.out.println(Arrays.toString(row));
-		}
-		System.out.println("--------------------------------");
 	}
 
 }
