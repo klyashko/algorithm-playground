@@ -6,6 +6,7 @@ import java.util.Map.Entry;
 /**
  * https://codingcompetitions.withgoogle.com/kickstart/round/0000000000050eda/00000000001198c1
  */
+@SuppressWarnings("DuplicatedCode")
 public class Solution {
 
 	public static void main(String[] args) {
