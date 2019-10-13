@@ -315,6 +315,7 @@
 
  * easy:
    * [Maximize Sum Of Array After K Negations](https://leetcode.com/problems/maximize-sum-of-array-after-k-negations/)
+   * [Split a String in Balanced Strings](https://leetcode.com/problems/split-a-string-in-balanced-strings/)
    * [Two City Scheduling](https://leetcode.com/problems/two-city-scheduling/)
    * [Lemonade Change](https://leetcode.com/problems/lemonade-change/)
    * [Assign Cookies](https://leetcode.com/problems/assign-cookies/)
@@ -526,4 +527,4 @@
     * [Print Zero Even Odd](https://leetcode.com/problems/print-zero-even-odd/)
     * [Building H2O](https://leetcode.com/problems/building-h2o/)
 
-##### Total: 308
+##### Total: 309

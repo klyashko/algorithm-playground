@@ -464,4 +464,5 @@ This repository contains:
  * [1117 Building H2O](https://leetcode.com/problems/building-h2o/) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/leetcode/problems/lc1000/lc1100/lc1110/lc1117/H2O.java)
  * [1124 Longest Well-Performing Interval](https://leetcode.com/problems/longest-well-performing-interval/) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/leetcode/problems/lc1000/lc1100/lc1124/LongestWellPerformingInterval.java)
  * [1125 Smallest Sufficient Team](https://leetcode.com/problems/smallest-sufficient-team/) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/leetcode/problems/lc1000/lc1100/lc1125/SmallestSufficientTeam.java)
+ * [1221 Split a String in Balanced Strings](https://leetcode.com/problems/split-a-string-in-balanced-strings/) [[solution]](https://github.com/klyashko/algorithm-playground/blob/master/src/main/java/com/algorithm/playground/leetcode/problems/lc1000/lc1221/SplitAStringInBalancedStrings.java)
  
