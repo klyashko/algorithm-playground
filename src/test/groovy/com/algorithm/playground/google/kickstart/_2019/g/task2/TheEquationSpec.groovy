@@ -6,7 +6,6 @@ import spock.lang.Unroll
 import static com.algorithm.playground.google.kickstart._2019.g.task2.Solution.main
 import static com.algorithm.playground.google.utils.GoogleUtils.exec
 
-
 class TheEquationSpec extends Specification {
 
 	@Unroll
